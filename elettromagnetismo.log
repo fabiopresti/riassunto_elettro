@@ -1,0 +1,589 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  28 OCT 2022 09:18
+entering extended mode
+**./elettromagnetismo.tex
+(elettromagnetismo.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2020/12/16 3.52 The Babel package
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2020/12/16 3.52 Babel common definitions
+\babel@savecnt=\count185
+\U@D=\dimen139
+\l@babelnohyphens=\language79
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count186
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.l
+df
+Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
+\it@lettering=\count187
+\it@doublequoteactive=\count188
+\it@ISOcompliance=\count189
+))
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count190
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen140
+))
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count191
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count192
+\leftroot@=\count193
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count194
+\DOTSCASE@=\count195
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count196
+\c@MaxMatrixCols=\count197
+\dotsspace@=\muskip16
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
+\tag@help=\toks18
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
+\andhelp@=\toks19
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+\c@theorem=\count269
+\c@esercizio=\count270
+\c@corollary=\count271
+\c@definition=\count272
+\c@prop=\count273
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count274
+\l__pdf_internal_box=\box49
+) (elettromagnetismo.aux)
+\openout1 = `elettromagnetismo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 29.
+LaTeX Info: Redefining \it@ccap on input line 29.
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen151
+\scratchbox=\box50
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen152
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks24
+)
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<images/elettroscopio.jpg, id=1, 526.21594pt x 451.6875pt>
+File: images/elettroscopio.jpg Graphic file (type jpg)
+<use images/elettroscopio.jpg>
+Package pdftex.def Info: images/elettroscopio.jpg  used on input line 41.
+(pdftex.def)             Requested size: 137.9979pt x 118.44913pt.
+
+Overfull \hbox (11.80084pt too wide) in paragraph at lines 38--45
+\T1/cmr/m/n/10 ri-ci re-la-ti-vi a que-ste espe-rien-ze. Il pri-mo fon-da-men-t
+a-le stru-men-to è l'\T1/cmr/bx/n/10 elettroscopio
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+{C:/Users/Fabio/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2 <./images/el
+ettroscopio.jpg>]
+<images/bilancia_coulomb.jpg, id=20, 514.92375pt x 202.7575pt>
+File: images/bilancia_coulomb.jpg Graphic file (type jpg)
+<use images/bilancia_coulomb.jpg>
+Package pdftex.def Info: images/bilancia_coulomb.jpg  used on input line 64.
+(pdftex.def)             Requested size: 207.0021pt x 81.50685pt.
+ [3 <./images/bilancia_coulomb.jpg>] [4]
+Overfull \hbox (2.10674pt too wide) in paragraph at lines 121--123
+[]
+ []
+
+[5] [6]
+Overfull \hbox (62.01819pt too wide) detected at line 142
+\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 d[] \OT1/cmr/m/n
+/10 = [] [][] []\OML/cmm/m/it/10 dl []  \OT1/cmr/m/n/10 = [] [][] []\OML/cmm/m
+/it/10 dr \OT1/cmr/m/n/10 = [] [] = \OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (\OML/cmm
+/m/it/10 B\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 U\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (1.71365pt too wide) in paragraph at lines 166--167
+[]\T1/cmr/m/it/10 Definiamo for-za elet-tro-mo-tri-
+ []
+
+
+Overfull \hbox (2.67604pt too wide) in paragraph at lines 171--172
+[]
+ []
+
+[7] [8]
+<images/angolo_solido.png, id=46, 230.0595pt x 320.397pt>
+File: images/angolo_solido.png Graphic file (type png)
+<use images/angolo_solido.png>
+Package pdftex.def Info: images/angolo_solido.png  used on input line 195.
+(pdftex.def)             Requested size: 172.5pt x 240.24338pt.
+ [9 <./images/angolo_solido.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+<images/thm_gauss_1.png, id=52, 499.8675pt x 468.75125pt>
+File: images/thm_gauss_1.png Graphic file (type png)
+<use images/thm_gauss_1.png>
+Package pdftex.def Info: images/thm_gauss_1.png  used on input line 222.
+(pdftex.def)             Requested size: 172.5pt x 161.76227pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]
+Overfull \hbox (46.19678pt too wide) detected at line 235
+[]
+ []
+
+[11 <./images/thm_gauss_1.png>]
+
+LaTeX Warning: Command \` invalid in math mode on input line 260.
+
+Missing character: There is no ì in font cmr10!
+
+LaTeX Warning: Command \` invalid in math mode on input line 260.
+
+Missing character: There is no ì in font cmr10!
+
+Overfull \hbox (18.05634pt too wide) detected at line 260
+[]
+ []
+
+
+Overfull \hbox (2.10674pt too wide) in paragraph at lines 263--264
+[]
+ []
+
+[12]
+Overfull \hbox (14.08298pt too wide) in paragraph at lines 273--274
+[]
+ []
+
+[13] [14] [15] [16]
+Overfull \hbox (26.69795pt too wide) in paragraph at lines 332--333
+[]
+ []
+
+
+Overfull \hbox (24.81364pt too wide) in paragraph at lines 350--351
+[]\T1/cmr/m/it/10 Consideriamo
+ []
+
+[17]
+Overfull \hbox (17.88339pt too wide) in paragraph at lines 363--364
+[]\T1/cmr/m/it/10 Consideriamo
+ []
+
+[18]
+<images/anello.png, id=82, 499.8675pt x 367.3725pt>
+File: images/anello.png Graphic file (type png)
+<use images/anello.png>
+Package pdftex.def Info: images/anello.png  used on input line 380.
+(pdftex.def)             Requested size: 207.0021pt x 152.1316pt.
+
+Overfull \hbox (1.07637pt too wide) in paragraph at lines 377--384
+[]\T1/cmr/m/it/10 Consideriamo un
+ []
+
+[19 <./images/anello.png (PNG copy)>]
+Overfull \hbox (1.72787pt too wide) in paragraph at lines 397--398
+[]\T1/cmr/m/it/10 Ora, al po-sto di un
+ []
+
+
+Overfull \hbox (68.09618pt too wide) in paragraph at lines 405--406
+[]
+ []
+
+[20] [21]
+<images/tubo_di_flusso.png, id=93, 1204.5pt x 632.3625pt>
+File: images/tubo_di_flusso.png Graphic file (type png)
+<use images/tubo_di_flusso.png>
+Package pdftex.def Info: images/tubo_di_flusso.png  used on input line 445.
+(pdftex.def)             Requested size: 207.0021pt x 108.66774pt.
+ [22 <./images/tubo_di_flusso.png>] [23]
+<images/condensatore-piano.png, id=101, 229.85875pt x 220.825pt>
+File: images/condensatore-piano.png Graphic file (type png)
+<use images/condensatore-piano.png>
+Package pdftex.def Info: images/condensatore-piano.png  used on input line 483.
+
+(pdftex.def)             Requested size: 137.9979pt x 132.58025pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24] [25 <./images/condensatore-piano.png>]
+<images/condensatore-piano-2.png, id=110, 428.60126pt x 533.995pt>
+File: images/condensatore-piano-2.png Graphic file (type png)
+<use images/condensatore-piano-2.png>
+Package pdftex.def Info: images/condensatore-piano-2.png  used on input line 50
+4.
+(pdftex.def)             Requested size: 137.9979pt x 171.933pt.
+<images/Condensatori_parallelo.png, id=111, 352.31625pt x 347.2975pt>
+File: images/Condensatori_parallelo.png Graphic file (type png)
+<use images/Condensatori_parallelo.png>
+Package pdftex.def Info: images/Condensatori_parallelo.png  used on input line 
+513.
+(pdftex.def)             Requested size: 207.0021pt x 204.05055pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26 <./images/condensatore-piano-2.png>]
+<images/Condensatori_serie.png, id=116, 352.31625pt x 136.51pt>
+File: images/Condensatori_serie.png Graphic file (type png)
+<use images/Condensatori_serie.png>
+Package pdftex.def Info: images/Condensatori_serie.png  used on input line 529.
+
+(pdftex.def)             Requested size: 207.0021pt x 80.20483pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./images/Condensatori_parallelo.png (PNG copy)>]
+Overfull \hbox (46.68547pt too wide) detected at line 545
+\OML/cmm/m/it/10 L \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] []\OML/cmm/m/it/10
+ d[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 Q[] [][] []d[] \OT1/c
+mr/m/n/10 = \OML/cmm/m/it/10 Q[]V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r[]\OT1/cmr/
+m/n/10 ) = [][] = \OML/cmm/m/it/10 Q[][][] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Q
+[]V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r[]\OT1/cmr/m/n/10 )
+ []
+
+[28 <./images/Condensatori_serie.png (PNG copy)>] [29]
+<images/dipolo_elettrico.png, id=126, 1284.8pt x 963.6pt>
+File: images/dipolo_elettrico.png Graphic file (type png)
+<use images/dipolo_elettrico.png>
+Package pdftex.def Info: images/dipolo_elettrico.png  used on input line 579.
+(pdftex.def)             Requested size: 137.9979pt x 103.49675pt.
+
+Overfull \hbox (17.06142pt too wide) in paragraph at lines 586--587
+[]
+ []
+
+[30 <./images/dipolo_elettrico.png>]
+<images/dipolo.png, id=130, 67.75313pt x 77.91609pt>
+File: images/dipolo.png Graphic file (type png)
+<use images/dipolo.png>
+Package pdftex.def Info: images/dipolo.png  used on input line 602.
+(pdftex.def)             Requested size: 137.9979pt x 158.70416pt.
+
+Overfull \hbox (48.53568pt too wide) in paragraph at lines 599--606
+[]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31] [32 <./images/dipolo.png>]
+<images/dipolo_campo_elettrico.png, id=140, 411.33675pt x 354.123pt>
+File: images/dipolo_campo_elettrico.png Graphic file (type png)
+<use images/dipolo_campo_elettrico.png>
+Package pdftex.def Info: images/dipolo_campo_elettrico.png  used on input line 
+639.
+(pdftex.def)             Requested size: 172.5pt x 148.5091pt.
+
+Overfull \hbox (7.30638pt too wide) detected at line 646
+\OML/cmm/m/it/10 U \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 q\OT1/cmr/m/n/10 [\OML/cm
+m/m/it/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/
+10 ax; y \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ay; z \OT1/cmr/m/n/10 + \OML/cmm/m/
+it/10 az\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 V\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )] = \OML/cmm/m/it/10 qdV \OT1/cmr/m/n
+/10 = \OML/cmm/m/it/10 q [] \OT1/cmr/m/n/10 =
+ []
+
+[33 <./images/dipolo_campo_elettrico.png>]
+<images/sistema_dipolo.png, id=145, 470.9595pt x 441.44925pt>
+File: images/sistema_dipolo.png Graphic file (type png)
+<use images/sistema_dipolo.png>
+Package pdftex.def Info: images/sistema_dipolo.png  used on input line 658.
+(pdftex.def)             Requested size: 172.5pt x 161.69008pt.
+ [34 <./images/sistema_dipolo.png>]
+<images/dipolo_SR.png, id=150, 341.47575pt x 305.34074pt>
+File: images/dipolo_SR.png Graphic file (type png)
+<use images/dipolo_SR.png>
+Package pdftex.def Info: images/dipolo_SR.png  used on input line 678.
+(pdftex.def)             Requested size: 172.5pt x 154.24477pt.
+
+[35 <./images/dipolo_SR.png>]
+<images/dipolo_H_H2O.png, id=155, 536.60475pt x 272.217pt>
+File: images/dipolo_H_H2O.png Graphic file (type png)
+<use images/dipolo_H_H2O.png>
+Package pdftex.def Info: images/dipolo_H_H2O.png  used on input line 694.
+(pdftex.def)             Requested size: 172.5pt x 87.50996pt.
+<images/dielettrico_idrogeno.png, id=156, 436.63126pt x 317.38576pt>
+File: images/dielettrico_idrogeno.png Graphic file (type png)
+<use images/dielettrico_idrogeno.png>
+Package pdftex.def Info: images/dielettrico_idrogeno.png  used on input line 70
+3.
+(pdftex.def)             Requested size: 207.0021pt x 150.46922pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./images/dipolo_H_H2O.png>]
+Overfull \hbox (3.05383pt too wide) detected at line 713
+\OT1/cmr/m/n/10 \OML/cmm/m/it/10 V \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 d
+[] \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 + [][] []\OML/
+cmm/m/it/10 d[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Ed[] \OT1/cmr/m/n/10 + \OML/
+cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10   \OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D\OT1/cmr/m/n/10 
+)) = \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10   \
+OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 \OML/cmm
+/m/it/10 V[]
+ []
+
+[37 <./images/dielettrico_idrogeno.png>] [38] [39] [40] [41]
+<images/calcite1.png, id=180, 1003.75pt x 596.2275pt>
+File: images/calcite1.png Graphic file (type png)
+<use images/calcite1.png>
+Package pdftex.def Info: images/calcite1.png  used on input line 845.
+(pdftex.def)             Requested size: 207.0021pt x 122.95523pt.
+<images/calcite2.jpg, id=181, 192.72pt x 128.3997pt>
+File: images/calcite2.jpg Graphic file (type jpg)
+<use images/calcite2.jpg>
+Package pdftex.def Info: images/calcite2.jpg  used on input line 846.
+(pdftex.def)             Requested size: 137.9979pt x 91.94026pt.
+ [42] [43 <./images/calcite1.png> <./images/calcite2.jpg>] [44] [45]
+<images/flusso2bis.jpg, id=197, 581.17125pt x 371.13657pt>
+File: images/flusso2bis.jpg Graphic file (type jpg)
+<use images/flusso2bis.jpg>
+Package pdftex.def Info: images/flusso2bis.jpg  used on input line 926.
+(pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46] [47 <./images/flusso2bis.jpg>]
+<images/div.png, id=204, 319.1925pt x 158.5925pt>
+File: images/div.png Graphic file (type png)
+<use images/div.png>
+Package pdftex.def Info: images/div.png  used on input line 949.
+(pdftex.def)             Requested size: 207.0021pt x 102.84915pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--959
+
+ []
+
+<images/div_quadrato.png, id=205, 484.81125pt x 419.76825pt>
+File: images/div_quadrato.png Graphic file (type png)
+<use images/div_quadrato.png>
+Package pdftex.def Info: images/div_quadrato.png  used on input line 963.
+(pdftex.def)             Requested size: 207.0021pt x 179.235pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48 <./images/div.png>] [49 <./images/div_quadrato.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1006
+
+ []
+
+[50]
+Overfull \hbox (48.15594pt too wide) detected at line 1011
+[]
+ []
+
+[51] [52] (elettromagnetismo.aux) ) 
+Here is how much of TeX's memory you used:
+ 3998 strings out of 479618
+ 55326 string characters out of 2865026
+ 357221 words of memory out of 3000000
+ 21102 multiletter control sequences out of 15000+200000
+ 418420 words of font info for 65 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,15n,74p,1098b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Fabio\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\Fabio\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Fabio\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Fabio\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Fabio\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Fab
+io\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Use
+rs\Fabio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <
+C:\Users\Fabio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200
+.pk> <C:\Users\Fabio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
+rm1728.pk><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Fabio/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Fabio/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Fabio/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Fabio/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/F
+abio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
+Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on elettromagnetismo.pdf (52 pages, 1230969 bytes).
+PDF statistics:
+ 591 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+
