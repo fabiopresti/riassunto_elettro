@@ -38,7 +38,7 @@ La parola elettrone deriva dal greco elektron che vuol dire ambra, un materiale 
 	\item Questa forza può essere sia attrattiva che repulsiva
 	\item Esiste un'attributo che la materia può avere o non avere (e che talvolta si nota può asumere per sfregamento) che genera questa attrazione e che chiameremo "carica" Q.
 \end{itemize}
-Seguendo il metodo scientifico, vogliamo fare esperimenti che offrano dati numerici relativi a queste esperienze. Il primo fondamentale strumento è l'\textbf{elettroscopio} che permette di misurare la carica di un corpo. Un classico tipo di elettroscopio è quello a foglie d'oro: un'ampolla all'interno del quale è applicato il vuoto presenta all'interno due foglie d'oro estremamento sottili e leggere attaccate ad una barretta metallica che fuoriesce dall'ampolla e che termina con una sfera metallica; se viene avvicinato un corpo carico alla sfera questa si caricherà e distribuirà la carica su tutto il corpo metalico, le due foglie metalliche, essendo entrambe cariche dello stesso segno si respingeranno tanto più quanto più forte è la carica con cui sono state elettrizzate. Si misura l'angolo di apertura delle foglie e si ottiene con semplici considerazioni di statica (forza elettromagnetica di repulsione o attrazione che in quiete eguaglia quella gravitazionale) un valore numerico della forza di repulsione elettrostatica. 
+Seguendo il metodo scientifico, vogliamo fare esperimenti che offrano dati numerici relativi a queste esperienze. Il primo fondamentale strumento è l'\textbf{elettroscopio} che permette di misurare la carica di un corpo. Un classico tipo di elettroscopio è quello a foglie d'oro: un'ampolla all'interno del quale è applicato il vuoto presenta all'interno due foglie d'oro estremamente sottili e leggere attaccate ad una barretta metallica che fuoriesce dall'ampolla e che termina con una sfera metallica; se viene avvicinato un corpo carico alla sfera questa si caricherà e distribuirà la carica su tutto il corpo metallico, le due foglie metalliche, essendo entrambe cariche dello stesso segno si respingeranno tanto più quanto più forte è la carica con cui sono state elettrizzate. Si misura l'angolo di apertura delle foglie e si ottiene con semplici considerazioni di statica (forza elettromagnetica di repulsione o attrazione che in quiete eguaglia quella gravitazionale) un valore numerico della forza di repulsione elettrostatica. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{images/elettroscopio}
@@ -106,7 +106,10 @@ Il fatto che avvicinando due cariche esse si attraggono con una forza porta ad i
 Matematicamente l'espressione del campo elettrostatico si ottiene semplicemente aggiungendo una parentesi nell'espressione della forza 
 \[\vec{F}=q_0\left[\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\hat{r}\right]\]
 \[\vec{E} = \frac{\vec{F}}{q_0} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\hat{r}\]
-Si noti il salto concettuale rispetto la teoria della gravità newtoniana: ora non si tratta di trovare le forze agenti su un corpo ma il campo vettoriale, in questo caso elettrico.\\
+Si noti il salto concettuale rispetto la teoria della gravità newtoniana: ora non si tratta di trovare le forze agenti su un corpo ma il campo vettoriale, in questo caso elettrico.
+\begin{definition}[Campo elettrostatico]
+	 il campo elettrico è un campo di forze generato nello spazio dalla presenza di una o più cariche elettriche. L'interazione del campo elettrostatico con una carica di prova genera una forza sulla carica stessa e, uguale e contraria, sulle cariche che generano il campo.
+\end{definition}
 Un campo vettoriale può essere pensato come una porzione di spazio piena di frecce rappresentanti i vettori che esso associa ad ogni punto; disegnarlo in tal modo è impossibile dunque si opta per disegnare pochi vettori sempre tangenti al campo stesso. Per farlo si disegna un primo vettore, da esso ci si sposta di un'intervallo infinitesimo in avanti e si traccia un nuovo vettore (la cui direzione e verso saranno quelle del campo), reiterando otterremo un'insieme di vettori, se li cancelliamo e lasciamo solamente i punti di applicazione otteniamo una linea detta "di campo". Il campo elettrostatico è un vettore perché direzione e verso si ricavano dai singoli vettori mentre il modulo è dato dalla densità delle linee di campo. Per convenzione le linee di campo sono uscenti dalle cariche positive ed entranti nelle cariche negative.\\
 Si osserva sperimentalmente che il campo generato da un numero discreto di cariche puntiforme è la somma vettoriale dei singoli campi, questo viene detto \textbf{principio di sovrapposizione} ed è solamente frutto dell'esperienza. Ne risulta che il campo totale generato da N cariche puntiformi è
 \[\vec{E_{tot}} = \frac{1}{4\pi\varepsilon_0}\sum_{i=1}^{N}\frac{Q_i}{ r_i^2} \hat{r}_i\]
@@ -143,7 +146,7 @@ La forza generata è enorme.
 \subsection{Potenziale elettrostatico}
 Cominciamo con il chiederci se la forza elettrostatica è conservativa verificando che esiste una funzione dipendente solo dalla posizione con cui sia possibile calcolare il lavoro (il lavoro è indipendente dal percorso). 
 \[L_{AB} = \int_{A}^{B}\vec{F}d\vec{L}= \frac{q_1q_2}{4\pi\varepsilon_0}\int_{A}^{B}\frac{1}{r^2}dl\cos\theta=\frac{q_1q_2}{4\pi\varepsilon_0}\int_{A}^{B}\frac{1}{r^2}dr=\frac{q_1q_2}{4\pi\varepsilon_0}\left(\frac{1}{r_A}-\frac{1}{r_B}\right)=U(B)-U(A)\]
-Analogamente alla forza possiamo immediatamente verificare che il campo elettrostatico è conservativo poichè è uguale alla forza a meno di una costante
+Analogamente alla forza possiamo immediatamente verificare che il campo elettrostatico è conservativo poiché è uguale alla forza a meno di una costante
 \[\int_{A}^{B}\vec{E}d\vec{L}=\frac{q}{4\pi\varepsilon_0}\left(\frac{1}{r_A}-\frac{1}{r_B}\right)=V(B)-V(A)\]
 \begin{definition}[Potenziale elettrostatico]
 Definiamo la funzione di stato 
@@ -300,7 +303,10 @@ Ne segue quindi che la componente tangenziale resta continua attraversando la su
 \subsection{Conduttori neutri}
 I materiali si suddividono nelle due macrocategorie di conduttori e dielettrici (isolanti). Un conduttore metallico come il rame può essere modellizzato, in prima approssimazione, come un reticolo di ioni vincolati fra loro che possono solamente vibrare, immersi in un mare di elettroni tanto debolmente legati al nucleo da poter muoversi liberamente attorno al reticolo a seguito di eccitazioni energetiche minime come 'agitazione termica. Ogni atomo di rame contribuisce con circa un elettrone di conduzione, in un centimetro cubo vi sono
 \[n_e = \frac{\rho_M }{A}N_A \simeq 8\cdot 10^22\ \frac{e^-}{cm^3}\simeq13000\ \frac{C}{cm^3}\]
-dove $\rho_M$ è la densità ed A è la massa molare.\\
+dove $\rho_M$ è la densità ed A è la massa molare.
+\begin{definition}[Conduttore elettrico]
+	Un conduttore elettrico è un materiale in grado di far scorrere corrente elettrica al suo interno. I materiali conduttori sono caratterizzati dalla presenza di elettroni liberi nella banda di valenza degli atomi del reticolo cristallino (conduttori di prima specie) o contengono specie ioniche che si fanno carico di trasportare la corrente (conduttori di seconda specie).
+\end{definition}
 Di seguito elenchiamo, dimostrandole, 6 proprietà dei conduttori:
 \begin{enumerate}
 \item	Se inserisco un conduttore in un campo elettrico uniforme, ogni elettrone sperimenta una forza di verso opposto a quello del campo elettrostatico
@@ -432,7 +438,7 @@ Generalizziamo ora quanto ottenuto per conduttori neutri a conduttori carichi. E
 \subsection{Disposizione delle cariche sulla superficie}
 Ma come si dispongono le cariche sulla superficie? Sperimentalmente si esclude l'ipotesi più semplice: le cariche non si dispongono in modo uniforme; si osserva infatti che la densità è maggiore dove il raggio di curvatura è maggiore. Per mostrarlo studiamo il caso di due sfere di raggio \(R_1\), \(R_2\) con \(R_1>R_2\) collegate da un filo di dimensioni trascurabili nel quale è presente una carica +Q. La carica si redistribuisce sulle due sfere, vogliamo studiare come. Osserviamo che possiamo considerare il sistema come un unico conduttore, dalle proprietà di questi sappiamo che tutti i punti sono equipotenziali quindi calcoliamo i potenziali \(V_1\), \(V_2\) sulla superficie delle due sfere ed eguagliamoli
 \begin{align*}
-	&V_1 = V(+\infty) - V(R_1) = \int_{R_1}^{+\infty} \vec{E}d\vec{r} =  \frac{Q_1}{4\pi\varepsilon_0}\int_{R_1}^{\infty}\frac{1}{r^2}dr = \frac{Q_!}{4\pi\varepsilon_0R_1} \\
+	&V_1 = V(+\infty) - V(R_1) = \int_{R_1}^{+\infty} \vec{E}d\vec{r} =  \frac{Q_1}{4\pi\varepsilon_0}\int_{R_1}^{\infty}\frac{1}{r^2}dr = \frac{Q_1}{4\pi\varepsilon_0R_1} \\
 	&V_2 = \frac{Q_2}{4\pi\varepsilon_0R_1}\\
 	&\Rightarrow \frac{Q_1}{R_1}= \frac{Q_2}{R_2}\\
 	&\Rightarrow \frac{\sigma_1}{R_2} = \frac{\sigma_2}{R_1}
@@ -442,7 +448,7 @@ Considerando un conduttore appuntito, sulla punta la curvatura è estremamente a
 Alla luce di quanto ottenuto possiamo rivedere il risultato precedentemente ottenuto per cui nella superficie interna non si dispongono cariche: possiamo considerare un conduttore pieno con carica disposta in superficie e piegarlo fino ad ottenere un conduttore cavo, più lo pieghiamo più la curvatura che formerà la cavità diventa negativa, allontanando da sè le cariche.\\
 Quando colleghiamo un conduttore carico al terreno questo si scarica, ciò avviene perché entra a contatto con una sfera di raggio di curvatura enorme (approssimabile ad infinito). 
 \section{Condensatori}
-Cominciamo la trattazione di un nuovo oggetto fondamentale in elettrostatica introducendo il concetto di \textbf{tubo di flusso}. Considerando le linee di forza di un campo, il tubo di flusso è formato dalle linee che si appoggiano su una superficie chiusa (come quelle verdi in figura).
+Cominciamo la trattazione di un nuovo oggetto fondamentale in elettrostatica, i condensatori, introducendo il concetto di \textbf{tubo di flusso}. Considerando le linee di forza di un campo, il tubo di flusso è formato dalle linee che si appoggiano su una superficie chiusa (come quelle verdi in figura).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{images/tubo_di_flusso}
@@ -450,23 +456,27 @@ Cominciamo la trattazione di un nuovo oggetto fondamentale in elettrostatica int
 	\label{fig:tubodiflusso}
 \end{figure}
 \FloatBarrier
-La superficie laterale ha la caratteristica di avere ogni punto d$\vec{s}$ ortogonale al flusso $\vec{E}$. osserviamo che le superfici che fanno da "tappi" del tubo di flusso, in figura C1 e C2, possono essere scelte arbitrariamente, le prendiamo in modo che il vettore $d\vec{s}_1$, \(d\vec{s}_2\) siano paralleli al vettore campo $\vec{E}$. Di modo che
-\[\vec{E}\cdot d\vec{s}_1 = Eds_1\cos\theta= \pm |Eds|_1\]
+La superficie laterale ha la caratteristica di avere ogni punto d$\vec{s}$ ortogonale al flusso $\vec{E}$. Osserviamo che le superfici che fanno da "tappi" del tubo di flusso (in figura C1 e C2), possono essere scelte arbitrariamente, le prendiamo in modo che i vettori $d\vec{s}_1$, \(d\vec{s}_2\) siano paralleli al vettore campo $\vec{E}$. Di modo che
+\[\vec{E}\cdot d\vec{s}_1 = Eds_1\cos\theta= \pm |Eds_1|\]
 dove il più o meno indica il fatto che a seconda del verso avremo un angolo di 0 o di 180 gradi. Ne risulta che il flusso per un tubo di flusso è
 \[d\Phi = \pm |Eds_1|\pm |Eds_2| =\frac{dQ}{\varepsilon_0}\]
-Consideriamo ora una superficie chiusa carica e calcoliamo il flusso di un tubo di flusso: le linee di campo partono dalla superficie divergendo verso l'esterno, scegliamo una superficie di chiusura esterna come appena detto. All'interno della superficie non è presente campo elettrico quindi a rigore non potremmo chiudere il tubo di flusso all'interno della superficie chiusa, possiamo però prolungare analiticamente le linee di campo all'interno e chiuderla con una superficie interna al conduttore. Sia \(S_1\) la superficie interna ed \(S_2\) quella esterna. Applichiamo ora la legge di Gauss
+Consideriamo ora una superficie chiusa carica e calcoliamo il flusso di un tubo di flusso: le linee di campo partono dalla superficie divergendo verso l'esterno, scegliamo la superficie di "tappo" del tubo come appena detto. All'interno della superficie non è presente campo elettrico quindi a rigore non potremmo chiudere il tubo di flusso all'interno della superficie chiusa, possiamo però prolungare analiticamente le linee di campo all'interno e chiuderla con una superficie interna al conduttore. Sia \(S_1\) la superficie interna ed \(S_2\) quella esterna. Applichiamo ora la legge di Gauss
 \[E_1ds_1+E_2ds_2 = E_2ds_2 = \frac{dQ}{\varepsilon_0}\]
 \[\Rightarrow E_2 = \frac{dQ}{\varepsilon_0 ds_2}\]
 Questa è l'espressione del campo elettrico passante per un tubo di flusso.\\
 Si noti che \(E_2\) non è costante perché dipende dalla superficie individuata dal tubo di flusso: essendo le linee di campo divergenti dalla superficie, più ci si allontana più \(ds_2\) aumenta, facendo diminuire il campo.\\
-Applichiamo quanto ricavato ad un condensatore. Un condensatore è un apparato formato da due "armature", ovvero conduttori carichi uno positivamente ed uno negativamente, poste una di fronte all'altra. Le armature che consideriamo per ora sono poste nel vuoto. Sia A l'armatura di carica +Q e B quella di carica -Q. Vogliamo calcolare la differenza di potenziale fra le due armature, applicare la definizione è ostico perché non sappiamo a priori come varia il campo nello spazio compreso fra le due armature. Consideriamo quindi un tubo di flusso infinitesimo che va da A a B, il campo elettrico per questo tubo è
+Possiamo ora introdurre i condensatori
+\begin{definition}[Condensatore]
+	Un condensatore è un componente elettrico formato da due conduttori chiamati armature, separati da un materiale isolante, ed ha la capacità di immagazzinare l'energia elettrostatica associata a un campo elettrostatico.
+\end{definition}
+Applichiamo quanto ricavato ad un condensatore. Un condensatore è un apparato formato da due "armature", ovvero conduttori carichi uno positivamente ed uno negativamente, poste una di fronte all'altra. Le armature che consideriamo per ora sono poste nel vuoto. Sia A l'armatura di carica +Q e B quella di carica -Q. Vogliamo calcolare la differenza di potenziale fra le due armature, applicare la definizione di potenziale per questo calcolo è ostico perché non sappiamo come varia il campo nello spazio compreso fra le due armature. Consideriamo quindi un tubo di flusso infinitesimo che va da A a B, il campo elettrico per questo tubo è
 \[E_i  = \frac{dQ_i}{\varepsilon_0 ds_i}\]
-\[\Delta V_{AB} = _i\int_{A}^{B}\vec{E}d\vec{r} =dQ_i\ _i\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}\]
+\[\Delta V_{AB} = \int_{A}^{B}\vec{E}d\vec{r} =dQ_i \int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}\]
 In generale questo integrale è complesso da calcolare. Riordinando i termini otteniamo
-\[dQ_i = \frac{\Delta V_{AB}}{\ _i\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}\]
-\[Q = \sum_i\frac{\Delta V_{AB}}{\ _i\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}\]
+\[dQ_i = \frac{\Delta V_{AB}}{\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}\]
+\[Q = \sum_i\frac{\Delta V_{AB}}{\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}\]
 Definiamo la \textbf{capacità di un condensatore} come
-\[C\equiv \frac{1}{{ _i\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}}\]
+\[C\equiv \frac{1}{{ \int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}}\]
 osserviamo che questa quantità è una costante che dipende dalla geometria del dielettrico e dal materiale ($\varepsilon_0$ è la costante dielettrica del vuoto ma potremmo scegliere qualsiasi mezzo). L'unità di misura della capacità è il Farad (\(F\)) definito come un Coulomb su un Volt. 
 \[1F \equiv \frac{1C}{1V}\]
 questa capacità è enorme tanto che, in un circuito comune la capacità figura spesso il microFarad (\(\mu F\)).\\
@@ -477,7 +487,7 @@ Per il calcolo della capacità in generale si seguono 3 step
 \begin{enumerate}
 \item Calcolare $\vec{E}$ tra le facce del condensatore
 \item Calcolare la differenza di potenziale fra le armature \(\Delta V\)
-\item Calcolare la capacità con la relazione \(C=\frac{Q}{\delta V}\) facendo attenzione che l'espressione finale della capacità non dipenda da Q. 
+\item Calcolare la capacità con la relazione \(C=\frac{Q}{\Delta V}\) facendo attenzione che l'espressione finale della capacità non dipenda da Q. 
 \end{enumerate} 
 \subsubsection*{Condensatore a facce piane parallele infinite}
 Consideriamo due superfici piane parallele infinite di carica uguale ma in segno opposto. Possiamo intuitivamente ottenere dove si dispongono le linee di campo, per farlo consideriamo le linee di campo di ogni armatura singolarmente per poi unirle con il principio di sovrapposizione: la faccia di carica positiva produce un campo uscente e perpendicolare ad essa sia nel lato sinistro del condensatore, sia al centro sia nel lato destro; l'armatura carica negativamente produce linee di campo in modo analogo ma di verso opposto. Sovrapponendo le linee si ottiene che quelle nel lato sinistro e destro si eliminano (i campi generati hanno la stessa intensità essendo medesima la carica) mentre nella regione interna al condensatore le linee di campo hanno stessa direzione e verso quindi si sommano dando linee di modulo doppio.
@@ -509,23 +519,29 @@ Un'ultima considerazione: l'approssimazione a facce infinite è abbastanza buona
 	\label{fig:condensatore-piano-2}
 \end{figure}
 \FloatBarrier
-\subsection{Condensatori piani in parallelo}
+\subsection*{Condensatori piani in parallelo}
+\begin{definition}[Collegamento in parallelo]
+Si parla di collegamento in parallelo quando n componenti sono collegati ad una coppia di conduttori in modo che la differenza di potenziale sia la stessa per ciascun componente.
+\end{definition}
 Consideriamo due condensatori collegati in parallelo come in figura
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{images/Condensatori_parallelo}
+	\includegraphics[width=0.4\linewidth]{images/Condensatori_parallelo}
 	\caption{Schema di due condensatori collegati in parallelo}
 	\label{fig:condensatoriparallelo}
 \end{figure}
 \FloatBarrier
 dove le due facce a sinistra sono cariche positivamente rispettivamente di \(+Q_1,\ +Q_2\) e le due a destra negativamente con carica \(-Q_1,\ -Q_2\). Sia \(V_a\) il potenziale del blocco a sinistra e \(V_b\) quello a destra. Vogliamo ricavare un'espressione della capacità totale del sistema di condensatori, note le capacità \(C_1\), \(C_2\). 
 \[\Delta V = V_a - V_b = \frac{Q_{tot}}{C_{tot}}\] 
-\[Q=Q_1+Q_2=C_{tot}\Delta V = (C_1+C_2)\Delta V\]
+\[Q_{tot}=Q_1+Q_2=C_{tot}\Delta V = (C_1+C_2)\Delta V\]
 \[\Rightarrow C_{tot} = C_1 +C_2\]
 Dunque la capacità risultante da un sistema di condensatori in parallelo è pari alla somma delle capacità dei singoli condensatori. In generale
 \[C_{tot} = \sum_i C_i\]
 Questo risultato era prevedibile in quanto in un condensatore piano la capacità dipende dalla superficie e mettere condensatori in parallelo equivale ad aumentarla. 
-\subsubsection*{Condensatori piani in serie}
+\subsection*{Condensatori piani in serie}
+\begin{definition}[Collegamento in serie]
+	Si parla di collegamento in serie quando n componenti sono collegati in modo da essere attraversati da una corrente elettrica (che definiremo in seguito) di uguale intensità. La differenza di potenziale dei diversi componenti collegati in serie può essere diversa per ciascun componente.
+\end{definition}
 Consideriamo due conduttori in serie come in figura
 \begin{figure}[h!]
 	\centering
@@ -541,9 +557,9 @@ Siano \(V_a\) \(V_e\) \(V_b\) rispettivamente i potensziali del blocco a sinistr
 \subsection{Condensatori dal punto di vista energetico}
 Possiamo vedere un condensatore come un serbatoio di energia, vogliamo trovare un'espressione della quantità di energia immagazinata. Cominciamo chiarendo i termini del problema
 \begin{definition}[Energia]
-L'energia è la capacità di fare lavoro positivo
+L'energia è la capacità di un sistema o di un corpo di fare lavoro positivo
 \end{definition}
-Da questa definizione risulta chiaro perchè il lavoro di una forza conservativa, esprimibile come differenza di energia potenziale, è definito come \(U(A)-U(B)\) e non come \(U(B)-U(A)\) (nonostante la scelta sia arbitraria): in questo modo fare lavoro positivo vuol dire passare da uno stato iniziale ad energia maggiore U(A) per arrivare ad uno ad energia minore U(B) dove la differenza di energia è proprio il lavoro positivo fatto.\\
+Da questa definizione risulta chiaro perché il lavoro di una forza conservativa, esprimibile come differenza di energia potenziale, è definito come \(U(A)-U(B)\) e non come \(U(B)-U(A)\) (nonostante la scelta sia arbitraria): in questo modo fare lavoro positivo vuol dire passare da uno stato iniziale ad energia maggiore U(A) per arrivare ad uno ad energia minore U(B) dove la differenza di energia è proprio il lavoro positivo fatto.\\
 Osserviamo che l'energia immagazzinata in un condensatore discende dall'alta densità di carica in equilibrio nel sistema. L'energia immagazzinata deve coincidere (per la conservazione dell'energia) con il lavoro positivo fatto per portare le cariche da distanza infinita alla posizione che occupano nel condensatore. Possiamo considerare il lavoro necessario per avvicinare le cariche ad una ad una e poi generalizzare ad n cariche. Per la prima carica il lavoro è nullo, infatti possiamo scegliere il sistema di riferimento con al centro questa carica. per la seconda dobbiamo constrastare la forza di Coulomb dall'infinito fino ad \(r_{12}\), dobbiamo quindi applicare una forza $\vec{F}_{est} = -\vec{F}_{c}$.
 \[L = -\int_{r_12}^{+\infty}\vec{F}_{c}d\vec{r} = -Q_2\int_{r_12}^{+\infty}\vec{E}d\vec{r} = Q_2V(r_{12}) = \frac{1}{4\pi\varepsilon_0}\frac{Q_1 Q_2}{r_{12}} = Q_1\frac{1}{4\pi\varepsilon_0}\frac{ Q_2}{r_{12}} = Q_1V(r_{21}) \]
 \[\Rightarrow U_{12} = U_{21}\]
@@ -566,7 +582,7 @@ Possiamo seguire una strada concettuale diversa per ottenere il medesimo risulta
 \[dL = dq\vec{E}d\vec{z} = -dqdV \]
 dove il segno negativo deriva dal fatto che lo spostamento è in direzione opposta a quella del campo. Il lavoro esterno da "immettere" nel sistema è di segno opposto a quello che deve fare il sistema quindi
 \[dL_{est} = -dL = dqdV\]
-per ottenere il lavoro per spostare una carica dq da destra a sinistra integriamo sul percorso AB
+per ottenere il lavoro per spostare una carica dq da destra a sinistra integriamo sul percorso AB, indichiamo questo lavoro discreto con \(\Delta L\).
 \[\Delta L_{est} = \int_{A}^{B} dL = \int_{A}^{B} dqdV = dq \Delta V_{ab}(q) \]
 dove la differenza di potenziale dipende da q perché più cariche spostiamo da sinistra a destra più aumenta il potenziale. Per trovare il lavoro totale integriamo per tutte le cariche
 \[L_{est} = \int_0^Q  \Delta V_{ab}(q) dq= \int_0^Q \frac{qdq}{4\pi\varepsilon_0 d} = \frac{q^2}{8\pi\varepsilon_0 d} = \frac{1}{2}Q\Delta V = \frac{1}{2} C \Delta V^2\]
@@ -575,8 +591,10 @@ Possiamo sostituire all'ultima espressione ottenuta due espressioni viste in pre
 \[U_{tot} = [\frac{1}{2}\varepsilon_0 E^2](Sd) \]
 \[u_e \equiv \frac{1}{2}\varepsilon_0 E^2\]
 quest'ultimo è detto "densità di energia" e tornerà utile in seguito. 
-\section{I dipoli elettrici}
-Un dipolo elettrico, in elettrostatica, è un sistema composto da due cariche elettriche uguali e di segno opposto e separate da una distanza costante nel tempo. È uno dei più semplici sistemi di cariche che si possano studiare e rappresenta il primo termine dello sviluppo in multipoli del campo elettrico generato da un insieme di cariche globalmente neutro.
+\section{Dipoli elettrici}
+\begin{definition}[Dipolo elettrico]
+	Un dipolo elettrico, in elettrostatica, è un sistema composto da due cariche elettriche uguali e di segno opposto e separate da una distanza costante nel tempo.
+\end{definition}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{images/dipolo_elettrico}
@@ -584,9 +602,9 @@ Un dipolo elettrico, in elettrostatica, è un sistema composto da due cariche el
 	\label{fig:dipoloelettrico}
 \end{figure}
 \FloatBarrier
-Usando solamente il principio di sovrapposizione possiamo ottenere il campo generato da un dipolo elettrico su un punto.
+Usando solamente il principio di sovrapposizione possiamo ottenere il campo generato da un dipolo elettrico su un punto posto sullo stesso asse del dipolo.
 \begin{esercizio}[Campo elettrostatico generato da due cariche puntiformi]
-	Si considerino due cariche poste per semplicità entrambe sull'asse z e a distanza uguale dall'origine (una dal lato positivo ed una dal lato negativo) e di distanza d fra di esse, vogliamo ottenere un'espressione del campo elettrico che genera in un punto P a distanza r dall'asse z. Consideriamo inizialmente due cariche di segno opposto (quella positiva sopra e quella negativa sotto), si traccino i vettori \(\vec{r}_+ \ \vec{r}_- \) congiungenti le cariche al punto P, dato il segno negativo della carica in basso, il vettore campo avrà verso entrante (verso la carica) mentre il campo generato dalla carica in alto è uscente dalla carica e quindi dal punto P. Sommando i vettori di campo otteniamo che il campo risultante ha direzione parallela all'asse z e verso negativo (-$\hat{k}$). Chiamiamo y il modulo della proiezione sull'asse z del vettore $\vec{r}_+$.
+	Si considerino due cariche poste per semplicità entrambe sull'asse z e a distanza uguale dall'origine (una dal lato positivo ed una dal lato negativo) e di distanza d fra di esse, vogliamo ottenere un'espressione del campo elettrico che genera in un punto P a distanza r dall'asse z. Consideriamo inizialmente due cariche di segno opposto (quella positiva sopra e quella negativa sotto), si traccino i vettori \(\vec{r}_+ \ \vec{r}_- \) congiungenti le cariche al punto P, dato il segno negativo della carica in basso, il vettore campo avrà verso entrante (verso la carica) mentre il campo generato dalla carica in alto è uscente dalla carica e quindi diretto verso il punto P. Sommando i vettori di campo otteniamo che il campo risultante ha direzione parallela all'asse z e verso negativo (-$\hat{k}$). Chiamiamo y il modulo della proiezione sull'asse z del vettore $\vec{r}_+$.
 	\[\hat{r}_+ =\frac{ 0\hat{i}+y \hat{j}-\frac{d}{2}\hat{k}}{r}\]
 	\[\hat{r}_- = \frac{0\hat{i}+y \hat{j}+\frac{d}{2}\hat{k}}{r}\]
 	\[\vec{E}_{tot} = \vec{E}_{+} + \vec{E}_{-} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\left(\hat{r}_+-\hat{r}_-\right)=\]
@@ -597,7 +615,7 @@ Usando solamente il principio di sovrapposizione possiamo ottenere il campo gene
 	Se invece le cariche fossero state dello stesso segno avremmo ottenuto con ragionamenti analoghi ma cambiando il segno del vettore
 	\[\vec{E}_{tot} = \frac{1}{4\pi\varepsilon_0}\frac{q2y}{r^3}\hat{j}\]
 \end{esercizio}
-Sfruttando il potenziale elettrostatico possiamo ottenere un'espressione più generale
+Finora abbiamo ottenuto solamente la componente del campo parallela al dipolo. Sfruttando il potenziale elettrostatico possiamo ottenere un'espressione più generale
 \begin{esercizio}[Espressione generale del campo generato da un dipolo elettrico]
 	Consideriamo un dipolo elettrico come in figura dove chiamiamo a la distanza fra le due cariche, effettuiamo l'approssimazione \(r>>a\). Sia P il punto a cui puntano i vettori \(\vec{r_1}, \vec{r_2}, \vec{r}\). 
 	\begin{figure}[h!]
@@ -627,7 +645,7 @@ Sfruttando il potenziale elettrostatico possiamo ottenere un'espressione più ge
 	\[E_{\perp} = 0\]
 	\[E_{//} = \frac{p}{2\pi\varepsilon_0r^3}\]
 	mentre se \(\theta = 180^\circ\)
-	\[E_{\perp} = 0\deg\]
+	\[E_{\perp} = 0^\circ\]
 	\[E_{//} = -\frac{p}{2\pi\varepsilon_0r^3}\]
 	Quest'ultimo risultato lo avevamo già ottenuto in precedenza ma ora siamo passati per il caso più generale.
 \end{esercizio}
@@ -644,11 +662,13 @@ Consideriamo ora un dipolo formato da due cariche puntiformi immerso in campo el
 	\label{fig:dipolocampoelettrico}
 \end{figure}
 \FloatBarrier
-calcoliamo l'energia potenziale del dipolo calcolando il lavoro necessario 
-\[L = \int_{\vec{r}}^{\vec{r}+\vec{a}}= U(\vec{r}+\vec{a})-U(\vec{r}) = qV(\vec{r}+\vec{a})-qV(\vec{r})\]
+calcoliamo l'energia potenziale del dipolo calcolando il lavoro necessario ad avvicinare le due cariche partendo dall'infinito (entrambe sotto l'effetto del campo $\vec{E}$)
+\[L = \int_{\infty}^{\vec{r}+\vec{a}} qE(r) dr -\int_{\infty}^{\vec{r}} qE(r) dr =\int_{\vec{r}}^{\vec{r}+\vec{a}} qE(r) dr= U(\vec{r}+\vec{a})-U(\vec{r}) = qV(\vec{r}+\vec{a})-qV(\vec{r})\]
+Considerato che $||\vec{a}||<<||\vec{r}||$, possiamo interpretare le componenti \((a_x, a_y, a_z)\) come tendenti a zero
 \[U = q[V(x+ax, y+ay, z+az)-V(x, y, z)] = qdV = q\left[\frac{\partial V}{\partial x} a_x + \frac{\partial V}{\partial y}a_y + \frac{\partial V}{\partial z}a_z\right] =\]
-\[ q-(\vec{E}\vec{a}) = -\vec{p}\vec{E}\]
-\[U = -pE\cos\theta\]
+\[ q(-\vec{E}\vec{a}) = -\vec{p}\vec{E}\]
+Da cui segue, ricordando che \(\vec{F} = \vec{\nabla} U\)
+\[\vec{F} = \vec{p}\vec{\nabla}\vec{E}\]
 Notiamo che abbiamo una condizione di equilibrio stabile quando questa funzione presenta un minimo, ovvero per \(\theta= 0^\circ,\ 180^\circ\). inoltre notiamo che, avendo considerato $\vec{a}$ infinitesimo, possiamo considerare in campo elettrico uguale nelle due cariche quindi la forza totale su un generico punto risulta 
 \[\vec{F}_{tot} =\vec{F}_++\vec{F}_- = q\vec{E}-q\vec{E} = 0\]
 Il momento delle forze totale invece è
@@ -667,14 +687,14 @@ Consideriamo ora un sistema di cariche discrete (il caso uniforme è analogo ma 
 Ipotizziamo che la dimensione d del sistema sia molto più piccola della distanza dal punto P \(d<<r\), ne seguirà che anche \(d_i<<r_i\). Possiamo dunque scrivere le seguenti relazioni
  \[\vec{r}_i = \vec{r} - \vec{d}_i\]
  \[r_i \simeq r-d_i\cos\theta_i\]
- \[r-r_i = d_i\cos_i = \vec{d}\hat{r}\]
- \[\frac{1}{r_i} = \frac{1}{r-\vec{d}\hat{r}}\frac{r+\vec{d}\hat{r}}{r+\vec{d}\hat{r}} = \frac{r-\vec{d}_i\vec{r}}{r^2-(\vec{d}\hat{r})^2} \simeq \frac{r-\vec{d}_i\vec{r}}{r^2}\]
- \[\Rightarrow V(P) =\frac{1}{4\pi\varepsilon_0}\sum_i \frac{q_i}{r^2}(r+\vec{d}_i\hat{r}) = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}+\frac{1}{4\pi\varepsilon_0}\frac{(\sum_i(q_i\vec{d}_i))\hat{r}}{r^2}\]
+ \[r-r_i = d_i\cos_i = \vec{d}\cdot\hat{r}\]
+ \[\frac{1}{r_i} = \frac{1}{(r-\vec{d}_i\cdot\hat{r})}\frac{r+\vec{d}_i\cdot\hat{r}}{r+\vec{d}_i\cdot\hat{r}} = \frac{r+\vec{d}_i\cdot\vec{r}}{r^2-(\vec{d}\hat{r})^2} \simeq \frac{r+\vec{d}_i\cdot\vec{r}}{r^2}\]
+ \[\Rightarrow V(P) =\frac{1}{4\pi\varepsilon_0}\sum_i \frac{q_i}{r^2}(r+\vec{d}_i\cdot\hat{r}) = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}+\frac{1}{4\pi\varepsilon_0}\frac{(\sum_i(q_i\vec{d}_i))\hat{r}}{r^2}\]
  Possiamo generalizzare la definizione di momento di dipolo ad un sistema discreto 
  \[\vec{p} = \sum_i q_i\vec{d}_i\]
  \[V(P) = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}+\frac{1}{4\pi\varepsilon_0}\frac{\vec{p}\hat{r}}{r^2}\]
  Le due componenti del potenziali sono rispettivamente dette di monopolo \(V_0\) e di dipolo \(V_{dip}\), la prima equivale al potenziale che il sistema genererebbe se tutta la carica fosse concentrata in un punto mentre il secondo tiene conto della distribuzione di carica del sistema. Ne segue che anche se al carica totale Q fosse nulla, un sistema può comunque generare potenziale se le sue cariche sono disposte in certo modo. Possiamo dimostrare che il secondo membro è trascurabile rispetto al primo infatti
- \[\frac{V_{dip}}{V_0} = \frac{|\vec{p}\wedge \vec{r}|}{rQ}\simeq\frac{|\vec{p}|}{rQ} = \frac{|\sum_i q_i d_i|}{rQ}\leq \frac{|(\sum_i q_i)d|}{rQ} = \frac{d}{r}<<1\]
+ \[\frac{V_{dip}}{V_0} = \frac{|\vec{p}\cdot \hat{r}|}{rQ}\leq\frac{|\vec{p}|}{rQ} = \frac{|\sum_i q_i d_i|}{rQ}\leq \frac{|(\sum_i q_i)d|}{rQ} = \frac{d}{r}<<1\]
  In generale se cambio l'origine del sistema cambiano i \(q_i\) e i \(d_i\) quindi \(\vec{p}\neq\vec{p}'\). Tuttavia se \(\sum_i q_i = Q_{tot} = 0\) allora $\vec{p}$ diventa indipendente da come scegliamo il sistema di riferimento. 
 \begin{figure}[h!]
 	\centering
@@ -699,8 +719,9 @@ Se il corpo è neutro abbiamo \(|Q^+|=|Q^-|=Q\) quindi \(\vec{p} = Q(\vec{d}^+-\
 	\label{fig:dipolohh2o}
 \end{figure}
 \FloatBarrier
-\section{I dielettrici}
-Come già accennato, un dielettrico è un materiale schematizzabile come un reticolo cristallino in cui tutti gli elettroni sono legati. Ha proprietà isolanti ed è contrapposto ai materiali conduttori. Un dielettrico, nonostante abbia gli elettroni "fissi" può polarizzarsi se esposto ad un campo elettromagnetico. 
+\section{Dielettrici}
+Come già accennato, un dielettrico è un materiale schematizzabile come un reticolo cristallino in cui tutti gli elettroni sono legati. Ha proprietà isolanti ed è contrapposto ai materiali conduttori.\\
+Un dielettrico, nonostante abbia gli elettroni "fissi" può polarizzarsi se esposto ad un campo elettromagnetico.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{images/dielettrico_idrogeno}
@@ -708,6 +729,9 @@ Come già accennato, un dielettrico è un materiale schematizzabile come un reti
 	\label{fig:dielettricoidrogeno}
 \end{figure}
 \FloatBarrier
+\begin{definition}[Dielettrico]
+	Qualsiasi sostanza non conduttrice che, immersa in un campo elettrico esterno, dà luogo a fenomeni di polarizzazione più o meno intensi, che producono una variazione del campo elettrico totale.
+\end{definition}
 Consideriamo un condensatore a facce piane parallele, se fra le armature vi è il vuoto abbiamo le seguenti informazioni:
 \[C_0 = \frac{\varepsilon_0S}{d}\]
 \[|\vec{E}_0| = \frac{\sigma}{\varepsilon_0} = \frac{Q}{\varepsilon_0 S}\]
