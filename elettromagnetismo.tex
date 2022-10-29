@@ -275,7 +275,7 @@ Ricordiamo infine che sulla superficie laterale il campo è costante quindi lo p
 Infine, eguagliando le due espressioni ottenute
 \[|\vec{E}|= \frac{\lambda}{\varepsilon_0 2\pi r }\]
 \end{esercizio}
-\begin{esercizio}[Campo elettrostatico generato da un piano infinito carico]
+\begin{esercizio}[Campo elettrostatico generato da un piano infinito carico]\label{es:campo_piano_infinito}
 Sia $\sigma$ la densità di carica superficiale del piano. Notiamo che tutti i piani paralleli al piano carico presentano medesimo campo elettrostatico in ogni punto. Consideriamo il cilindro "coricato" con basi parallele al piano carico, altezza 2r (il piano taglia in due parti uguali il cilindro) e il punto P al centro del cerchio che sta alla base del cilindro. Analogamente a quanto fatto precedentemente, per il teorema di Gauss abbiamo:
 \[\oint\vec{E}d\vec{s} = \frac{Q_{tot}}{\varepsilon_0}=\frac{\sigma}{\varepsilon_0}\int_Sds=\frac{A\sigma}{\varepsilon_0}\]
 dove A è l'area di base del cilindro.\\
@@ -283,15 +283,18 @@ Ricalcoliamo ora il flusso dividendo l'integrale nelle tre superfici: sulla supe
   \[\oint\vec{E}d\vec{s} = 2\int_{\Sigma_b}\vec{E}d\vec{s}_b= 2A|\vec{E}|\]
 Eguagliando le due espressioni ottenute si perviene a 
 \[|\vec{E}|=\frac{\sigma}{2\varepsilon_0}\]
+Il campo ha direzione opposta dai due lati della superficie, la discontinuità che si osserva attraversando la superficie da un lato all'altro è dunque di
+\[E_1-E_2 = \frac{\sigma}{2\varepsilon_0}-\left(-\frac{\sigma}{2\varepsilon_0}\right) = \frac{\sigma}{\varepsilon_0}\]
 Si noti infine che nel caso del piano carico il flusso non dipende dalla distanza del punto poiché, essendo il piano infinito, aumentare la distanza porterebbe solo a "riscalare" il tutto ottenendo lo stesso flusso.
 \end{esercizio}
-Osserviamo ora delle proprietà interessanti del campo elettrostatico, quando si attraversa una superficie carica. 
+\subsubsection{Discontinuità del campo elttrico attraverso una superficie carica}
+Osserviamo ora delle proprietà interessanti del campo elettrostatico, quando si attraversa una superficie carica.\\
 Consideriamo una superficie generica (non omogenea), costruiamo un cilindro che la interseca, visto che ci interessa sapere cosa accade nel passaggio da una faccia all'altra della superficie consideriamo un cilindro con altezza \(dh\to 0\), da ciò deriva che la componente di flusso per la superficie laterale del cilindro non è rilevante. Il flusso è quindi
-\[\oint_{\Sigma}\vec{E}d\vec{s} = \vec{E}_{u}d\vec{s}_{u}+\vec{E}_{d}d\vec{s}_d=(E_u\cos\theta_u-E_d\cos\theta_d)dA = dA(E_{\perp u}+E_{\perp d})\] 
+\[\oint_{\Sigma}\vec{E}d\vec{s} = \vec{E}_{u}d\vec{s}_{u}+\vec{E}_{d}d\vec{s}_d=(E_u\cos\theta_u-E_d\cos\theta_d)dA = dA(E_{\perp u}-E_{\perp d})\] 
 Per il teorema di Gauss, essendo la superficie del cilindro chiusa e $\sigma$ la densità di carica superficiale, si ha
-\[\oint_{\Sigma}\vec{E}d\vec{s} = \frac{Q_{tot}}{\varepsilon_0} = \frac{\sigma dA}{\varepsilon}\] 
-\[\Rightarrow |\Delta \vec{E}|_{\perp} = (E_{\perp u} - E_{\perp d} = \frac{\sigma}{\varepsilon_0}\]
-Ne segue che la discontinuità della componente perpendicolare alla superficie, nell'attraversarla, presenta un salto pari a \(\frac{\sigma}{\varepsilon_0}\) (non si hanno informazioni su come sia distribuita questa quantità fra le due facce).\\
+\[\oint_{\Sigma}\vec{E}d\vec{s} = \frac{Q_{tot}}{\varepsilon_0} = \frac{\sigma dA}{\varepsilon_0}\] 
+\[\Rightarrow |\Delta \vec{E}_{\perp}| = (E_{\perp u} - E_{\perp d}) = \frac{\sigma}{\varepsilon_0}\]
+Ne segue che la discontinuità della componente perpendicolare alla superficie, nell'attraversarla, presenta un salto pari a \(\frac{\sigma}{\varepsilon_0}\) (non si hanno informazioni su come sia distribuita questa quantità fra le due facce). Si noti che è la stessa discontinuità ottenuta nell'esercizio (\ref{es:campo_piano_infinito}).\\
 Ci chiediamo ora cosa accada alla componente tangente al campo nell'attraversare una superficie carica. Per farlo consideriamo la circuitazione del campo elettrostatico, calcolandola in un percorso rettangolare che interseca la superficie perpendicolarmente, a metà dei due lati perpendicolari. Essendo il campo conservativo abbiamo che la circuitazione deve essere nulla
 \[\oint_\Gamma\vec{E}d\vec{r} = 0\]
 D'altro canto possiamo calcolare la circuitazione lato per lato; visto che ci interessa il passaggio fra le due facce consideriamo un percorso rettangolare la cui altezza tenda a zero \(dh\to 0\) (considereremo solo i lati orizzontali del circuito).  
@@ -408,7 +411,7 @@ Ora, al posto di un anello consideriamo un disco di densità superficiale di car
 dove l è stato sostituito al precedente R perché quest'ultimo era costante mentre l dovrà essere la nostra variabile di integrazione. 
 \[d\vec{E} = \frac{  \sigma l dl r }{2\varepsilon_0 (l^2+r^2)^{\frac{3}{2}}}\hat{k}\]
 \[\vec{E} = \frac{\sigma r}{2\varepsilon_0}\int_{0}^{R}\frac{ldl}{(l^2+r^2)^{\frac{3}{2}}} = \frac{\sigma r}{2\varepsilon_0}\left[-\frac{1}{(l^2+r^2)^{\frac{1}{2}}}\right]^R_0 = \frac{\sigma }{2\varepsilon_0}\left[\frac{r}{|r|}-\frac{r}{\sqrt{R^2+r^2}}\right]\]
-Si noti che il valore assoluto porta una discontinuità tale che per \(z\to0^+\) si ha \(E = \frac{\sigma}{2\varepsilon_0}\) e per \(z\to0^-\) si ha \(E = -\frac{\sigma}{2\varepsilon_0}\) 
+Si noti che il valore assoluto porta una discontinuità tale che per \(z\to0^+\) si ha \(E = \frac{\sigma}{2\varepsilon_0}\) e per \(z\to0^-\) si ha \(E = -\frac{\sigma}{2\varepsilon_0}\); la discontinuità nell'attraversare la superficie del disco è quindi \(\frac{\sigma}{\varepsilon_0}\) come dimostrato nel caso generale in precedenza.
 \end{esercizio}
 \begin{esercizio}[Campo elettrostatico di uno spessore di carica di superficie infinita]
 Consideriamo una lastra carica di superficie infinita spessa D di densità di carica volumetrica uniforme $\rho$. Consideriamo un cilindro di asse perpendicolare al piano della lastra di basi \(B_1\) e \(B_2\), eguagliamo la legge di Gauss al calcolo del flusso (che sulla superficie laterale del cilindro è nullo) per ottenere il campo all'esterno della lastra. 
@@ -431,7 +434,7 @@ Generalizziamo ora quanto ottenuto per conduttori neutri a conduttori carichi. E
 \begin{enumerate}
 	\item Dentro il conduttore il campo è nullo.
 	\item La densità di carica è nulla quindi le cariche si dispongono sulla superficie.
-	\item Il campo è normale alla superficie e  la discontinuità del modulo della componente perpendicolare del campo è $\frac{\sigma}{2\varepsilon_0}$.
+	\item Il campo è normale alla superficie e la discontinuità del modulo della componente perpendicolare del campo è $\frac{\sigma}{\varepsilon_0}$.
 	\item Ogni punto interno al conduttore è equipotenziale. Ogni punto sulla superficie del conduttore è equipotenziale 
 	\item Se il conduttore è cavo le cariche stanno solo sulla superficie esterna.
 \end{enumerate}
@@ -505,7 +508,7 @@ Per ottenere la Capacità di questo condensatore seguiamo i 3 step: calcoliamo i
 Per farlo calcoliamo il flusso per la faccia interna del condensatore considerando un cilindro che parte dall'interno dell'armatura e termina all'esterno attraversando la faccia interna. Osservando che l'integrale sulla superficie del cilindro è l'Area di base A e che il flusso nella faccia del cilindro interna all'armatura è nullo, si ha, eguagliando con il teorema di Gauss
 \[\oint\vec{E}d\vec{s} = EA = \frac{\sigma A}{\varepsilon_0}\]
 \[\Rightarrow E = \frac{\sigma}{\varepsilon_0}\]
-Si noti che apparentemente questo risultato sembra contraddire quanto ottenuto in precedenza: la discontinuità della componente normale del campo attraversando la superficie è $\frac{\sigma}{2\varepsilon_0}$. In realtà il campo calcolato è la somma del campo prodotto dalle due armature poiché inizialmente, applicando il principio di sovrapposizione al calcolo delle linee di campo, abbiamo sommato i due contributi che, essendo uguali, sono di $\frac{\sigma}{2\varepsilon_0}$ ciascuno, come ottenuto precedentemente.\\
+Si noti che apparentemente questo risultato sembra contraddire quanto ottenuto in precedenza: abbiamo precedentemente dimostrato infatti ( esercizio (\ref{es:campo_piano_infinito})) che il campo generato da una superficie carica è $\frac{\sigma}{2\varepsilon_0}$. In realtà il campo calcolato è la somma del campo prodotto dalle due armature poiché inizialmente, applicando il principio di sovrapposizione al calcolo delle linee di campo, abbiamo sommato i due contributi che, essendo uguali, sono di $\frac{\sigma}{2\varepsilon_0}$ ciascuno. Si noti inoltre che sia considerati separatamente sia considerati a seguito della sovrapposizione dei campi la discontinuità è sempre $\frac{\sigma}{\varepsilon_0}$, come precedentemente dimostrato (quando si considerano insieme il campo all'interno e dietro le armature è nullo).
 Una volta ottenuto il campo elettrico calcoliamo la differenza di potenziale fra le due facce 
 \[\Delta V_{AB} = \int_{A}^{B}\vec{E}d\vec{r} = Ed=\frac{\sigma d}{\varepsilon_0}=\frac{Q d}{S\varepsilon_0}\]
 calcoliamo infine C
@@ -570,13 +573,14 @@ Mettiamo ora la terza carica
 Dunque l'energia necessaria totale è 
 \[U_{tot} =U_{13} + U_{23} + U_{12}  = \frac{U_{13} + U_{23} + U_{12} + U_{31} + U_{32} + U_{21}}{2}\]
 Generalizzando ad n cariche
-\[U_{tot} =\frac{1}{8\pi\varepsilon_0} \sum_i Q_i\sum_{j\neq i} \frac{1}{r_{ij}} = \frac{1}{2}\sum_i Q_i V_i\]
+\[U_{tot} =\frac{1}{8\pi\varepsilon_0} \sum_i Q_i\sum_{j\neq i} \frac{Q_j}{r_{ij}} = \frac{1}{2}\sum_i Q_i V_i\]
+dove quest'ultimo passaggio è stato possibile perché \(r_{ij} = r_{ji}\) ed esserndo il prodotto fra cariche commutativo \(Q_iQ_j = Q_jQ_i\).\\
 Per passare ad una distribuzione di carica continua osserviamo
 \[Q_i \to dq = \rho d\tau\]
 dove $\rho$ è la densità di carica volumetrica e $\tau$ un volume infinitesimo. Ne segue
 \[U_{tot} = \frac{1}{2}\int_{\tau} V\rho d\tau\]
 Osserviamo ora che sull'armatura A sta una carica \(Q_a = C(V_a - V_b)\) e sull'armatura B \(Q_b = - Q_a\). L'energia totale del condensatore è
-\[U_{tot} = \frac{1}{2}\sum_{i=1}^{2} Q_i U_i = \frac{1}{2} (Q_a V_a + Q_b V_b)= \frac{1}{2}C((V_a - V_b) V_a + (V_a - V_b) V_b) = \]
+\[U_{tot} = \frac{1}{2}\sum_{i=1}^{2} Q_i V_i = \frac{1}{2} (Q_a V_a + Q_b V_b)= \frac{1}{2}C((V_a - V_b) V_a - (V_a - V_b) V_b) = \]
 \[\frac{1}{2}C\Delta V^2 = \frac{1}{2}Q\Delta V = \frac{1}{2}\frac{Q^2}{C}\]
 Possiamo seguire una strada concettuale diversa per ottenere il medesimo risultato: consideriamo due conduttori scarichi posti uno di fronte all'altro ed immaginiamo di spostare ad una ad una le cariche positive dell'armatura destra verso quella sinistra. La prima non necessita lavoro perché tutto è neutro ma già a partire dalla seconda esiste un campo $\vec{E}$ generato dalla prima carica spostata che produce una forza che si oppone al movimento da destra a sinistra della carica. Consideriamo il lavoro infinitesimo necessario per spostare di d$\vec{z}$ la carica dq da destra a sinistra. 
 \[dL = dq\vec{E}d\vec{z} = -dqdV \]
