@@ -55,6 +55,10 @@ Possiamo fare tre ulteriori riflessioni sulla carica:
 	\item La carica totale si conserva
 	\item la carica non dipende dal S.I.
 \end{itemize}
+In queste prime sezioni tratteremo dell'elettrostatica, cioè quella branca dell'elettromagnetismo che studia sistemi all'\textbf{equilibrio elettrostatico}.
+\begin{definition}[equilibrio elettrostatico]
+	L'equilibrio elettrostatico è la condizione per cui tutte le cariche presenti su di un conduttore sono ferme, è quindi assente moto di carica.
+\end{definition}
 \subsection{La legge di Coulomb}
 Un grande passo avanti venne fatto da Coulomb (1736-1806) che mediante esperimenti con una bilancia a torsione ottenne un metodo preciso per calcolare numericamente la forza elettrostatica e mediante al quale riuscì a ricavare l'omonima legge.\\
 La bilancia di Coulomb, analoga a quella di Cavendish usata per la misura della costante di gravitazione universale, è basata sulla torsione di un filo di costante elastica c nota a causa dell'interazione elettrostatica di due corpi carichi. In particolare questa è formata da una barra sospesa mediante un filo alle estremità della quale è presente una sfera metallica ed un contrappeso, vi si avvicina un'altra carica a distanza R e si misura l'angolo a cui si dispone la prima sfera a causa della repulsione e la nuova distanza fra le due sfere. Sappiamo che il modulo del momento generato dalla torsione è
@@ -152,7 +156,7 @@ Analogamente alla forza possiamo immediatamente verificare che il campo elettros
 Definiamo la funzione di stato 
 \[V(\vec{r}) = \frac{q}{4\pi\varepsilon_0}\frac{1}{r}\]
 potenziale elettrostatico. La sua unità di misura è il Volt $V \equiv \frac{kg\cdot m^2}{s^2\cdot C}$.  Quest'ultima espressione è valida per una singola carica puntiforme. Se avessimo un numero finito di N cariche avremmo
-\[V_i(\vec{r}) = \frac{1}{4\pi\varepsilon_0}\frac{q_i}{|\Delta \vec{r}_i}\]
+\[V_i(\vec{r}) = \frac{1}{4\pi\varepsilon_0}\frac{q_i}{|\Delta \vec{r}_i}|\]
 \[V(\vec{r})_i= \frac{1}{4\pi\varepsilon_0}\sum_{i}\frac{q_i}{|\Delta \vec{r}_i|}\]
 Se avessimo una distribuzione continua di carica invece
 \[V(\vec{r})_i= \frac{1}{4\pi\varepsilon_0}\ _Q\int\frac{d q_i}{|\Delta \vec{r}_i|} =  \frac{1}{4\pi\varepsilon_0}\ _V\int\frac{\rho}{|\Delta \vec{r}_i|}dV\]
@@ -162,12 +166,12 @@ Si ha inoltre
 Le superfici equipotenziali nel caso della carica singola sono i gusci sferici concentrici centrati nella carica, il campo elettrico è sempre perpendicolare ad essi.\\
 Possiamo quindi scrivere le 4 proprietà equivalenti che presenta il potenziale elettrostatico in quanto conservativo
 \begin{itemize}
-	\item \(\oint \vec{E}d\vec{l} = 0 \)
-	\item \(\vec{\nabla}\wedge\vec{E} = 0\)
+	\item \(\oint \vec{E}d\vec{l} = 0 \)\ per ogni percorso chiuso $\Gamma$ 
+	\item \(\vec{\nabla}\wedge\vec{E} = 0\) per ogni punto
 	\item \(\exists\varphi\  \text{campo scalare} : \vec{E}=-\vec{\nabla}\varphi\)=$\left(E_x = -\frac{\partial E}{\partial x},\ E_y= - \frac{\partial E}{\partial y},\ E_z= -\frac{\partial E}{\partial z}\right)$
-	\item \(\varphi(B)-\varphi(A) = -\int_{A}^{B}\vec{\nabla}\varphi d\vec{l}\ \forall L\)
+	\item \(\varphi(B)-\varphi(A) = -\int_{A}^{B}\vec{\nabla}\varphi d\vec{l}\ \) \ per ogni percorso $\Gamma$ 
 \end{itemize}
-dove $\varphi = V(\vec{r})$
+dove $\varphi = V(\vec{r})$.
 \begin{definition}[Forza elettromotrice (f.e.m.)]
 Definiamo forza elettromotrice
 \[\varepsilon \equiv \oint \vec{E}d\vec{l}\]
@@ -608,16 +612,16 @@ quest'ultimo è detto "densità di energia" e tornerà utile in seguito.
 \FloatBarrier
 Usando solamente il principio di sovrapposizione possiamo ottenere il campo generato da un dipolo elettrico su un punto posto sullo stesso asse del dipolo.
 \begin{esercizio}[Campo elettrostatico generato da due cariche puntiformi]
-	Si considerino due cariche poste per semplicità entrambe sull'asse z e a distanza uguale dall'origine (una dal lato positivo ed una dal lato negativo) e di distanza d fra di esse, vogliamo ottenere un'espressione del campo elettrico che genera in un punto P a distanza r dall'asse z. Consideriamo inizialmente due cariche di segno opposto (quella positiva sopra e quella negativa sotto), si traccino i vettori \(\vec{r}_+ \ \vec{r}_- \) congiungenti le cariche al punto P, dato il segno negativo della carica in basso, il vettore campo avrà verso entrante (verso la carica) mentre il campo generato dalla carica in alto è uscente dalla carica e quindi diretto verso il punto P. Sommando i vettori di campo otteniamo che il campo risultante ha direzione parallela all'asse z e verso negativo (-$\hat{k}$). Chiamiamo y il modulo della proiezione sull'asse z del vettore $\vec{r}_+$.
+	Si considerino due cariche poste per semplicità entrambe sull'asse z e a distanza uguale dall'origine (una dal lato positivo ed una dal lato negativo) e di distanza d fra di esse, vogliamo ottenere un'espressione del campo elettrico che genera in un punto P che giace sull'asse y a distanza r dall'asse z. Si noti che questo è un caso particolare (date le simmetrie geometriche con cui abbiamo costruito il sistema) in cui è presente solo una componente parallela al dipolo. Consideriamo inizialmente due cariche di segno opposto (quella positiva sopra e quella negativa sotto), si traccino i vettori \(\vec{r}_+ \ \vec{r}_- \) congiungenti le cariche al punto P, dato il segno negativo della carica in basso, il vettore campo avrà verso entrante (verso la carica) mentre il campo generato dalla carica in alto è uscente dalla carica e quindi diretto verso il punto P. Sommando i vettori di campo otteniamo che il campo risultante ha direzione parallela all'asse z e verso negativo (-$\hat{k}$). Chiamiamo y il modulo della proiezione sull'asse z del vettore $\vec{r}_+$.
 	\[\hat{r}_+ =\frac{ 0\hat{i}+y \hat{j}-\frac{d}{2}\hat{k}}{r}\]
 	\[\hat{r}_- = \frac{0\hat{i}+y \hat{j}+\frac{d}{2}\hat{k}}{r}\]
-	\[\vec{E}_{tot} = \vec{E}_{+} + \vec{E}_{-} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\left(\hat{r}_+-\hat{r}_-\right)=\]
+	\[\vec{E}_{//} = \vec{E}_{+} + \vec{E}_{-} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\left(\hat{r}_+-\hat{r}_-\right)=\]
 	\[\frac{1}{4\pi\varepsilon_0}\frac{q}{r^3}\left[(y\hat{j}-\frac{d}{2}\hat{k})-(y\hat{j}+\frac{d}{2}\hat{k})\right]= -\frac{1}{4\pi\varepsilon_0}\frac{q d}{r^3}\hat{k}\]
 	Possiamo definire una nuova grandezza legata ad una coppia di cariche opposte: il \textbf{momento di dipolo} ed esprimere il campo in funzione di esso.
 	\[\vec{p} \equiv qd\vec{k}\]
-	\[\vec{E}_{tot} = \frac{1}{4\pi\varepsilon_0}\frac{\vec{p}}{r^3}\]
+	\[\vec{E}_{//} = \frac{1}{4\pi\varepsilon_0}\frac{\vec{p}}{r^3}\]
 	Se invece le cariche fossero state dello stesso segno avremmo ottenuto con ragionamenti analoghi ma cambiando il segno del vettore
-	\[\vec{E}_{tot} = \frac{1}{4\pi\varepsilon_0}\frac{q2y}{r^3}\hat{j}\]
+	\[\vec{E}_{\perp} = \frac{1}{4\pi\varepsilon_0}\frac{q2y}{r^3}\hat{j}\]
 \end{esercizio}
 Finora abbiamo ottenuto solamente la componente del campo parallela al dipolo. Sfruttando il potenziale elettrostatico possiamo ottenere un'espressione più generale
 \begin{esercizio}[Espressione generale del campo generato da un dipolo elettrico]
@@ -640,9 +644,9 @@ Finora abbiamo ottenuto solamente la componente del campo parallela al dipolo. S
 	\[\Rightarrow V(P) = \frac{p \cos\theta}{4\pi\varepsilon_0 r^2} = \frac{\vec{p}\vec{r}}{4\pi\varepsilon_0 r^3} = \frac{pz}{4\pi\varepsilon_0 (x^2+y^2+z^2)^{\frac{3}{2}}}\]
 	Calcoliamo ora le componenti parallela e perpendicolare del campo elettrico generato dal dipolo
 	\[\vec{E}_{//} = \vec{E}_z = -\frac{\partial V}{\partial z} \hat{k} = \frac{p(3\cos^2\theta-1)}{4\pi\varepsilon_0 r^3}\]
-	dove nello svolgere i passaggi è stata usata \(z = r\cos\theta\). Analogamente possiamo calcolare il campo sull'asse x e sull'asse z 
-	\[E_x = \frac{p(3zx)}{4\pi\varepsilon_0 r^5}\]
-	\[E_y = \frac{p(3zy)}{4\pi\varepsilon_0 r^5}\]
+	dove nello svolgere i passaggi è stata usata \(z = r\cos\theta\). Analogamente possiamo calcolare il campo sull'asse x e sull'asse y
+	\[E_x = -\frac{\partial V}{\partial x} \hat{i}=\frac{p(3zx)}{4\pi\varepsilon_0 r^5}\]
+	\[E_y = -\frac{\partial V}{\partial y} \hat{j}=\frac{p(3zy)}{4\pi\varepsilon_0 r^5}\]
 	\[E_{\perp} = \sqrt{E_x^2+E_y^2} = \frac{p}{4\pi\varepsilon_0r^3}3\cos\theta\sin\theta\]
 	dove nei passaggi è stato usato \(r_{\perp} = \sqrt{x^2+y^2} = r\sin\theta\)
 	Ne segue che se \(\theta = 0^\circ \)
@@ -668,8 +672,8 @@ Consideriamo ora un dipolo formato da due cariche puntiformi immerso in campo el
 \FloatBarrier
 calcoliamo l'energia potenziale del dipolo calcolando il lavoro necessario ad avvicinare le due cariche partendo dall'infinito (entrambe sotto l'effetto del campo $\vec{E}$)
 \[L = \int_{\infty}^{\vec{r}+\vec{a}} qE(r) dr -\int_{\infty}^{\vec{r}} qE(r) dr =\int_{\vec{r}}^{\vec{r}+\vec{a}} qE(r) dr= U(\vec{r}+\vec{a})-U(\vec{r}) = qV(\vec{r}+\vec{a})-qV(\vec{r})\]
-Considerato che $||\vec{a}||<<||\vec{r}||$, possiamo interpretare le componenti \((a_x, a_y, a_z)\) come tendenti a zero
-\[U = q[V(x+ax, y+ay, z+az)-V(x, y, z)] = qdV = q\left[\frac{\partial V}{\partial x} a_x + \frac{\partial V}{\partial y}a_y + \frac{\partial V}{\partial z}a_z\right] =\]
+Considerato che $||\vec{a}||<<||\vec{r}||$, possiamo interpretare le componenti \((a_x, a_y, a_z)\) come tendenti a zero quindi \((a_x, a_y, a_z)\simeq (\partial x, \partial y, \partial z)\)
+\[U = q[V(x+a_x, y+a_y, z+a_z)-V(x, y, z)] = qdV = q\left[\frac{\partial V}{\partial x} a_x + \frac{\partial V}{\partial y}a_y + \frac{\partial V}{\partial z}a_z\right] =\]
 \[ q(-\vec{E}\vec{a}) = -\vec{p}\vec{E}\]
 Da cui segue, ricordando che \(\vec{F} = \vec{\nabla} U\)
 \[\vec{F} = \vec{p}\vec{\nabla}\vec{E}\]
@@ -772,6 +776,9 @@ Si nota sperimentalmente (ma si dedurrà a breve) che la maggior parte dei diele
 	\vec{P} = \varepsilon_0(k-1)\vec{E} = \varepsilon_0 \chi \vec{E}
 \end{align}
 dove $\chi$ è detta \textbf{suscettibilità elettrica}. I dielettrici che rispettano questa condizione sono detti lineari perché p dipende linearmente da E, limiteremo la nostra trattazione a questo tipo di materiali. Di solito P è uniforme all'interno del dielettrico ma esistono casi in cui cambia, di conseguenza anche k cambia all'interno del materiale. Inoltre nella maggior parte dei casi \(\vec{P} // \vec{E}\) (per come abbiamo scritto l'ultima equazione sembra l'unica opzione possibile) tuttavia può accadere che k non sia uno scalare am un tensore 3x3, in questo caso la direzione di $\vec{P}$ può non essere la stessa di $\vec{E}$. Quando ciò avviene il materiale è detto anisotropo (ad esempio i cristalli birifrangenti). Fin ora abbiamo quindi studiato solamente dielettrici lineari isotropi.
+\begin{definition}[Velocità isotropa]
+	L'isotropia è la proprietà dell'indipendenza dalla direzione, da parte di una grandezza definita nello spazio. Il suo contrario è l'anisotropia.
+\end{definition}
 \subsection{Interpretazione microscopica della polarizzazione di un dielettrico}
 Abbiamo visto che quando avviene la polarizzazione si ridistribuiscono le cariche e si genera una densità di carica sulla superficie \(\sigma_p\), abbiamo giustificato matematicamente il fatto che questa si generi proprio in superficie con la legge di Gauss e ne abbiamo reso conto anche fisicamente mediante un'interpretazione microscopica della polarizzazione.\\
 A causa di questa ridistribuzione di carica si crea un campo elettrico indotto di entità molto minore rispetto a quello che viene a crearsi in un conduttore (dove la polarizzazione è totale, cioè si ferma solo quando il campo elettrico esterno è totalmente schermato); la schermatura del campo esterno è quindi molto minore rispetto ad un conduttore e la differenza di potenziale fra le armature del condensatore si riduce in quantità minore. Continuerà dunque ad esistere un campo elettrico all'interno del dielettrico $\vec{E}$ (a differenza del caso del conduttore)
@@ -906,7 +913,7 @@ Consideriamo un condensatore piano a facce parallele dove lo spazio fra le armat
 \[C_k = \frac{k\varepsilon_0 S}{d} = \frac{\varepsilon S}{d}\]
 \[E_k = \frac{E}{k} = \frac{\sigma}{k\varepsilon_0} = \frac{\sigma}{\varepsilon}\]
 Possiamo quindi ricavare l'energia immagazzinata nel condensatore come
-\[U = \frac{Q^2}{C_k} = \frac{1}{2}\frac{S^2\sigma^2 d}{\varepsilon S}\frac{\varepsilon}{\varepsilon} = \frac{1}{2}\frac{\sigma^2\varepsilon S d}{\varepsilon^2} = \frac{1}{2}E_k^2\varepsilon V\]
+\[U = \frac{1}{2}\frac{Q^2}{C_k} = \frac{1}{2}\frac{S^2\sigma^2 d}{\varepsilon S}\frac{\varepsilon}{\varepsilon} = \frac{1}{2}\frac{\sigma^2\varepsilon S d}{\varepsilon^2} = \frac{1}{2}E_k^2\varepsilon V\]
 dividendo per il volume si ottiene la densità di energia di un condensatore
 \[u = \frac{1}{2}E_k^2\varepsilon  = \frac{1}{2}E_k^2\varepsilon_0 k\]
 Si noti che la differenza di energia fra un condensatore con in mezzo un dielettrico e quella con in mezzo il vuoto è data dalla polarizzazione del dielettrico: quando si polarizza il dielettrico non si fa altro che effettuare lavoro per "tirare" ed allontanare i centri di carica degli atomi, passando ad uno stato ad energia potenziale maggiore. La densità di energia necessaria a polarizzare un dielettrico è quindi espressa dalla differenza fra la densità di energia di un condensatore con in mezzo un dielettrico e quella con in mezzo il vuoto
@@ -915,28 +922,107 @@ La densità è negativa perché il sistema costituito dal dielettrico, nel polar
 Nel caso più generale del dielettrico anisotropo si ha 
 \[u = \frac{1}{2}\varepsilon_0 \vec{k} \vec{E} \vec{E}(\frac{1}{k}-1) =\frac{1}{2} \vec{D} \vec{E}\]
 dove $\vec{k}$ è una matrice 3x3 che moltiplicata al primo $\vec{E}$ risulta nel vettore $\vec{D}$ che moltiplicato al secondo $\vec{E}$ da uno scalare.
+\section{Corrente elettrica}
+I conduttori sono tali in virtù della presenza di portatori di carica, questi possono essere positivi (protoni) o, come succede più frequentemente, negativi (elettroni). Ad esempio la densità di portatori di carica di rame e argento è
+\[N_{Cu} = 8.5 \cdot 10^{28}\frac{e^-}{m^3}\]
+\[N_{Ag} = 5.9\cdot 10^{28}\frac{e^-}{m^3}\]
+Come si muovono i portatori di carica quando esiste un campo all'interno di un conduttore? Per saperlo è necessario avere uno strumento capace di generare un tale campo, questo è la pila, inventata da Alessandro Volta nel 1799 (prima di questa data uno studio sistematico di questi fenomeni era impossibile). La pila è un generatore di \textbf{forza elettromotrice} (che non è una forza) che intuitivamente è un qualcosa che genera movimento di elettroni.
+\begin{definition}[Forza elettromotrice]
+	Si definisce forza elettromotrice \(\varepsilon\) (f.e.m.) di un generatore di corrente l'energia potenziale fornita per unità di carica, cioè il lavoro fatto sull'unità di carica
+	\[\varepsilon \equiv \frac{dL}{dQ}\]
+\end{definition}
+I portatori di carica si muovono solamente per agitazione termica in assenza di una f.e.m. quindi la media vettoriale delle velocità per agitazione termica è nulla
+\[\vec{\overline{v}}_0= \sum_{i = 1}^{N}\frac{\vec{v}_i}{N}=0\]
+Quando attacchiamo la pila si ha una forza sui portatori di carica che quindi sono accelerati; la velocità media non sarà più nulla
+\[\vec{F}= \pm q\vec{E}= m \vec{a}\]
+Se il campo è costante lungo il conduttore (quando si parla di conduttori possiamo immaginare, per fissare le idee, un filo conduttore), L'accelerazione è costante e il moto è uniformemente accelerato. Ciò vuol dire che le cariche, accelerate per un tempo sufficiente, possono raggiungere velocità infinita (o anche solamente raggiungere la velocità della luce)? Chiaramente no perché all'interno di un conduttore i portatori di carica nel muoversi urtano con il reticolo del conduttore deviando la propria traiettoria e quindi, in media, rallentando; si raggiungerà quindi una velocità di soglia in cui l' accelerazione elettrica e la decelerazione a causa degli urti si bilanciano. \'E evidente un'analogia con l'attrito viscoso
+\[\vec{F} = \pm q\vec{E}-\eta\vec{v}=m\vec{a}\]
+\[\pm q\vec{E}=\eta\vec{v}_{soglia} \Leftrightarrow \vec{a}= 0\]
+La costante che compare in questo caso (e che nel caso dell'attrito viscoso è la viscosità) in questo caso è la \textbf{resistività}, il concetto è lo stesso ma in questo caso è dal punto di vista microscopico. Hanno resistività nulla solamente il vuoto e i superconduttori, nei quali è possibile far raggiungere ai portatori di carica velocità prossime a quelle della luce (a causa di effetti relativistici). La velocità dei portatori di carica in modulo è ricavabile dalla teoria cinetica dei gas come valor medio della distribuzione di Maxwell-Boltzmann
+\[\overline{v}_0=\sqrt{\frac{3k_b T}{m}}\]
+i valori ottenuti da questa formula sono sottostimati di un fattore 10, di cui è possibile render conto solo introducendo la teoria quantistica (teoria di Fermi-Sommerfield).\\
+Se è presente un campo nel conduttore (e quindi una f.e.m.) esisterà una velocità media di deriva delle cariche (le possiamo immaginare come una nuvola di portatori di carica che si muove disordinatamente e che trasla in una direzione). Vogliamo ricavare un'espressione della velocità di deriva; consideriamo un conduttore cilindrico con densità di portatori di carica N, all'interno del quale è presente un portatore di carica positivo (in modo da avere lo spostamento equiverso al campo). Consideriamo una superficie \(\Sigma\) che taglia il conduttore trasversalmente, sia $\Delta q$ la carica che attraversa $\Sigma$ nel tempo $\Delta t$
+\begin{definition}[Intensità di corrente]
+	Definiamo l'intensità di corrente elettrica come
+	\[I \equiv \lim_{\Delta t \to 0} \frac{\Delta q}{\Delta t}=\frac{dq}{dt}\]
+	L'unità di misura è l'Ampere
+	\[1 A = \frac{1 C}{1 s}\]
+\end{definition}
+Quanta carica passa per \(d\vec{s}\) (porzione infinitesima di $\Sigma$) in un intervallo di tempo $\Delta t$? Se i portatori di carica hanno una velocità di deriva \(v_d\), quelli che passano $\Sigma$ in $\Delta t$ sono quelli contenuti nel volume di conduttore di base \(ds\cos\theta\) (la superficie $\Sigma$ è inclinata) e altezza $v_d\Delta t$, conoscendo la densità di portatori di carica, essendo i portatori di carica positivi solitamente i protoni, si ha che la densità di carica è \(\rho = N e^+\). Se $\Delta t \to 0$
+\[dq = N e^+ d\tau = N e^+ v_d dt ds cos\theta\]
+
+\[dI = N e^+ v_d ds cos\theta = N e^+ \vec{v}_d\cdot d\vec{s}\]
+Definiamo il vettore \textbf{densità di corrente}
+\[\vec{J} \equiv N e^+ \vec{v}_d\]
+\[dI = \vec{J}d\vec{s}\]
+\[I = \int_{\Sigma} \vec{J}d\vec{s}\]
+L'intensità di corrente è quindi il flusso del vettore densità di corrente sulla superficie. Qualora i portatori di carica fossero negativi, in J cambiano segno sia la carica (\(e^-\)) che la velocità quindi J rimane invariato; si ha sempre, indipendentemente dal tipo di portatore, \(\vec{J}\) // $\vec{E}$. Vediamo che è arbitrario assumere portatori positivi o negativi nella definizione dell'intensità di corrente, essendo più intuitivo il fatto che i portatori siano equiversi al campo scegliamo portatori di carica sempre positivi; ne segue che in un circuito immagineremo sempre portatori di carica che vanno dal punto a potenziale maggiore a quello minore ma nella realtà non è detto che ciò avvenga (anzi, è più frequente che i portatori siano negativi, come in tutti i conduttori). \\
+Consideriamo ora una superficie chiusa $\Sigma$ in presenza di un campo vettoriale di densità di carica $\vec{J}$ che la attraversa; calcoliamone l'intensità di corrente
+\[\oint_\Sigma \vec{J}d\vec{s} = -\frac{dq}{dt}\]
+Intuitivamente, il segno meno deriva dal fatto che se l'intensità di corrente è positiva esce più carica di quanta ne entra quindi la carica interna è diminuita (derivata negativa). Essendo $\Sigma$ una superficie chiusa il vettore normale è sempre uscente, il prodotto scalare fra J e ds sarà quindi positivo quando J esce dalla superficie ($\theta<90^\circ$), negativo quando entra ($\theta>90^\circ$) e nullo quando è perpendicolare (i versi delle disuguaglianze cambiano a seconda del segno del portatore di carica).\\
+L'aver aggiunto il segno meno all'integrale chiuso non deriva da considerazioni matematiche ma puramente fisiche (suffragato dall'esperienza), ne deriva dunque un principio (non dimostrabile) dell'elettrodinamica, il \textbf{principio della continuità della carica} o \textbf{legge di conservazione della carica elettrica}:\\
+\textit{Il flusso della densità di corrente elettrica attraverso una qualunque superficie chiusa è pari alla variazione della carica elettrica situata nel volume racchiuso dalla superficie nell'unità di tempo.}\\
+Possiamo applicare la legge di Gauss per ottenere
+\[\oint_\Sigma \vec{J}d\vec{s} = \int_{V(\Sigma)} \vec{\nabla}\vec{J} d\tau\]
+d'altra parte possiamo esprimere la carica dq come l'integrale di \(d\rho\) in un volume infinitesimo \(d\tau\) 
+\[\oint_\Sigma \vec{J}d\vec{s} = -\int_{V(\Sigma)}\frac{d\rho}{dt}d\tau\]
+Eguagliando le due precedenti si ottiene la forma differenziale del teorema di Gauss
+\[\vec{\nabla}\vec{J} = -\frac{d\rho}{dt}\]
+Nel caso stazionario (quello più comune, che solitamente considereremo) I è lo stesso in tutti i punti del conduttore ed è costante, che equivale a dire che nonostante vi sia un movimento delle cariche, la quantità di queste al'interno della superficie chiusa è sempre la stessa. Ne segue che in questo caso particolare 
+\[\oint_\Sigma \vec{J}d\vec{s} = -\frac{dq}{dt} = 0\]
+\section{Le leggi di Ohm}
+Vogliamo ricavare la relazione che lega J ad E. Storicamente quanto andremo a ricavare per via teorica è stato inizialmente osservato sperimentalmente e dall'esperienza se ne sono dedotte le leggi empiriche (macroscopiche); ciò avvenne nella prima metà dell'ottocento. Solo agli inizi del novecento si formulò un modello teorico che rendesse conto dell'esperienza; in particolare le leggi di Ohm sono del 1827 mentre il modello teorico di Grunde-Lorentz è del 1906. Questo modello parte da due considerazioni e due principi:
+\begin{itemize}
+	\item[C1] Gli elettroni si muovono per agitazione termica (in modo isotropo)
+	\item[C2] Essendo il tempo fra due urti molto piccolo i tratti percorsi dagli elettroni fra due urti sono approssimabili a rettilinei (moto uniformemente accelerato)
+	\item[P1] Il tempo medio fra due urti non dipende dalla velocità di deriva
+	\item[P2] Dopo un urto la distribuzione di velocità è isotropa
+\end{itemize}
+Soffermiamoci sui due principi: il primo è equivalente a dire che la velocità di deriva è trascurabile rispetto a quella di agitazione termica, questo è valido a temperature "normali" ma in alcuni casi, ad esempio a basse temperature e con materiali poco resistivi e con alte differenze di potenziale ciò può non essere vero e il modello perde di validità; il secondo invece ci dice che nell'istante successivo ad un urto la velocità dipende solamente dall'agitazione termica perché ancora il campo elettrico non ha avuto il tempo di accelerare l'elettrone in una direzione, essendo la velocità di agitazione termica isotropa, anche la velocità a seguito di un urto è isotropa (nel tempo la velocità dovuta al campo aumenta e si crea una direzione privilegiata in cui la velocità è maggiore e dunque smette di essere isotropa). I materiali che soddisfano questi due principi sono detti ohmici.\\
+Sia \(v_{i+1}\) la velocità subito prima di un urto, \(v_i\) quella subito dopo e $\overline{t}$ il tempo medio fra due urti essendo il moto uniformemente accelerato, la velocità prima dell'urto è uguale alla velocità iniziale (isotropa, dovuta all'agitazione termica) più l'accelerazione dovuta al campo per il tempo medio fra due urti
+\[\vec{v}_{i+1}  = \vec{v}_i - \frac{e\vec{E}}{m_e}\overline{t}\]
+\[\vec{v}_d = \sum_i\frac{\vec{v}_{i+1}}{N}= \frac{\sum_i\vec{v}_i}{N} - \frac{e\vec{E}}{m_e}\overline{t} \frac{N}{N} = - \frac{e\vec{E}}{m_e}\overline{t}\]
+dove il primo addendo si elimina perché la media vettoriale di una velocità isotropa è nulla. Possiamo riscrivere il vettore di densità di corrente
+\[\vec{J}= Ne\vec{v_d}= \frac{Ne^2\overline{t}\vec{E}}{m_e}\]
+Definiamo la \textbf{conduttività} $\sigma$ e la \textbf{resistività} $\rho$
+\[\sigma \equiv \frac{Ne^2\overline{t}}{m_e}\]
+\[\rho \equiv \frac{1}{\sigma}= \frac{m_e}{Ne^2\overline{t}}\]
+osserviamo che il tempo medio fra due urti dipende dal passo del reticolo cristallino l e dalla velocità di agitazione termica (\(\overline{t}= \frac{l}{v_i}\)), ne segue che conduttività e resistività dipendono solo dal tipo di materiale (in N ed l) e dalla temperatura ( in $\vec{v}_i$). \\
+In conclusione
+\[\vec{E}= \rho \vec{J}\]
+\[\vec{J}= \sigma \vec{E}\]
+Queste sono forme equivalenti alle leggi di Ohm, che possiamo ricavare semplicemente.\\
+Si consideri un circuito in condizioni stazionarie (I costante) e con campo elettrico costante con differenza di potenziale \(\Delta V_{AB}\) a cui è collegato un cilindro di materiale conduttore di altezza l e superficie di base S. 
+\[\Delta V = \int_{A}^{B}\vec{E}d\vec{l}=El\]
+\[I = \int_S \vec{J}d\vec{s}= JS= \frac{E S}{\rho}\]
+\[\Rightarrow E = \frac{\rho}{S}I\]
+\[\Rightarrow \Delta V = \frac{l\rho}{S}I \equiv R I\]
+dove R è la \textbf{resistenza}. Quest'ultima è la prima legge di Ohm, la seconda è proprio la definizione di R
+\[R = \frac{\rho l}{S}\]
 \appendix
 \section{Operatori differenziali}
 \subsection{Teorema del gradiente}
 \begin{definition}[campo scalare]
-	Si dice campo scalare una funzione del tipo 
+	Si dice campo scalare da \(\mathbb{R}^3\) a \(\mathbb{R}\) una funzione del tipo 
 	\[\varphi(x, y, z):\ \mathbb{R}^3\rightarrow \mathbb{R}\]
 	Fisicamente, questa è una funzione che associa ad ogni punto dello spazio uno scalare (come pressione o temperatura).
 \end{definition}
 \begin{definition}[campo vettoriale]
-	Si dice campo scalare una funzione del tipo 
+	Si dice campo vettoriale da \(\mathbb{R}^3\) a \(\mathbb{R}^3\) una funzione del tipo 
 	\[\varphi(x, y, z):\ \mathbb{R}^3\rightarrow \mathbb{R}^3\]
 	Fisicamente, questa è una funzione che associa ad ogni punto dello spazio un vettore (come campo gravitazionale o elettrico).
 \end{definition}
 Per derivare una funzione di questo tipo si introduce l'operatore differenziale \textbf{gradiente} e l'operatore \textbf{nabla}
 \[\vec{\nabla} \equiv \left(\frac{\partial}{\partial x}, \frac{\partial }{\partial y}, \frac{\partial }{\partial z}\right)\]
 \[\vec{grad}\varphi \equiv \vec{\nabla}\varphi = \left(\frac{\partial\varphi }{\partial x}, \frac{\partial\varphi }{\partial y}, \frac{\partial\varphi }{\partial z}\right)\]
-Per invertire l'operazione di derivazione di un campo scalare consideriamo il teorema fondamentale del calcolo (valido per unzioni da \(\mathbb{R}\) ad \(\mathbb{R}\))
+Per invertire l'operazione di derivazione di un campo scalare consideriamo il teorema fondamentale del calcolo (valido per funzioni da \(\mathbb{R}\) ad \(\mathbb{R}\))
 \[f(B)-f(A) = \int_{A}^{B}f'(x)dx\]
 definiamo il differenziale di una funzione f come
 \[df = f'(x)dx\] 
-Per estendere il concetto a più dimensioni, consideriamo due punti A e B ed un generico percorso L che li congiunge, il vettore tangente al percorso è $d\vec{l}$.  Definisco il differenziale di un campo scalare come 
-\[d\varphi = \vec{naba}\varphi d\vec{l}\]
+in modo da avere
+\[f(B)-f(A) = \int_{A}^{B}df\]
+Per estendere il concetto a più dimensioni, consideriamo due punti A e B ed un generico percorso L che li congiunge, il vettore tangente al percorso è $d\vec{l}$.  Definiamo il differenziale di un campo scalare come 
+\[d\varphi = \vec{\nabla}\varphi d\vec{l}\]
 Possiamo quindi integrare il differenziale e si dimostra che vale la seguente proprietà (estensione del teorema fondamentale del calcolo)
 \[_L\int_{A}^{B}d\varphi = _L\int_{A}^{B}\vec{\nabla}\varphi d\vec{l} = \varphi(A)-\varphi(B)\]
 questa relazione viene detta \textbf{teorema del gradiente}. Si noti che grazie a questo teorema abbiamo messo in relazione due oggetti di dimensione diversa: uno scalare (\(\varphi\)) di dimensione zero con una "linea", che è l'integrale di percorso da A a B, di dimensione uno.
@@ -955,23 +1041,23 @@ Prima di procedere è utile fare una digressione sulle superfici: queste possono
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{images/flusso2bis}
-	\caption{Schema di una superficie chiusa (da immaginare tridimensionalmente) attraversata da un campo \(\vec{F}\).}
+	\caption{Schema di una superficie chiusa (da immaginare tridimensionalmente) attraversata da un campo \(\vec{E}\).}
 	\label{fig:flusso2bis}
 \end{figure}
 \FloatBarrier
 Il flusso è 
-\[\phi(\vec{F}) = _S\oint \vec{F}d\vec{s}\]
+\[\Phi(\vec{F}) = _S\oint \vec{F}d\vec{s}\]
 dove il simbolo del doppio integrale cerchiato indica l'integrale di superficie chiusa.\\
 Se tagliamo la superficie chiusa in due parti \(S_1\) ed \(S_2\), mediante una superficie trasversale G, l'integrale sull'intera superficie, per l'additività dell'integrale, è semplicemente la somma degli integrali di superficie su \(S_1\) ed \(S_2\).
-\[\phi(\vec{F}) = _{S_1}\iint \vec{F}d\vec{s}+_{S_2}\iint \vec{F}d\vec{s}\]
+\[\Phi(\vec{F}) = _{S_1}\iint \vec{F}d\vec{s}+_{S_2}\iint \vec{F}d\vec{s}\]
 Possiamo aggiungere e sottrarre l'integrale di superficie aperte su G 
-\[\phi(\vec{F}) = _{S_1}\iint \vec{F}d\vec{s}+_{S_2}\iint \vec{F}d\vec{s}+_{G}\iint \vec{F}d\vec{s}-_{G}\iint \vec{F}d\vec{s}\]
+\[\Phi(\vec{F}) = _{S_1}\iint \vec{F}d\vec{s}+_{S_2}\iint \vec{F}d\vec{s}+_{G}\iint \vec{F}d\vec{s}-_{G}\iint \vec{F}d\vec{s}\]
 Si noti che avendo diviso la superficie chiusa S in due mediante G, abbiamo ottenuto due nuove superfici chiuse se consideriamo \(S_1^* = S_1+G\) e \(S_2^* = S_2+G\). Il contributo che fornisce G nell'integrale delle due superfici chiuse è uguale in modulo ma di segno opposto, quindi possiamo unire a due a due gli addendi dell'espressione precedente ottenendo due integrali di superficie chiusa (il doppio o triplo integrale chiuso sarà indicato sempre con il simbolo "\(\oint\)")
-\[\phi(\vec{F}) = _{S_1^*}\oint \vec{F}d\vec{s}+_{S_2^*}\oint \vec{F}d\vec{s}\]
+\[\Phi(\vec{F}) = _{S_1^*}\oint \vec{F}d\vec{s}+_{S_2^*}\oint \vec{F}d\vec{s}\]
 Possiamo reiterare questo processo di divisione n volte ottenendo
-\[\phi(\vec{F}) = \sum_{i=1}^{n}\ _{S_i^*}\oint \vec{F}d\vec{s}\]
+\[\Phi(\vec{F}) = \sum_{i=1}^{n}\ _{S_i^*}\oint \vec{F}d\vec{s}\]
 Moltiplichiamo e dividiamo per il volume \(V_i\) sotteso dall'i-esima superficie chiusa
-\[\phi(\vec{F}) = \sum_{i=1}^{n}\left(\frac{_{S_i^*}\oint \vec{F}d\vec{s}_i}{V_i}\right)V_i\]
+\[\Phi(\vec{F}) = \sum_{i=1}^{n}\left(\frac{_{S_i^*}\oint \vec{F}d\vec{s}_i}{V_i}\right)V_i\]
 Definiamo la \textbf{divergenza} del campo vettoriale $\vec{F}$ 
 \[div\vec{F} = \frac{_{S_i}\oint \vec{F}d\vec{s}_i}{V_i}\]
 In un campo vettoriale, chiamiamo "pozzo" un punto in cui convergono le linee di campo e "sorgente" uno in cui divergono, . Intuitivamente la divergenza ci offre informazioni su quanto un punto sia "pozzo" o "sorgente". 
@@ -983,9 +1069,9 @@ In un campo vettoriale, chiamiamo "pozzo" un punto in cui convergono le linee di
 \end{figure}
 \FloatBarrier
 Possiamo quindi sostituire e ottenere
-\[\phi(\vec{F}) = \sum_{i=1}^{n}div\vec{F}V_i\]
+\[\Phi(\vec{F}) = \sum_{i=1}^{n}div\vec{F}V_i\]
 Se il numero di divisioni n tende a infinito possiamo passare al continuo 
-\[\phi(\vec{F}) = \oint div\vec{F}dV\]
+\[\Phi(\vec{F}) = \oint div\vec{F}dV\]
 quest'ultima relazione è conosciuta come teorema della divergenza o di Gauss. Si noti che la superficie presa in considerazione deve essere chiusa. si noti come in questo teorema mettiamo in relazione il flusso su una superficie con un integrale su un volume, aumentando di 1 la dimensione.\\
 \subsubsection{Calcolo della divergenza}
 Si consideri un cubo di volume infinitesimo di lati (dx, dy, dz) attraversato da un campo vettoriale $\vec{F}(x,y,z) = (F_x, F_y, F_z)$.  
@@ -1009,7 +1095,8 @@ Ripetendo procedimenti analoghi per gli altri assi e sommando otteniamo
 \[\frac{d\Phi}{dV} = \left(\frac{\partial F_z}{\partial z}+ \frac{\partial F_z}{\partial z}+ \frac{\partial F_z}{\partial z}\right)\]
 Ricordando le definizioni di divergenza di $\vec{F}$ e di \(\vec{\nabla}\) si ottiene
 \[div\vec{F} = \frac{d\Phi}{dV} = \vec{\nabla}\vec{F}\]
-\[\Rightarrow \Phi_S(\vec{F}) = \iiint \vec{\nabla}\vec{F}dV\]
+Si noti che a differenza del gradiente in questo caso il vettore nabla è moltiplicato ad un altro vettore risultando in uno scalare (la divergenza è un operatore scalare definito come il prodotto scalare tra nabla ed un vettore)
+\[\Rightarrow \Phi_S(\vec{F}) = \iiint \vec{\nabla}\vec{F}dV = \oint_{V(\Sigma)} \vec{\nabla}\vec{F}dV\]
 che è un'altro modo per esprimere il teorema di Gauss.
 \subsection{Teorema di Stokes (teorema del rotore)}
 Si consideri la linea chiusa L, fissiamo un verso di percorrenza ed un vettore tangente ad essa $d\vec{l}= dl\hat{u}$. 
@@ -1031,11 +1118,11 @@ Definiamo, analogamente a quanto fatto per la divergenza, un nuovo operatore dif
 \[\vec{rot}\vec{F} = \frac{_{L_i}\oint\vec{F}d\vec{l}}{s_i}\hat{n}\]
 \[\Gamma(\vec{F}) = \sum_{i=1}^{n}\vec{rot}\vec{F}\vec{s}_i \]
 Se il numero di divisioni tende a infinito passiamo al continuo ottenendo
-\[_L\oint\vec{F}d\vec{l} =\Gamma(\vec{F}) = _{S_L}\iint(\vec{rot}\vec{F})\vec{s}_i\]
-Questa relazione è conosciuta come il teorema del gradiente o, più frequentemente, come il \textbf{teorema di Stokes}. Si noti come questo metta in relazione un integrale di linea (una dimensione) con un integrale di superficie (due dimensioni).\\\\
+\[_L\oint\vec{F}d\vec{l} =\Gamma(\vec{F}) = _{S_L}\iint(\vec{rot}\vec{F})d\vec{s}_i =_{S_L}\oint(\vec{rot}\vec{F})d\vec{s}_i\]
+Questa relazione è conosciuta come il teorema del rotore o, più frequentemente, come il \textbf{teorema di Stokes}. Si noti come questo metta in relazione un integrale di linea (una dimensione) con un integrale di superficie (due dimensioni).\\\\
 In sintesi, per evidenziare un'analogia, i tre teoremi esposti mettono in relazione le dimensioni 0-1 (gradiente), 2-3 (divergenza) ed 1-2 (rotore).
 \subsubsection{Calcolo del rotore}
-Come per la divergenza, la definizione con cui è stato introdotto il rotore non è operativa: cerchiamo una espressione operativa calcolando la circuitazione di un quadrato infinitesimo ABCD di lati dx e dy scegliendo il senso di percorrenza antiorario. Il quadrato è disposto nello spazio in modo da avere versore coincidente con $\hat{j}$. 
+Come per la divergenza, la definizione con cui è stato introdotto il rotore non è operativa: cerchiamo una espressione operativa calcolando la circuitazione di un quadrato infinitesimo ABCD di lati dx e dy scegliendo il senso di percorrenza antiorario. Il quadrato è disposto nello spazio in modo da avere versore coincidente con $\hat{k}$. 
 \begin{align*}
 	&\Gamma_L(\vec{F}) = _L\oint \vec{F} d\vec{l} = \int_{A}^{B} \vec{F} d\vec{l}+\int_{B}^{C} \vec{F} d\vec{l}+\int_{C}^{D} \vec{F} d\vec{l}+\int_{D}^{A} \vec{F} d\vec{l}\\
 	&= \int_{x}^{x+dx} F_x(x,y) dx+\int_{y}^{y+dy} F_y(x+dx,y) dy+\int_{x+dx}^{x} F_x(x, y+dy) dx+\int_{y+dy}^{y} F_y(x, y) dy
@@ -1049,7 +1136,7 @@ Ricordando come avevamo definito il rotore, otteniamo
 \[(\vec{rot}\vec{F})\hat{k} = \left[\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y}\right]\]
 Per le componenti sugli altri assi il ragionamento è del tutto analogo. Notiamo che le tre componenti del rotore appena ottenute si possono ricavare semplicemente calcolando il determinante di una matrice che sulle righe ha rispettivamente i versori, l'operatore di derivata parziale sui tre assi e le componenti del campo vettoriale. In conclusione
 \begin{align*}
-&\vec{rot}\vec{F}=\vec{nabla}\wedge\vec{F}=det
+&\vec{rot}\vec{F}=\vec{\nabla}\wedge\vec{F}=det
 \begin{pmatrix}
 	\hat{i}&\hat{j}&\hat{k}\\
 	\frac{\partial}{\partial x}&\frac{\partial}{\partial y}&\frac{\partial}{\partial z}\\
@@ -1068,4 +1155,7 @@ Le quattro condizioni necessarie e sufficienti (equivalenti) perché un campo si
 	\item \(\exists\varphi \text{campo scalare} : \vec{F}=-\vec{\nabla}\varphi\)
 	\item \(\varphi(B)-\varphi(A) = -\int_{A}^{B}\vec{\nabla}\varphi d\vec{l}\ \forall L\)
 \end{itemize}
+\begin{align*}
+\frac{c_1(c_2+c_4)}{c_1+c_2+c_3+c_4}-\frac{c_1c_2}{c_1+c_2}
+\end{align*}
 \end{document}
