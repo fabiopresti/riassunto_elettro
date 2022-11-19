@@ -321,7 +321,7 @@ Di seguito elenchiamo, dimostrandole, 6 proprietà dei conduttori:
 \[\mathbf{F} = -e\mathbf{E} = m_e \mathbf{a}\]
 Se aspettiamo un tempo sufficientemente lungo gli elettroni si sposteranno ed il sistema sarà nuovamente all'equilibrio (è un fatto sperimentale che a un certo punto gli elettroni smettono di muoversi). Se gli elettroni smettono di muoversi (intendendo movimento in media) vuol dire che una forza si oppone a quella generata dal campo elettrostatico, quale? Quando gli elettroni si spostano tutti nello stesso verso si crea una zona a prevalenza di cariche positive (il reticolo di ioni privo di elettroni) che attrae per forza di Coulomb gli elettroni a sè opponendosi alla forza generata dal campo elettrostatico. Passando da termini di forza a termini di campo, potremo dire che all'interno del conduttore si è creato un \textbf{campo elettrostatico indotto}, opposto a quello esterno (in verso e modulo). Abbiamo quindi che il campo elettrostatico totale all'interno di un conduttore è
 \[\mathbf{E}_{tot} = \mathbf{E}_I+\mathbf{E}_E = 0\]
-\textit{Il campo elettrico totale all'equilibrio, all'interno di un conduttore, è nullo, anche in presenza di un camppo elettrostatico esterno}.
+\textit{Il campo elettrico totale all'equilibrio, all'interno di un conduttore, è nullo, anche in presenza di un campo elettrostatico esterno}.
 \item Possiamo applicare la legge di Gauss al caso appena visto 
 \[\oint_{\Sigma}\mathbf{E}_{tot}d\mathbf{s}= \frac{Q_{tot}}{\varepsilon_0} = 0\]
 \[\Rightarrow Q_{tot} = 0\]
@@ -965,18 +965,18 @@ i valori ottenuti da questa formula sono sottostimati di un fattore 10, di cui �
 Se è presente un campo nel conduttore (e quindi una f.e.m.) esisterà una velocità media di deriva delle cariche (le possiamo immaginare come una nuvola di portatori di carica che si muove disordinatamente e che trasla in una direzione). Vogliamo ricavare un'espressione della velocità di deriva; consideriamo un conduttore cilindrico con densità di portatori di carica N, all'interno del quale è presente un portatore di carica positivo (in modo da avere lo spostamento equiverso al campo). Consideriamo una superficie \(\Sigma\) che taglia il conduttore trasversalmente, sia $\Delta q$ la carica che attraversa $\Sigma$ nel tempo $\Delta t$
 \begin{definizione}[Intensità di corrente]
 	Definiamo l'intensità di corrente elettrica come
-	\[I \equiv \lim_{\Delta t \to 0} \frac{\Delta q}{\Delta t}=\frac{dq}{dt}\]
+	\[i \equiv \lim_{\Delta t \to 0} \frac{\Delta q}{\Delta t}=\frac{dq}{dt}\]
 	L'unità di misura è l'Ampere
 	\[1 A = \frac{1 C}{1 s}\]
 \end{definizione}
 Quanta carica passa per \(d\mathbf{s}\) (porzione infinitesima di $\Sigma$) in un intervallo di tempo $\Delta t$? Se i portatori di carica hanno una velocità di deriva \(v_d\), quelli che passano $\Sigma$ in $\Delta t$ sono quelli contenuti nel volume di conduttore di base \(ds\cos\theta\) (la superficie $\Sigma$ è inclinata) e altezza $v_d\Delta t$, conoscendo la densità di portatori di carica, essendo i portatori di carica positivi solitamente i protoni, si ha che la densità di carica è \(\rho = N e^+\). Se $\Delta t \to 0$
 \[dq = N e^+ d\tau = N e^+ v_d dt ds cos\theta\]
 
-\[dI = N e^+ v_d ds cos\theta = N e^+ \mathbf{v}_d\cdot d\mathbf{s}\]
+\[di = N e^+ v_d ds cos\theta = N e^+ \mathbf{v}_d\cdot d\mathbf{s}\]
 Definiamo il vettore \textbf{densità di corrente}
 \[\mathbf{J} \equiv N e^+ \mathbf{v}_d\]
-\[dI = \mathbf{J}d\mathbf{s}\]
-\[I = \int_{\Sigma} \mathbf{J}d\mathbf{s}\]
+\[di = \mathbf{J}d\mathbf{s}\]
+\[i = \int_{\Sigma} \mathbf{J}d\mathbf{s}\]
 L'intensità di corrente è quindi il flusso del vettore densità di corrente sulla superficie. Qualora i portatori di carica fossero negativi, in J cambiano segno sia la carica (\(e^-\)) che la velocità quindi J rimane invariato; si ha sempre, indipendentemente dal tipo di portatore, \(\mathbf{J}\) // $\mathbf{E}$. Vediamo che è arbitrario assumere portatori positivi o negativi nella definizione dell'intensità di corrente, essendo più intuitivo il fatto che i portatori siano equiversi al campo scegliamo portatori di carica sempre positivi; ne segue che in un circuito immagineremo sempre portatori di carica che vanno dal punto a potenziale maggiore a quello minore ma nella realtà non è detto che ciò avvenga (anzi, è più frequente che i portatori siano negativi, come in tutti i conduttori). \\
 Consideriamo ora una superficie chiusa $\Sigma$ in presenza di un campo vettoriale di densità di carica $\mathbf{J}$ che la attraversa; calcoliamone l'intensità di corrente
 \[\oint_\Sigma \mathbf{J}d\mathbf{s} = -\frac{dq}{dt}\]
@@ -1015,9 +1015,9 @@ In conclusione
 Queste sono forme equivalenti alle leggi di Ohm, che possiamo ricavare semplicemente.\\
 Si consideri un circuito in condizioni stazionarie (I costante) e con campo elettrico costante con differenza di potenziale \(\Delta V_{AB}\) a cui è collegato un cilindro di materiale conduttore di altezza l e superficie di base S. 
 \[\Delta V = \int_{A}^{B}\mathbf{E}d\mathbf{l}=El\]
-\[I = \int_S \mathbf{J}d\mathbf{s}= JS= \frac{E S}{\rho}\]
-\[\Rightarrow E = \frac{\rho'}{S}I\]
-\[\Rightarrow \Delta V = \frac{l\rho'}{S}I \equiv R I\]
+\[i = \int_S \mathbf{J}d\mathbf{s}= JS= \frac{E S}{\rho}\]
+\[\Rightarrow E = \frac{\rho'}{S}i\]
+\[\Rightarrow \Delta V = \frac{l\rho'}{S}i \equiv R i\]
 dove R è la \textbf{resistenza}. Quest'ultima è la prima legge di Ohm, la seconda è proprio la definizione di resistenza R
 \[R \equiv \frac{\rho' l}{S}\]
 \begin{definizione}[Resistenza]
@@ -1223,13 +1223,56 @@ Le cariche negative col tempo si addensano sulla faccia sinistra generando una d
 \[\Delta V_H = E_H l =\frac{BJ}{nq}l =\frac{iB}{ldnq}l=\frac{i B}{nqd} = R_H \frac{iB}{d}\] 
 dove è stata usata la formula della \(\Delta V\) per i condensatori, ed \(R_H\) è la \textbf{costante di Hall}.
 \end{applicazione}
-\subsection{Campo magnetico}
+\subsection{Misurare il campo magnetico}
 Come già osservato l'ideazione di un'apparato sperimentale per la misura di una grandezza offre la possibilità di dedurne informazioni teoriche. Nel caso del campo magnetico il primo semplice metodo di misura del campo magnetico è basato sullo studio del moto di una spira immersa in un campo magnetico
 \begin{definizione}[Spira]
 	 In elettrotecnica la spira di un avvolgimento solenoidale è il tratto di conduttore corrispondente a un passo dell’elica di avvolgimento; poiché tale tratto è proporzionale al campo magnetico generato dall'intero avvolgimento percorso da corrente, il termine ha finito con l’essere usato, in elettromagnetismo, per indicare un circuito chiuso, per es. un circuito filiforme circolare (spira circolare) o poligonale (spira rettangolare, quadrata, ecc.).
 \end{definizione}
-Consideriamo una spira rettangolare di lati a,b attraversata da corrente in senso antiorario. Il circuito individua una superficie S di vettore normale $\mathbf{\hat{u_n}}$ (il verso si determina con la regola della mano destra). Si consideri un campo magnetico $\mathbf{B}$ passante per S che forma un angolo $\theta$ con $\mathbf{\hat{u_n}}$ 
-
+Consideriamo una spira rettangolare di lati a,b attraversata da corrente in senso antiorario. Il circuito individua una superficie S di vettore normale $\mathbf{\hat{u_n}}$ (il verso si determina con la regola della mano destra). Si consideri un campo magnetico $\mathbf{B}$ passante per S che forma un angolo $\theta$ con $\mathbf{\hat{u_n}}$. Le forze che agiscono sui lati del solenoide sono a due a due uguali, 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{images/spira_campo_magnetico}
+	\caption{Spira immersa in un campo magnetico, le forze sui lati superiore ed inferiore si annullano a vicenda, quelle sui lati destro e sinistro generano momento.}
+	\label{fig:spiracampomagnetico}
+\end{figure}
+\FloatBarrier
+La forza di Lorentz totale sulla spira è
+\[\mathbf{F}= \int_{\Gamma}dq\mathbf{v}\wedge\mathbf{B}= \int_{\Gamma}dq\frac{\mathbf{ds}}{dt}\wedge\mathbf{B}= i \int_{\Gamma}\mathbf{ds}\wedge\mathbf{B}\]
+Possiamo spezzare questo integrale di percorso nei 4 lati, chiamiamo 1 e 3 quelli superiore e inferiore di lunghezza a, 2 e 4 quelli destro e sinistro di lunghezza b.\\
+Sui lati superiore e inferiore il campo è ortogonale alla velocità e la forza di Lorentz risulta ortogonale al lato del solenoide, essendo il verso della velocità opposto su questi due lati, le due forze si annullano. Sui lati destro e sinistro invece l'angolo fra il campo magnetico e il vettore velocità è \(2\pi-\theta\) da cui
+\[F_1=F_3 = iaB \sin(\frac{\pi}{2}) = iaB \]
+\[F_2=F_4 = ibB \sin(2\pi-\theta) = -ibB\sin(\theta) \]
+Il momento delle forze sulla spira, prendendo come polo il centro del rettangolo, osservando che il braccio r è uguale per le due forze, pari a metà del lato a, è quindi
+\[\mathbf{\tau}= \mathbf{r}\wedge\mathbf{F_2}+\mathbf{r}\wedge\mathbf{F_4}=2(-\frac{ab}{2}i\sin\theta)= -i SB \sin\theta\]
+Ricordando l'espressione del momento delle forze in funzione di $\theta$, impostiamo l'equazione differenziale che descrive il moto della spira
+\[\mathbf{\tau}=I\ddot{\theta}=- iSB\sin\theta\]
+Per piccoli valori di $\theta$ possiamo approssimare $\sin\theta \simeq \theta$, ottenendo l'equazione differenziale armonica: spostando la spira, a partire da una posizione di equilibrio, di un piccolo angolo $\theta$, il campo tende a farla tornare alla posizione iniziale instaurando un moto armonico. 
+\[\ddot{\theta}+ \frac{iSB}{I}\theta= 0 \]
+Osserviamo che l'espressione di $\mathbf{\tau}$ è esprimibile come prodotto vettoriale
+\[\mathbf{\tau}=iS\mathbf{\hat{u}_n}\wedge\mathbf{B}=-iSB\sin\theta\]
+Possiamo definire il vettore \textbf{momento magnetico della spira} e sostituire
+\[\mathbf{m}\equiv iS\mathbf{\hat{u}_n}\] 
+\[\mathbf{\tau}=\mathbf{m}\wedge\mathbf{B}\]
+Osserviamo un'analogia fra il momento generato da una spira percorsa da corrente e quello generato da un dipolo elettrico ($\mathbf{\tau}=\mathbf{P}\wedge\mathbf{E}$). A partire da queste considerazioni Ampere formula l'omonimo principio di equivalenza: \textit{una spira attraversata da corrente equivale ad un dipolo magnetico e, più in generale una calamita equivale ad un circuito attraversato da corrente}.\\
+Risolvendo l'equazione differenziale otteniamo
+\[\omega=\sqrt{\frac{mB}{I}}\]
+\[T=2\pi\sqrt{\frac{I}{mB}}\]
+con semplici misure risulta possibile misurare l'intensità del campo magnetico.\\
+Sperimentalmente, anche grazie a questo strumento, si ottiene che il campo magnetico generato da un filo di lunghezza dl attraversato da corrente è
+\[\mathbf{dB}=k_m\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}\]
+dove \(k_m\) è una costante che si pone (per ragioni che saranno chiare in seguito)
+\[k_m \equiv\frac{\mu_0}{4\pi}\]
+dove $\mu_0$ è detta \textbf{permeabilità magnetica del vuoto}.\\
+Anche per il campo magnetico vale il principio di sovrapposizione, considerando un oggetto qualsiasi è possibile scomporlo in fili
+\[\mathbf{dB}=\frac{\mu}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu}{4\pi}\frac{(\Sigma dl)\mathbf{J}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu}{4\pi}\frac{\mathbf{J}\wedge\mathbf{\hat{u}_r}dV}{r^2}=\frac{\mu}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}n dV}{r^2}\]
+Il campo magnetico creato da un solo portatore di carica si ha per \(ndV=1\)
+\[\mathbf{B_i}=\frac{\mu}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}}{r^2}\] 
+Ricordando l'espressione del campo elettrico possiamo sostituire per ottenere
+\[\mathbf{B_i}=\mu_0\mathbf{v}\wedge\varepsilon_0\mathbf{E}\]
+Risulta che 
+\[\mu_0\varepsilon_0=\frac{1}{c^2}\]
+\[\mathbf{B_i}=\frac{1}{c^2}\mathbf{v}\wedge\mathbf{E}\]
+dove c è la velocità della luce.
 \appendix
 \section{Operatori differenziali}
 \subsection{Teorema del gradiente}

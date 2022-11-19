@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  19 NOV 2022 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  19 NOV 2022 16:15
 entering extended mode
 **./elettromagnetismo.tex
 (elettromagnetismo.tex
@@ -622,56 +622,63 @@ Overfull \hbox (0.67625pt too wide) in paragraph at lines 1210--1217
 []\T1/cmr/m/it/10 Consideriamo un pa-ral-le-le-pi-pe-do con-dut-to-re di
  []
 
-[63 <./images/hall_effect.png>] [64]
-<images/flusso2bis.jpg, id=271, 581.17125pt x 371.13657pt>
+[63 <./images/hall_effect.png>]
+<images/spira_campo_magnetico.png, id=267, 329.23pt x 311.1625pt>
+File: images/spira_campo_magnetico.png Graphic file (type png)
+<use images/spira_campo_magnetico.png>
+Package pdftex.def Info: images/spira_campo_magnetico.png  used on input line 1
+234.
+(pdftex.def)             Requested size: 172.5pt x 163.03514pt.
+ [64 <./images/spira_campo_magnetico.png (PNG copy)>] [65] [66]
+<images/flusso2bis.jpg, id=278, 581.17125pt x 371.13657pt>
 File: images/flusso2bis.jpg Graphic file (type jpg)
 <use images/flusso2bis.jpg>
-Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1274.
+Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1317.
 (pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[65]
-<images/div.png, id=275, 319.1925pt x 158.5925pt>
+[67]
+<images/div.png, id=283, 319.1925pt x 158.5925pt>
 File: images/div.png Graphic file (type png)
 <use images/div.png>
-Package pdftex.def Info: images/div.png  used on input line 1297.
+Package pdftex.def Info: images/div.png  used on input line 1340.
 (pdftex.def)             Requested size: 207.0021pt x 102.84915pt.
- [66 <./images/flusso2bis.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1305--1307
+ [68 <./images/flusso2bis.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
 
  []
 
-<images/div_quadrato.png, id=279, 484.81125pt x 419.76825pt>
+<images/div_quadrato.png, id=287, 484.81125pt x 419.76825pt>
 File: images/div_quadrato.png Graphic file (type png)
 <use images/div_quadrato.png>
-Package pdftex.def Info: images/div_quadrato.png  used on input line 1311.
+Package pdftex.def Info: images/div_quadrato.png  used on input line 1354.
 (pdftex.def)             Requested size: 207.0021pt x 179.235pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[67 <./images/div.png>] [68 <./images/div_quadrato.png>]
-Overfull \hbox (1.80522pt too wide) in paragraph at lines 1335--1336
+[69 <./images/div.png>] [70 <./images/div_quadrato.png>]
+Overfull \hbox (1.80522pt too wide) in paragraph at lines 1378--1379
 []\T1/cmr/m/it/10 Definiamo cir-cui-ta-zio-ne in-fi-ni-te-si-ma la quan-
  []
 
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1355
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1398
 
  []
 
 
-Overfull \hbox (48.15594pt too wide) detected at line 1360
+Overfull \hbox (48.15594pt too wide) detected at line 1403
 []
  []
 
-[70] [71] (elettromagnetismo.aux) ) 
+[72] [73] (elettromagnetismo.aux) ) 
 Here is how much of TeX's memory you used:
- 4114 strings out of 479618
- 58072 string characters out of 2865026
- 355421 words of memory out of 3000000
- 21198 multiletter control sequences out of 15000+200000
+ 4123 strings out of 479618
+ 58361 string characters out of 2865026
+ 355431 words of memory out of 3000000
+ 21206 multiletter control sequences out of 15000+200000
  420275 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,16n,74p,1129b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -701,9 +708,9 @@ msfonts/cm/cmsy10.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy5.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Fabio/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elettromagnetismo.pdf (71 pages, 1647099 bytes).
+Output written on elettromagnetismo.pdf (73 pages, 1675914 bytes).
 PDF statistics:
- 719 PDF objects out of 1000 (max. 8388607)
+ 728 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
