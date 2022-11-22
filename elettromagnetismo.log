@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  19 NOV 2022 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  22 NOV 2022 12:08
 entering extended mode
 **./elettromagnetismo.tex
 (elettromagnetismo.tex
@@ -229,11 +229,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Fabio/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(elettromagnetismo.toc)
+(elettromagnetismo.toc [2])
 \tf@toc=\write3
 \openout3 = `elettromagnetismo.toc'.
 
- [2] [3]
+ [3]
 <images/elettroscopio.jpg, id=17, 526.21594pt x 451.6875pt>
 File: images/elettroscopio.jpg Graphic file (type jpg)
 <use images/elettroscopio.jpg>
@@ -627,58 +627,82 @@ Overfull \hbox (0.67625pt too wide) in paragraph at lines 1210--1217
 File: images/spira_campo_magnetico.png Graphic file (type png)
 <use images/spira_campo_magnetico.png>
 Package pdftex.def Info: images/spira_campo_magnetico.png  used on input line 1
-234.
+235.
 (pdftex.def)             Requested size: 172.5pt x 163.03514pt.
- [64 <./images/spira_campo_magnetico.png (PNG copy)>] [65] [66]
-<images/flusso2bis.jpg, id=278, 581.17125pt x 371.13657pt>
-File: images/flusso2bis.jpg Graphic file (type jpg)
-<use images/flusso2bis.jpg>
-Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1317.
-(pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
+ [64 <./images/spira_campo_magnetico.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1269
+
+ []
+
+[65] [66]
+<images/esperimento_ampere.png, id=277, 400.49625pt x 281.05pt>
+File: images/esperimento_ampere.png Graphic file (type png)
+<use images/esperimento_ampere.png>
+Package pdftex.def Info: images/esperimento_ampere.png  used on input line 1307
+.
+(pdftex.def)             Requested size: 207.0021pt x 145.2677pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [67]
-<images/div.png, id=283, 319.1925pt x 158.5925pt>
+<images/circuitazione_campo_magnetico.png, id=282, 387.24675pt x 325.215pt>
+File: images/circuitazione_campo_magnetico.png Graphic file (type png)
+<use images/circuitazione_campo_magnetico.png>
+Package pdftex.def Info: images/circuitazione_campo_magnetico.png  used on inpu
+t line 1316.
+(pdftex.def)             Requested size: 207.0021pt x 173.84688pt.
+ [68 <./images/esperimento_ampere.png> <./images/circuitazione_campo_magnetico.
+png>] [69] [70] [71]
+<images/flusso2bis.jpg, id=297, 581.17125pt x 371.13657pt>
+File: images/flusso2bis.jpg Graphic file (type jpg)
+<use images/flusso2bis.jpg>
+Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1407.
+(pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[72]
+<images/div.png, id=301, 319.1925pt x 158.5925pt>
 File: images/div.png Graphic file (type png)
 <use images/div.png>
-Package pdftex.def Info: images/div.png  used on input line 1340.
+Package pdftex.def Info: images/div.png  used on input line 1430.
 (pdftex.def)             Requested size: 207.0021pt x 102.84915pt.
- [68 <./images/flusso2bis.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
+ [73 <./images/flusso2bis.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1438--1440
 
  []
 
-<images/div_quadrato.png, id=287, 484.81125pt x 419.76825pt>
+<images/div_quadrato.png, id=306, 484.81125pt x 419.76825pt>
 File: images/div_quadrato.png Graphic file (type png)
 <use images/div_quadrato.png>
-Package pdftex.def Info: images/div_quadrato.png  used on input line 1354.
+Package pdftex.def Info: images/div_quadrato.png  used on input line 1444.
 (pdftex.def)             Requested size: 207.0021pt x 179.235pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[69 <./images/div.png>] [70 <./images/div_quadrato.png>]
-Overfull \hbox (1.80522pt too wide) in paragraph at lines 1378--1379
+[74 <./images/div.png>] [75 <./images/div_quadrato.png>]
+Overfull \hbox (1.80522pt too wide) in paragraph at lines 1468--1469
 []\T1/cmr/m/it/10 Definiamo cir-cui-ta-zio-ne in-fi-ni-te-si-ma la quan-
  []
 
-[71]
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1398
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1488
 
  []
 
 
-Overfull \hbox (48.15594pt too wide) detected at line 1403
+Overfull \hbox (48.15594pt too wide) detected at line 1493
 []
  []
 
-[72] [73] (elettromagnetismo.aux) ) 
+[77] [78] (elettromagnetismo.aux) ) 
 Here is how much of TeX's memory you used:
- 4123 strings out of 479618
- 58361 string characters out of 2865026
- 355431 words of memory out of 3000000
- 21206 multiletter control sequences out of 15000+200000
+ 4143 strings out of 479618
+ 59048 string characters out of 2865026
+ 355469 words of memory out of 3000000
+ 21224 multiletter control sequences out of 15000+200000
  420275 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,16n,74p,1129b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -708,9 +732,9 @@ msfonts/cm/cmsy10.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy5.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Fabio/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elettromagnetismo.pdf (73 pages, 1675914 bytes).
+Output written on elettromagnetismo.pdf (78 pages, 1759420 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
+ 755 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -175,7 +175,7 @@ Possiamo quindi scrivere le 4 proprietà equivalenti che presenta il potenziale 
 dove $\varphi = V(\mathbf{r})$.
 \begin{definizione}[Forza elettromotrice (f.e.m.)]
 Definiamo forza elettromotrice
-\[\varepsilon \equiv \oint \mathbf{E}d\mathbf{l}\]
+\[\mathcal{E} \equiv \oint \mathbf{E}d\mathbf{l}\]
 che è nulla per campi elettrostatici ma che può essere diversa da zero se vi sono cariche in movimento.
 \end{definizione}
 \begin{esercizio}[Differenza di potenziale elettrostatico di un filo infinito]
@@ -446,7 +446,7 @@ Generalizziamo ora quanto ottenuto per conduttori neutri a conduttori carichi. E
 \subsection{Disposizione delle cariche sulla superficie}
 Ma come si dispongono le cariche sulla superficie? Sperimentalmente si esclude l'ipotesi più semplice: le cariche non si dispongono in modo uniforme; si osserva infatti che la densità è maggiore dove il raggio di curvatura è maggiore. Per mostrarlo studiamo il caso di due sfere di raggio \(R_1\), \(R_2\) con \(R_1>R_2\) collegate da un filo di dimensioni trascurabili nel quale è presente una carica +Q. La carica si redistribuisce sulle due sfere, vogliamo studiare come. Osserviamo che possiamo considerare il sistema come un unico conduttore, dalle proprietà di questi sappiamo che tutti i punti sono equipotenziali quindi calcoliamo i potenziali \(V_1\), \(V_2\) sulla superficie delle due sfere ed eguagliamoli
 \begin{align*}
-	&V_1 = V(+\infty) - V(R_1) = \int_{R_1}^{+\infty} \mathbf{E}d\mathbf{r} =  \frac{Q_1}{4\pi\varepsilon_0}\int_{R_1}^{\infty}\frac{1}{r^2}dr = \frac{Q_1}{4\pi\varepsilon_0R_1} \\
+	&V_1 = V(+\infty) - V(R_1) = \int_{R_1}^{+\infty} \mathbf{E}d\mathbf{r} =  \frac{Q_1}{4\pi_0}\int_{R_1}^{\infty}\frac{1}{r^2}dr = \frac{Q_1}{4\pi\varepsilon_0R_1} \\
 	&V_2 = \frac{Q_2}{4\pi\varepsilon_0R_1}\\
 	&\Rightarrow \frac{Q_1}{R_1}= \frac{Q_2}{R_2}\\
 	&\Rightarrow \frac{\sigma_1}{R_2} = \frac{\sigma_2}{R_1}
@@ -950,7 +950,7 @@ I conduttori sono tali in virtù della presenza di portatori di carica, questi p
 Come si muovono i portatori di carica quando esiste un campo all'interno di un conduttore? Per saperlo è necessario avere uno strumento capace di generare un tale campo, questo è la pila, inventata da Alessandro Volta nel 1799 (prima di questa data uno studio sistematico di questi fenomeni era impossibile). La pila è un generatore di \textbf{forza elettromotrice} (che non è una forza) che intuitivamente è un qualcosa che genera movimento di elettroni.
 \begin{definizione}[Forza elettromotrice]
 	Si definisce forza elettromotrice \(\varepsilon\) (f.e.m.) di un generatore di corrente l'energia potenziale fornita per unità di carica, cioè il lavoro fatto sull'unità di carica
-	\[\varepsilon \equiv \frac{dL}{dQ}\]
+	\[\mathcal{E} \equiv \frac{dL}{dQ}\]
 \end{definizione}
 I portatori di carica si muovono solamente per agitazione termica in assenza di una f.e.m. quindi la media vettoriale delle velocità per agitazione termica è nulla
 \[\mathbf{\overline{v}}_0= \sum_{i = 1}^{N}\frac{\mathbf{v}_i}{N}=0\]
@@ -1084,15 +1084,15 @@ La f.e.m. di un circuito siffatto è
 \[\oint_{\Gamma}\mathbf{E_{tot}}\mathbf{dl}= \int_{a}^{b}\mathbf{E_{el}}\mathbf{dl}+\int_{b}^{a}\mathbf{E^*}+\mathbf{E_{el}}\mathbf{dl}= Ri + R_{gen}i\]
 dove la prima resistenza è quella offerta dal conduttore mentre la seconda quella offerta dal generatore. Possiamo vedere lo stesso calcolo in modo diverso come
 \[\oint_{\Gamma}\mathbf{E_{tot}}\mathbf{dl}= \int_{a}^{b}\mathbf{E_{el}}\mathbf{dl} + \int_{b}^{a}\mathbf{E^*}\mathbf{dl} +  \int_{b}^{a}\mathbf{E_{el}}\mathbf{dl}= \int_{b}^{a}\mathbf{E^*}\mathbf{dl}\]
-\[\Rightarrow \varepsilon = \oint_{\Gamma}\mathbf{E_{tot}}\mathbf{dl} = \int_{b}^{a}\mathbf{E^*}\mathbf{dl} = (R + R_{gen})i \]
+\[\Rightarrow \mathcal{E} = \oint_{\Gamma}\mathbf{E_{tot}}\mathbf{dl} = \int_{b}^{a}\mathbf{E^*}\mathbf{dl} = (R + R_{gen})i \]
 ne segue che possiamo trattare un generatore come un pezzo di circuito che offre una sua resistenza \(R_{gen}\). \(\mathbf{E^*}\) è detto \textbf{campo elementare} e non è conservativo, infatti è proprio l'unica componente di circuitazione non nulla. Possiamo ricavare le seguenti relazioni
 \begin{align*}
-	&i = \frac{\varepsilon}{R+R_{gen}}\\
-	&\Delta V = \varepsilon-R_{gen}i
+	&i = \frac{\mathcal{E}}{R+R_{gen}}\\
+	&\Delta V = \mathcal{E}-R_{gen}i
 \end{align*}
 Ne deduciamo che la differenza di potenziale che effettivamente è prodotta da un generatore è minore della f.e.m. indotta da questo. Nelle comuni pile è indicata la f.ew.m. e non la $\Delta V$.\\
 Da un punto di vista energetico, la potenza totale dissipata da un circuito con generatore
-\[P = \varepsilon_i = R i^2 + R_{gen}i^2\]
+\[P = \mathcal{E}_i = R i^2 + R_{gen}i^2\]
 La potenza non è quindi dissipata solo dall'effetto Joule del conduttore ma anche da quello del generatore. 
 \section{Circuiti in regime quasi stazionario: il circuito RC}
 Fin ora, parlando di resistenze, abbiamo considerato solamente circuiti in cui la corrente è costante in tutti i punti del circuito, l'unico caso diverso che considereremo è il regime stazionario. Consideriamo un circuito con un condensatore, un generatore, un interruttore ed una resistenza in serie (detto circuito RC), a circuito aperto non vi è corrente e il condensatore è scarico, quando si chiude il circuito, dopo un tempo sufficientemente lungo si raggiunge una situazione di equilibrio; vogliamo sapere come evolva il sistema in questo periodo (in particolare le espressioni di q(t) e i(t)). 
@@ -1104,7 +1104,7 @@ Fin ora, parlando di resistenze, abbiamo considerato solamente circuiti in cui l
 \end{figure}
 \FloatBarrier
 Per ottenere q(t) impostiamo una equazione differenziale a partire dall'espressione della f.e.m.. Considerando la resistenza interna al generatore trascurabile, otteniamo da una relazione vista in precedenza 
-\[\varepsilon = \Delta V = \Delta V_{ab} + \Delta_{bd} = \frac{q(t)}{C}+R\frac{dq(t)}{dt}\]
+\[\mathcal{E} = \Delta V = \Delta V_{ab} + \Delta_{bd} = \frac{q(t)}{C}+R\frac{dq(t)}{dt}\]
 Otteniamo quindi l'equazione differenziale del primo grado, risolvibile con il metodo di separazione delle variabili
 \[\Delta V-q = RC \dot{q}\]
 \[\frac{dq}{q-C\Delta V}= -\frac{dt}{RC}\]
@@ -1177,7 +1177,7 @@ Fin ora abbiamo considerato la forza di Lorentz su una carica, in un conduttore 
 \[\mathbf{dF}=n(\Sigma dl)\mathbf{F_i} = n\Sigma dl q\mathbf{v}\wedge\mathbf{B}= -n\Sigma dl e\mathbf{v}\wedge\mathbf{B} = \Sigma dl \mathbf{J}\wedge\mathbf{B}= i\mathbf{ds}\wedge\mathbf{B}\]  
 \[\Rightarrow \mathbf{F}=i\mathbf{l}\wedge\mathbf{B}\]
 dove n è la densità dei portatori di carica e \(\mathbf{F_i}\) la forza di Lorentz generata da una singola carica, q è stato sostituito con -e, la carica dell'elettrone, in quanto in un conduttore metallico i portatori di carica sono gli elettroni liberi. Si dimostra che la forza non dipende dal cammino del filo e che $\mathbf{l}$ è in realtà la distanza tra due punti del filo.  
-\subsection{Applicazioni}
+\subsection{Alcune applicazioni}
 \begin{applicazione}[Spettrometro di massa]
 Basandosi sul fatto che il campo magnetico è legato alla velocità della carica è possibile creare un apparato che selezioni particelle che viaggiano ad una specifica velocità, basandosi poi sul fatto che il campo magnetico genera una forza centripeta che curva il moto delle cariche in base non solo loro velocità ma anche a massa e carica di queste, è possibile ottenere informazioni su queste grandezze se i campi magnetici hanno intensità nota.\\
 Inizialmente abbiamo un campione di particelle già cariche o previamente ionizzate, di velocità differenti (ad esempio secondo una distribuzione di Maxwell-Boltzmann), innanzitutto bisogna selezionare le particelle di una specifica velocità con l'utilizzo di un \textbf{selettore di velocità}, costituito da un condensatore all'interno del quale è presente un campo magnetico ortogonale alle facce in modo da produrre una forza di Lorentz  parallela e discorde a quella generata dal campo elettrico. Una carica, supponiamo un elettrone, che passa per questo apparato è sottoposta alle forze (che consideriamo in modulo essendo tutte parallele e verticali)
@@ -1228,7 +1228,8 @@ Come già osservato l'ideazione di un'apparato sperimentale per la misura di una
 \begin{definizione}[Spira]
 	 In elettrotecnica la spira di un avvolgimento solenoidale è il tratto di conduttore corrispondente a un passo dell’elica di avvolgimento; poiché tale tratto è proporzionale al campo magnetico generato dall'intero avvolgimento percorso da corrente, il termine ha finito con l’essere usato, in elettromagnetismo, per indicare un circuito chiuso, per es. un circuito filiforme circolare (spira circolare) o poligonale (spira rettangolare, quadrata, ecc.).
 \end{definizione}
-Consideriamo una spira rettangolare di lati a,b attraversata da corrente in senso antiorario. Il circuito individua una superficie S di vettore normale $\mathbf{\hat{u_n}}$ (il verso si determina con la regola della mano destra). Si consideri un campo magnetico $\mathbf{B}$ passante per S che forma un angolo $\theta$ con $\mathbf{\hat{u_n}}$. Le forze che agiscono sui lati del solenoide sono a due a due uguali, 
+Consideriamo una spira rettangolare di lati a,b attraversata da corrente in senso antiorario. Il circuito individua una superficie S di vettore normale $\mathbf{\hat{u}_n}$ (il verso si determina con la regola della mano destra). Si consideri un campo magnetico $\mathbf{B}$ passante per S che forma un angolo $\theta$ con $\mathbf{\hat{u}_n}$. Consideriamo per semplicità il vettore $\mathbf{B}$ giacente nel piano parallelo ai lati superiore ed inferiore del rettangolo, se giacesse parallelamente all'altra coppia di lati i calcoli seguenti sarebbero analoghi ma con gli assi invertiti (l'asse di rotazione sarebbe quello orizzontale al posto di quello verticale), se invece giacesse su una qualsiasi direzione il problema si complicherebbe (avremmo una rotazione del solenoide su entrambi gli assi).\\
+Le forze che agiscono sui lati del solenoide sono a due a due uguali,
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.5\linewidth]{images/spira_campo_magnetico}
@@ -1237,12 +1238,14 @@ Consideriamo una spira rettangolare di lati a,b attraversata da corrente in sens
 \end{figure}
 \FloatBarrier
 La forza di Lorentz totale sulla spira è
-\[\mathbf{F}= \int_{\Gamma}dq\mathbf{v}\wedge\mathbf{B}= \int_{\Gamma}dq\frac{\mathbf{ds}}{dt}\wedge\mathbf{B}= i \int_{\Gamma}\mathbf{ds}\wedge\mathbf{B}\]
+\[\mathbf{F}= \int_{\Gamma}dq\mathbf{v}\wedge\mathbf{B}= \int_{\Gamma}dq\frac{\mathbf{dl}}{dt}\wedge\mathbf{B}= i \int_{\Gamma}\mathbf{dl}\wedge\mathbf{B}\]
 Possiamo spezzare questo integrale di percorso nei 4 lati, chiamiamo 1 e 3 quelli superiore e inferiore di lunghezza a, 2 e 4 quelli destro e sinistro di lunghezza b.\\
-Sui lati superiore e inferiore il campo è ortogonale alla velocità e la forza di Lorentz risulta ortogonale al lato del solenoide, essendo il verso della velocità opposto su questi due lati, le due forze si annullano. Sui lati destro e sinistro invece l'angolo fra il campo magnetico e il vettore velocità è \(2\pi-\theta\) da cui
-\[F_1=F_3 = iaB \sin(\frac{\pi}{2}) = iaB \]
-\[F_2=F_4 = ibB \sin(2\pi-\theta) = -ibB\sin(\theta) \]
-Il momento delle forze sulla spira, prendendo come polo il centro del rettangolo, osservando che il braccio r è uguale per le due forze, pari a metà del lato a, è quindi
+Calcoliamo le forze e il momento da esse generato: l'angolo compreso fra il vettore spostamento $\mathbf{dl}$ ed il campo magnetico sui lati 1 e 3 è pari a \(\frac{\pi}{2}+\theta\), per i lati 2 e 4 è invece \(\frac{3\pi}{2}\), indipendentemente da $\theta$ (osservare attentamente la figura per convincersene)
+\[F_1=F_3=ibB\sin(\frac{\pi}{2}+\theta)\]
+\[F_2=F_4 = ibB\sin(\frac{3}{2}\pi)= -ibB\]
+Per il calciolo del momento delle forze prendiamo come polo il centro del rettangolo, il braccio per le forze 1 e 3 ha modulo b/2 ed è parallelo ai lati 2 e 4 mentre per le forze 2 e 4 vale a/2 ed è parallelo ai lati 1 e 3.\\
+Indipendentemente dal valore delle forze  \(F_1\) ed \(F_3\), il momento da esse generato è nullo perché l'angolo fra braccio e forza è nullo, essendo inoltre di modulo uguali ma di direzione opposte esse non imprimono alla spira neanche un'accelerazione lineare.
+Il momento delle forze sulla spira dato da \(F_2\) ed \(F_4\), osservando che l'angolo formato con il braccio è in entrambi i casi $\theta$, è
 \[\mathbf{\tau}= \mathbf{r}\wedge\mathbf{F_2}+\mathbf{r}\wedge\mathbf{F_4}=2(-\frac{ab}{2}i\sin\theta)= -i SB \sin\theta\]
 Ricordando l'espressione del momento delle forze in funzione di $\theta$, impostiamo l'equazione differenziale che descrive il moto della spira
 \[\mathbf{\tau}=I\ddot{\theta}=- iSB\sin\theta\]
@@ -1259,20 +1262,107 @@ Risolvendo l'equazione differenziale otteniamo
 \[T=2\pi\sqrt{\frac{I}{mB}}\]
 con semplici misure risulta possibile misurare l'intensità del campo magnetico.\\
 Sperimentalmente, anche grazie a questo strumento, si ottiene che il campo magnetico generato da un filo di lunghezza dl attraversato da corrente è
-\[\mathbf{dB}=k_m\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}\]
+\begin{align}\label{eq:campo_magnetico_filo_infinitesimo}
+&\mathbf{dB}=\frac{\mu_0}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{r}}{r^3}
+\end{align}
+Quest'ultima è anche detta \textbf{legge di Biot-Savart}.\\
+\[\mathbf{dB}=k_m\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\]
 dove \(k_m\) è una costante che si pone (per ragioni che saranno chiare in seguito)
 \[k_m \equiv\frac{\mu_0}{4\pi}\]
 dove $\mu_0$ è detta \textbf{permeabilità magnetica del vuoto}.\\
 Anche per il campo magnetico vale il principio di sovrapposizione, considerando un oggetto qualsiasi è possibile scomporlo in fili
-\[\mathbf{dB}=\frac{\mu}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu}{4\pi}\frac{(\Sigma dl)\mathbf{J}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu}{4\pi}\frac{\mathbf{J}\wedge\mathbf{\hat{u}_r}dV}{r^2}=\frac{\mu}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}n dV}{r^2}\]
+\[\mathbf{dB}=\frac{\mu_0}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu_0}{4\pi}\frac{(\Sigma dl)\mathbf{J}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu_0}{4\pi}\frac{\mathbf{J}\wedge\mathbf{\hat{u}_r}dV}{r^2}=\frac{\mu_0}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}n dV}{r^2}\]
 Il campo magnetico creato da un solo portatore di carica si ha per \(ndV=1\)
-\[\mathbf{B_i}=\frac{\mu}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}}{r^2}\] 
+\begin{align*}
+&\mathbf{B_i}=\frac{\mu_0}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}}{r^2} 
+\end{align*}
 Ricordando l'espressione del campo elettrico possiamo sostituire per ottenere
 \[\mathbf{B_i}=\mu_0\mathbf{v}\wedge\varepsilon_0\mathbf{E}\]
 Risulta che 
 \[\mu_0\varepsilon_0=\frac{1}{c^2}\]
 \[\mathbf{B_i}=\frac{1}{c^2}\mathbf{v}\wedge\mathbf{E}\]
 dove c è la velocità della luce.
+\section{Circuitazione del campo magnetico: legge di Ampere-Maxwell}
+\subsection{Campo magnetico generato da un filo infinito rettilineo uniforme attraversato da corrente}
+Consideriamo due fili infiniti paralleli a distanza d in cui la densità di corrente fluisce con verso concorde verso l'alto, qual è la forza per unità di lunghezza esercitata dal filo 1 (a sinistra) sul 2 (a destra)? \\
+Partendo dall'espressione del campo magnetico generato da un tratto infinitesimo di filo 1 attraversato da corrente (\ref{eq:campo_magnetico_filo_infinitesimo}) su un punto P del filo 2, integriamo per ottenere il campo magnetico totale generato dal filo 1 du un punto P del filo 2. 
+\[\mathbf{dB} = \frac{\mu_0}{4\pi}\frac{i_1\mathbf{v}\wedge\mathbf{r}}{r^3} \]
+visto che, per la regola della mano destra, il campo magnetico ha sempre direzione entrante nel foglio, possiamo considerare solo i moduli
+\[B=\int_{filo\ 1}dB= \int_{filo\ 1}\frac{\mu_0 i_1 }{4\pi}\frac{dl \sin\theta}{r^2}\]
+Integriamo rispetto a $\theta$ che varia da 0 a $\pi$ radianti; esprimiamo r e dl in funzione di $\theta$
+\[B = \int_{0}^{\pi}\frac{\mu_0 i_1 }{4\pi}\frac{\left(\frac{d}{\sin^2\theta}\right) \sin\theta}{\left(\frac{d^2}{\sin^2\theta}\right)^2}= \frac{\mu_0 i_1}{2\pi d}\]
+La forza che genera il filo 1 su un tratto dl di filo 2 attraversato da corrente \(i_2\) è 
+\[dF_{12} = i_2dl_2 B\sin\frac{\pi}{2}=i_2dl_2 \frac{\mu_0 i_1}{2\pi d}\]
+La forza per unità di lunghezza è 
+\[\frac{dF_{12}}{dl_2}= \frac{\mu_0 i_1i_2}{2\pi d}=-\frac{dF_{21}}{dl_1}\]
+Ponendo solo grandezze unitarie ottengo
+\[dF = \frac{\mu_0}{2\pi}\]
+ovvero la forza generata da un filo infinito su un filo infinitesimo ad esso parallelo se in entrambi fluisce una densità di corrente equiversa, misurabile con un dinamometro. Fino al 2019 questa relazione era usata per definire l'intensità di corrente elettrica da cui poi si ricavava il Coulomb; oggi queste grandezze sono definite a partire dalla carica dell'elettrone in quanto si è preferito legare le definizioni a costanti naturali universali.\\
+Da quanto visto osserviamo che il campo magnetico generato da un filo presenta analogie con il campo elettrico
+\[B = \frac{\mu_0 i}{2\pi r}\]
+\[E = \frac{\lambda}{2\pi \varepsilon_0 r}\]
+Entrambi presentano simmetria cilindrica, dipendendo da \(r^{-1}\) ma il campo magnetico è tangente alle circonferenze di livello in ogni punto mentre il campo elettrico è perpendicolare. Osserviamo inoltre che le linee di campo del campo magnetico sono chiuse e il flusso è conseguentemente nullo come osservato in precedenza. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/esperimento_ampere}
+	\caption{Se le direzioni sono concordi la forza è attrattiva, se discordi repulsiva. Il campo magnetico generato dal filo è costituito da circonferenze concentriche al filo di modulo uguale e direzione tangente ad ogni punto della circonferenza.}
+	\label{fig:esperimentoampere}
+\end{figure}
+\FloatBarrier
+\subsection{Legge di Ampere}
+Risulta ovvio che la circuitazione del campo magnetico è diversa da zero se scegliamo come percorso una linea di campo circolare concentrica ad un filo attraversato da corrente, ci chiediamo se questo sia vero per ogni linea chiusa. Consideriamo un percorso come quello in figura 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/circuitazione_campo_magnetico}
+	\caption{Schema utile alla dimostrazione che la circuitazione del campo magnetico è sempre diversa da zero.}
+	\label{fig:circuitazionecampomagnetico}
+\end{figure}
+\FloatBarrier
+Spezziamo la circuitazione nei 4 tratti, osservando che nei tratti radiali l'angolo tra il percorso e il campo è retto dunque l'integrale di percorso è nullo
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\int_{D}^{E}\mathbf{B}\mathbf{dl}+\int_{F}^{G}\mathbf{B}\mathbf{dl}\]
+Osserviamo che l'angolo fra campo e spostamento è nullo e che il campo è costante sulle circonferenze, possiamo quindi portarne il modulo fori dall'integrale. Dai due integrali risultano gli archi di circonferenza \(\widehat{DE}\) ed \(\widehat{FG}\), per la definizione di angolo in radianti otteniamo
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=B_1\int_{D}^{E}dl+B_2\int_{F}^{G}dl= \frac{\mu_0 i}{2\pi r_1}\widehat{DE}+\frac{\mu_0 i}{2\pi r_2}\widehat{FG}=\]
+ \[\frac{\mu_0 i}{2\pi r_1}\theta_{DE}r_1+\frac{\mu_0 i}{2\pi r_2}\theta_{FG}r_2=\frac{\mu_0 i}{2\pi}(\theta_{DE}+\theta_{FG})=\mu_0 i \]
+Dove nell'ultimo passaggio si è usato il fatto che la somma dei due angoli è l'angolo giro, come risulta evidente in figura.\\
+Si dimostra che qualsiasi percorso può essere suddiviso il tratti radiali e tratti ad arco dunque la circuitazione del campo magnetico è sempre pari a \(\mu_0 i\).\\
+Questo risultato, valido per ogni configurazione di filo (non per forza rettilinea) è detta \textbf{Legge di Ampere}
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i\] 
+\begin{definizione}[Corrente concatenata a $\Gamma$]
+	Considerando la linea chiusa orientata $\Gamma$ come bordo di una qualsiasi superficie aperta (ne esistono infinite che hanno $\Gamma$ come bordo), la corrente passante per la superficie è detta corrente concatenata a $\Gamma$.
+\end{definizione}
+\textit{La circuitazione del campo induzione magnetica B lungo una qualsiasi linea chiusa orientata \(\Gamma\) è pari all'intensità di corrente complessiva con cui la linea chiusa $\Gamma$ si concatena moltiplicata per la permeabilità magnetica del vuoto $\mu_0$}.\\
+Possiamo esprimere equivalentemente la legge di Ampere usando il vettore densità di corrente
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}= \mu_0\int_{\sigma(\Gamma)}\mathbf{J}\mathbf{ds}\]
+Dove l'orientamento della superficie $\mathbf{ds}$ dipende dalla scelta del verso di $\mathbf{dl}$, seguendo la regola della mano destra. 
+Applicando la legge di Stokes all'espressione precedente otteniamo
+\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J}\]
+\subsection{Contributo di Maxwell}
+La legge di Ampere non ha validità del tutto generale a causa di un "bias" di cui erano affetti i suoi apparati sperimentali, legato al momento storico: i fili da lui considerati erano attraversati da una corrente continua generata da una pila, unico generatore allora conosciuto, in questo modo il campo elettrico che genera la corrente resta costante nel tempo, rendendo l'esperienza un caso particolare. In questo aneddoto si evidenzia la limitatezza di un approccio puramente sperimentale in confronto ad uno teorico, adottato da Maxwell. Consideriamo l'equazione di continuità vista in precedenza e la forma differenziale della legge di Gauss per il campo elettrico
+\[\mathbf{\nabla}\mathbf{J}=-\frac{\partial \rho}{\partial t}\]
+\[\mathbf{\nabla}\mathbf{E}=\frac{ \rho}{\varepsilon_0}\]
+\[\Rightarrow \mathbf{\nabla}\mathbf{J}= -\frac{\partial (\varepsilon_0\mathbf{\nabla}\mathbf{E})}{\partial t}\]
+\[\mathbf{\nabla}\left(\mathbf{J}+\varepsilon_0\frac{\partial\mathbf{E}}{\partial t}\right) = 0\]
+Possiamo definire un nuovo vettore $\mathbf{J'}$ tale che
+\[\mathbf{\nabla}\mathbf{J'}=0\]
+Nel caso di Ampere la divergenza di J è nulla, nel caso di Maxwell invece, dedotto in modo puramente teorico, quella di J' è nulla; abbiamo aggiunto un termine che tiene conto della variabilità nel tempo del campo elettrico. La legge di Ampere, nella forma di Ampere-Maxwell, diventa
+\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J'}=\mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\partial\mathbf{E}}{\partial t}\]
+Quando venne pubblicato, il risultato di Maxwell fu ignorato fintanto che non ci si rese conto della sua importanza.\\
+Il fatto che la legge di Maxwell abbia validità più generale di quella di Ampere si verifica semplicemente considerando un circuito non stazionario (in cui la corrente è variabile), l'unico caso da noi trattato è quello quasi stazionario del circuito RC. Applichiamo la legge di Ampere in due casi: quello in cui la superficie $\Sigma$ interseca il filo del circuito e quello in cui non lo fa, passando per lo spazio tra le armature del condensatore. Nel primo caso passa corrente per $\Sigma$ secondo l'espressione i(t) ricavata in precedenza
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i(t)= \mu_0 \frac{\mathcal{E}}{R}e^{-\frac{t}{RC}}\neq0\]
+Nel secondo caso invece non passa corrente per la superficie poiché fra le armature non passano cariche
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i(t)= 0\]
+La legge di Ampere, che dovrebbe essere uguale per ogni superficie avente come bordo $\Gamma$, fornisce risultati diversi, cadendo nell'assurdo: la legge non è valida in questo caso. Sappiamo che il caso sbagliato è il secondo perché abbiamo già osservato come il campo magnetico abbia sempre circuitazione diversa da zero.\\
+Ricalcoliamo i due casi con la legge di Ampere-Maxwell
+\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J'}=\mu_0\left[\mathbf{J}+\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}\right]\]
+Nel primo caso il campo elettrico non varia nel tempo quindi resta solo il primo addendo della somma, tornando alla formula di Ampere (che quindi è un caso particolare) mentre nel secondo caso non passa corrente quindi il primo addendo è nullo, ma nel caricarsi il condensatore aumenta il campo elettrico compreso fra le armature nel tempo quindi 
+\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}= \mu_0\varepsilon_0\frac{\partial}{\partial t}\left(\right)\]
+Si dimostra che quest'ultimo termine è uguale a \(\mu_0\mathbf{J}\).
+Riassumendo, la legge di Maxwell-Ampere rispettivamente in forma differenziale ed integrale è
+\begin{align}\label{eq:legge_Maxwell_Ampere}
+	&\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\partial\mathbf{E}}{\partial t}\\
+	&\oint\mathbf{B}_{\Gamma}\mathbf{dl}= \mu_0 i + \mu_0\varepsilon_0\frac{d}{dt}\Phi(\mathbf{E})
+\end{align}
+Resta aperto un problema: in questo modo si spiega l'origine dei fenomeni magnetici legati a correnti elettriche, come si spiega però il campo magnetico generato da una calamita? Questo è dato dal moto degli elettroni nelle molecole di essa che generano una corrente atomica che genera campo magnetico (secondo il primo termine della legge di Ampere-Maxwell).
 \appendix
 \section{Operatori differenziali}
 \subsection{Teorema del gradiente}
