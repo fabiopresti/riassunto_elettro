@@ -16,6 +16,10 @@
 \newtheorem{definizione}{definizione}
 \newtheorem{proposizione}{proposizione}
 \makeatletter
+\def\d{\ensuremath\partial}
+\def\d{\ensuremath\partial\ }
+\def\n{\ensuremath\nabla}
+\def\n{\ensuremath\nabla\ }
 \def\th@plain{%
 	\thm@notefont{}% same as heading font
 	\itshape % body font
@@ -33,7 +37,8 @@
 	\tableofcontents
 	\newpage
 \section{Elettrostatica di cariche puntiformi}
-La parola elettrone deriva dal greco elektron che vuol dire ambra, un materiale facilmente elettrizzabile. Sappiamo che già i greci avevano fatto esperienza del fenomeno dell' "elettrzzazione per strofinio" o "triboelettricità": strofinando due barre di vetro con un tessuto si avrà esperienza di una forza repulsiva fra di esse; se si strofinano due sbarre di plastica con delle pelli si otterrà lo stesso risultato ma se si avvicina una barra di vetro con una di plastica opportunamente sfregate queste si attrarranno. Dall'antica grecia fino al XVII secolo questo fenomeno resta inspiegato e non si verificano sostanziali passi avanti nelle scienze; dopo l'introduzione del metodo scientifico si razionalizza quanto sperimentato traendo le seguenti conclusioni:
+La parola elettrone deriva dal greco elektron che vuol dire ambra, un materiale facilmente elettrizzabile. Sappiamo che già i greci avevano fatto esperienza del fenomeno dell' "elettrzzazione per strofinio" o "triboelettricità": strofinando due barre di vetro con un tessuto si avrà esperienza di una forza repulsiva fra di esse; se si strofinano due sbarre di plastica con delle pelli si otterrà lo stesso risultato ma se si avvicina una barra di vetro con una di plastica opportunamente sfregate queste si attrarranno. Dall'antica Grecia fino al XVII secolo questo fenomeno resta inspiegato e non si verificano sostanziali passi avanti nelle scienze; dopo l'introduzione del metodo scientifico si razionalizza quanto sperimentato traendo le seguenti conclusioni:
+
 \begin{itemize}
 	\item Esiste una forza diversa da quella gravitazionale (sicuramente trascurabile tra due barre)
 	\item Questa forza può essere sia attrattiva che repulsiva
@@ -101,7 +106,7 @@ Non resta che determinare la costante k; esistono due metodi filosoficamente mol
 	\[\mathbf{F} = \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{r^2}\hat{\mathbf{r}}\]
 \end{enumerate}
 Si nota sperimentalmente che la forza esercitata dalla presenza di molteplici cariche è data dalla somma vettoriale delle forze.\\
-Fino al 2019 il Coulomb era definito come la forza esercitata tra due fili a distanza di un metro nei quali passa 1 Amp di corrente elettrica. Recentemente si preferisce definire le grandezze fondamentali mediante costanti di natura, il Coulomb è stato definito mediante la carica dell'elettrone: la carica dell'elettrone equivale ad una piccolissima frazione di Coulomb: 
+Fino al 2019 il Coulomb era definito come la forza esercitata tra due fili a distanza di un metro nei quali passa 1 A di corrente elettrica. Recentemente si preferisce definire le grandezze fondamentali mediante costanti di natura, il Coulomb è stato definito mediante la carica dell'elettrone: la carica dell'elettrone equivale ad una piccolissima frazione di Coulomb: 
 \[e^- \equiv 1.6021766208\cdot10^{-19} C\]
 Possiamo paragonare la forza di gravità a quella elettrostatica facendone il rapporto
 \[\frac{F_E}{F_G} = \frac{1}{4\pi\varepsilon_0 G}\frac{|q_1||q_2|}{m_1m_2}=\simeq 2\cdot10^{39}\]
@@ -640,7 +645,9 @@ Usando solamente il principio di sovrapposizione possiamo ottenere il campo gene
 	\[\frac{1}{4\pi\varepsilon_0}\frac{q}{r^3}\left[(y\hat{\mathbf{j}}-\frac{d}{2}\hat{\mathbf{k}})-(y\hat{\mathbf{j}}+\frac{d}{2}\hat{\mathbf{k}})\right]= -\frac{1}{4\pi\varepsilon_0}\frac{q d}{r^3}\hat{\mathbf{k}}\]
 	Possiamo definire una nuova grandezza legata ad una coppia di cariche opposte: il \textbf{momento di dipolo} ed esprimere il campo in funzione di esso.
 	\[\mathbf{p} \equiv qd\mathbf{k}\]
-	\[\mathbf{E}_{//} = \frac{1}{4\pi\varepsilon_0}\frac{\mathbf{p}}{r^3}\]
+	\begin{align}\label{eq:campo_dipolo}
+		\mathbf{E}_{//} = \frac{1}{4\pi\varepsilon_0}\frac{\mathbf{p}}{r^3}
+	\end{align}
 	Se invece le cariche fossero state dello stesso segno avremmo ottenuto con ragionamenti analoghi ma cambiando il segno del vettore
 	\[\mathbf{E}_{\perp} = \frac{1}{4\pi\varepsilon_0}\frac{q2y}{r^3}\hat{\mathbf{j}}\]
 \end{esercizio}
@@ -1255,7 +1262,9 @@ Osserviamo che l'espressione di $\mathbf{\tau}$ è esprimibile come prodotto vet
 \[\mathbf{\tau}=iS\mathbf{\hat{u}_n}\wedge\mathbf{B}=-iSB\sin\theta\]
 Possiamo definire il vettore \textbf{momento magnetico della spira} e sostituire
 \[\mathbf{m}\equiv iS\mathbf{\hat{u}_n}\] 
-\[\mathbf{\tau}=\mathbf{m}\wedge\mathbf{B}\]
+\begin{align}\label{eq:momento_spira}
+	\mathbf{\tau}=\mathbf{m}\wedge\mathbf{B}
+\end{align}
 Osserviamo un'analogia fra il momento generato da una spira percorsa da corrente e quello generato da un dipolo elettrico ($\mathbf{\tau}=\mathbf{P}\wedge\mathbf{E}$). A partire da queste considerazioni Ampere formula l'omonimo principio di equivalenza: \textit{una spira attraversata da corrente equivale ad un dipolo magnetico e, più in generale una calamita equivale ad un circuito attraversato da corrente}.\\
 Risolvendo l'equazione differenziale otteniamo
 \[\omega=\sqrt{\frac{mB}{I}}\]
@@ -1282,8 +1291,7 @@ Risulta che
 \[\mu_0\varepsilon_0=\frac{1}{c^2}\]
 \[\mathbf{B_i}=\frac{1}{c^2}\mathbf{v}\wedge\mathbf{E}\]
 dove c è la velocità della luce.
-\section{Circuitazione del campo magnetico: legge di Ampere-Maxwell}
-\subsection{Campo magnetico generato da un filo infinito rettilineo uniforme attraversato da corrente}
+\subsection{Circuitazione del campo magnetico: legge di Ampere-Maxwell}
 Consideriamo due fili infiniti paralleli a distanza d in cui la densità di corrente fluisce con verso concorde verso l'alto, qual è la forza per unità di lunghezza esercitata dal filo 1 (a sinistra) sul 2 (a destra)? \\
 Partendo dall'espressione del campo magnetico generato da un tratto infinitesimo di filo 1 attraversato da corrente (\ref{eq:campo_magnetico_filo_infinitesimo}) su un punto P del filo 2, integriamo per ottenere il campo magnetico totale generato dal filo 1 du un punto P del filo 2. 
 \[\mathbf{dB} = \frac{\mu_0}{4\pi}\frac{i_1\mathbf{v}\wedge\mathbf{r}}{r^3} \]
@@ -1309,7 +1317,6 @@ Entrambi presentano simmetria cilindrica, dipendendo da \(r^{-1}\) ma il campo m
 	\label{fig:esperimentoampere}
 \end{figure}
 \FloatBarrier
-\subsection{Legge di Ampere}
 Risulta ovvio che la circuitazione del campo magnetico è diversa da zero se scegliamo come percorso una linea di campo circolare concentrica ad un filo attraversato da corrente, ci chiediamo se questo sia vero per ogni linea chiusa. Consideriamo un percorso come quello in figura 
 \begin{figure}[h!]
 	\centering
@@ -1336,7 +1343,6 @@ Possiamo esprimere equivalentemente la legge di Ampere usando il vettore densit�
 Dove l'orientamento della superficie $\mathbf{ds}$ dipende dalla scelta del verso di $\mathbf{dl}$, seguendo la regola della mano destra. 
 Applicando la legge di Stokes all'espressione precedente otteniamo
 \[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J}\]
-\subsection{Contributo di Maxwell}
 La legge di Ampere non ha validità del tutto generale a causa di un "bias" di cui erano affetti i suoi apparati sperimentali, legato al momento storico: i fili da lui considerati erano attraversati da una corrente continua generata da una pila, unico generatore allora conosciuto, in questo modo il campo elettrico che genera la corrente resta costante nel tempo, rendendo l'esperienza un caso particolare. In questo aneddoto si evidenzia la limitatezza di un approccio puramente sperimentale in confronto ad uno teorico, adottato da Maxwell. Consideriamo l'equazione di continuità vista in precedenza e la forma differenziale della legge di Gauss per il campo elettrico
 \[\mathbf{\nabla}\mathbf{J}=-\frac{\partial \rho}{\partial t}\]
 \[\mathbf{\nabla}\mathbf{E}=\frac{ \rho}{\varepsilon_0}\]
@@ -1363,6 +1369,132 @@ Riassumendo, la legge di Maxwell-Ampere rispettivamente in forma differenziale e
 	&\oint\mathbf{B}_{\Gamma}\mathbf{dl}= \mu_0 i + \mu_0\varepsilon_0\frac{d}{dt}\Phi(\mathbf{E})
 \end{align}
 Resta aperto un problema: in questo modo si spiega l'origine dei fenomeni magnetici legati a correnti elettriche, come si spiega però il campo magnetico generato da una calamita? Questo è dato dal moto degli elettroni nelle molecole di essa che generano una corrente atomica che genera campo magnetico (secondo il primo termine della legge di Ampere-Maxwell).
+\subsection{Spire e campo magnetico}
+Abbiamo già visto la definizione di spira, analogamente a quanto fatto per il campo elettrico calcoliamo il campo magnetico generato da una spira attraversata da corrente in senso antiorario su un punto P giacente sul suo asse a distanza d. 
+\begin{esercizio}[Campo magnetico spira]
+Consideriamo una porzione infinitesima di spira \(\mathbf{dl}\) attraversata da corrente, per la legge di Biot-Savart il campo generato sul punto P è
+\[\mathbf{dB}=\frac{\mu_0 i}{4\pi}\frac{\mathbf{dl}\wedge\mathbf{r}}{r^3}\]
+Per determinare la direzione di questo campo usiamo la regola della mano destra: il campo deve essere ortogonale sia al vettore \(\mathbf{r}\) che a \(\mathbf{dl}\), che a loro volta sono ortogonali fra loro, il campo avrà direzione tale da formare un angolo $\alpha$ con l'asse y, dove $\alpha$ è lo stesso angolo compreso fra \(\mathbf{r}\) e l'asse z. Visto che nè angoli compresi nè moduli cambiano spostando \(\mathbf{dl}\) sulla spira, la somma di tutti i contribuiti (principio di sovrapposizione) risulta in un vettore con componente solo sull'asse y. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/campo_magnetico_spira}
+	\caption{Schema del campo generato da una spira attraversata da corrente in senso antiorario su un punto a distanza d sull'asse della spira}
+	\label{fig:campomagneticospira}
+\end{figure}
+\FloatBarrier
+\[\mathbf{B}=\int_{spira}\mathbf{B}= B_y\mathbf{\hat{j}}=\int_{spira}dB_y\mathbf{\hat{j}}=\int_{spira}dB\cos\alpha\mathbf{\hat{j}}=\frac{\mu_0 i}{4\pi}\frac{\cos\alpha}{r^2}\int_{0}^{2\pi}dl\mathbf{\hat{j}}=\]
+\[\frac{\mu_0 i R}{2r^2}\cos\alpha \mathbf{\hat{j}}=\frac{\mu_0 i R^2}{2r^3} \mathbf{\hat{j}}=\frac{\mu_0 i R^2}{2(R^2+y^2)^{\frac{3}{2}}} \mathbf{\hat{j}}=\frac{\mu_0 (i \pi R^2)}{2\pi(R^2+y^2)^{\frac{3}{2}}} \mathbf{\hat{j}}=\frac{\mu_0 \mathbf{m}}{2\pi(R^2+y^2)^{\frac{3}{2}}}\]
+Ipotizzando r>>R, R può essere trascurato al denominatore ottenendo 
+\[\mathbf{B}=\frac{\mu_0 \mathbf{m}}{2\pi y^{3}}\]
+Si osservi come questa formula sia simile a quella del campo elettrico generato da un dipolo elettrico (\ref{eq:campo_dipolo}). Analogamente al caso del dipolo si mostra che la formula per un punto P in posizione generica è  
+\[\mathbf{B}=\frac{\mu_0 m }{4\pi r^3}[2\cos\theta\mathbf{\hat{u}_r}+\sin\theta\mathbf{\hat{u}_{\theta}}]\]
+dove $\theta$ è l'angolo compreso tra il vettore \(\mathbf{m}\) della spira e il vettore distanza \(\mathbf{r}\) tra il centro della spira e il punto. Ne segue che le linee di campo hanno la seguente forma
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/linee_campo_magnetico_spira}
+	\caption{Linee di campo magnetico generate da una spira circolare percorsa da corrente.}
+	\label{fig:lineecampomagneticospira}
+\end{figure}
+\FloatBarrier
+Si noti che, come osservato in precedenza, le linee di campo magnetico devono chiudersi, anche quelle che nell'immagine sembrano restare aperte in realtà si chiudono all'infinito. Si faccia attenzione a questo fatto che tornerà utile in seguito.  
+\end{esercizio}
+Se immergiamo una spira attraversata da corrente in un campo magnetico B esterno, come già osservato nel caso della spira rettangolare,il momento della forza è 
+\[\tau = \mathbf{m}\wedge\mathbf{B}_{ext}\]
+ma il campo magnetico generato dalla spira \(\mathbf{B}_{spira}\) ha la stessa direzione di \textbf{m}, ne segue che la spira è in quiete quando si allinea il campo magnetico da essa prodotto a quello esterno.\\
+Calcoliamo ora il lavoro che della spira immersa in un campo magnetico
+\[L = \int M d\theta= \int m B \sin\theta d\theta= -mB\cos\theta + c= -\mathbf{m}\mathbf{B}+c \equiv U\]
+dove U è l'energia potenziale derivante dal lavoro fatto dal campo magnetico sulla spira, definita a meno della costante c. Si presenta però un problema concettuale importante: l'energia potenziale è definita solo per campi conservativi, cosa che abbiamo visto il campo magnetico non è, come interpretare fisicamente questo passaggio matematico? La non conservatività di B dipende dal fatto che la sua circuitazione non è mai nulla, che a sua volta è legato al fatto che le linee di campo si chiudono sempre, creando percorsi in cui la circuitazione non è nulla. Abbiamo però osservato che in una spira alcune linee di campo si chiudono all'infinito, ne segue che localmente le linee di campo restano aperte: otteniamo così un campo localmente conservativo per cui ha senso definire un'energia potenziale locale (approssimazione)\\ 
+Consideriamo ora N spire circolari collegate fra loro in serie come in figura, questo apparato è detto solenoide.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/Solenoid}
+	\caption{Solenoide}
+	\label{fig:solenoide}
+\end{figure}
+\FloatBarrier
+Una grandezza spesso usata in relazione ai solenoidi è la densità lineare di spire 
+\[n = \frac{N}{l}\]
+Ci chiediamo che forma abbia il campo magnetico generato da un solenoide, possiamo seguire due strategie: considerare il solenoide come unione di N spire e sfruttare il principio di sovrapposizione o osservare che se N tendesse ad infinito le linee di campo sarebbero tutte dritte al suo interno a causa della simmetria cilindrica che eliminerebbe le componenti verticali. Seguendo il secondo approccio, possiamo usare la formula di Ampere, poiché è presente solo una corrente e non un campo elettrico variabile nel tempo, prendendo come $\Gamma$ un qualsiasi percorso interno al solenoide
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}= \mu_0 i\]
+dove in questo caso i è la corrente concatenata al solenoide
+\begin{definizione}[Corrente concatenata al percorso \(\Gamma\)]
+	Una corrente si dice concatenata ad un percorso di circuitazione \(\Gamma\), se la corrente attraversa una qualsiasi superficie aperta che abbia come bordo il percorso di circuitazione \(\Gamma\). 
+\end{definizione}
+la corrente passante per la superficie sottesa da $\Gamma$ (che possiamo scegliere interna al solenoide) è nulla (la corrente passa nel circuito che non è interno a $\Gamma$) dunque la circuitazione è sicuramente nulla. 
+Ricalcoliamo la circuitazione seguendo la definizione: consideriamo una linea chiusa rettangolare all'interno del solenoide di lati AB, DE paralleli all'asse del solenoide e di lunghezza l e CD,DA perpendicolari all'asse. Avendo osservato che con infinite spire il campo verticale si annulla restano solo due componenti da considerare, in cui il campo è parallelo allo spostamento
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}= \int_{A}^{B}Bdl+\int_{E}^{D}Bdl=lB_{AB}-lB{CD}=0\]
+\[\Rightarrow B_{AB}=B{CD}\]
+Ne deduciamo che il campo all'interno del solenoide ha lo stesso valore, direzione e verso in tutti i punti.\\
+Per conoscere il modulo del campo all'interno del solenoide consideriamo ora un percorso rettangolare, analogo a quello di prima, ma che sia a cavalo del solenoide come in figura e tale che i due lati verticali siano infinitesimi
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/circuitazione_solenoide}
+	\caption{Schema di un solenoide sezionato verticalmente e di un percorso a cavallo di esso su cui calcolare la circuitazione}
+	\label{fig:circuitazionesolenoide}
+\end{figure}
+\FloatBarrier
+Sul tratto AB sappiamo che la circuitazione vale \(lB_{AB}\), sui tratti verticali la trascuriamo poiché li abbiamo presi per ipotesi infinitesimi. Infine sul lato esterno possiamo considerare il campo magnetico trascurabile rispetto che all'interno perché, come si vede dalla figura, per ogni punto che fornisce un contributo di campo positivo, ne esiste un'altro che ne fornisce uno negativo, la somma totale non è nulla perché i punti della spira più vicini a P offrono un contributo maggiore rispetto agli atri ma il totale è comunque trascurabile. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/campo_esterno_spira}
+	\caption{Schema del campo generato da una spira su un punto ad essa esterno, si noti che il campo generato dal vettore in alto a sinistra è uscente dal foglio mentre per quello in basso a destra è entrante, i due non si annullano del tutto perché il secondo si trova a distanza minore.}
+	\label{fig:campoesternospira}
+\end{figure}
+\FloatBarrier
+\[\Rightarrow \oint_{\Gamma}\mathbf{B}\mathbf{dl}\simeq lB_{AB}= lB\]
+Questa volta la corrente concatenata a $\Gamma$ non è nulla perché questo contiene parte del solenoide dentro il quale passa corrente i in ogni spira; essendoci \(N = n l\) spire all'interno del rettangolo di lato orizzontale l, la corrente concatenata totale è \(inl\). Per la legge di Ampere dunque
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}\simeq lB= \mu_0 inl\]
+\[\Rightarrow B = \mu_0 i n\]
+Ricordiamo che questo ragionamento parte dall'approssimazione di una spira infinita, che equivale ad una spira il cui raggio sia molto minore della sua lunghezza (\(r<<l\)), in questo caso le linee di campo della spira si presentano come nell'immagine seguente
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/linee_campo_solenoide}
+	\caption{Linee di campo generate da un solenoide tale che \(r<<l\)}
+	\label{fig:lineecamposolenoide}
+\end{figure}
+\FloatBarrier
+Ricordando l'immagine delle linee di campo prodotte da un magnete vista a inizio sezione notiamo che quelle generate da un tale solenoide sono identiche, per il principio di equivalenza di Ampere infatti una calamita è equivalente ad un solenoide infinito percorso da corrente; il grande vantaggio del solenoide è che è possibile modificare agevolmente il campo magnetico prodotto dal magnete semplicemente variando la corrente. Nei moderni apparati di risonanza magnetica sono presenti grandi avvolgimenti di spire di forma particolare attraverso cui è fatta passare corrente, per ottenere grandi campi magnetici è necessaria la massima quantità di corrente a parità di differenza di potenziale (ovvero resistenze minori possibili); per questo motivo nella produzione di magneti si adottano materiali superconduttori. 
+\subsubsection{Continuità del campo magnetico}
+Abbiamo osservato come, attraversando una superficie carica, la componente tangente del campo elettrico si conservi mentre quella normale si modifichi. Nel campo magnetico avviene il contrario: la componente normale si conserva perché il flusso è nullo (similmente nel campo elettrico abbiamo dimostrato che la componente normale non si conserva perché il flusso non è nullo) mentre quella tangente non si conserva perché la circuitazione non è nulla (mentre nel campo elettrico abbiamo dimostrato che si conserva perché la circuitazione è nulla). Possiamo valutarne la discontinuità considerando un percorso di altezza infinitesima, come fatto nel caso del solenoide, ed applicare sta volta non la legge di Ampere ma quella più generale di Ampere-Maxwell
+\[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i + \mu_0\varepsilon_0 \frac{\d \Phi(\mathbf{E})}{\d t}\]
+\section{Magnetismo e relatività}
+Consideriamo due cariche uguali \(q_1\) \(q_2\) di segno positivo a distanza R in un S.R.I. O in quiete rispetto all'osservatore, che ipotizziamo sia solidale allo stesso S.R.I. delle cariche. Sappiamo che la forza agente su \(q_1\) è
+\[\mathbf{F}=q_1 \mathbf{E_2}= \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}\]
+Consideriamo ora lo stesso sistema rispetto ad un osservatore solidale ad un S.R.I. O' che si muove con velocità costante \(\mathbf{v}_2\) rispetto ad O. Per un osservatore solidale ad O' il sistema in O ha velocità \(\mathbf{v_1}=-\mathbf{v_2}= -\mathbf{v}\) secondo la relatività galileiana. Osserviamo immediatamente un fatto curioso: mentre nel primo caso era presente solo un campo elettrico, ora abbiamo anche un campo magnetico dovuto al movimento delle cariche, calcoliamo quello generato da \(q_2\). 
+\[\mathbf{B_2}= \frac{\mu_0q_2}{4\pi}\frac{\mathbf{v}\wedge\mathbf{r}}{r^3}=\frac{\mu_0q_2}{4\pi}\frac{v}{r^2}\mathbf{\hat{u}}\]
+La forza sulla carica \(q_1\) è data dalla somma della forza elettrica e magnetica
+\[\mathbf{F'}= \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}+q_1\mathbf{v}\wedge\mathbf{B_2}=\frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}+\frac{\mu_0q_1q_2}{4\pi}\frac{v}{r^2}\mathbf{\hat{u}}\]
+per semplicità consideriamo la velocità \(\mathbf{v}\) con componente solo sull'asse y di modo che \(\mathbf{\hat{u}}= - \mathbf{\hat{j}}\)
+\[\mathbf{F'}= \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}-\frac{\mu_0q_1q_2}{4\pi}\frac{v}{r^2}\mathbf{\hat{j}}\frac{\varepsilon_0}{\varepsilon_0}=\frac{q_1q_2}{4\pi\varepsilon_0 r^2}\left(1-\frac{v^2}{c^2}\right)\mathbf{\hat{j}}\]
+dove è stato usato \(\mu_0\varepsilon_0 = \frac{1}{c^2}\). 
+\[\Rightarrow \mathbf{F'}=\mathbf{F}\left(1-\frac{v^2}{c^2}\right)\]
+otteniamo il sorprendente risultato che la forza dipende dalla velocità relativa del S.R.I. da cui è osservato il sistema! Questo risultato profondamente contro intuitivo è difficile da accettare a partire dalla cornice concettuale della fisica classica. Ciò ci porta a mettere in dubbio o la correttezza delle teorie dell'elettromagnetismo sviluppate fin ora o la relatività galileiana (entrambe accettate ed in uso da centinaia di anni al tempo in cui questi calcoli vennero sviluppati). Si arriverà, con la teoria della relatività, alla conclusione che entrambi sono sbagliati e che anche il risultato da noi ottenuto lo è (poichè abbiamo usato come presupposto la relatività galileiana che è sbagliata). In realtà la formula sarebbe
+\[\mathbf{F'}=\mathbf{F}\sqrt{1-\frac{v^2}{c^2}}\]
+Ma come risposero i fisici dell'epoca a questi risultati (dal momento che ancora la teoria della relatività non era stata sviluppata)? Semplicemente aggiunsero come postulato la seguente proposizione
+\[\mathbf{E}=\mathbf{E}'+\mathbf{v}\wedge\mathbf{B}'\]
+cioè il campo elettrico del sistema in quiete è uguale a quello del sistema in moto più un contributo dato dal campo magnetico.\\
+Da questa cui deriva
+\[\mathbf{B}=\mathbf{B}'-\frac{1}{c^2}\mathbf{v}\wedge\mathbf{E}\]
+e di conseguenza
+\[\mathbf{F}=\mathbf{F}'\]
+In sintesi, i fisici di fine '800 preferirono salvare la relatività galileiana, tanto intuitiva e semplice da sembrare assurdo metterla in discussione, a patto di aggiungere un postulato che mette in luce il fatto che \(\mathbf{B}\) ed \(\mathbf{E}\) sono strettamente correlati. In realtà questo postulato è falso, per risolvere questo problema si scoprirà che spazio e tempo sono un'unica cosa, detta spaziotempo, che possiede 4 (e non 3) dimensioni. La forza quindi si conserva nei diversi sistemi di riferimento, ma solo nello spazio a 4 dimensioni; limitandosi alle tre dimensioni è ovvio il fatto che non si conservi perché stiamo considerando solo 3 delle 4 componenti del vettore forza! Inoltre risulta che la forza di cui abbiamo fin ora parlato non è elettrica o magnetica ma elettromagnetica, in quanto i due fenomeni sono due facce della stessa medaglia. Le leggi che regolano campo elettrico, campo magnetico e Forza elettromagnetica, alla luce delle correzioni relativistiche, sono
+\begin{align*}
+	&\begin{cases}
+		E'_x=E_x \\
+		E'_y=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}[E_y-vB_z]\\
+		E'_z=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}[E_z+vB_y]
+	\end{cases}\\
+	&\begin{cases}
+		B'_x=B_x \\
+		B'_y=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}[B_y+\frac{v}{c^2}E_z] \\
+		B'_z=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}[B_z-\frac{v}{c^2}E_y]
+	\end{cases}\\
+	&\begin{cases}
+		F'_x=F_x \\
+		F'_y=F_y\sqrt{1-\frac{v^2}{c^2}} \\
+		F'_z=F_z\sqrt{1-\frac{v^2}{c^2}}
+	\end{cases}	
+\end{align*}
 \appendix
 \section{Operatori differenziali}
 \subsection{Teorema del gradiente}
