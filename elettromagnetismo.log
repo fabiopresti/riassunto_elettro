@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  26 NOV 2022 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  3 DEC 2022 18:18
 entering extended mode
 **./elettromagnetismo.tex
 (elettromagnetismo.tex
@@ -707,52 +707,105 @@ File: images/linee_campo_solenoide.png Graphic file (type png)
 Package pdftex.def Info: images/linee_campo_solenoide.png  used on input line 1
 451.
 (pdftex.def)             Requested size: 207.0021pt x 114.27417pt.
- [75 <./images/linee_campo_solenoide.png>] [76] [77] [78]
-<images/flusso2bis.jpg, id=331, 581.17125pt x 371.13657pt>
-File: images/flusso2bis.jpg Graphic file (type jpg)
-<use images/flusso2bis.jpg>
-Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1539.
-(pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
- [79 <./images/flusso2bis.jpg>]
-<images/div.png, id=336, 319.1925pt x 158.5925pt>
-File: images/div.png Graphic file (type png)
-<use images/div.png>
-Package pdftex.def Info: images/div.png  used on input line 1562.
-(pdftex.def)             Requested size: 207.0021pt x 102.84915pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1570--1572
-
- []
-
-<images/div_quadrato.png, id=337, 484.81125pt x 419.76825pt>
-File: images/div_quadrato.png Graphic file (type png)
-<use images/div_quadrato.png>
-Package pdftex.def Info: images/div_quadrato.png  used on input line 1576.
-(pdftex.def)             Requested size: 207.0021pt x 179.235pt.
-[80 <./images/div.png>] [81 <./images/div_quadrato.png>]
-Overfull \hbox (1.80522pt too wide) in paragraph at lines 1600--1601
-[]\T1/cmr/m/it/10 Definiamo cir-cui-ta-zio-ne in-fi-ni-te-si-ma la quan-
- []
-
-[82]
-Underfull \hbox (badness 10000) in paragraph at lines 1617--1620
-
- []
-
-
-Overfull \hbox (48.15594pt too wide) detected at line 1625
+ [75 <./images/linee_campo_solenoide.png>]
+Overfull \hbox (38.25069pt too wide) in paragraph at lines 1472--1473
 []
  []
 
-[83] [84] (elettromagnetismo.aux) ) 
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1487
+
+ []
+
+[77]
+Overfull \hbox (11.28499pt too wide) in paragraph at lines 1500--1501
+[]\T1/cmr/m/it/10 Vi so-no va-ri me-
+ []
+
+
+Overfull \hbox (16.50873pt too wide) in paragraph at lines 1504--1505
+[]\T1/cmr/m/it/10 Consideriamo
+ []
+
+
+Overfull \hbox (20.55635pt too wide) in paragraph at lines 1512--1513
+[]\T1/cmr/m/it/10 Consideriamo
+ []
+
+[78]
+<images/circuito_RL.jpeg, id=329, 165.61874pt x 127.22531pt>
+File: images/circuito_RL.jpeg Graphic file (type jpg)
+<use images/circuito_RL.jpeg>
+Package pdftex.def Info: images/circuito_RL.jpeg  used on input line 1531.
+(pdftex.def)             Requested size: 207.0021pt x 159.02347pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[79]
+<images/corrente_RL.png, id=334, 245.91875pt x 206.7725pt>
+File: images/corrente_RL.png Graphic file (type png)
+<use images/corrente_RL.png>
+Package pdftex.def Info: images/corrente_RL.png  used on input line 1550.
+(pdftex.def)             Requested size: 137.9979pt x 116.03474pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[80 <./images/circuito_RL.jpeg>] [81 <./images/corrente_RL.png>] [82] [83]
+[84] [85] [86] [87] [88] [89]
+<images/flusso2bis.jpg, id=369, 581.17125pt x 371.13657pt>
+File: images/flusso2bis.jpg Graphic file (type jpg)
+<use images/flusso2bis.jpg>
+Package pdftex.def Info: images/flusso2bis.jpg  used on input line 1759.
+(pdftex.def)             Requested size: 207.0021pt x 132.19328pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[90]
+<images/div.png, id=373, 319.1925pt x 158.5925pt>
+File: images/div.png Graphic file (type png)
+<use images/div.png>
+Package pdftex.def Info: images/div.png  used on input line 1782.
+(pdftex.def)             Requested size: 207.0021pt x 102.84915pt.
+ [91 <./images/flusso2bis.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1790--1792
+
+ []
+
+<images/div_quadrato.png, id=378, 484.81125pt x 419.76825pt>
+File: images/div_quadrato.png Graphic file (type png)
+<use images/div_quadrato.png>
+Package pdftex.def Info: images/div_quadrato.png  used on input line 1796.
+(pdftex.def)             Requested size: 207.0021pt x 179.235pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[92 <./images/div.png>] [93 <./images/div_quadrato.png>]
+Overfull \hbox (1.80522pt too wide) in paragraph at lines 1820--1821
+[]\T1/cmr/m/it/10 Definiamo cir-cui-ta-zio-ne in-fi-ni-te-si-ma la quan-
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1840
+
+ []
+
+
+Overfull \hbox (48.15594pt too wide) detected at line 1845
+[]
+ []
+
+[95] [96] (elettromagnetismo.aux) ) 
 Here is how much of TeX's memory you used:
- 4199 strings out of 479618
- 60757 string characters out of 2865026
- 355552 words of memory out of 3000000
- 21274 multiletter control sequences out of 15000+200000
+ 4222 strings out of 479618
+ 61276 string characters out of 2865026
+ 361590 words of memory out of 3000000
+ 21295 multiletter control sequences out of 15000+200000
  420275 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,74p,1129b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,16n,74p,1762b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Fabio\AppData\Local\MiKTeX\fonts/
 pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\Fabio\AppData\Local\MiKTeX\
 fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Fabio\AppData\Local\M
@@ -780,9 +833,9 @@ ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Fabio/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Fabio/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Fabio/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elettromagnetismo.pdf (84 pages, 2137382 bytes).
+Output written on elettromagnetismo.pdf (96 pages, 2186126 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
+ 837 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

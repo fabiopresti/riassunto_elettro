@@ -639,7 +639,7 @@ quest'ultima è detta "densità di energia", in questo caso è stata ricavata pe
 Usando solamente il principio di sovrapposizione possiamo ottenere il campo generato da un dipolo elettrico su un punto posto sullo stesso asse del dipolo.
 \begin{esercizio}[Campo elettrostatico generato da due cariche puntiformi]
 	Si considerino due cariche poste per semplicità entrambe sull'asse z e a distanza uguale dall'origine (una dal lato positivo ed una dal lato negativo) e di distanza d fra di esse, vogliamo ottenere un'espressione del campo elettrico che genera in un punto P che giace sull'asse y a distanza r dall'asse z. Si noti che questo è un caso particolare (date le simmetrie geometriche con cui abbiamo costruito il sistema) in cui è presente solo una componente parallela al dipolo. Consideriamo inizialmente due cariche di segno opposto (quella positiva sopra e quella negativa sotto), si traccino i vettori \(\mathbf{r}_+ \ \mathbf{r}_- \) congiungenti le cariche al punto P, dato il segno negativo della carica in basso, il vettore campo avrà verso entrante (verso la carica) mentre il campo generato dalla carica in alto è uscente dalla carica e quindi diretto verso il punto P. Sommando i vettori di campo otteniamo che il campo risultante ha direzione parallela all'asse z e verso negativo (-$\hat{\mathbf{k}}$). Chiamiamo y il modulo della proiezione sull'asse z del vettore $\mathbf{r}_+$.
-	\[\hat{\mathbf{r}}_+ =\frac{ 0\hat{\mathbf{i}}+y \hat{\mathbf{j}}-\frac{d}{2}\hat{\mathbf{k}}}{r}\]
+	\[\hat{\mathbf{r}}_+ =\frac{ 0\hat{\mathbf{i}}+y \hat{\mathbf{j}}\mathbf{-\frac{d}}{2}\hat{\mathbf{k}}}{r}\]
 	\[\hat{\mathbf{r}}_- = \frac{0\hat{\mathbf{i}}+y \hat{\mathbf{j}}+\frac{d}{2}\hat{\mathbf{k}}}{r}\]
 	\[\mathbf{E}_{//} = \mathbf{E}_{+} + \mathbf{E}_{-} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\left(\hat{\mathbf{r}}_+-\hat{\mathbf{r}}_-\right)=\]
 	\[\frac{1}{4\pi\varepsilon_0}\frac{q}{r^3}\left[(y\hat{\mathbf{j}}-\frac{d}{2}\hat{\mathbf{k}})-(y\hat{\mathbf{j}}+\frac{d}{2}\hat{\mathbf{k}})\right]= -\frac{1}{4\pi\varepsilon_0}\frac{q d}{r^3}\hat{\mathbf{k}}\]
@@ -1360,8 +1360,8 @@ Nel secondo caso invece non passa corrente per la superficie poiché fra le arma
 La legge di Ampere, che dovrebbe essere uguale per ogni superficie avente come bordo $\Gamma$, fornisce risultati diversi, cadendo nell'assurdo: la legge non è valida in questo caso. Sappiamo che il caso sbagliato è il secondo perché abbiamo già osservato come il campo magnetico abbia sempre circuitazione diversa da zero.\\
 Ricalcoliamo i due casi con la legge di Ampere-Maxwell
 \[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\mathbf{J'}=\mu_0\left[\mathbf{J}+\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}\right]\]
-Nel primo caso il campo elettrico non varia nel tempo quindi resta solo il primo addendo della somma, tornando alla formula di Ampere (che quindi è un caso particolare) mentre nel secondo caso non passa corrente quindi il primo addendo è nullo, ma nel caricarsi il condensatore aumenta il campo elettrico compreso fra le armature nel tempo quindi 
-\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}= \mu_0\varepsilon_0\frac{\partial}{\partial t}\left(\right)\]
+Nel primo caso il campo elettrico non varia nel tempo quindi resta solo il primo addendo della somma. Nel secondo caso non passa corrente quindi il primo addendo è nullo, ma nel caricarsi il condensatore aumenta il campo elettrico compreso fra le armature nel tempo quindi 
+\[\mathbf{\nabla}\wedge\mathbf{B}=\mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}\]
 Si dimostra che quest'ultimo termine è uguale a \(\mu_0\mathbf{J}\).
 Riassumendo, la legge di Maxwell-Ampere rispettivamente in forma differenziale ed integrale è
 \begin{align}\label{eq:legge_Maxwell_Ampere}
@@ -1433,11 +1433,11 @@ Per conoscere il modulo del campo all'interno del solenoide consideriamo ora un 
 	\label{fig:circuitazionesolenoide}
 \end{figure}
 \FloatBarrier
-Sul tratto AB sappiamo che la circuitazione vale \(lB_{AB}\), sui tratti verticali la trascuriamo poiché li abbiamo presi per ipotesi infinitesimi. Infine sul lato esterno possiamo considerare il campo magnetico trascurabile rispetto che all'interno perché, come si vede dalla figura, per ogni punto che fornisce un contributo di campo positivo, ne esiste un'altro che ne fornisce uno negativo, la somma totale non è nulla perché i punti della spira più vicini a P offrono un contributo maggiore rispetto agli atri ma il totale è comunque trascurabile. 
+Sul tratto AB sappiamo che la circuitazione vale \(lB_{AB}\), sui tratti verticali la trascuriamo poiché li abbiamo presi per ipotesi infinitesimi. Infine sul lato esterno possiamo considerare il campo magnetico trascurabile rispetto che all'interno perché, come si vede dalla figura, per ogni punto che fornisce un contributo di campo positivo, ne esiste un'altro che ne fornisce uno negativo (usando la regola della mano destra) che annullerà il primo, la somma totale non è nulla perché, solo per i due punti che si trovano sullo stesso asse del punto esterno, i contributi del campo non si annullano perché uno dei due è più vicino dell'altro quindi la differenza (e quindi i moduli non sono uguali), per quanto piccola, non è nulla. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/campo_esterno_spira}
-	\caption{Schema del campo generato da una spira su un punto ad essa esterno, si noti che il campo generato dal vettore in alto a sinistra è uscente dal foglio mentre per quello in basso a destra è entrante, i due non si annullano del tutto perché il secondo si trova a distanza minore.}
+	\caption{Schema del campo generato da una spira su un punto ad essa esterno, si noti che il campo generato dal vettore in alto a sinistra è uscente dal foglio mentre per quello in basso a destra è entrante.}
 	\label{fig:campoesternospira}
 \end{figure}
 \FloatBarrier
@@ -1457,7 +1457,227 @@ Ricordando l'immagine delle linee di campo prodotte da un magnete vista a inizio
 \subsubsection{Continuità del campo magnetico}
 Abbiamo osservato come, attraversando una superficie carica, la componente tangente del campo elettrico si conservi mentre quella normale si modifichi. Nel campo magnetico avviene il contrario: la componente normale si conserva perché il flusso è nullo (similmente nel campo elettrico abbiamo dimostrato che la componente normale non si conserva perché il flusso non è nullo) mentre quella tangente non si conserva perché la circuitazione non è nulla (mentre nel campo elettrico abbiamo dimostrato che si conserva perché la circuitazione è nulla). Possiamo valutarne la discontinuità considerando un percorso di altezza infinitesima, come fatto nel caso del solenoide, ed applicare sta volta non la legge di Ampere ma quella più generale di Ampere-Maxwell
 \[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i + \mu_0\varepsilon_0 \frac{\d \Phi(\mathbf{E})}{\d t}\]
-\section{Magnetismo e relatività}
+\subsection{Mutua induzione e autoinduzione}
+Abbiamo già osservato che il flusso del campo magnetico per una superficie chiusa è sempre nullo; vogliamo conoscere il flusso per una superficie aperta. Per farlo consideriamo due superfici aperte, $\Sigma_1$ e $\Sigma_2$, con lo stesso bordo $\gamma$, singolarmente i flussi sono diversi da zero ma se si uniscono le due superfici facendo combaciare i bordi in totale il flusso è nullo perché si forma una superficie chiusa. Cominciamo chiedendoci se il flusso di $\Sigma_1$ sia uguale a quello di $\Sigma_2$.
+\[\phi_{12} = \iint_{\Sigma(\Gamma)}d\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_2= i\left(\int_{\Sigma(\Gamma)}\oint_{\Gamma_1}\frac{\mu_0 }{4\pi}\frac{\mathbf{ds}_1\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma_2\right)\equiv M_{12}i\]
+Dove, notando che l'integrale doppio all'interno delle parentesi dipende dolo dal mezzo e dalla geometria della superficie, abbiamo definito il \textbf{coefficiente di mutua induzione} M.
+Analogamente abbiamo
+\[\phi_{12}= M_{21}i\]
+Visto che i due flussi sono uguali, anche i due coefficienti di mutua induzione lo sono, in generale \(M_{12}=M_{21}\) per qualsiasi coppia di superfici.\\
+Ne deduciamo che l'espressione generale del flusso del campo magnetico è
+\[\phi(B) = M i\]
+Il coefficiente di mutua induzione ha una sua unità di misura: l'Henry (H)
+\[H = \frac{Wb}{A}\]
+\begin{esercizio}[Coefficiente di mutua induzione per due solenoidi concentrici]
+Verifichiamo quanto ottenuto nel caso particolare di due solenoidi concentrici
+\[\phi_{12}=\iint_{\Sigma_2}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_2 = B_1\Sigma_2 n_2=B_1 S n_2 = \mu_0 i_1 n_1 n_2 S = M_{12}i_1\]
+\[\phi_{21}=\iint_{\Sigma_1}\mathbf{B}_2\mathbf{\hat{u}_n}d\Sigma_1 = B_2\Sigma_1 n_1=B_2 S n_1 = \mu_0 i_2 n_1 n_2 S = M_{21}i_2\]
+\[\Rightarrow M_{12}=\mu_0 n_1 n_2 S=M_{21}\]
+\end{esercizio}
+Un fatto di fondamentale importanza è che si crea un flusso non solo fra le due superfici ma anche di una superficie con sè stessa
+\[\iint_{\Sigma}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_1 = \int_{\Sigma}\oint_{\Gamma}\frac{\mu_0 i }{4\pi}\frac{\mathbf{ds}\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma\equiv L i\]
+dove, osservando che nell'integrale tutto dipende dalla geometria e dal mezzo tranne la corrente, definiamo il coefficiente di autoinduzione o \textbf{induttanza} L.
+\section{Campi magnetici variabili}
+In elettrostatica valevano le relazioni
+\begin{align*}
+&\n\wedge\mathbf{E}=0&&\n\wedge\mathbf{B}=\mu_0\mathbf{J}\\
+&\n\mathbf{E}=\frac{\rho}{\varepsilon_0}&&\n\mathbf{B}=0
+\end{align*}
+ma abbiamo già visto che in elettrodinamica queste non sono più valide in quanto un campo elettrico variabile genera campo magnetico, secondo le legge di Ampere-Maxwell, che corregge la seconda di queste relazioni. A partire dalle seguenti evidenze sperimentali, raccolte durante la prima metà dell''800, si giunse ad una correzione della prima relazione.\\
+\begin{itemize}
+	\item Se si avvicina un magnete ad un circuito in cui non passa corrente e a cui è collegato un galvanometro, questo segna un flusso di elettroni nel circuito (si genera corrente elettrica). Disponendo il magnete con il polo nord verso il circuito, la corrente è positiva se si allontana il magnete e negativa se lo si avvicina, se si invertono i poli si inverte anche il segno della corrente. Inoltre, più velocemente si muove il magnete maggiore è l'intensità di corrente rilevata.
+	\item Lo stesso effetto si riscontra se al posto del magnete si usa un circuito attraversato da corrente elettrica. In questo caso a seconda del verso della corrente nel secondo filo si ottiene una corrente sul primo di segno positivo o negativo. (in conformità con il principio di equivalenza di Ampere magnete e spira attraversata da corrente hanno lo stesso effetto).
+\end{itemize}
+Ciò che risulta evidente è che in qualche modo il campo magnetico è capace di indurre corrente elettrica su un filo. Queste evidenze portarono a formulare la \textbf{legge di Faraday} nel 1831, questa viene anche detta legge di Faraday-Henry o Faraday-Neumann o Faraday-Neumann-Lenz poiché a legge di Lenz ne è un corollario.
+\begin{align}\label{eq:Faraday_integrale}
+	\mathcal{E}_I = -\frac{d\phi(B)}{dt}
+\end{align}
+\[i_I = -\frac{1}{R}\frac{d\phi(B)}{dt}\]
+Si osservi che se esiste una corrente elettrica esiste un campo elettrico, quello indotto dal campo magnetico però non può essere conservativo perché la condizione di conservatività è che la circuitazione del campo sia nulla ma
+\[\mathcal{E}_I = \oint_{\Gamma}\mathbf{E}\mathbf{ds}=-\frac{d\phi(B)}{dt}\neq 0\]
+Cosa indica il segno negativo presente nella legge? La corrente indotta, generandosi, varia da zero ad un valore, a seconda di come varia il flusso del campo magnetico; come tutte le correnti variabili genera campo magnetico, questo ha sempre verso opposto al campo che lo genera. Da ciò segue, svolgendo semplici considerazioni applicando la regola della mano destra, che il segno della corrente è sempre opposto a quello della variazione del campo magnetico.  Se così non fosse sarebbe violata la conservazione dell'energia infatti avremmo che un campo magnetico variando genera corrente variabile che genera un campo magnetico che si somma a quello iniziale e, facendolo aumentare, produce altra corrente che porterebbe ad un loop infinito che produrrebbe energia infinita, il che è assurdo. Avviene invece che si genera un campo magnetico opposto a quello iniziale che tende ad annullarlo. Possiamo pensare lo stesso problema avvalendoci del principio di equivalenza di Ampere, il filo su cui passa corrente indotta eè equivalente ad un'altro magnete che, a causa del segno negativo nella formula, ha i poli invertiti rispetto al magnete iniziale, in questo modo due poli uguali, avvicinandosi, generano una forza che li respinge e quindi si oppone all'avvicinarsi del magnete iniziale che avrebbe aumentato il campo magnetico  (e quindi in definitiva si crea un campo magnetico indotto opposto all'aumento del campo iniziale).
+\begin{esercizio}[Variare il flusso per rotazione del circuito]
+Vi sono vari metodi per far variare il flusso del campo magnetico (la variazione di flusso nel tempo è facilmente misurabile mediante la f.e.m.), uno di questi è lasciare il campo magnetico costante (non muovere il magnete) e variare il vettore normale alla superficie individuata dal circuito (ruotando il circuito su un asse) e quindi l'angolo $\theta$ compreso fra questo versore ed il campo magnetico. La rotazione ha velocità angolare $\omega(t)$
+\[\mathcal{E}_I = -\frac{d\phi (B)}{dt} = -\frac{d}{dt}\oint_{\Gamma}\mathbf{B}\mathbf{ds} = -\frac{d}{dt}B\Sigma \cos\theta=B\Sigma \sin\theta\frac{d\theta}{dt}=B\Sigma\sin\theta\omega(t)\]
+\end{esercizio}
+\begin{esercizio}[Variare il flusso per variazione della corrente]
+Consideriamo un filo infinito giacente sull'asse z con un flusso di corrente verso l'alto variabile nel tempo ed un circuito quadrato di lato l. A priori non sappiamo che verso ha la corrente indotta quindi non sappiamo come orientare la superficie  (che convenzionalmente si orienta con la regola della mano destra a seconda del verso della corrente), quindi scegliamo arbitrariamente un'orientamento, se questo è lo stesso che induce il verso della corrente indotta allora l'espressione che otterremo sarà positiva, se no negativa (quindi l'orientamento inizialmente scelto era sbagliato e bisogna invertirlo). In questo caso scegliamo arbitrariamente verso antiorario (versore superficie uscente dal foglio), in questo modo l'angolo fra questo è il campo magnetico è nullo
+\[\mathbf{B}_{filo} = \frac{\mu_0 i}{2\pi y}\mathbf{\hat{i}}\]
+\[\phi(B)=\int_0^l\int_{y_0}^{y_0+l} \frac{\mu_0 i}{2\pi y}dydz= \mu_0 i l \int_{y_0}^{y_0+l}\frac{dy}{y}=\mu_0 i l \ln\left(\frac{y_0 + l}{y_0}\right)\]
+\[\mathcal{E}_I=-\frac{d}{dt}\left(\mu_0 i l \ln\left(\frac{y_0 + l}{y_0}\right)\right) = \mu_0 \frac{di}{dt} l \ln\left(\frac{y_0 + l}{y_0}\right)\]
+\[i_I = -\frac{\mu_0 l}{2\pi R}\ln\left(\frac{l}{y_0}\frac{di}{dt}\right)\]
+Il segno della corrente risulta negativo: la scelta dell'orientamento iniziale era sbagliata. 
+\end{esercizio}
+\begin{esercizio}[Variare il flusso per deformazione del circuito]
+Consideriamo un campo magnetico costante ed un circuito quadrato di lato l e resistenza R e superficie $\Sigma$ immerso in esso, inizialmente la corrente sul filo è nulla. In seguito il lato destro del circuito viene spostato verso destra con velocità v(t) aumentando la superficie del circuito, essendoci un campo magnetico costante il flusso aumenta nel tempo con l'aumentare della superficie. Sia x(t) la lunghezza della coppia di lati che varia nel tempo. Scegliamo arbitrariamente orientamento di \(\Sigma\) antiorario, l'angolo fra il versore superficie ed il campo è nullo, \(\cos(0)= 1\)
+\[\Sigma(t) = l x(t)\] 
+\[\phi(B) = \iint_{\Sigma(\Gamma)}\mathbf{B}\mathbf{\hat{u}_n}d\Sigma = B\int dx\int dy = Blx(t)\]
+\[\mathcal{E}_I = -Bl\frac{dx(t)}{dt} = -Blv(t)\]
+\[i_I(t) = -\frac{Bl}{R}v(t)\]
+Il segno della corrente è negativo, avevamo scelto l'orientamento sbagliato, la corrente scorre in senso orario, il campo elettrico indotto è quindi verso il basso.\\
+Si osservi che i portatori di carica sul lato del circuito in movimento hanno una velocità v(t) quindi sono soggetti ad una forza di Lorentz verso l'alto, si genera dunque un campo elettrico verso l'alto, opposto a quello iniziale, si verifica un piccolo effetto Hall
+\[\mathbf{F}_l = q \mathbf{v}\wedge\mathbf{B}\]
+\[\mathbf{E}_I=\frac{\mathbf{F}}{q} = \mathbf{v}\wedge\mathbf{B}\]
+\end{esercizio}
+L'espressione della legge di Faraday vista precedentemente, riferendosi al flusso su una superficie, ha forma integrale ed esprime una proprietà media di un circuito. Possiamo ricavare la forma differenziale usando il teorema di Stokes
+\[\mathcal{E} = \oint_{\Gamma}\mathbf{E}_I \mathbf{ds} = -\frac{d}{dt}\oint_{\Sigma}\mathbf{B\mathbf{\hat{u}_n}}d\Sigma\]
+\begin{align}\label{eq:Faraday_differenziale}
+	\n\wedge\mathbf{E}_I = -\frac{\d \mathbf{B}}{\d t}
+\end{align}
+\subsection{Circuito RL}
+Solitamente l'induttanza L di un circuito è talmente bassa da essere trascurabile, tuttavia in presenza di un solenoide l'induttanza aumenta e non è più trascurabile. Il circuito RL è un modello di circuito in cui si considerano resistenza ed induttanza concentrate in due punti, il componente elettrico che genera campo magnetico a seguito di un passaggio di corrente è detto \textbf{induttore} e si indica con un aspirale (che ricorda la forma di un solenoide, un ottimo induttore)
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/circuito_RL}
+	\caption{Schema di un circuito RL.}
+	\label{fig:circuitorl}
+\end{figure}
+\FloatBarrier
+Il flusso autoindotto genera una f.e.m. autoindotta che si somma a quella preesistente, possiamo quindi applicare la legge di Ohm 
+\[\phi(B) = L i \quad \mathcal{E}_I = -L\frac{d i}{dt}\]
+\[\mathcal{E} + \mathcal{E}_I = Ri \]
+\[\Rightarrow \mathcal{E} = Ri+L\frac{di}{dt}\]
+Quest'ultima è un'equazione differenziale di variabile i a variabili separabili; risolvendola otteniamo la corrente in funzione del tempo. Separando le variabili otteniamo
+\[\frac{di}{\mathcal{E}-Ri} = \frac{dt}{L}\]
+\[\int_{0}^{i}\frac{di}{\mathcal{E}-Ri} = \frac{1}{L}\int_{0}^{t}dt\]
+\[i(t) = \frac{\mathcal{E}}{R}(1-e^{-\frac{t}{\tau}})\]
+dove $\tau$ è detto tempo caratteristico del circuito (analogamente a quanto visto per il circuito RC) ed è definito come \(\tau \equiv \frac{L}{R}\).
+\[\mathcal{E}_I = -L\frac{di(t)}{dt}=-\mathcal{E}e^{-\frac{t}{\tau}}\]
+\[i_I(t) = \frac{\mathcal{E}}{R} = -\frac{\mathcal{E}}{R}e^{-\frac{t}{\tau}}\]
+Svolgiamo alcune osservazioni: il grafico della corrente nel tempo è
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{images/corrente_RL}
+	\caption{Grafico della corrente (curva continua) e della corrente indotta (tratteggiata) nel tempo a partire dal momento in cui viene chiuso il circuito. Sulle ascisse sono riportati i multipli del tempo caratteristico, dopo 4\(\tau\) la corrente ha raggiunto il suo valore di regime.}
+	\label{fig:correnterl}
+\end{figure}
+\FloatBarrier
+Ci spieghiamo fisicamente questo grafico perché nell'istante in cui è chiuso il circuito la corrente aumenta, questa variazione genera una f.e.m. e duna corrente indotta che rallenta l'aumento di corrente, tendendo a farla stabilizzare a \(\frac{\mathcal{E}}{R}\). La tendenza a stabilizzarsi equivale ad una riduzione graduale della variazione e quindi ad una riduzione della forza elettromotrice indotta e quindi della corrente indotta. Si noti dunque che per \(t\to\infty\) l'effetto dell'induttore si annulla e il valore della corrente si stabilizza a quello del caso elettrostatico; è possibile vedere la corrente indotta come la differenza fra il valore a cui si stabilizza la corrente \((i_{\infty})\) e il suo valore al tempo t
+\[i_I = i_\infty - i(t)\]
+Possiamo infine svolgere uno studio del circuito RL da un punto di vista energetico
+\[f.e.m.:\ \mathcal{E} = Ri+L\frac{di}{dt}\]
+\[potenza:\ \mathcal{E}i = Ri^2+L\frac{di}{dt}i\]
+\[energia:\  \mathcal{E}idt = Ri^2dt+Lidi\]
+Notiamo che l'energia del circuito è formata da una componente di energia dissipata per effetto Joule ed una che è l'energia accumulata all'interno del solenoide in cui scorre corrente i aumentando quest'ultima di un valore infinitesimo di. Concentrandosi sul secondo termine, integrando, otteniamo l'energia immagazzinata in un solenoide in cui passa corrente i. 
+\[U_{sol} = \int_{0}^{i}Lidi=\frac{1}{2}Li^2\]
+In analogia a quanto fatto per i condensatori, dove avevamo ricavato prima l'energia di un condensatore a facce piane parallele (caso particolare) in funzione del campo elettrico per poi ricavare un'espressione della densità di energia del campo elettrico di validità generale, ci chiediamo ora se sia possibile ricavare una densità di energia del campo magnetico di validità generale a partire dall'energia del solenoide (caso particolare). 
+\[\phi(B)_{sol} = \iint_{\Sigma}\mathbf{B}\mathbf{\hat{u}_n}d\Sigma = \mu_0 \frac{N}{l}\Sigma i = Li\]
+\[\Rightarrow L = \frac{\mu_0 N\Sigma}{l}\]
+\[U_sol = \frac{1}{2}Li^2 = \frac{1}{2}\frac{\mu_0 N^2\Sigma}{l}i^2=\frac{1}{2}\frac{\mu_0^2 N^2(\Sigma l)}{\mu_0 l^2}i^2=\frac{1}{2}\frac{B^2}{\mu_0}(\Sigma l)\]
+Dove \(\Sigma l= V \) è il prodotto tra superficie e lunghezza del solenoide, quindi il suo volume. Per svincolarsi dal caso particolare del solenoide dividiamo per il volume, ottenendo un'espressione di densità di energia magnetica che non presente termini dipendenti da caratteristiche del solenoide (si dimostra che ha validità generale)
+\[\mu_L = \frac{U}{V} =\frac{1}{2}\frac{B^2}{\mu_0} \]
+\section{Natura ondulatoria del campo elettromagnetico}
+Riassumendo quanto fatto fin ora, abbiamo ottenuto delle nuove relazioni di validità generale per campi elettrici e magnetici variabili nel tempo, di cui l'elettrostatica è un caso particolare. Riscriviamo le quattro equazioni presentate ad inizio capitolo correggendole
+\begin{align*}
+	&\n\wedge\mathbf{E}=-\frac{\d \mathbf{B}}{\d t}&&\n\wedge\mathbf{B}=\mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\d \mathbf{E}}{\d t}\\
+	&\n\mathbf{E}=\frac{\rho}{\varepsilon_0}&&\n\mathbf{B}=0
+\end{align*}
+Un grande contributo che fornì il genio di Maxwell alla fisica fu quello di dimostrare la natura ondulatoria del campo elettromagnetico, e quindi della luce, risolvendo apparentemente l'annosa disputa sulla natura della luce (più avanti si scoprì la doppia natura della luce ma questa è un'altra storia). Per semplicità trattiamo il caso particolare di un punto in cui la densità di carica è nulla ($\rho = 0$), non vi è corrente (\(\mathbf{J}=0\)) e le uniche fonti di campo elettromagnetico sono poste a distanza infinita (in modo da trattare il caso semplice di onde piane poiché, ad esempio, un'onda sferica generata a distanza infinita ha raggio di curvatura tanto grande da poter essere approssimata ad onda piana). Le quattro equazioni diventano quindi
+\begin{align*}
+	&\n\wedge\mathbf{E}=-\frac{\d \mathbf{B}}{\d t}&&\n\wedge\mathbf{B}=\mu_0\varepsilon_0\frac{\d \mathbf{E}}{\d t}\\
+	&\n\mathbf{E}=0&&\n\mathbf{B}=0
+\end{align*}
+ L'equazione dell'onda piana, che poniamo si propaghi solo sull'asse x, è
+\[\frac{\d^2 \mathbf{\Psi}}{\d x^2} = \frac{1}{v^2}\frac{\d^2 \mathbf{\Psi}}{\d t^2}\]
+dove v è la velocità dell'onda.\\
+Svolgiamo ora una serie di considerazioni a partire dalle quattro equazioni del campo elettrico e magnetico di cui sopra 
+\begin{itemize}
+	\item \(\n\mathbf{E}=\frac{\d E_x}{\d x}+\frac{\d E_y}{\d y}+\frac{\d E_z}{\d z} =\frac{\d E_x}{\d x}=0\)
+	da cui otteniamo che il campo elettrico sull'asse x è costante nello spazio e, non essendoci sorgenti per ipotesi, esso dev'essere nullo. 
+	\item \(\n\mathbf{B}=\frac{\d B_x}{\d x}+\frac{\d B_y}{\d y}+\frac{\d B_z}{\d z} =\frac{\d B_x}{\d x}=0\)
+	da cui otteniamo che il campo magnetico sull'asse x è costante nello spazio e, non essendoci sorgenti per ipotesi, esso dev'essere nullo. 
+	\item 
+	\begin{align*}
+		&\n\wedge\mathbf{E}=det
+		\begin{pmatrix}
+			\hat{\mathbf{i}}&\hat{\mathbf{j}}&\hat{\mathbf{k}}\\
+			\frac{\partial}{\partial x}&\frac{\partial}{\partial y}&\frac{\partial}{\partial z}\\
+			E_x&E_y&E_z
+		\end{pmatrix}=\\\\
+		&\left(\frac{\partial E_z}{\partial y}-\frac{\partial E_y}{\partial z}\right)\hat{\mathbf{i}}
+		-\left(\frac{\partial E_z}{\partial x}-\frac{\partial E_x}{\partial z}\right)\hat{\mathbf{j}}
+		+\left(\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}\right)\hat{\mathbf{k}}=\\\\
+		&0\mathbf{\hat{i}}-\frac{\d Ez}{\d x}\mathbf{\hat{j}}+ \frac{\d E_y}{\d x}\mathbf{\hat{k}}=-\frac{\partial B_x}{\partial t}\mathbf{\hat{i}} - \frac{\partial B_y}{\partial t}\mathbf{\hat{j}} -\frac{\partial B_z}{\partial t}\mathbf{\hat{k}}\\\\
+		&\Rightarrow
+		\begin{cases}
+			\frac{\partial B_x}{\partial t} = 0\\\\
+			\frac{\d Ez}{\d x} = \frac{\partial B_y}{\partial t}\\\\
+			\frac{\d E_y}{\d x} = -\frac{\partial B_z}{\partial t}
+		\end{cases}
+		\end{align*}
+	Dalla prima di queste tre equazioni deduciamo che il campo elettrico sull'asse x è costante nel tempo, non essendoci sorgenti di campo magnetico per ipotesi deduciamo che deve essere costante e nullo. 
+	\item Analogamente a quanto fatto per il rotore del campo elettrico per il campo magnetico otteniamo 
+	\begin{align*}
+		&0\mathbf{\hat{i}}-\frac{\d Bz}{\d x}\mathbf{\hat{j}}+ \frac{\d B_y}{\d x}\mathbf{\hat{k}}=\mu_0\varepsilon_0\frac{\partial E_x}{\partial t}\mathbf{\hat{i}} + \mu_0\varepsilon_0\frac{\partial E_y}{\partial t}\mathbf{\hat{j}} +\mu_0\varepsilon_0\frac{\partial E_z}{\partial t}\mathbf{\hat{k}}\\\\
+		&\Rightarrow
+		\begin{cases}
+			\frac{\partial E_x}{\partial t} = 0\\\\
+			\frac{\d Bz}{\d x} = -\mu_0\varepsilon_0\frac{\partial E_y}{\partial t}\\\\
+			\frac{\d B_y}{\d x} = \mu_0\varepsilon_0\frac{\partial E_z}{\partial t}
+		\end{cases}		
+	\end{align*}
+	Come prima, dalla prima equazione deduciamo che il campo magnetico è nullo sull'asse x e costante nel tempo.
+\end{itemize}
+Infine, prendiamo dal punto 3 la seconda equazione del sistema e, derivando parzialmente rispetto ad x, otteniamo
+\[\frac{\d^2 E_z}{\d x^2} = \frac{\d^2 B_y}{\d x\d t} \]
+dalla terza equazione del sistema del punto quattro, derivando rispetto al tempo otteniamo
+\[\frac{\d^2 B_y}{\d x\d t} = \mu_0\varepsilon_0 \frac{\d^2 E_z}{\d t^2}\] 
+Uguagliando le precedenti otteniamo
+\[\frac{\d^2 E_z}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 E_z}{\d t^2}\]
+Che ha la forma dell'equazione di un'onda sull'asse z. Possiamo ripetere lo stesso ragionamento sull'asse y sfruttando l'altra coppia di equazioni 
+\[\frac{\d^2 E_y}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 E_y}{\d t^2}\]
+Inoltre, facendo prima le derivate rispetto al tempo e poi rispetto ad x otteniamo un risultato analogo per il campo magnetico
+\[\frac{\d^2 B_z}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 B_z}{\d t^2}\]
+\[\frac{\d^2 B_y}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 B_y}{\d t^2}\]
+Sommando vettorialmente, ricordando che la componente sull'asse x di campo elettrico e magnetico è nulla e costante nel tempo e sulle x, otteniamo l'espressione
+\[\frac{\d^2 \mathbf{E}}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 \mathbf{E}}{\d t^2}\]
+\[\frac{\d^2 \mathbf{B}}{\d x^2}=\mu_0\varepsilon_0 \frac{\d^2 \mathbf{B}}{\d t^2}\]
+dove nel caso particolare considerato abbiamo \(\mathbf{E}=(0, E_y,E_z)\); \(\mathbf{B}=(0, B_y, B_z)\). Deduciamo che un campo elettrico o magnetico generati all'infinito, che si propagano solo su due assi, sono descrivibili come un'onda piana sul terzo asse. Campo elettrico e magnetico si propagano ortogonalmente alla direzione in cui si propaga l'onda
+\begin{definizione}[onda trasversale]
+	Un' onda trasversale è un'onda in movimento che è composta da oscillazioni che avvengono perpendicolari alla direzione del trasferimento di energia. Se un'onda trasversale si muove nella direzione positiva x, le sue oscillazioni sono nelle direzioni sopra e sotto che giacciono nel piano yz.
+\end{definizione}
+Notiamo infine che $\mu_0\varepsilon_0$ ha, come ci aspettavamo dalla forma generale dell'equazione delle onde piane, le dimensioni di una velocità alle meno 2 dunque la velocità di un'onda elettrica o magnetica è 
+\[v = \frac{1}{\sqrt{\mu_0\varepsilon_0}}\]
+che è una costante che risulta essere uguale alla velocità della luce. 
+\section{Campi magnetici nella materia}
+\subsection{Evidenze sperimentali}
+Consideriamo un solenoide (solenoide 1) di raggio R con asse giacente sull'asse delle x nel quale passa una corrente i. Poniamo un altro solenoide (solenoide 2) concentrico al primo, di raggio minore sulla soglia del primo solenoide e connesso ad un dinamometro per misurare la forza con cui è attratto o respinto dal solenoide in cui passa corrente. La forza è data da 
+\[\mathbf{F} = -\n U = -\n(\mathbf{m}\mathbf{B})\]
+dove \(\mathbf{m}\) è il momento magnetico della spira 2, questo è costante in direzione e modulo nell'apparato da noi considerato ma a seconda del verso in cui scorre la corrente può essere positivo o negativo.
+\[\mathbf{F}=\pm m \frac{d B_x}{dx}\mathbf{\hat{i}}\]
+Se la corrente è oraria la forza va verso il basso, se antioraria va verso l'alto.\\
+Se ora al posto del solenoide 2 poniamo un campione di materiale di egual forma e volume si osserva che alcuni materiali sono attratti, altri respinti con forze che sono solitamente deboli ma che possono arrivare ad essere molto grandi per alcuni materiali. Nella maggior parte dei casi la direzione della forza dipende dal verso della corrente ma talvolta si osserva che la forza ha verso indipendente dal verso della corrente (sorprendentemente per gli sperimentatori ottocenteschi che osservarono questo fenomeno per la prima volta).\\
+Per svolgere gli esperimenti, come detto, bisogna usare sempre lo stesso volume di materiale dunque introduciamo una nuova grandezza
+\[\frac{\mathbf{F}}{\tau} = \frac{m}{\tau}\frac{d B_x}{dx}\mathbf{\hat{i}}\equiv \mathbf{M}\frac{dB_x}{dx}\]
+dove abbiamo definito M, vettore di magnetizzazione. A seconda delle caratteristiche di \(\mathbf{M}\) che si osservano mediante l'apparato sperimentale di cui sopra possiamo distinguere i materiali in tre categorie
+\begin{itemize}
+	\item Diamagnetici: se M è negativa di modulo piccolo ed equiversa al campo magnetico, ovvero quando il materiale è debolmente respinto
+	\item Paramagnetici: se M è positiva di modulo piccolo ed equiversa al campo magnetico, ovvero quando il materiale è debolmente attratto
+	\item Ferromagnetici: se M è positiva di modulo grande ed equiversa al campo magnetico, ovvero quando il materiale è fortemente attratto. In questo caso non vi è una relazione tra M e B univoca, che dipende da come si raggiunge il valore di M. 
+\end{itemize}
+Sempre sperimentalmente si nota che se l'esperimento avviene in un mezzo invece che nel vuoto si ha che il campo magnetico è proporzionale a quello che avremmo osservato nel vuoto con una costante di proporzionalità dipendente unicamente dal mezzo, detta costante di permeabilità magnetica relativa (\(k_m\)).
+\[B = B_0 k_m 0 \mu_0 k_m n i = \mu n i\]
+dove $\mu$ è la costante di permeabilità magnetica assoluta. 
+Il valore di \(k_m\) dipende dal mezzo e può essere maggiore o minore di 1, a differenza della costante di permeabilità elettrica che era sempre minore di uno e riduceva sempre il campo elettrico. Questo fatto, osservato per la prima volta nel caso specifico di un solenoide, si osserva avere validità generale,per mezzi omogenei (\(k_m\) è la stessa in tutto il mezzo) e con densità uguale in tutti i punti. La formula di Biot-Savart in un mezzo con queste caratteristiche è quindi 
+\[\mathbf{dB} = \frac{\mu}{4\pi} i \frac{\mathbf{ds}\wedge \mathbf{r}}{r^3}\] 
+Possiamo definire una grandezza analoga alla suscettibilità elettrica: la suscettibilità magnetica 
+\[\mathbf{B}-\mathbf{B_0}=(k_m - 1)B_0 \equiv \chi_m B_0\]
+riordinando i termini otteniamo una forma più espressiva
+\[\frac{B-B_0}{B}=\chi_m\]
+che mette in luce il fatto che $\chi_m$ è la frazione di quanto varia il campo magnetico in un mezzo rispetto al vuoto. Riordinando nuovamente i termini possiamo anche scrivere
+\[\mathbf{B}=\mathbf{B_0}+\mathbf{B_0}\chi_m\]
+che mette in luce il fatto che il campo magnetico in un mezzo è costituito da una componente che è il valore che avrebbe avuto nel vuoto più una componente che esprime il contributo del mezzo (che può essere sia riduttivo che accrescitivo). Questo contributo ha natura atomica: esiste una corrente atomica detta "amperiana" causata dai moti degli elettroni, le cui traiettorie possono essere viste come piccole spire e, visto che il loro moto è effettivamente una corrente variabile, si genera per ogni elettrone un piccolo campo magnetico, ad ogni elettrone, come si farebbe ad una spira, è possibile associare un momento magnetico \(\mathbf{m_e}\); essendo le direzioni degli atomi casuali il momento magnetico globale di un materiale formato da molti atomi è globalmente nullo ma in presenza di un campo magnetico, proprio come nel caso delle spire, i momenti magnetici tendono ad allinearsi col campo, producendo così un momento magnetico globale nel materiale. Visto che nei materiali ferromagnetici (solitamente metalli) gli elettroni sono legati debolmente ai nuclei e possono muoversi abbastanza liberamente, questi si allineano al campo magnetico, in qualunque direzione esso sia diretto, generando sempre una forza attrattiva. Inoltre, avendo molti elettroni "liberi" si allineano molti elettroni creando un grande momento magnetico che genera una grande forza attrattiva. Nei materiali paramagnetici e diamagnetici invece gli elettroni sono già parzialmente allineati in una direzione (in piccole quantità) quindi questi materiali posseggono un momento magnetico intrinseco di modulo esiguo, che genera una debole forza attrattiva o repulsiva a seconda dell'orientamento intrinseco del momento magnetico.\\
+Possiamo quindi riclassificare i materiali in base ai valori di suscettibilità magnetica che presentano
+\begin{itemize}
+	\item Diamagnetici: \(k_m <1,\ \chi_m < 0\sim 10^{-5}\) \(\Rightarrow\) \(B< B_0\)
+	\item Paramagnetici: \(k_m >1,\ \chi_m > 0\sim 10^{-5}\) \(\Rightarrow\) \(B > B_0\)
+	\item Ferromagnetici: \(k_m >1,\ \chi_m < 0\sim 10^{3}-10^{5}\) \(\Rightarrow\) \(B > B_0\)
+\end{itemize}
+Si osserva sperimentalmente una dipendenza inversa tra suscettibilità magnetica e temperatura nei materiali paramagnetici, ciò accade perché aumentando la temperatura aumenta anche l'agitazione termica degli atomi, in questo modo diventa più difficile allineare elettroni e quindi più difficile accrescere il momento magnetico globale del materiale.
+La relazione tra suscettibilità e temperatura per materiali paramagnetici è data dall'espressione
+\[\chi_m (T) = C \frac{\rho}{T}\]
+dove C è una costante, $\rho$ è la densità e T la temperatura. Nei paramagnetici qualche elettrone si allinea generando una debole attrazione, nei ferromagnetici si allineano la maggior parte degli elettroni producendo una grande attrazione, ciò è dovuto al fatto che i materiali ferromagnetici sono solitamente metalli o materiali di raggio atomico grande in cui sono presenti elettroni poco legati al nucleo che possono muoversi più liberamente. 
+\section{Elettromagnetismo e relatività}
 Consideriamo due cariche uguali \(q_1\) \(q_2\) di segno positivo a distanza R in un S.R.I. O in quiete rispetto all'osservatore, che ipotizziamo sia solidale allo stesso S.R.I. delle cariche. Sappiamo che la forza agente su \(q_1\) è
 \[\mathbf{F}=q_1 \mathbf{E_2}= \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}\]
 Consideriamo ora lo stesso sistema rispetto ad un osservatore solidale ad un S.R.I. O' che si muove con velocità costante \(\mathbf{v}_2\) rispetto ad O. Per un osservatore solidale ad O' il sistema in O ha velocità \(\mathbf{v_1}=-\mathbf{v_2}= -\mathbf{v}\) secondo la relatività galileiana. Osserviamo immediatamente un fatto curioso: mentre nel primo caso era presente solo un campo elettrico, ora abbiamo anche un campo magnetico dovuto al movimento delle cariche, calcoliamo quello generato da \(q_2\). 
