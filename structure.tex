@@ -1,0 +1,66 @@
+\usepackage[
+nochapters, % Turn off chapters since this is an article        
+beramono, % Use the Bera Mono font for monospaced text (\texttt)
+eulermath,% Use the Euler font for mathematics
+pdfspacing, % Makes use of pdftex’ letter spacing capabilities via the microtype package
+dottedtoc % Dotted lines leading to the page numbers in the table of contents
+]{classicthesis} % The layout is based on the Classic Thesis style
+
+\usepackage{arsclassica} % Modifies the Classic Thesis package
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{Figures/}} % Set the default folder for images
+
+\usepackage{enumitem} % Required for manipulating the whitespace between and within lists
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{subfig} % Required for creating figures with multiple parts (subfigures)
+
+\usepackage{amsmath,amssymb,amsthm} % For including math equations, theorems, symbols, etc
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{varioref}
+
+\theoremstyle{plain}
+\newtheorem{teorema}{teorema}
+\theoremstyle{plain}
+\newtheorem{esercizio}{esercizio}
+\theoremstyle{plain}
+\newtheorem{applicazione}{applicazione}
+\theoremstyle{plain}
+\newtheorem{corollario}{corollario}[teorema]
+\theoremstyle{plain}
+\newtheorem{lemma}[teorema]{lemma}
+\theoremstyle{definition}
+\newtheorem{definizione}{definizione}
+\theoremstyle{plain}
+\newtheorem{proposizione}{proposizione}
+\makeatletter
+\def\d{\ensuremath\partial}
+\def\d{\ensuremath\partial\ }
+\def\n{\ensuremath\nabla}
+\def\n{\ensuremath\nabla\ }
+\def\th@plain{%
+	\thm@notefont{}% same as heading font
+	\itshape % body font
+}
+\def\th@definizione{%
+	\thm@notefont{}% same as heading font
+	\normalfont % body font
+}
+\hypersetup{
+colorlinks=true, breaklinks=true, bookmarks=true,bookmarksnumbered,
+urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, % Link colors
+pdftitle={}, % PDF title
+pdfauthor={\textcopyright}, % PDF Author
+pdfsubject={}, % PDF Subject
+pdfkeywords={}, % PDF Keywords
+pdfcreator={pdfLaTeX}, % PDF Creator
+pdfproducer={LaTeX with hyperref and ClassicThesis} % PDF producer
+}
