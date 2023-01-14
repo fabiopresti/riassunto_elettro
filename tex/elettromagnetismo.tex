@@ -95,7 +95,7 @@ La parola elettrone deriva dal greco elektron che vuol dire ambra, un materiale 
 	\item Questa forza può essere sia attrattiva che repulsiva
 	\item Esiste un'attributo che la materia può avere o non avere (e che talvolta si nota può assumere per sfregamento) che genera questa attrazione e che chiameremo "carica" Q.
 \end{itemize}
-Seguendo il metodo scientifico, vogliamo fare esperimenti che offrano dati numerici relativi a queste esperienze. Il primo fondamentale strumento è l'\textbf{elettroscopio} che permette di misurare la carica di un corpo. Un classico tipo di elettroscopio è quello a foglie d'oro: un'ampolla all'interno del quale è applicato il vuoto presenta all'interno due foglie d'oro estremamente sottili e leggere attaccate ad una barretta metallica che fuoriesce dall'ampolla e che termina con una sfera metallica; se viene avvicinato un corpo carico alla sfera questa si caricherà e distribuirà la carica su tutto il corpo metallico, le due foglie metalliche, essendo entrambe cariche dello stesso segno si respingeranno tanto più quanto più forte è la carica con cui sono state elettrizzate. Si misura l'angolo di apertura delle foglie e si ottiene con semplici considerazioni di statica (forza elettromagnetica di repulsione o attrazione che in quiete eguaglia quella gravitazionale) un valore numerico della forza di repulsione elettrostatica. 
+Seguendo il metodo scientifico, vogliamo fare esperimenti che offrano dati numerici relativi a queste esperienze. Il primo fondamentale strumento è l'\textbf{elettroscopio} che permette di comparare la carica di due corpi. Un classico tipo di elettroscopio è quello a foglie d'oro: un'ampolla all'interno del quale è applicato il vuoto presenta all'interno due foglie d'oro estremamente sottili e leggere attaccate ad una barretta metallica che fuoriesce dall'ampolla e che termina con una sfera metallica; se viene avvicinato un corpo carico alla sfera questa si caricherà e distribuirà la carica su tutto il corpo metallico, le due foglie metalliche, essendo entrambe cariche dello stesso segno si respingeranno tanto più quanto più forte è la carica con cui sono state elettrizzate.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{../images/elettroscopio}
@@ -142,7 +142,7 @@ Possiamo trarre tre conseguenze da quanto ottenuto:
 	dove k è una costante da determinare, \(q_1\) e \(q_2\) sono le cariche ed r la distanza fra di esse. 
 \end{itemize}
 Quest'ultima è la formalizzazione della legge di Coulomb che si enuncia come segue:\\
-\textit{"Date due cariche poste ad una distanza r, tra di esse si esercita una forza direttamente proporzionale al prodotto delle cariche ed inversamente proporzionale al quadrato della distanza r. Tale forza è diretta lungo la congiungente delle cariche ed è attrattiva se le cariche sono dello stesso segno e repulsiva se di segno opposto."}\\
+\textit{"Date due cariche poste ad una distanza r, tra di esse si esercita una forza direttamente proporzionale al prodotto delle cariche ed inversamente proporzionale al quadrato della distanza r. Tale forza è diretta lungo la congiungente delle cariche ed è repulsiva se le cariche sono dello stesso segno e attrattiva se di segno opposto."}\\
 Si noti che la forma matematica di questa legge è analoga a quella di gravitazione universale poiché entrambe le forze sono "centrali". Nella forza di Coulomb non compare il segno negativo poiché non è sempre attrattiva come quella di gravitazione ma il segno dipende dal segno delle cariche.\\
 Non resta che determinare la costante k; esistono due metodi filosoficamente molto diversi fra loro:
 \begin{enumerate}
@@ -168,11 +168,11 @@ Matematicamente l'espressione del campo elettrostatico si ottiene semplicemente 
 \[\mathbf{F}=q_0\left[\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\hat{\mathbf{r}}\right]\]
 \[\mathbf{E} = \frac{\mathbf{F}}{q_0} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\hat{\mathbf{r}}\]
 Si noti il salto concettuale rispetto la teoria della gravità newtoniana: ora non si tratta di trovare le forze agenti su un corpo ma il campo vettoriale, in questo caso elettrico.
-\begin{definizione}[Campo elettrostatico]
+\begin{definizione}[Campo elettrico ed elettrostatico]
 	 Il campo elettrico è un campo di forze generato nello spazio dalla presenza di una o più cariche elettriche. Il campo elettrostatico è il campo elettrico generato da cariche in quiete. L'interazione del campo elettrostatico con una carica di prova genera una forza sulla carica stessa e, uguale e contraria, sulle cariche che generano il campo.
 \end{definizione}
 Un campo vettoriale può essere pensato come una porzione di spazio piena di frecce rappresentanti i vettori che esso associa ad ogni punto; disegnarlo in tal modo è impossibile dunque si opta per disegnare pochi vettori sempre tangenti al campo stesso. Per farlo si disegna un primo vettore, da esso ci si sposta di un'intervallo infinitesimo in avanti e si traccia un nuovo vettore (la cui direzione e verso saranno quelle del campo), reiterando otterremo un'insieme di vettori, se li cancelliamo e lasciamo solamente i punti di applicazione otteniamo una linea detta "di campo". Il campo elettrostatico è un vettore perché direzione e verso si ricavano dai singoli vettori mentre il modulo è dato dalla densità delle linee di campo. Per convenzione le linee di campo sono uscenti dalle cariche positive ed entranti nelle cariche negative.\\
-Si osserva sperimentalmente che il campo generato da un numero discreto di cariche puntiforme è la somma vettoriale dei singoli campi, questo viene detto \textbf{principio di sovrapposizione} ed è solamente frutto dell'esperienza. Ne risulta che il campo totale generato da N cariche puntiformi è
+Si osserva sperimentalmente che il campo generato da un numero discreto di cariche puntiformi è la somma vettoriale dei singoli campi, questo viene detto \textbf{principio di sovrapposizione} ed è solamente frutto dell'esperienza. Ne risulta che il campo totale generato da N cariche puntiformi è
 \[\mathbf{E_{tot}} = \frac{1}{4\pi\varepsilon_0}\sum_{i=1}^{N}\frac{Q_i}{ r_i^2} \hat{\mathbf{r}}_i\]
 Se invece avessimo un insieme continuo di cariche, che è ciò che avviene nella maggior parte dei casi poiché il numero di cariche è solitamente estremamente elevato, dobbiamo innanzitutto definire la densità di carica
 \begin{definizione}[Densità di carica]
@@ -188,14 +188,14 @@ Quest'ultimo è un integrale di volume.
 Si consideri un filo di lunghezza infinita, vogliamo ottenere un'espressione del campo elettrico che genera su un punto P a distanza r' dal filo. \\
 Cominciamo considerando due porzioni infinitesime di filo di lunghezza dz e carica dq, poste a distanza uguale dall'origine (uno in verso positivo ed uno in verso negativo), tracciamo i vettori $\mathbf{r}$ congiungenti le porzioni di filo con il punto P e prolunghiamo i vettori per rappresentare il campo su quel punto; $\mathbf{r}$ incide sull'asse del punto con un angolo $\theta$. Da una prima approssimazione grafica, sommando i vettori, notiamo che la componente sull'asse z si elide e il campo risultante dovrà essere parallelo all'asse delle y e in verso positivo ($\hat{\mathbf{j}}$). Possiamo quindi focalizzarci sul calcolo del modulo
 \[\mathbf{E}_{tot} = \int_L dE_y\hat{\mathbf{j}}\]
-\[E_{tot} = \int^{+\infty}_{\infty} \frac{1}{4\pi\varepsilon_0}\frac{\lambda dz}{r^2}\cos\theta\]
+\[E_{tot} = \int^{+\infty}_{-\infty} \frac{1}{4\pi\varepsilon_0}\frac{\lambda dz}{r^2}\cos\theta\]
 le variabili \(z, \theta, r\) sono correlate quindi dobbiamo esprimere l'integrale in funzione di una sola di queste, i calcoli si semplificano se scegliamo $\theta$. r' è semplicemente la proiezione sull'asse x di r quindi si ottiene immediatamente la relazione
 \[r \cos\theta = r'\]
 z invece è la proiezione sull'asse y di r, per ottenere dz differenziamo
 \[z = r \sin\theta = r' \tan\theta\]
 \[dz = \frac{r'}{\cos^2\theta}d\theta\]
 da cui l'integrale diventa
-\[E_{tot} = _L\int^{+\frac{\pi}{2}}_{-\frac{\pi}{2}} \frac{\lambda}{4\pi\varepsilon_0 r'}\cos\theta d\theta = \frac{\lambda}{2\pi\varepsilon_0 r'}\]
+\[E_{tot} = \int^{+\frac{\pi}{2}}_{-\frac{\pi}{2}} \frac{\lambda}{4\pi\varepsilon_0 r'}\cos\theta d\theta = \frac{\lambda}{2\pi\varepsilon_0 r'}\]
 \end{esercizio}
 La carica dell'elettrone e del protone sono esattamente uguali? Fin ora è stato visto sperimentalmente che coincidono con una precisione dell'ordine di \(10^{21}\). Se fossero diverse anche di una parte su un miliardo avremmo un effetto macrosocopico enorme: ponendo due sfere di ferro (z = 26; A = 55) a distanza di un metro, se le cariche sono esattamente uguali la forza fra esse è nulla, se invece avessimo 
 \[\frac{|q_p|-|q_e|}{|q_e|} = \frac{|\Delta q|}{|q_e|}=10^{-9}\]
@@ -214,9 +214,9 @@ Definiamo la funzione di stato
 \[V(\mathbf{r}) = \frac{q}{4\pi\varepsilon_0}\frac{1}{r}\]
 potenziale elettrostatico. La sua unità di misura è il Volt $V \equiv \frac{kg\cdot m^2}{s^2\cdot C}$.  Quest'ultima espressione è valida per una singola carica puntiforme. Se avessimo un numero finito di N cariche avremmo
 \[V_i(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\frac{q_i}{r_i}\]
-\[V(\mathbf{r})_i= \frac{1}{4\pi\varepsilon_0}\sum_{i}\frac{q_i}{r_i}\]
+\[V(\mathbf{r})= \frac{1}{4\pi\varepsilon_0}\sum_{i}\frac{q_i}{r_i}\]
 Se avessimo una distribuzione continua di carica invece
-\[V(\mathbf{r})_i= \frac{1}{4\pi\varepsilon_0}\ _Q\int\frac{d q_i}{r_i} =  \frac{1}{4\pi\varepsilon_0}\ _V\int\frac{\rho}{ r_i}dV\]
+\[V(\mathbf{r})= \frac{1}{4\pi\varepsilon_0}\ _Q\int\frac{d q}{r} =  \frac{1}{4\pi\varepsilon_0}\ _V\int\frac{\rho}{ rattrattiva}dV\]
 Si ha inoltre 
 \[U(\mathbf{r})=qV(\mathbf{r})\]
 \end{definizione}
@@ -291,12 +291,12 @@ Consideriamo ora una superficie chiusa $\Sigma$ e una sua parte infinitesima $d\
 	\label{fig:thmgauss1}
 \end{figure}
 \FloatBarrier
-Si noti che l'angolo che forma il campo elettrico con la superficie infinitesima è rispettivamente \(\theta_1\) e \(\theta_2\); essendo la direzione del campo generata da una carica costante nello spazio, si ha
+Si noti che l'angolo che forma il campo elettrico con la superficie infinitesima è rispettivamente \(\theta_1\) e \(\theta_2\); essendo la direzione del campo generato da una carica costante nello spazio, si ha
 \[\theta_1 = \theta_2 + 180\]
 \[\Rightarrow \cos\theta_1 = -\cos\theta_2\]
 Possiamo calcolare il flusso delle due superfici infinitesime, ricordando la definizione di steradiante precedentemente ottenuta
 \begin{align*}
-	&d\Phi_2 = \mathbf{E}_2\cdot d\mathbf{s}_2 = E_2 ds_2 \cos\theta_2 = E_2 R_2^2 \frac{ ds_2 \cos\theta_2}{R_2^2} = E_2 R_2^2 d\Omega_2 =\frac{1}{4\pi\varepsilon_0}\frac{Q}{R^2_2}R^2_2= \frac{Q}{4\pi\varepsilon_0}d\Omega \\
+	&d\Phi_2 = \mathbf{E}_2\cdot d\mathbf{s}_2 = E_2 ds_2 \cos\theta_2 = E_2 R_2^2 \frac{ ds_2 \cos\theta_2}{R_2^2} = E_2 R_2^2 d\Omega =\frac{1}{4\pi\varepsilon_0}\frac{Q}{R^2_2}R^2_2 d\Omega= \frac{Q}{4\pi\varepsilon_0}d\Omega \\
 	&d\Phi_1 = \mathbf{E}_1\cdot d\mathbf{s}_1 = E_1 ds_1 \cos\theta_1 = -E_1 ds_1 \cos\theta_2 = -\frac{Q}{4\pi\varepsilon_0}d\Omega\\
 	&\Rightarrow d\Phi_{12} = d\Phi_1 + d\Phi_2 = 0
 \end{align*}
@@ -319,7 +319,7 @@ Si noti inoltre che la legge di Gauss espressa in questa forma (integrale) espri
 	&\text{Thm. della divergenza: }\ \oint\mathbf{E}d\mathbf{s} = \int_{V(\Sigma)}\mathbf{\n}\cdot\mathbf{E}\ d\tau \\
 	&\Rightarrow \mathbf{\n}\cdot\mathbf{E} = \frac{\rho}{\varepsilon_0}
 \end{align*} 
-Il teorema di Gauss in forma differenziale esprime una proprietà puntuale del flusso sulla superficie $\Sigma$. Si noti, ad esempio, nella forma differenziale si nota immediatamente che la divergenza del campo elettrico in un punto senza carica è nulla poiché la densità di carica in quel punto è nulla. Possiamo anche verificarlo calcolando la divergenza
+Il teorema di Gauss in forma differenziale esprime una proprietà puntuale del flusso sulla superficie $\Sigma$. Nella forma differenziale si nota immediatamente che la divergenza del campo elettrico in un punto senza carica è nulla poiché la densità di carica in quel punto è nulla. Possiamo anche verificarlo calcolando la divergenza
 \begin{align*}
 	&\mathbf{E} = \frac{Q}{4\pi\varepsilon_0}\frac{\mathbf{r}}{r^3} = \frac{Q}{4\pi\varepsilon_0}\frac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{(x^2+y^2+z^2)^{\frac{3}{2}}}\\
 	&\mathbf{\n}\cdot\mathbf{E} = \frac{Q}{4\pi\varepsilon_0}\left(\frac{\d}{\d x}\frac{x}{(x^2+y^2+z^2)^{\frac{3}{2}}}+\frac{\d}{\d y}\frac{y}{(x^2+y^2+z^2)^{\frac{3}{2}}}+\frac{\d}{\d z}\frac{z}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right)=\\
@@ -336,7 +336,7 @@ Ricordiamo infine che sulla superficie laterale il campo è costante quindi lo p
 Infine, eguagliando le due espressioni ottenute
 \[E= \frac{\lambda}{\varepsilon_0 2\pi r }\]
 \end{esercizio}
-\begin{esercizio}[Campo elettrostatico generato da un piano infinito carico]\label{es:campo_piano_infinito}
+\begin{esercizio}[Campo elettrostatico generato da un piano infinito carico]\label{:campo_piano_infinito}
 Sia $\sigma$ la densità di carica superficiale del piano. Notiamo che tutti i piani paralleli al piano carico presentano medesimo campo elettrostatico in ogni punto. Consideriamo il cilindro "coricato" con basi parallele al piano carico, altezza 2r (il piano taglia in due parti uguali il cilindro) e il punto P al centro del cerchio che sta alla base del cilindro. Analogamente a quanto fatto precedentemente, per il teorema di Gauss abbiamo:
 \[\oint\mathbf{E}d\mathbf{s} = \frac{Q_{tot}}{\varepsilon_0}=\frac{\sigma}{\varepsilon_0}\int_Sds=\frac{A\sigma}{\varepsilon_0}\]
 dove A è l'area di base del cilindro.\\
@@ -365,7 +365,7 @@ Dove la t al pedice indica la componente tangenziale. Eguagliando le due espress
 Ne segue quindi che la componente tangenziale resta continua attraversando la superficie. 
 \section{Elettrostatica della materia: i conduttori}
 \subsection{Conduttori neutri}
-I materiali si suddividono nelle due macrocategorie di conduttori e dielettrici (isolanti). Un conduttore metallico come il rame può essere modellizzato, in prima approssimazione, come un reticolo di ioni vincolati fra loro che possono solamente vibrare, immersi in un mare di elettroni tanto debolmente legati al nucleo da poter muoversi liberamente attorno al reticolo a seguito di eccitazioni energetiche minime come 'agitazione termica. Ogni atomo di rame contribuisce con circa un elettrone di conduzione, in un centimetro cubo vi sono
+I materiali si suddividono nelle due macrocategorie di conduttori e dielettrici (isolanti). Un conduttore metallico come il rame può essere modellizzato, in prima approssimazione, come un reticolo di ioni vincolati fra loro che possono solamente vibrare, immersi in un mare di elettroni tanto debolmente legati al nucleo da poter muoversi liberamente attorno al reticolo a seguito di eccitazioni energetiche minime come l'agitazione termica. Ogni atomo di rame contribuisce con circa un elettrone di conduzione, in un centimetro cubo vi sono
 \[n_e = \frac{\rho_M }{A}N_A \simeq 8\cdot 10^22\ \frac{e^-}{cm^3}\simeq13000\ \frac{C}{cm^3}\]
 dove $\rho_M$ è la densità ed A è la massa molare.
 \begin{definizione}[Conduttore elettrico]
@@ -396,15 +396,15 @@ dove C è l'insieme di punti all'interno del conduttore. \\
 \textit{La superficie di un conduttore è equipotenziale come i punti al suo interno}.
 \item Consideriamo ora un conduttore cavo, possiamo individuare una superficie esterna $\Sigma_E$, su cui sappiamo sono disposte le cariche, ed una superficie interna $\Sigma_I$, ci chiediamo come sono disposte le cariche su questa superficie. Consideriamo una generica superficie $\Sigma$ compresa tra quella interna e quella esterna, applichiamo la legge di Gauss
 \[\oint_\Sigma \mathbf{E}d\mathbf{s} = \frac{Q_{tot}}{\varepsilon_0} = 0 \Rightarrow Q_{tot} = 0\]
-La carica totale all'interno di questa superficie è nulla, essendo $\Sigma$ arbitraria possiamo prenderla infinitamente vicina a $\Sigma_I$ ottenendo che l'unica disposizione possibile sarebbe con le cariche positive e negative sono in numero eguale e disposte sula superficie interna come su quella esterna (metà da una parte e metà dall'altra a bilanciarsi). Tuttavia in questo caso si violerebbe la conservatività del campo elettrostatico: consideriamo un percorso chiuso passante in parte dall'interno cavo (AB) ed in parte tra $\Sigma_I$ e $\Sigma_E$, avremmo
+La carica totale all'interno di questa superficie è nulla, essendo $\Sigma$ arbitraria possiamo prenderla infinitamente vicina a $\Sigma_I$ ottenendo che l'unica disposizione possibile sarebbe con le cariche positive e negative in numero eguale e disposte sula superficie interna come su quella esterna (metà da una parte e metà dall'altra a bilanciarsi). Tuttavia in questo caso si violerebbe la conservatività del campo elettrostatico: consideriamo un percorso chiuso passante in parte dall'interno cavo (AB) ed in parte tra $\Sigma_I$ e $\Sigma_E$, avremmo
 \[\oint_{\Gamma}\mathbf{E}d\mathbf{r}= \int_{A}^{B}\mathbf{E}d\mathbf{r}+\int_{B}^{A}\mathbf{E}d\mathbf{r}\]
-Il secondo addendo è nullo perché abbiamo visto che all'interno del conduttore il campo è identicamente nullo mentre il primo addendo è diverso da zero perché d$\mathbf{r}$ è parallelo a $\mathbf{E}$. Ne segue che la circuitazione non è nulla e la conservatività del campo è violata, il che è assurdo. ne segue per esclusione che non vi sono cariche sulla superficie interna del conduttore cavo. Ciò spiega perché all'interno di un ascensore (metallico) il telefono non prende (no campo). 
+Il secondo addendo è nullo perché abbiamo visto che all'interno del conduttore il campo è identicamente nullo mentre il primo addendo è diverso da zero perché d$\mathbf{r}$ è parallelo a $\mathbf{E}$. Ne segue che la circuitazione non è nulla e la conservatività del campo è violata, il che è assurdo. Ne segue per esclusione che non vi sono cariche sulla superficie interna del conduttore cavo. Ciò spiega perché all'interno di un ascensore (metallico) il telefono non prende (non c'è campo). 
 \textit{Se ho un conduttore cavo la redistribuzione delle cariche riguarda solo la superficie esterna}. 
 \end{enumerate}
 \begin{esercizio}[Campo elettrostatico di un cilindro carico di altezza infinita]
 Consideriamo un cilindro carico con densità volumetrica di carica uniforme $\rho$, raggio di base R e altezza h infinita. Cominciamo calcolando il campo all'esterno del cilindro circondandolo con una superficie cilindrica di raggio \(r>R\). Per il teorema di Gauss abbiamo
 \[\oint_{\Sigma}\mathbf{E}d\mathbf{s}=\frac{Q_{tot}}{\varepsilon_0}\]
-Calcolando invece il flusso dividendo la superficie cilindrica in tre superfici (area laterale e due basi) notiamo che il flusso per le masi è nullo, inoltre il campo sulla superficie laterale è costante data la simmetria cilindrica dell'oggetto carico considerato.
+Calcolando invece il flusso dividendo la superficie cilindrica in tre superfici (area laterale e due basi) notiamo che il flusso per le basi è nullo, inoltre il campo sulla superficie laterale è costante data la simmetria cilindrica dell'oggetto carico considerato.
 \[\oint_{\Sigma}\mathbf{E}d\mathbf{s}=\int E ds_l = E\int ds = E2\pi r h\]
 Considerato che
 \[Q_{tot} = \rho V = \rho \pi R^2 h\]
@@ -508,7 +508,7 @@ Ma come si dispongono le cariche sulla superficie? Sperimentalmente si esclude l
 	&\Rightarrow \frac{\sigma_1}{R_2} = \frac{\sigma_2}{R_1}
 \end{align*}
 Da cui segue che la densità superficiale di carica aumenta con il raggio di curvatura.\\
-Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica, per un fenomeno che studieremo in seguito, nel punto in cui si concentra la carica avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche.\\
+Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica; in questo punto avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche.\\
 Alla luce di quanto ottenuto possiamo rivedere il risultato precedentemente ottenuto per cui nella superficie interna non si dispongono cariche: possiamo considerare un conduttore pieno con carica disposta in superficie e piegarlo fino ad ottenere un conduttore cavo, più lo pieghiamo più la curvatura che formerà la cavità diventa negativa, allontanando da sè le cariche.\\
 Quando colleghiamo un conduttore carico al terreno questo si scarica, ciò avviene perché entra a contatto con una sfera di raggio di curvatura enorme (approssimabile ad infinito). 
 \subsection{Metodo delle cariche immagine}
@@ -518,14 +518,16 @@ La risoluzione di una equazione differenziale del secondo ordine necessita di du
 \begin{teorema}[Teorema di unicità della soluzione dell'equazione di Poisson]
 	Si consideri una regione di spazio finita  \(\tau\)  delimitata dalla superficie S. Se in questa regione la funzione densità $\rho$ è integrabile e la funzione potenziale V sulla superficie S assume un valore ben preciso \(V_s\), allora la soluzione dell'equazione di Poisson è unica.
 \end{teorema}
-Per assurdo, se esistessero due soluzioni diverse \(V_1 = V_s\) e \(V_2 = V_s\) in S, che soddisfano le stesse condizioni al contorno su una stessa superficie S, potremmo definire la funzione differenza come segue
+Per assurdo, se esistessero due soluzioni diverse \(V_1,\  V_2\) in S, che soddisfano le stesse condizioni al contorno su una stessa superficie S, potremmo definire la funzione differenza come segue
+\[f\equiv V_1-V_2\]
+Notiamo che sulla superficie S il valore di f è costante e sempre nullo.\\
+Mostriamo preliminarmente che il laplaciano di tale funzione è nullo:
 \[\n^2 V_1 - \n^2 V_2 = \n^2(V_1 - V_2) = \n^2 f = -\frac{\rho}{\varepsilon_0}+\frac{\rho}{\varepsilon_0}=0 \]
-Notiamo che visto che sulla superficie S le soluzioni coincidono f è nulla su tutto S.\\
 Consideriamo ora \(\mathbf{\n}(f\mathbf{\n}f)\) e calcoliamone l'integrale su un volume $\tau$ ed applichiamo il teorema della divergenza
 \[\int_\tau \mathbf{\n}(f\mathbf{\n}f)d\tau= \int_Sf\mathbf{\n}fd\mathbf{s}\]
 L'integrale a destra è nullo perché f è nulla su tutto S, l'integrale di sinistra si sviluppa con la derivata di prodotto come
-\[\int_\tau \mathbf{\n}(f\mathbf{\n}f)d\tau = \int_\tau (\mathbf{\n}f )^2 d\tau + \int_\tau f{\n}^2f)d\tau = \]
-Il laplaciano di f è nullo quindi il secondo addendo si annulla. Infine otteniamo
+\[\int_\tau \mathbf{\n}(f\mathbf{\n}f)d\tau = \int_\tau (\mathbf{\n}f )^2 d\tau + \int_\tau (f{\n}^2f)d\tau = 0\]
+Il laplaciano di f, come notato, è nullo quindi il secondo addendo si annulla. Infine otteniamo
 \[\int_\tau (\mathbf{\n}f )^2 d\tau=0\]
 \[\Rightarrow \mathbf{\n}f = 0\]
 Da cui si deduce che f è sempre costante ma essendo 0 su S vorrà dire che sarà sempre nulla da cui \[V_1 = V_2\]. 
@@ -544,7 +546,7 @@ La superficie laterale ha la caratteristica di avere ogni punto d$\mathbf{s}$ or
 \[\mathbf{E}\cdot d\mathbf{s}_1 = Eds_1\cos\theta= \pm |Eds_1|\]
 dove il più o meno indica il fatto che a seconda del verso avremo un angolo di 0 o di 180 gradi. Ne risulta che il flusso per un tubo di flusso è
 \[d\Phi = \pm |Eds_1|\pm |Eds_2| =\frac{dQ}{\varepsilon_0}\]
-Consideriamo ora una superficie chiusa carica e calcoliamo il flusso di un tubo di flusso: le linee di campo partono dalla superficie divergendo verso l'esterno, scegliamo la superficie di "tappo" del tubo come appena detto. All'interno della superficie non è presente campo elettrico quindi a rigore non potremmo chiudere il tubo di flusso all'interno della superficie chiusa, possiamo però prolungare analiticamente le linee di campo all'interno e chiuderla con una superficie interna al conduttore. Sia \(S_1\) la superficie interna ed \(S_2\) quella esterna. Applichiamo ora la legge di Gauss
+Consideriamo ora una superficie chiusa carica infinitesima e calcoliamo il flusso di un tubo di flusso: le linee di campo partono dalla superficie divergendo verso l'esterno, scegliamo la superficie di "tappo" del tubo come appena detto. All'interno della superficie non è presente campo elettrico quindi a rigore non potremmo chiudere il tubo di flusso all'interno della superficie chiusa, possiamo però prolungare analiticamente le linee di campo all'interno e chiuderla con una superficie interna al conduttore. Sia \(S_1\) la superficie interna ed \(S_2\) quella esterna. Applichiamo ora la legge di Gauss
 \[E_1ds_1+E_2ds_2 = E_2ds_2 = \frac{dQ}{\varepsilon_0}\]
 \[\Rightarrow E_2 = \frac{dQ}{\varepsilon_0 ds_2}\]
 Questa è l'espressione del campo elettrico passante per un tubo di flusso.\\
@@ -561,7 +563,7 @@ In generale questo integrale è complesso da calcolare. Riordinando i termini ot
 \[Q = \sum_i\frac{\Delta V_{AB}}{\int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}\]
 Definiamo la \textbf{capacità di un condensatore} come
 \[C\equiv \frac{1}{{ \int_{A}^{B}\frac{dr_i}{\varepsilon_0 ds_i}}}\]
-osserviamo che questa quantità è una costante che dipende dalla geometria del dielettrico e dal materiale ($\varepsilon_0$ è la costante dielettrica del vuoto ma potremmo scegliere qualsiasi mezzo). L'unità di misura della capacità è il Farad (\(F\)) definito come un Coulomb su un Volt. 
+osserviamo che questa quantità è una costante che dipende dalla geometria del conduttore e dal dielettrico in cui questo è immerso ($\varepsilon_0$ è la costante dielettrica del vuoto ma potremmo scegliere qualsiasi mezzo). L'unità di misura della capacità è il Farad (\(F\)) definito come un Coulomb su un Volt. 
 \[1F \equiv \frac{1C}{1V}\]
 questa capacità è enorme tanto che, in un circuito comune la capacità figura spesso il microFarad (\(\mu F\)).\\
 La precedente relazione quindi si riscrive come
@@ -753,7 +755,7 @@ Da cui segue, ricordando che \(\mathbf{F} = \mathbf{\n} U\)
 Notiamo che abbiamo una condizione di equilibrio stabile quando questa funzione presenta un minimo, ovvero per \(\theta= 0^\circ,\ 180^\circ\). inoltre notiamo che, avendo considerato $\mathbf{a}$ infinitesimo, possiamo considerare in campo elettrico uguale nelle due cariche quindi la forza totale su un generico punto risulta 
 \[\mathbf{F}_{tot} =\mathbf{F}_++\mathbf{F}_- = q\mathbf{E}-q\mathbf{E} = 0\]
 Il momento delle forze totale invece è
-\[\mathbf{M}_{tot} = \mathbf{r}_+\wedge\mathbf{F}_+ + \mathbf{r}_-\wedge\mathbf{F}_- = \mathbf{r}_+\wedge q\mathbf{E}_+ + \mathbf{r}_\wedge q\mathbf{E}_ = (\mathbf{r}_+ - \mathbf{r}_-)\wedge q \mathbf{E} = (\mathbf{a}q)\wedge\mathbf{E} = \mathbf{p}\wedge\mathbf{E}\]
+\[\mathbf{M}_{tot} = \mathbf{r}_+\wedge\mathbf{F}_+ + \mathbf{r}_-\wedge\mathbf{F}_- = \mathbf{r}_+\wedge q\mathbf{E}_+ + \mathbf{r}_\wedge q\mathbf{E}_- = (\mathbf{r}_+ - \mathbf{r}_-)\wedge q \mathbf{E} = (\mathbf{a}q)\wedge\mathbf{E} = \mathbf{p}\wedge\mathbf{E}\]
 Notiamo che essendo il momento \(pE\sin\theta\), si ha che esso è nullo per \(\theta= 0^\circ,\ 180^\circ\), gli unici angoli in cui il sistema è stabile. 
 \subsection{Sistema di cariche come dipolo}
 Consideriamo ora un sistema di cariche discrete (il caso uniforme è analogo ma con gli integrali al posto delle sommatorie). Per il principio di sovrapposizione possiamo esprimere il potenziale totale sul punto P come somma dei potenziali generati dalle i cariche \(q_i\).
@@ -780,7 +782,7 @@ Ipotizziamo che la dimensione d del sistema sia molto più piccola della distanz
 \[\mathbf{d}_i = \mathbf{R}+\mathbf{d}'_i\]
 \[\mathbf{p} = \sum_iq_id_i = \sum_iq_i\mathbf{R}+\sum_iq_i\mathbf{d}'_i=QR+\mathbf{p}'\]
 Se \(Q = 0\) si ha \(\mathbf{p} = \mathbf{p}'\). L'analogia con la statica è in questo caso evidente.\\
-Ci chiediamo ora quando, se \(Q_{tot} = 0\), $\mathbf{p} = 0$. Possiamo riscrivere $\mathbf{p}$ e definire il "centro di carica" per le cariche positive e negative 
+Possiamo riscrivere $\mathbf{p}$ e definire il "centro di carica" per le cariche positive e negative 
 \[\mathbf{p} = \sum_iq_id_i = \sum_i|q_i^+|\mathbf{d_i}-\sum_i|q_i^-|\mathbf{d_i}\]
 \[\mathbf{d}_+ = \frac{\sum_i|q_i^+|\mathbf{d_i}}{\sum_i|q_i^+|} = \frac{\sum_i|q_i^+|\mathbf{d_i}}{|Q^+|}\]
 \[\mathbf{d}_- = \frac{\sum_i|q_i^-|\mathbf{d_i}}{\sum_i|q_i^-|} = \frac{\sum_i|q_i^-|\mathbf{d_i}}{|Q^-|}\]
@@ -843,8 +845,8 @@ Si nota sperimentalmente (ma si dedurrà a breve) che la maggior parte dei diele
 \begin{align}\label{eq:polarizzazione_lineare}
 	\mathbf{P} = \varepsilon_0(k-1)\mathbf{E} = \varepsilon_0 \chi \mathbf{E}
 \end{align}
-dove $\chi$ è detta \textbf{suscettibilità elettrica}. I dielettrici che rispettano questa condizione sono detti lineari perché p dipende linearmente da E, limiteremo la nostra trattazione a questo tipo di materiali. Di solito P è uniforme all'interno del dielettrico ma esistono casi in cui cambia, di conseguenza anche k cambia all'interno del materiale. Inoltre nella maggior parte dei casi \(\mathbf{P} // \mathbf{E}\) (per come abbiamo scritto l'ultima equazione sembra l'unica opzione possibile) tuttavia può accadere che k non sia uno scalare am un tensore 3x3, in questo caso la direzione di $\mathbf{P}$ può non essere la stessa di $\mathbf{E}$. Quando ciò avviene il materiale è detto anisotropo (ad esempio i cristalli birifrangenti). Fin ora abbiamo quindi studiato solamente dielettrici lineari isotropi.
-\begin{definizione}[Velocità isotropa]
+dove $\chi$ è detta \textbf{suscettibilità elettrica}. I dielettrici che rispettano questa condizione sono detti lineari perché p dipende linearmente da E, limiteremo la nostra trattazione a questo tipo di materiali. Di solito P è uniforme all'interno del dielettrico ma esistono casi in cui cambia, di conseguenza anche k cambia all'interno del materiale. Inoltre nella maggior parte dei casi \(\mathbf{P} // \mathbf{E}\) (per come abbiamo scritto l'ultima equazione sembra l'unica opzione possibile) tuttavia può accadere che k non sia uno scalare ma un tensore 3x3, in questo caso la direzione di $\mathbf{P}$ può non essere la stessa di $\mathbf{E}$. Quando ciò avviene il materiale è detto anisotropo (ad esempio i cristalli birifrangenti). Fin ora abbiamo quindi studiato solamente dielettrici lineari isotropi.
+\begin{definizione}[Isotropia]
 	L'isotropia è la proprietà dell'indipendenza dalla direzione, da parte di una grandezza definita nello spazio. Il suo contrario è l'anisotropia.
 \end{definizione}
 \subsection{Interpretazione microscopica della polarizzazione di un dielettrico}
@@ -854,14 +856,14 @@ A causa di questa ridistribuzione di carica si crea un campo elettrico indotto d
 dove $\mathbf{E}_0$ è il campo esterno che già era presente e $\mathbf{E}_p$ è il campo di polarizzazione (che si oppone a quello preesistente).\\
 Basandoci su questa interpretazione microscopica ci chiediamo quanto valga $\sigma_p$. Conoscendo la densità volumetrica di atomi nel dielettrico (n), la moltiplichiamo alla carica di un singolo atomo (ottenendo la densità di carica del dielettrico), che poi moltiplichiamo per uno spessore infinitesimo (\(\delta\)) corrispondente alla distanza fra i centri di carica positiva e negativa del singolo atomo, ottenendo così la densità superficiale.
 \[\sigma_p = n q \delta\]
-Ricordando che \(\mathbf{P} = nq\delta\), abbiamo che $\sigma_p = |\mathbf{P}|$. Se però il campo non è perpendicolare alla superficie del dielettrico ma vi entra con un angolo di incidenza $\theta$, allora la distanza fra i centri di carica negativo e positivo sarà di modulo $\delta$ ma orientata obliquamente, parallela al campo elettrico. Ne segue che la densità di carica decresce secondo il coseno dell'angolo di incidenza, possiamo quindi scrivere una forma più generale della densità superficiale di polarizzazione
+Ricordando che \(P = nq\delta\), abbiamo che $\sigma_p = P$. Se però il campo non è perpendicolare alla superficie del dielettrico ma vi entra con un angolo di incidenza $\theta$, allora la distanza fra i centri di carica negativo e positivo sarà di modulo $\delta$ ma orientata obliquamente, parallela al campo elettrico. Ne segue che la densità di carica decresce secondo il coseno dell'angolo di incidenza, possiamo quindi scrivere una forma più generale della densità superficiale di polarizzazione
 \begin{align}\label{eq:densità_polarizzazione}
 	\sigma_p = np\delta \cos\theta= |\mathbf{P}|\cos\theta = \mathbf{P}\hat{n}
 \end{align}
 
 Solitamente la densità di carica dovuta alla polarizzazione sta sulla superficie per i motivi precedentemente spiegati, tuttavia fin ora abbiamo implicitamente presunto che il dielettrico sia omogeneo, cioè, intuitivamente, che non presenti irregolarità al suo interno.
 In generale, a livello locale, visto che può capitare che se il materiale non è "regolare", non tutte le cariche generate dalla polarizzazione di uno strato interno siano annullate da quelli adiacenti; si possono quindi avere cariche anche all'interno del dielettrico (vi sarà quindi una densità di carica volumetrica dovuta alla polarizzazione \(\rho_p\)).\\
-Vediamo una trattazione matematica di questo fenomeno. Consideriamo una superficie $\Sigma$ all'interno del dielettrico, se non c'è campo esterno non c'è polarizzazione quindi abbiamo abbiamo
+Vediamo una trattazione matematica di questo fenomeno. Consideriamo una superficie $\Sigma$ all'interno del dielettrico, se non c'è campo esterno non c'è polarizzazione quindi abbiamo
 \[E = V(\Sigma) Q = 0\]
 \[Q_p = \int_{V(\Sigma)}\rho_p d\tau = 0\]
 dove \(Q_p\) è la carica generata dalla polarizzazione.\\
@@ -870,7 +872,7 @@ In presenza di campo invece, nel caso di un dielettrico generale, si ridistribui
 Ne deduciamo che la carica passata per \(\Sigma\) la otteniamo con il flusso di $\mathbf{P}$ su $\Sigma$. Se $\mathbf{P}$ è costante all'interno di tutto il dielettrico (definizione rigorosa di quanto prima chiamavamo "regolare", si dice che il materiale è isotropo) tanta carica entra e tanta ne esce da $\Sigma$ quindi il flusso è nullo e la carica interna al dielettrico anche (\(\rho_p = 0\)). Se $\mathbf{P}$ non è uniforme (materiali anisotropi) allora il flusso non è nullo e di conseguenza vi è una carica $Q_p$ all'interno del dielettrico. 
 \[ Q_p = -\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau \neq 0 \]
 Applicando il teorema della divergenza otteniamo
-\[-\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau = \int_{V(\Sigma)}(\mathbf{\n}\mathbf{P})d\tau \]
+\[-\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau = -\int_{V(\Sigma)}(\mathbf{\n}\mathbf{P})d\tau \]
 \begin{align}\label{eq:gradiente_vettore_polarizzazione}
 \Rightarrow \mathbf{\n}\mathbf{P} = -\rho_p
 \end{align}
@@ -950,9 +952,9 @@ dove I è la matrice identità. La matrice $\mathbf{k}$ è simmetrica (\(k_{ij} 
 \end{align*}
 In questo sistema di riferimento abbiamo quindi
 \begin{align*}
-	&P_x =(K_{11}-1)E'_x\\
-	&P_x =(K_{11}-1)E'_x\\
-	&P_x =(K_{11}-1)E'_x
+	&P'_x =(K_{11}-1)E'_x\\
+	&P'_y =(K_{22}-1)E'_y\\
+	&P'_z =(K_{33}-1)E'_z
 \end{align*}
 Il vettore P non è ancora parallelo ad E perché le costanti ne cambiano la direzione, se fossero tutte uguali (caso isotropo) allora si avrebbe \(\mathbf{E}//\mathbf{P}\). Gli assi a cui, a seguito della diagonalizzazione, è associato un diverso k, sono detti \textbf{assi ottici}, un esempio di materiale anisotropo con due diversi assi ottici è la calcite. Essendo la luce un'onda elettromagnetica, anch'essa risente delle diverse costanti dielettriche nei diversi assi ottici, cambiando la sua velocità e piegandosi in modi diversi a seconda del k; in materiali come la calcite le immagini si vedono dunque sdoppiate a causa della presenza di due assi ottici.
 \begin{figure}[h!]
@@ -1057,8 +1059,8 @@ Vogliamo ricavare la relazione che lega J ad E. Storicamente quanto andremo a ri
 	\item[P1] Il tempo medio fra due urti non dipende dalla velocità di deriva
 	\item[P2] Dopo un urto la distribuzione di velocità è isotropa
 \end{itemize}
-Soffermiamoci sui due principi: il primo è equivalente a dire che la velocità di deriva è trascurabile rispetto a quella di agitazione termica, questo è valido a temperature "normali" ma in alcuni casi, ad esempio a basse temperature e con materiali poco resistivi e con alte differenze di potenziale ciò può non essere vero e il modello perde di validità; il secondo invece ci dice che nell'istante successivo ad un urto la velocità dipende solamente dall'agitazione termica perché ancora il campo elettrico non ha avuto il tempo di accelerare l'elettrone in una direzione, essendo la velocità di agitazione termica isotropa, anche la velocità a seguito di un urto è isotropa (nel tempo la velocità dovuta al campo aumenta e si crea una direzione privilegiata in cui la velocità è maggiore e dunque smette di essere isotropa). I materiali che soddisfano questi due principi sono detti ohmici.\\
-Sia \(v_{i+1}\) la velocità subito prima di un urto, \(v_i\) quella subito dopo e $\overline{t}$ il tempo medio fra due urti essendo il moto uniformemente accelerato, la velocità prima dell'urto è uguale alla velocità iniziale (isotropa, dovuta all'agitazione termica) più l'accelerazione dovuta al campo per il tempo medio fra due urti
+I materiali che soddisfano questi due principi sono detti ohmici.\\
+Sia \(v_{i+1}\) la velocità subito prima di un urto, \(v_i\) quella subito dopo e $\overline{t}$ il tempo medio fra due urti. Essendo il moto uniformemente accelerato, la velocità prima dell'urto è uguale alla velocità iniziale (isotropa, dovuta all'agitazione termica) più l'accelerazione dovuta al campo per il tempo medio fra due urti
 \[\mathbf{v}_{i+1}  = \mathbf{v}_i - \frac{e\mathbf{E}}{m_e}\overline{t}\]
 \[\mathbf{v}_d = \sum_i\frac{\mathbf{v}_{i+1}}{N}= \frac{\sum_i\mathbf{v}_i}{N} - \frac{e\mathbf{E}}{m_e}\overline{t} \frac{N}{N} = - \frac{e\mathbf{E}}{m_e}\overline{t}\]
 dove il primo addendo si elimina perché la media vettoriale di una velocità isotropa è nulla. Possiamo riscrivere il vettore di densità di corrente
@@ -1073,7 +1075,7 @@ In conclusione
 Queste sono forme equivalenti alle leggi di Ohm, che possiamo ricavare semplicemente.\\
 Si consideri un circuito in condizioni stazionarie (i costante) e con campo elettrico costante con differenza di potenziale \(\Delta V_{AB}\) a cui è collegato un cilindro di materiale conduttore di altezza l e superficie di base S. 
 \[\Delta V = \int_{A}^{B}\mathbf{E}d\mathbf{l}=El\]
-\[i = \int_S \mathbf{J}d\mathbf{s}= JS= \frac{E S}{\rho}\]
+\[i = \int_S \mathbf{J}d\mathbf{s}= JS= \frac{E S}{\rho'}\]
 \[\Rightarrow E = \frac{\rho'}{S}i\]
 \[\Rightarrow \Delta V = \frac{l\rho'}{S}i \equiv R i\]
 dove R è la \textbf{resistenza}. Quest'ultima è la prima legge di Ohm, la seconda è proprio la definizione di resistenza R
@@ -1123,7 +1125,7 @@ Che si estende a
 \[\frac{1}{R_{tot}}= \sum_{i = 1}^N\frac{1}{R_i}\]
 
 \subsubsection*{Resistenze dal punto di vista energetico: effetto Joule}
-In presenza di campo elettrico gli elettroni hanno una velocità di deriva, se spengo il campo tornano ad avere velocità media nulla, qual'è la potenza che devo erogare per mantenere costante questa velocità (e quindi sconfiggere oppormi alla resistenza)? Cominciamo considerando quella necessaria ad un singolo portatore di carica
+In presenza di campo elettrico gli elettroni hanno una velocità di deriva, se spengo il campo tornano ad avere velocità media nulla, qual'è la potenza che devo erogare per mantenere costante questa velocità (e quindi sconfiggere la resistenza)? Cominciamo considerando quella necessaria ad un singolo portatore di carica
 \[P_i = \frac{dL}{dt}= \frac{\mathbf{F}\mathbf{dr}}{dt}= \mathbf{F}\mathbf{v_d}= -q\mathbf{E}\mathbf{v_d}\] 
 moltiplicando per la densità di portatori di carica otteniamo la densità volumetrica di potenza necessaria, osservando che la carica di un portatore coincide con quella dell'elettrone otteniamo
 \begin{align}\label{eq:effetto_Joule}
@@ -1135,7 +1137,7 @@ Microscopicamente, l'energia viene dissipata a causa degli urti dei portatori di
 \subsection{Generatori}
 Tutti i circuiti visti fin ora presuppongono l'esistenza di un generatore che mantenga costante la \(\Delta V\) fra i capi del circuito (sopperendo quindi alla perdita di energia dovuta all'effetto Joule). Consideriamo la differenza di potenziale tra i capi di un filo conduttore, mantenuta costante da un generatore: secondo la prima legge di Ohm abbiamo
 \[\Delta V = \int_a^b \mathbf{E_{el}}\mathbf{dr}= Ri\]
-Sappiamo che la circuitazione del campo elettrostatico (\(\mathbf{E}_el\)) è nulla, tuttavia in un circuito in cui si considerano portatori di carica in movimento si deve tener conto anche delle resistenze, che si oppongono al moto di queste. Per permettere il moto delle cariche quindi, all'interno del circuito (da A a B), la differenza di potenziale non può essere nulla perché deve fornire abbastanza energia da opporsi alle resistenze; ne segue che deve esistere un'altro campo elettrico, diverso da \(\mathbf{E}_el\), non elettrostatico, la cui circuitazione non è nulla. La restante parte di circuito da considerare per ottenere la circuitazione totale è quello che va da B ad A, ovvero la parte di circuito interna al generatore. Sia \(\mathbf{E^*}\) il campo prodotto dal generatore, al suo interno è presente in totale il campo \(\mathbf{E^*}+\mathbf{E_{el}}\) mentre nel resto del circuito c'è solo \(\mathbf{E_{el}}\). Ne segue che il campo \(\mathbf{E^*}\) deve non solo essere opposto a quello elettrico ma anche maggiore di esso e non conservativo.\\
+Sappiamo che la circuitazione del campo elettrostatico (\(\mathbf{E}_{el}\)) è nulla, tuttavia in un circuito in cui si considerano portatori di carica in movimento si deve tener conto anche delle resistenze, che si oppongono al moto di queste. Per permettere il moto delle cariche quindi, all'interno del circuito (da A a B), la differenza di potenziale non può essere nulla perché deve fornire abbastanza energia da opporsi alle resistenze; ne segue che deve esistere un'altro campo elettrico, diverso da \(\mathbf{E}_{el}\), non elettrostatico, la cui circuitazione non è nulla. La restante parte di circuito da considerare per ottenere la circuitazione totale è quello che va da B ad A, ovvero la parte di circuito interna al generatore. Sia \(\mathbf{E^*}\) il campo prodotto dal generatore, al suo interno è presente in totale il campo \(\mathbf{E^*}+\mathbf{E_{el}}\) mentre nel resto del circuito c'è solo \(\mathbf{E_{el}}\). Ne segue che il campo \(\mathbf{E^*}\) deve non solo essere opposto a quello elettrico ma anche maggiore di esso e non conservativo.\\
 Consideriamo la f.e.m. di un circuito siffatto è 
 \[\oint_{\Gamma}\mathbf{E_{tot}}\mathbf{dl}= \int_{a}^{b}\mathbf{E_{el}}\mathbf{dl}+\int_{b}^{a}(\mathbf{E^*}+\mathbf{E_{el}})\mathbf{dl}= Ri + R_{gen}i\]
 dove la prima resistenza è quella offerta dal conduttore mentre la seconda quella offerta dal generatore. Possiamo vedere lo stesso calcolo in modo diverso come
@@ -1180,7 +1182,7 @@ Consideriamo un circuito con un condensatore, un generatore, un interruttore ed 
 \end{figure}
 \FloatBarrier
 Per ottenere q(t) impostiamo una equazione differenziale a partire dall'espressione della f.e.m.. Considerando la resistenza interna al generatore trascurabile, otteniamo da una relazione vista in precedenza 
-\[\mathcal{E} = \Delta V = \Delta V_{ab} + \Delta_{bd} = \frac{q(t)}{C}+R\frac{dq(t)}{dt}\]
+\[\mathcal{E} = \Delta V = \Delta V_{ab} + \Delta V_{bd} = \frac{q(t)}{C}+R\frac{dq(t)}{dt}\]
 Otteniamo quindi l'equazione differenziale del primo grado, risolvibile con il metodo di separazione delle variabili
 \[\Delta V-q = RC \dot{q}\]
 \[\frac{dq}{q-C\Delta V}= -\frac{dt}{RC}\]
@@ -1957,13 +1959,13 @@ Abbiamo ricavato le equazioni (\ref{eq:densità_energia_elettrica}) e (\ref{eq:d
 \[\n\mathbf{B} = 0\]
 \[\n\wedge\mathbf{B} = \mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\d\mathbf{E}}{\d t}\]
 Consideriamo ora una porzione di volume infinitesimo \(d\tau\) della distribuzione di carica
-\[\mathbf{dF} = dq\mathbf{E} + dq\mathbf{v}\wedge\mathbf{B} = (\rho\mathbf{E} + \rho \mathbf{v}\wedge\mathbf{E})d\tau\]
+\[\mathbf{dF} = dq\mathbf{E} + dq\mathbf{v}\wedge\mathbf{B} = (\rho\mathbf{E} + \rho \mathbf{v}\wedge\mathbf{B})d\tau\]
 la forza moltiplicata scalarmente per la velocità risulta nella potenza scambiata dal volumetto $d\tau$
-\[\mathbf{dP} = \rho\mathbf{v}\mathbf{E}d\tau = (\rho\mathbf{v}\mathbf{E} + \rho (\mathbf{v}\wedge\mathbf{E})\mathbf{v})d\tau = \mathbf{J}\mathbf{E}d\tau\]
+\[\mathbf{dP} = (\rho\mathbf{v}\mathbf{E} + \rho (\mathbf{v}\wedge\mathbf{B})\mathbf{v})d\tau =  \rho\mathbf{v}\mathbf{E}d\tau = \mathbf{J}\mathbf{E}d\tau\]
 dove il contributo offerto dal campo magnetico si annulla perché per definizione di prodotto vettoriale il vettore risultante è ortogonale a \(\mathbf{v}\) che, moltiplicato per \(\mathbf{v}\) si annulla. Si noti che questa è la formula dell'effetto Joule (\ref{eq:effetto_Joule}).\\
 Ci chiediamo da cosa sia prodotta questa energia scambiata nell'unità di tempo, vogliamo ricavare un'espressione di \(\mathbf{J}\mathbf{E}\), usiamo la legge di Ampere-Maxwell e la moltiplichiamo scalarmente per \(\mathbf{E}\)
-\[(\n\wedge\mathbf{E})\mathbf{E} = \mu_0(\mathbf{J}\mathbf{E}) + \mu_0\varepsilon_0 \frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
-\[\mathbf{J}\mathbf{E} = \frac{(\n\wedge\mathbf{B})}{\mu_0}-\varepsilon_0\frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
+\[(\n\wedge\mathbf{B})\mathbf{E} = \mu_0(\mathbf{J}\mathbf{E}) + \mu_0\varepsilon_0 \frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
+\[\mathbf{J}\mathbf{E} = \frac{(\n\wedge\mathbf{B})\mathbf{E}}{\mu_0}-\varepsilon_0\frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
 Osservando che
 \[\n(\mathbf{E}\wedge\mathbf{B}) = (\n\wedge\mathbf{E})\mathbf{B}-(\n\wedge\mathbf{B})\mathbf{E}\]
 \[(\n\wedge\mathbf{B})\mathbf{E} = (\n\wedge\mathbf{E})\mathbf{B}- \n(\mathbf{E}\wedge\mathbf{B})\]
