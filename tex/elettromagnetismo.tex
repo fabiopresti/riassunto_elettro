@@ -216,7 +216,7 @@ potenziale elettrostatico. La sua unità di misura è il Volt $V \equiv \frac{kg
 \[V_i(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\frac{q_i}{r_i}\]
 \[V(\mathbf{r})= \frac{1}{4\pi\varepsilon_0}\sum_{i}\frac{q_i}{r_i}\]
 Se avessimo una distribuzione continua di carica invece
-\[V(\mathbf{r})= \frac{1}{4\pi\varepsilon_0}\ _Q\int\frac{d q}{r} =  \frac{1}{4\pi\varepsilon_0}\ _V\int\frac{\rho}{ rattrattiva}dV\]
+\[V(\mathbf{r})= \frac{1}{4\pi\varepsilon_0}\ _Q\int\frac{d q}{r} =  \frac{1}{4\pi\varepsilon_0}\ _V\int\frac{\rho}{ r}dV\]
 Si ha inoltre 
 \[U(\mathbf{r})=qV(\mathbf{r})\]
 \end{definizione}
@@ -273,9 +273,9 @@ Risulta, ricordando la definizione di angolo in radianti
 	&d\Omega = \frac{r^2 \sin\theta d\varphi}{r^2} = \sin\theta d\theta d\varphi
 \end{align*}
 Abbiamo ottenuto un'espressione dell'angolo solido in steradianti indipendente dal raggio. Per ottenere un angolo solido basta integrare su entrambe gli angoli l'angolo solido infinitesimo
-\[\Omega = \int\int d\Omega = \int \int \sin\theta d\theta\]
+\[\Omega = \int\int d\Omega = \int \int \sin\theta d\theta d\varphi\]
 Per integrare su tutto l'angolo solido si deve integrare \(\varphi\) da 0 a 180 e $\theta$ da 0 a 360. 
-\[\Omega_{tot} = \int^{2\pi}_{0}\left(\int^{\pi}_{0} d\Omega\right)d\varphi = 2\pi \int^\pi_{0} \sin\theta d\theta = 4\pi\]
+\[\Omega_{tot} = \int^{2\pi}_{0}\left(\int^{\pi}_{0} d\theta\right)d\varphi = 2\pi \int^\pi_{0} \sin\theta d\theta = 4\pi\]
 Ne segue che l'angolo solido totale è 4$\pi$, se lo moltiplichiamo per il raggio al quadrato otteniamo la superficie della sfera, proprio come moltiplicando l'angolo totale per il raggio otteniamo la circonferenza.\\\\
 
 Vogliamo ora calcolare il flusso del campo elettrostatico: consideriamo una calotta sferica \(\sigma\) ed una sua parte infinitesima d$\mathbf{s}$, con versore normale uscente dalla parte convessa; consideriamo inoltre un vettore campo elettrostatico $\mathbf{E}$ che forma un angolo \(\theta\) con il versore $\hat{u}$. Il flusso di $\mathbf{E}$ su \(d\mathbf{s}\) è 
@@ -363,6 +363,7 @@ D'altro canto possiamo calcolare la circuitazione lato per lato; visto che ci in
 Dove la t al pedice indica la componente tangenziale. Eguagliando le due espressioni ottenute si ha
 \[\Rightarrow E_{T1}=E_{T3}\]
 Ne segue quindi che la componente tangenziale resta continua attraversando la superficie. 
+\newpage
 \section{Elettrostatica della materia: i conduttori}
 \subsection{Conduttori neutri}
 I materiali si suddividono nelle due macrocategorie di conduttori e dielettrici (isolanti). Un conduttore metallico come il rame può essere modellizzato, in prima approssimazione, come un reticolo di ioni vincolati fra loro che possono solamente vibrare, immersi in un mare di elettroni tanto debolmente legati al nucleo da poter muoversi liberamente attorno al reticolo a seguito di eccitazioni energetiche minime come l'agitazione termica. Ogni atomo di rame contribuisce con circa un elettrone di conduzione, in un centimetro cubo vi sono
@@ -508,7 +509,7 @@ Ma come si dispongono le cariche sulla superficie? Sperimentalmente si esclude l
 	&\Rightarrow \frac{\sigma_1}{R_2} = \frac{\sigma_2}{R_1}
 \end{align*}
 Da cui segue che la densità superficiale di carica aumenta con il raggio di curvatura.\\
-Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica; in questo punto avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche.\\
+Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica; in questo punto avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche. Se la densità di carica è alta il campo elettrico subito oltre la punta sarà molto grande, può accadere che un elettrone libero o uno ione siano accelerati a sufficienza da questo campo, prima di effettuare un urto, in modo da acquistare una grande quantità di energia tale da far saltare un elettrone ad un altro atomo, questo nuovo elettrone libero sarà soggetto allo stesso meccanismo: in questo modo si produce una scintilla (o un piccolo fulmine) che scaricano il condensatore. Questo meccanismo si chiama perforazione del dielettrico, è lo stesso meccanismo che avviene nei fulmini e per evitarlo bisogna costruire condensatori il puù lisci possibile per evitare la presenza di punte.\\
 Alla luce di quanto ottenuto possiamo rivedere il risultato precedentemente ottenuto per cui nella superficie interna non si dispongono cariche: possiamo considerare un conduttore pieno con carica disposta in superficie e piegarlo fino ad ottenere un conduttore cavo, più lo pieghiamo più la curvatura che formerà la cavità diventa negativa, allontanando da sè le cariche.\\
 Quando colleghiamo un conduttore carico al terreno questo si scarica, ciò avviene perché entra a contatto con una sfera di raggio di curvatura enorme (approssimabile ad infinito). 
 \subsection{Metodo delle cariche immagine}
@@ -533,6 +534,7 @@ Il laplaciano di f, come notato, è nullo quindi il secondo addendo si annulla. 
 Da cui si deduce che f è sempre costante ma essendo 0 su S vorrà dire che sarà sempre nulla da cui \[V_1 = V_2\]. 
 \\\\
 Per mostrare che l'effetto di una carica è il medesimo di quello di un conduttore basta mostrare che entrambi soddisfano le stesse condizioni al contorno. Ad esempio, per calcolare il campo generato da una carica su un conduttore piano infinito le condizioni al contorno sono che le linee di campo entrano ortogonalmente alla superficie del conduttore e che il potenziale sulla superficie del conduttore è nullo (lo poniamo nullo in quella regione essendo definito a meno di una costante). Si dimostra facilmente che le stesse condizioni sono rispettate se al posto del conduttore mettiamo una carica di segno opposto alla prima a medesima distanza dalla superficie conduttrice ma dal lato opposto (e chiaramente sullo stesso asse). Per il teorema appena dimostrato il potenziale sarà lo stesso nei due casi. 
+\newpage
 \section{Condensatori}
 Cominciamo la trattazione di un nuovo oggetto fondamentale in elettrostatica, i condensatori, introducendo il concetto di \textbf{tubo di flusso}. Considerando le linee di forza di un campo, il tubo di flusso è formato dalle linee che si appoggiano su una superficie chiusa (come quelle verdi in figura).
 \begin{figure}[h!]
@@ -673,13 +675,14 @@ per ottenere il lavoro per spostare una carica dq da destra a sinistra integriam
 \[\Delta L_{est} = \int_{A}^{B} dL = \int_{A}^{B} dqdV = dq \Delta V_{ab}(q) \]
 dove la differenza di potenziale dipende da q perché più cariche spostiamo da sinistra a destra più aumenta il potenziale. Per trovare il lavoro totale integriamo per tutte le cariche
 \[L_{est} = \int_0^Q  \Delta V_{ab}(q) dq= \int_0^Q \frac{qdq}{4\pi\varepsilon_0 d} = \frac{q^2}{8\pi\varepsilon_0 d} = \frac{1}{2}Q\Delta V = \frac{1}{2} C \Delta V^2\]
-Ma l'energia immagazzinata dove risiede? Abbiamo appena visto che spostando le cariche aumenta la differenza di potenziale e quindi il campo elettrico, l'energia è immagazzinata nel campo elettrico: in generale dove c'è campo elettrico c'è energia.\\
+Ma l'energia immagazzinata dove risiede? Potremmo pensare che questa domanda non è rilevante in quanto il principio fondamentale che vogliamo sia rispettato è la conservazione dell'energia, indipendentemente da dove è conservata. Tuttavia a ben pensarci la conservazione dell'energia tout court ammetterebbe ancora che l'energia può scomparire in un punto e riapparire in un altro senza che nello spazio compreso avvenga nulla; se invece troviamo un oggetto fisico a cui è legata l'energia elettrica, stabiliamo una formulazione più forte della conservazione dell'energia: la conservazione locale dell'energia. Abbiamo appena visto che spostando le cariche aumenta la differenza di potenziale e quindi il campo elettrico, l'energia è immagazzinata nel campo elettrico: in generale dove c'è campo elettrico c'è energia. In questo modo, visto che il campo elettrico non ha discontinuità e non scompare e riappare casualmente, abbiamo un principio di conservazione dell'energia più "forte". Questa formulazione è necessaria perché se non riuscissimo ad individuare con precisione il luogo in cui è immagazzinata l'energia, dal momento che massa ed energia sono equivalenti (\(E = mc^2\)), allora non saremmo in grado di dtereminare la posizione delle masse con precisione e quindi la teoria della gravità sarebbe incompleta. Usando solo la teoria dell'elettrostatica non sappiamo dove risiede l'energia ma la teoria dell'elettromagnetismo completa offre molte più informazioni.\\
 Possiamo sostituire all'ultima espressione ottenuta due espressioni viste in precedenza per la capacità di un condensatore piano e per la differenza di potenziale di questo 
 \[U_{tot} = [\frac{1}{2}\varepsilon_0 E^2](Sd) \]
 \begin{align}\label{eq:densità_energia_elettrica}
 	u_e \equiv \frac{1}{2}\varepsilon_0 E^2
 \end{align}
 quest'ultima è detta "densità di energia", in questo caso è stata ricavata per un condensatore piano a facce parallele ma vedremo in seguito che questo è un caso particolare di un teorema molto più generale, il teorema di Poynting, e che questo è sempre il valore della densità di energia (locale) del campo elettrico.
+\newpage
 \section{Dipoli elettrici}
 \begin{definizione}[Dipolo elettrico]
 	Un dipolo elettrico, in elettrostatica, è un sistema composto da due cariche elettriche uguali e di segno opposto e separate da una distanza costante nel tempo.
@@ -796,6 +799,7 @@ Se il corpo è neutro abbiamo \(|Q^+|=|Q^-|=Q\) quindi \(\mathbf{p} = Q(\mathbf{
 	\label{fig:dipolohh2o}
 \end{figure}
 \FloatBarrier
+\newpage
 \section{Dielettrici}
 Come già accennato, un dielettrico è un materiale schematizzabile come un reticolo cristallino in cui tutti gli elettroni sono legati. Ha proprietà isolanti ed è contrapposto ai materiali conduttori.\\
 Un dielettrico, nonostante abbia gli elettroni "fissi" può polarizzarsi se esposto ad un campo elettromagnetico.
@@ -833,21 +837,24 @@ Riprendendo la precedente espressione, possiamo scrivere
  \[\frac{Q_{tot}}{\varepsilon_0} = E_k A = \frac{\sigma A - \sigma_p A}{\varepsilon_0}\]
 dove abbiamo sottratto alla $\sigma$ che ci sarebbe in un conduttore alla $\sigma_p$, si noti che siamo sicuri della presenza di una $\sigma_p$ di segno opposto a quella dell'armatura  sappiamo che \(\sigma_k<\sigma\) e quindi possiamo scrivere \(\sigma_k = \sigma -\sigma_p\). Possiamo quindi svolgere le seguenti considerazioni
 \[E_k = \frac{\sigma }{\varepsilon_0 k} = \frac{\sigma}{\varepsilon_0}\left[\frac{1}{k}-1+1\right] = \frac{\sigma}{\varepsilon_0}\left[1-\frac{k-1}{k}\right] = \frac{\sigma}{\varepsilon_0}-\frac{\sigma_p}{\varepsilon_0}\]
-\[\Rightarrow \sigma_k = \frac{k-1}{k}\sigma\]
-Notiamo che più k è grande più grande è la carica di polarizzazione.\\
+\[\Rightarrow \sigma_p = \frac{k-1}{k}\sigma\]
+Notiamo che più k è grande più grande è la carica di polarizzazione.
+\begin{definizione}[dielettrico omogeneo (o uniforme)]
+	Un dielettrico è detto omogeneo (o, equivalentemente, uniforme) se k non dipende dalla posizione.
+\end{definizione}
 Fin ora abbiamo solamente tratto deduzioni matematiche senza chiederci il motivo fisico per cui otteniamo questi risultati. Ciò che avviene è analogo a quanto visto per l'atomo di idrogeno in un campo elettrico: le nuvole elettroniche degli atomi nel dielettrico si spostano creando una polarizzazione. 
 \[\delta = \mathbf{d}_+ -\mathbf{d}_- \neq 0\]
 \[\mathbf{p} = q\delta\neq 0\]
-dove questo momento di dipolo è quello generato da un singolo atomo. La polarizzazione avviene in tutti gli atomi del dielettrico ma negli strati interni la asimmetria di carica di uno strato è compensata da quello superiore ed inferiore; la polarizzazione crea dunque una densità di carica solo in superficie dove non è presente uno strato superiore o inferiore. Abbiamo così spiegato il perché della presenza di \(\sigma_p\) da cui scaturiscono le relazioni matematiche appena dedotte. Definiamo il \textbf{vettore di polarizzazione} come
+dove questo momento di dipolo è quello generato da un singolo atomo. Se il dielettrico è omogeneo La polarizzazione avviene in tutti gli atomi del dielettrico ma negli strati interni la asimmetria di carica di uno strato è compensata da quello superiore ed inferiore; la polarizzazione crea dunque una densità di carica solo in superficie dove non è presente uno strato superiore o inferiore. Abbiamo così spiegato il perché della presenza di \(\sigma_p\) da cui scaturiscono le relazioni matematiche appena dedotte. Definiamo il \textbf{vettore densità di polarizzazione} come
 \[\mathbf{P} = n\mathbf{p} = nq\delta = \frac{\Delta N}{\Delta \tau} q \delta \]  
 dove n è la densità volumetrica di atomi e q è la carica di un'atomo (considerato come un dipolo) data da \(q = ze\) dove z è il numero atomico. Notiamo inoltre che più aumenta il campo elettrico più aumenta $\delta$ e quindi anche il vettore di polarizzazione.\\
 Si nota sperimentalmente (ma si dedurrà a breve) che la maggior parte dei dielettrici rispettano la seguente relazione
 \begin{align}\label{eq:polarizzazione_lineare}
 	\mathbf{P} = \varepsilon_0(k-1)\mathbf{E} = \varepsilon_0 \chi \mathbf{E}
 \end{align}
-dove $\chi$ è detta \textbf{suscettibilità elettrica}. I dielettrici che rispettano questa condizione sono detti lineari perché p dipende linearmente da E, limiteremo la nostra trattazione a questo tipo di materiali. Di solito P è uniforme all'interno del dielettrico ma esistono casi in cui cambia, di conseguenza anche k cambia all'interno del materiale. Inoltre nella maggior parte dei casi \(\mathbf{P} // \mathbf{E}\) (per come abbiamo scritto l'ultima equazione sembra l'unica opzione possibile) tuttavia può accadere che k non sia uno scalare ma un tensore 3x3, in questo caso la direzione di $\mathbf{P}$ può non essere la stessa di $\mathbf{E}$. Quando ciò avviene il materiale è detto anisotropo (ad esempio i cristalli birifrangenti). Fin ora abbiamo quindi studiato solamente dielettrici lineari isotropi.
-\begin{definizione}[Isotropia]
-	L'isotropia è la proprietà dell'indipendenza dalla direzione, da parte di una grandezza definita nello spazio. Il suo contrario è l'anisotropia.
+dove $\chi$ è detta \textbf{suscettibilità elettrica}. I dielettrici che rispettano questa condizione sono detti lineari perché p dipende linearmente da E, limiteremo la nostra trattazione a questo tipo di materiali. Di solito P è omogeneo all'interno del dielettrico ma esistono casi in dipende dalla posizione dunque \(\mathbf{P} = \mathbf{P}(x, y, z)\) e anche \(k = k(x, y, z)\). Inoltre nella maggior parte dei casi \(\mathbf{P} // \mathbf{E}\) (per come abbiamo scritto l'ultima equazione sembra l'unica opzione possibile) tuttavia questo è vero solo se k è uno scalare (che può essere uno scalare costante se il dielettrico è omogeneo o un campo scalare se non lo è) può accadere però che k non sia uno scalare ma un tensore 3x3, in questo caso la direzione di $\mathbf{P}$ può non essere la stessa di $\mathbf{E}$; il dielettrico si dice anisotropo (ad esempio i cristalli birifrangenti). Fin ora abbiamo quindi studiato solamente dielettrici lineari isotropi.
+\begin{definizione}[dielettrico anisotropo]
+	Un dielettrico è detto anisotropo se la costante dielettrica relativa ad esso associata è un tensore \(3\times 3\) detto tensore di polarizzazione. Contrariamente, un dielettrico isotropo ha come costante dielettrica relativa uno scalare.
 \end{definizione}
 \subsection{Interpretazione microscopica della polarizzazione di un dielettrico}
 Abbiamo visto che quando avviene la polarizzazione si ridistribuiscono le cariche e si genera una densità di carica sulla superficie \(\sigma_p\), abbiamo giustificato matematicamente il fatto che questa si generi proprio in superficie con la legge di Gauss e ne abbiamo reso conto anche fisicamente mediante un'interpretazione microscopica della polarizzazione.\\
@@ -862,14 +869,14 @@ Ricordando che \(P = nq\delta\), abbiamo che $\sigma_p = P$. Se però il campo n
 \end{align}
 
 Solitamente la densità di carica dovuta alla polarizzazione sta sulla superficie per i motivi precedentemente spiegati, tuttavia fin ora abbiamo implicitamente presunto che il dielettrico sia omogeneo, cioè, intuitivamente, che non presenti irregolarità al suo interno.
-In generale, a livello locale, visto che può capitare che se il materiale non è "regolare", non tutte le cariche generate dalla polarizzazione di uno strato interno siano annullate da quelli adiacenti; si possono quindi avere cariche anche all'interno del dielettrico (vi sarà quindi una densità di carica volumetrica dovuta alla polarizzazione \(\rho_p\)).\\
+In generale, a livello locale, non tutte le cariche generate dalla polarizzazione di uno strato interno sono annullate da quelli adiacenti; si possono quindi avere cariche anche all'interno del dielettrico (vi sarà quindi una densità di carica volumetrica dovuta alla polarizzazione \(\rho_p\)).\\
 Vediamo una trattazione matematica di questo fenomeno. Consideriamo una superficie $\Sigma$ all'interno del dielettrico, se non c'è campo esterno non c'è polarizzazione quindi abbiamo
 \[E = V(\Sigma) Q = 0\]
 \[Q_p = \int_{V(\Sigma)}\rho_p d\tau = 0\]
 dove \(Q_p\) è la carica generata dalla polarizzazione.\\
 In presenza di campo invece, nel caso di un dielettrico generale, si ridistribuiscono le cariche a causa della polarizzazione; ne segue che una carica dq è transitata attraverso la superficie $\Sigma$. Consideriamo una pozione di superficie di \(\Sigma\) infinitesima $d\mathbf{s}$ e il vettore di polarizzazione $\mathbf{P}$. La carica infinitesima transitata attraverso la superficie d$\mathbf{s}$ è
 \[dq = \sigma_pds=(\mathbf{P}\hat{n})ds = \mathbf{P}d\mathbf{s}\]
-Ne deduciamo che la carica passata per \(\Sigma\) la otteniamo con il flusso di $\mathbf{P}$ su $\Sigma$. Se $\mathbf{P}$ è costante all'interno di tutto il dielettrico (definizione rigorosa di quanto prima chiamavamo "regolare", si dice che il materiale è isotropo) tanta carica entra e tanta ne esce da $\Sigma$ quindi il flusso è nullo e la carica interna al dielettrico anche (\(\rho_p = 0\)). Se $\mathbf{P}$ non è uniforme (materiali anisotropi) allora il flusso non è nullo e di conseguenza vi è una carica $Q_p$ all'interno del dielettrico. 
+Ne deduciamo che la carica passata per \(\Sigma\) la otteniamo con il flusso di $\mathbf{P}$ su $\Sigma$. Se $\mathbf{P}$ è costante all'interno di tutto il dielettrico (dielettrico omogeneo) tanta carica entra e tanta ne esce da $\Sigma$ quindi il flusso è nullo e la carica interna al dielettrico anche (\(\rho_p = 0\)). Se $\mathbf{P}$ non è uniforme (materiali anisotropi) allora il flusso non è nullo e di conseguenza vi è una carica $Q_p$ all'interno del dielettrico. 
 \[ Q_p = -\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau \neq 0 \]
 Applicando il teorema della divergenza otteniamo
 \[-\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau = -\int_{V(\Sigma)}(\mathbf{\n}\mathbf{P})d\tau \]
@@ -903,11 +910,11 @@ Infine possiamo trovare una semplice espressione di $\mathbf{D}$ ricordando la \
 \subsection{Dielettrici anisotropi}
 Dalla relazione (\ref{eq:polarizzazione_lineare}) possiamo sostituire E alla definizione di D e differenziare per ottenere
 \[\mathbf{\n}\mathbf{P} = \mathbf{\n}\left(\frac{k-1}{k}\mathbf{D}\right)\]
-Se il materiale dielettrico è isotropo, differenziando $\mathbf{P}$, essendo k costante, si ottiene 
+Se il materiale dielettrico è omogeneo, differenziando $\mathbf{P}$, essendo k costante, si ottiene 
 \[\mathbf{\n}\mathbf{P} = \frac{k-1}{k}\mathbf{\n}\mathbf{D} = 0\] 
-se invece il materiale è anisotropo \(k=k(x,y,z)\) quindi si deve applicare la differenziazione di prodotto ottenendo
+se invece il materiale non è omogeneo \(k=k(x,y,z)\) si deve applicare la differenziazione di prodotto ottenendo
 \[\mathbf{\n}\mathbf{P} = \frac{k-1}{k}\mathbf{\n}\mathbf{D} + \mathbf{D}\mathbf{\n}\left(\frac{k-1}{k}\right)= \mathbf{D}\mathbf{\n}\left(\frac{k-1}{k}\right)\neq 0\]
-Osserviamo inoltre che se in materiale è lineare ed isotropo, la direzione in cui si polarizzano gli atomi è la stessa di quella del campo elettrico perché nella \ref{eq:polarizzazione_lineare} P ed E sono legate da uno scalare quindi
+Osserviamo inoltre che se in materiale è lineare ed omogeneo, la direzione in cui si polarizzano gli atomi è la stessa di quella del campo elettrico perché nella \ref{eq:polarizzazione_lineare} P ed E sono legate da uno scalare quindi
 \[\mathbf{D}//\mathbf{E}//\mathbf{P}\]
 se però k è una matrice in generale si ha che questi non sono paralleli. L'espressione più generale di $\mathbf{D}$ e $\mathbf{P}$ per materiali anisotropi è dunque
 \[\mathbf{P} = \varepsilon_0 (\mathbf{k}-I)\mathbf{E}\]
@@ -1001,10 +1008,11 @@ La densità è negativa perché il sistema costituito dal dielettrico, nel polar
 Nel caso più generale del dielettrico anisotropo si ha 
 \[u = \frac{1}{2}\varepsilon_0 \mathbf{k} \mathbf{E} \mathbf{E}(\frac{1}{k}-1) =\frac{1}{2} \mathbf{D} \mathbf{E}\]
 dove $\mathbf{k}$ è una matrice 3x3 che moltiplicata al primo $\mathbf{E}$ risulta nel vettore $\mathbf{D}$ che moltiplicato al secondo $\mathbf{E}$ da uno scalare.
+\newpage
 \section{Corrente elettrica stazionaria}
 I conduttori sono tali in virtù della presenza di portatori di carica, questi possono essere positivi (protoni) o, come succede più frequentemente, negativi (elettroni). Ad esempio la densità di portatori di carica di rame e argento è
-\[N_{Cu} = 8.5 \cdot 10^{28}\frac{e^-}{m^3}\]
-\[N_{Ag} = 5.9\cdot 10^{28}\frac{e^-}{m^3}\]
+\[n_{Cu} = 8.5 \cdot 10^{28}\frac{e^-}{m^3}\]
+\[n_{Ag} = 5.9\cdot 10^{28}\frac{e^-}{m^3}\]
 Come si muovono i portatori di carica quando esiste un campo all'interno di un conduttore? Per saperlo è necessario avere uno strumento capace di generare un tale campo, questo è la pila, inventata da Alessandro Volta nel 1799 (prima di questa data uno studio sistematico di questi fenomeni era impossibile). La pila è un generatore di \textbf{forza elettromotrice} (che non è una forza) che intuitivamente è un qualcosa che genera movimento di elettroni. I portatori di carica si muovono solamente per agitazione termica in assenza di una f.e.m. quindi la media vettoriale delle velocità per agitazione termica è nulla
 \[\mathbf{\overline{v}}_0= \sum_{i = 1}^{N}\frac{\mathbf{v}_i}{N}=0\]
 Quando attacchiamo la pila si ha una forza sui portatori di carica che quindi sono accelerati; la velocità media non sarà più nulla
@@ -1015,21 +1023,21 @@ Se il campo è costante lungo il conduttore (quando si parla di conduttori possi
 La costante che compare in questo caso (e che nel caso dell'attrito viscoso è la viscosità) è la \textbf{resistività}, il concetto è lo stesso ma in questo caso è dal punto di vista microscopico. Hanno resistività nulla solamente il vuoto e i superconduttori, nei quali è possibile far raggiungere ai portatori di carica velocità prossime a quelle della luce (a causa di effetti relativistici). La velocità dei portatori di carica in modulo è ricavabile dalla teoria cinetica dei gas come valor medio della distribuzione di Maxwell-Boltzmann
 \[\overline{v}_0=\sqrt{\frac{3k_b T}{m}}\]
 i valori ottenuti da questa formula sono sottostimati di un fattore 10, di cui è possibile render conto solo introducendo la teoria quantistica (teoria di Fermi-Sommerfield).\\
-Se è presente un campo nel conduttore (e quindi una f.e.m.) esisterà una velocità media di deriva delle cariche (le possiamo immaginare come una nuvola di portatori di carica che si muove disordinatamente e che trasla in una direzione). Vogliamo ricavare un'espressione della velocità di deriva; consideriamo un conduttore cilindrico con densità di portatori di carica N, all'interno del quale è presente un portatore di carica positivo (in modo da avere lo spostamento equiverso al campo). Consideriamo una superficie \(\Sigma\) che taglia il conduttore trasversalmente, sia $\Delta q$ la carica che attraversa $\Sigma$ nel tempo $\Delta t$
+Se è presente un campo nel conduttore (e quindi una f.e.m.) esisterà una velocità media di deriva delle cariche (le possiamo immaginare come una nuvola di portatori di carica che si muove disordinatamente e che trasla in una direzione). Vogliamo ricavare un'espressione della velocità di deriva; consideriamo un conduttore cilindrico con densità di portatori di carica n, all'interno del quale è presente un portatore di carica positivo (in modo da avere lo spostamento equiverso al campo). Consideriamo una superficie \(\Sigma\) che taglia il conduttore trasversalmente, sia $\Delta q$ la carica che attraversa $\Sigma$ nel tempo $\Delta t$
 \begin{definizione}[Intensità di corrente]
 	Definiamo l'intensità di corrente elettrica come
 	\[i \equiv \lim_{\Delta t \to 0} \frac{\Delta q}{\Delta t}=\frac{dq}{dt}\]
 	L'unità di misura è l'Ampere
 	\[1 A = \frac{1 C}{1 s}\]
 \end{definizione}
-Quanta carica passa per \(d\mathbf{s}\) (porzione infinitesima di $\Sigma$) in un intervallo di tempo $\Delta t$? Se i portatori di carica hanno una velocità di deriva \(v_d\), quelli che passano $\Sigma$ in $\Delta t$ sono quelli contenuti nel volume di conduttore di base \(ds\cos\theta\) (la superficie $\Sigma$ è inclinata) e altezza $v_d\Delta t$, conoscendo la densità di portatori di carica, essendo i portatori di carica positivi solitamente i protoni, si ha che la densità di carica è \(\rho = N e^+\). Se $\Delta t \to 0$
-\[dq = N e^+ d\tau = N e^+ v_d dt ds cos\theta\]
+Quanta carica passa per \(d\mathbf{s}\) (porzione infinitesima di $\Sigma$) in un intervallo di tempo $\Delta t$? Se i portatori di carica hanno una velocità di deriva \(v_d\), quelli che passano $\Sigma$ in $\Delta t$ sono quelli contenuti nel volume di conduttore di base \(ds\cos\theta\) (la superficie $\Sigma$ è inclinata) e altezza $v_d\Delta t$, conoscendo la densità di portatori di carica, essendo i portatori di carica positivi solitamente i protoni, si ha che la densità di carica è \(\rho = n e^+\). Se $\Delta t \to 0$
+\[dq = n e^+ d\tau = n e^+ v_d dt ds cos\theta\]
 
-\[di = N e^+ v_d ds cos\theta = N e^+ \mathbf{v}_d\cdot d\mathbf{s}\]
+\[di = n e^+ v_d ds cos\theta = n e^+ \mathbf{v}_d\cdot d\mathbf{s}\]
 Definiamo il vettore \textbf{densità di corrente}
-\[\mathbf{J} \equiv N e^+ \mathbf{v}_d\]
+\[\mathbf{J} \equiv n e^+ \mathbf{v}_d\]
 \[di = \mathbf{J}d\mathbf{s}\]
-\[i = \int_{\Sigma} \mathbf{J}d\mathbf{s} = \Phi(\mathbf{J})_\Sigma\]
+\[i = \int_{\Sigma} \mathbf{J}d\mathbf{s} = \Phi_\Sigma(\mathbf{J})\]
 se \(\mathbf{J}\) è costante su tutta la superficie allora la relazione si semplifica a 
 \[i = J\Sigma\]
 L'intensità di corrente è quindi il flusso del vettore densità di corrente sulla superficie. Qualora i portatori di carica fossero negativi, in J cambiano segno sia la carica (\(e^-\)) che la velocità quindi J rimane invariato; si ha sempre, indipendentemente dal tipo di portatore, \(\mathbf{J}\) // $\mathbf{E}$. Vediamo che è arbitrario assumere portatori positivi o negativi nella definizione dell'intensità di corrente, essendo più intuitivo il fatto che i portatori siano equiversi al campo scegliamo portatori di carica sempre positivi; ne segue che in un circuito immagineremo sempre portatori di carica che vanno dal punto a potenziale maggiore a quello minore ma nella realtà non è detto che ciò avvenga (anzi, è più frequente che i portatori siano negativi, come in tutti i conduttori). \\
@@ -1052,11 +1060,10 @@ Nel caso stazionario (quello più comune, che solitamente considereremo) I è lo
 	\[\n \mathbf{J}=0\]
 \end{definizione}
 \subsection{Le leggi di Ohm}
-Vogliamo ricavare la relazione che lega J ad E. Storicamente quanto andremo a ricavare per via teorica è stato inizialmente osservato sperimentalmente e dall'esperienza se ne sono dedotte le leggi empiriche (macroscopiche); ciò avvenne nella prima metà dell'ottocento. Solo agli inizi del novecento si formulò un modello teorico che rendesse conto dell'esperienza; in particolare le leggi di Ohm sono del 1827 mentre il modello teorico di Lorentz-Drude è del 1906. Questo modello parte da due considerazioni e due principi:
+Vogliamo ricavare la relazione che lega J ad E. Storicamente quanto andremo a ricavare per via teorica è stato inizialmente osservato sperimentalmente e dall'esperienza se ne sono dedotte le leggi empiriche (macroscopiche); ciò avvenne nella prima metà dell'ottocento. Solo agli inizi del novecento si formulò un modello teorico che rendesse conto dell'esperienza; in particolare le leggi di Ohm sono del 1827 mentre il modello teorico di Lorentz-Drude è del 1906. Questo modello parte da una considerazioni e due principi:
 \begin{itemize}
-	\item[C1] Gli elettroni si muovono per agitazione termica (in modo isotropo)
-	\item[C2] Essendo il tempo fra due urti molto piccolo i tratti percorsi dagli elettroni fra due urti sono approssimabili a rettilinei (moto uniformemente accelerato)
-	\item[P1] Il tempo medio fra due urti non dipende dalla velocità di deriva
+	\item[C] Gli elettroni si muovono per agitazione termica (in modo isotropo) molto maggiore della velocità di deriva (quindi il tempo che intercorre fra due urti non dipende dalla velocità di deriva)
+	\item[P1] Essendo il tempo fra due urti molto piccolo i tratti percorsi dagli elettroni fra due urti sono approssimabili a rettilinei (moto uniformemente accelerato)
 	\item[P2] Dopo un urto la distribuzione di velocità è isotropa
 \end{itemize}
 I materiali che soddisfano questi due principi sono detti ohmici.\\
@@ -1064,10 +1071,10 @@ Sia \(v_{i+1}\) la velocità subito prima di un urto, \(v_i\) quella subito dopo
 \[\mathbf{v}_{i+1}  = \mathbf{v}_i - \frac{e\mathbf{E}}{m_e}\overline{t}\]
 \[\mathbf{v}_d = \sum_i\frac{\mathbf{v}_{i+1}}{N}= \frac{\sum_i\mathbf{v}_i}{N} - \frac{e\mathbf{E}}{m_e}\overline{t} \frac{N}{N} = - \frac{e\mathbf{E}}{m_e}\overline{t}\]
 dove il primo addendo si elimina perché la media vettoriale di una velocità isotropa è nulla. Possiamo riscrivere il vettore di densità di corrente
-\[\mathbf{J}= Ne\mathbf{v_d}= \frac{Ne^2\overline{t}\mathbf{E}}{m_e}\]
+\[\mathbf{J}= ne\mathbf{v_d}= \frac{n e^2\overline{t}\mathbf{E}}{m_e}\]
 Definiamo la \textbf{conduttività} $\sigma'$ e la \textbf{resistività} $\rho'$
-\[\sigma' \equiv \frac{Ne^2\overline{t}}{m_e}\]
-\[\rho' \equiv \frac{1}{\sigma'}= \frac{m_e}{Ne^2\overline{t}}\]
+\[\sigma' \equiv \frac{ne^2\overline{t}}{m_e}\]
+\[\rho' \equiv \frac{1}{\sigma'}= \frac{m_e}{n e^2\overline{t}}\]
 osserviamo che il tempo medio fra due urti dipende dal passo del reticolo cristallino l e dalla velocità di agitazione termica (\(\overline{t}= \frac{l}{v_i}\)), ne segue che conduttività e resistività dipendono solo dal tipo di materiale (in N ed l) e dalla temperatura ( in $\mathbf{v}_i$). \\
 In conclusione
 \[\mathbf{E}= \rho' \mathbf{J}\]
@@ -1168,6 +1175,7 @@ la seconda è equivalente al fatto che la differenza di potenziale su un circuit
 \begin{align*}
 	\sum_i \mathcal{E}_i -\sum_i R i_i =0
 \end{align*}
+\newpage
 \section{Circuiti in regime quasi stazionario:\\ il circuito RC}
 Fin ora, parlando di resistenze, abbiamo considerato solamente circuiti in cui la corrente è costante in tutti i punti; l'unico caso diverso che considereremo è il regime quasistazionario.
 \begin{definizione}[Regime quasistazionario]
@@ -1184,7 +1192,7 @@ Consideriamo un circuito con un condensatore, un generatore, un interruttore ed 
 Per ottenere q(t) impostiamo una equazione differenziale a partire dall'espressione della f.e.m.. Considerando la resistenza interna al generatore trascurabile, otteniamo da una relazione vista in precedenza 
 \[\mathcal{E} = \Delta V = \Delta V_{ab} + \Delta V_{bd} = \frac{q(t)}{C}+R\frac{dq(t)}{dt}\]
 Otteniamo quindi l'equazione differenziale del primo grado, risolvibile con il metodo di separazione delle variabili
-\[\Delta V-q = RC \dot{q}\]
+\[\Delta V C-q = RC \dot{q}\]
 \[\frac{dq}{q-C\Delta V}= -\frac{dt}{RC}\]
 \[q(t) = -e^{-\frac{t}{RC}}C\Delta V+C\Delta V = C\Delta V(1-e^{-\frac{t}{RC}})\]
 \[i(t) = \frac{dq}{dt} = \frac{\Delta V}{R}e^{-\frac{t}{RC}}\]
@@ -1197,6 +1205,7 @@ Dal punto di vista energetico, una parte di energia per caricare il condensatore
 \[L_{gen} = \int_{0}^{+\infty}P_{gen}(t)dt=\int_{0}^{+\infty}\Delta V i(t)dt = \int_{0}^{+\infty}\frac{\Delta V^2}{R} e^{-\frac{t}{RC}}dt = C\Delta V^2 \]
 Ne deduciamo che L'energia fornita dal generatore per caricare il condensatore è doppia rispetto a quella immagazzinata da questo una volta carico (\(U=\frac{1}{2}X\Delta V^2\)), l'altra metà è persa per effetto Joule. Possiamo pervenire allo stesso risultato integrando la potenza dissipata per effetto Joule in un tempo infinito per ottenere l'energia dissipata nel processo di carica. 
 \[L_{R} = \int_{0}^{+\infty}P_{R}(t)dt =\int_{0}^{+\infty}Ri(t)^2dt = \int_{0}^{+\infty}\frac{\Delta V^2}{R}e^{-\frac{2t}{RC}}dt = \frac{1}{2}C\Delta^2\]
+\newpage
 \section{Il magnetismo stazionario nel vuoto}
 \subsection{Evidenze sperimentali}
 A partire dalla prima metà dell'Ottocento, grazie all'avanzamento della tecnica, studiosi quali Coulomb (1736-1806), Ampere (1775-1836), \O{}rsted (1777-1851) Faraday (1791-1867), Lorentz (1853-1928)
@@ -1214,7 +1223,7 @@ Il problema che rende l'approccio di Coulomb sostanzialmente sbagliato è che si
 \FloatBarrier
 \'{E} interessante che in tempi recenti sono stati condotti esperimenti (basati su teorie moderne) che ricercavano l'esistenza di monopoli magnetici, finora mai osservati.\\
 Ciò rende i fenomeni magnetici diversi da quelli elettrici perché le linee di forza di un campo magnetico sono sempre necessariamente chiuse, perché partendo da un polo, rientrano sempre al polo di carica opposta. Ne segue che il campo magnetico ha sempre flusso nullo
-\[\Phi(\mathbf{B}) = 0\] 
+\[\mathbf{\Phi}(\mathbf{B}) = 0\] 
 In seguito alcuni esperimenti misero in luce le strette relazioni tra campo magnetico ed elettrico. L'esperimento di \O{}rsted mette in luce il fatto che un filo attraversato da corrente fa ruotare un'ago magnetico (dunque produce campo magnetico) orientandolo perpendicolarmente alla direzione del flusso di corrente elettrica; deduce inoltre che il campo prodotto dal filo è circolare, ortogonale ad esso e di verso che segue la regola della mano destra. Ampere osserva che anche tra due fili attraversati da corrente si genera una forza (che ipotizza di tipo magnetico) attrattiva se direzione e verso della corrente sono paralleli e concordi, repulsiva se paralleli e discordi. Infine Faraday osserva che un filo attraversato da corrente posto ortogonalmente fra due poli di un magnete sperimenta una forza ortogonale sia al filo che all'asse congiungente i due poli.\\
 \subsection{Deduzioni dai fatti sperimentali}
 Da queste leggi deduciamo che la Forza generata dal campo magnetico deriva da un prodotto scalare (risulta ortogonale ai due agenti che sembrano provocarla: il campo magnetico e la corrente elettrica), l'ordine dei fattori si deduce dall'orientamento della forza risultante e si osserva, seguendo il principio della mano destra, che il primo è legato alla direzione della corrente e il secondo dal campi magnetico. Tuttavia bisogna notare che per come è stata definita la corrente è uno scalare, è dunque errato parlare di "direzione della corrente", in realtà la direzione è quella del vettore velocità degli elettroni che attraversano il filo, la corrente è in relazione diretta sia con la velocità degli elettroni sia con la quantità di questi (e quindi con la carica in generale). Da queste considerazioni Lorentz formulò l'omonima legge
@@ -1448,7 +1457,7 @@ Riassumendo, la legge di Maxwell-Ampere rispettivamente in forma differenziale e
 	&\oint\mathbf{B}_{\Gamma}\mathbf{dl}= \mu_0 i + \mu_0\varepsilon_0\frac{d}{dt}\Phi(\mathbf{E})
 \end{align}
 Resta aperto un problema: in questo modo si spiega l'origine dei fenomeni magnetici legati a correnti elettriche, come si spiega però il campo magnetico generato da una calamita? Questo è dato dal moto degli elettroni nelle molecole di essa che generano una corrente atomica che genera campo magnetico (secondo il primo termine della legge di Ampere-Maxwell). Approfondiremo e giustificheremo le calamite più approfonditamente in seguito.
-\subsection{Spire e campo magnetico}
+\subsection{Spire e solenoidi}
 Abbiamo già visto la definizione di spira, analogamente a quanto fatto per il campo elettrico calcoliamo il campo magnetico generato da una spira attraversata da corrente in senso antiorario su un punto P giacente sul suo asse a distanza d. 
 \begin{esercizio}[Campo magnetico spira]
 Consideriamo una porzione infinitesima di spira \(\mathbf{dl}\) attraversata da corrente, per la legge di Biot-Savart il campo generato sul punto P è
@@ -1552,6 +1561,7 @@ Verifichiamo quanto ottenuto nel caso particolare di due solenoidi concentrici
 Un fatto di fondamentale importanza è che si crea un flusso non solo fra le due superfici ma anche di una superficie con sè stessa
 \[\iint_{\Sigma}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_1 = \int_{\Sigma}\oint_{\Gamma}\frac{\mu_0 i }{4\pi}\frac{\mathbf{ds}\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma\equiv L i\]
 dove, osservando che nell'integrale tutto dipende dalla geometria e dal mezzo tranne la corrente, definiamo il coefficiente di autoinduzione o \textbf{induttanza} L.
+\newpage
 \section{Campi magnetici variabili nel tempo}
 In elettrostatica valevano le relazioni
 \begin{align*}
@@ -1600,6 +1610,8 @@ L'espressione della legge di Faraday vista precedentemente, riferendosi al fluss
 \begin{align}\label{eq:Faraday_differenziale}
 	\n\wedge\mathbf{E}_I = -\frac{\d \mathbf{B}}{\d t}
 \end{align}
+Da questa relazione notiamo che un campo elettrico che si genera a partire da una variazione del campo magnetico nel tempo non è conservativo, perchè il suo rotore è diverso da zero.
+\newpage
 \section{Circuiti in regime quasi stazionario: il circuito RL}
 Solitamente l'induttanza L di un circuito è talmente bassa da essere trascurabile, tuttavia in presenza di un solenoide l'induttanza aumenta e non è più trascurabile. Il circuito RL è un modello di circuito in cui si considerano resistenza ed induttanza concentrate in due punti, il componente elettrico che genera campo magnetico a seguito di un passaggio di corrente è detto \textbf{induttore} e si indica con una spirale (che ricorda la forma di un solenoide, un ottimo induttore)
 \begin{figure}[h!]
@@ -1645,6 +1657,7 @@ Dove \(\Sigma l= V \) è il prodotto tra superficie e lunghezza del solenoide, q
 \begin{align}\label{eq:densità_energia_magnetica}
 u_L = \frac{U}{V} =\frac{1}{2}\frac{B^2}{\mu_0} 
 \end{align}
+\newpage
 \section{Natura ondulatoria del campo elettromagnetico}
 Riassumendo quanto fatto fin ora, abbiamo ottenuto delle nuove relazioni di validità generale per campi elettrici e magnetici variabili nel tempo, di cui l'elettrostatica è un caso particolare. Riscriviamo le quattro equazioni presentate ad inizio capitolo correggendole
 \begin{align*}
@@ -1719,6 +1732,7 @@ dove nel caso particolare considerato abbiamo \(\mathbf{E}=(0, E_y,E_z)\); \(\ma
 Notiamo infine che $\mu_0\varepsilon_0$ ha, come ci aspettavamo dalla forma generale dell'equazione delle onde piane, le dimensioni di una velocità alle meno 2 dunque la velocità di un'onda elettrica o magnetica è 
 \[v = \frac{1}{\sqrt{\mu_0\varepsilon_0}}\]
 che è una costante che risulta essere uguale alla velocità della luce. 
+\newpage
 \section{Campi magnetici stazionari nella materia}
 \subsection{Evidenze sperimentali}
 Consideriamo un solenoide (solenoide 1) di raggio R con asse giacente sull'asse delle x nel quale passa una corrente i. Poniamo un altro solenoide (solenoide 2) concentrico al primo, di raggio minore, sulla soglia del primo solenoide e connesso ad un dinamometro per misurare la forza con cui è attratto o respinto dal solenoide in cui passa corrente. La forza è data da 
@@ -1765,12 +1779,12 @@ Consideriamo il caso particolare in cui \(\mathbf{M}\) è costante in tutto il m
 dove l'ultima uguaglianza è possibile perché il vettore di magnetizzazione è parallelo al versore normale la superficie. Per il teorema di equivalenza di Ampere il prisma, che è un piccolo magnete, è equivalente ad una spira in cui scorre una corrente di magnetizzazione \(di_M\) di superficie \(\mathbf{ds}\)
 \[\mathbf{dm} = di_M \mathbf{ds} = M dz \mathbf{ds}\]
 \[\Rightarrow d i_M = M dz\]
-essendo \(\mathbf{M}\) costante per ipotesi la corrente ha sempre la stessa intensità e dipende solo dall'altezza della sezione di cilindro considerata. Cò vuol dire che in tutti i prismi di cui è composto il cilindro vi è una corrente che circola sempre nello stesso verso, ciò vuol dire che all'interno del cilindro le correnti si annullano vicendevolmente tranne quelle al bordo, ne segue che la corrente id magnetizzazione sta solo sul bordo e, più questo è spesso maggiore sarà la corrente totale. Possiamo considerare prismi di volume tanto piccoli da contenere solo un atomo, dunque la corrente di magnetizzazione a livello atomico è data solo dagli elettroni nell'atomo. per ottenere la corrente di magnetizzazione dell'intero cilindro integriamo
+essendo \(\mathbf{M}\) costante per ipotesi la corrente ha sempre la stessa intensità e dipende solo dall'altezza della sezione di cilindro considerata. Ciò vuol dire che in tutti i prismi di cui è composto il cilindro vi è una corrente che circola sempre nello stesso verso, ciò vuol dire che all'interno del cilindro le correnti si annullano vicendevolmente tranne quelle al bordo, ne segue che la corrente id magnetizzazione sta solo sul bordo e, più questo è spesso maggiore sarà la corrente totale. Possiamo considerare prismi di volume tanto piccoli da contenere solo un atomo, dunque la corrente di magnetizzazione a livello atomico è data solo dagli elettroni nell'atomo. per ottenere la corrente di magnetizzazione dell'intero cilindro integriamo
 \[i_{ml} = \int_{0}^{h}di_M=Mh\]
 Analogamente a quanto già fatto per la corrente elettrica con il vettore di densità di corrente, definiamo un \textbf{vettore di densità lineare di corrente di magnetizzazione}
 \[J_{ml} \equiv \frac{i_M}{h}= M\]
 o, in forma vettoriale
-\[\mathbf{J_ml} \equiv \mathbf{M}\wedge \mathbf{\hat{n}}\]
+\[\mathbf{J_{ml}} \equiv \mathbf{M}\wedge \mathbf{\hat{n}}\]
 dove \(\mathbf{\hat{n}}\) è il versore normale alla superficie del cilindro. Questa relazione è analoga alla \ref{eq:densità_polarizzazione}. Se \(\mathbf{M}\) non è costante le correnti non si annullano all'interno del cilindro quindi si generano correnti di magnetizzazione interne al cilindro (analogamente a quando \(\mathbf{P}\) non è costante nel dielettrico e si creano densità di polarizzazione interne).\\
 Cosa succede sulla superficie di contatto fra i du prismi? Su ogni superficie laterale c'è una corrente che girano nello stesso senso
 \[di_1 = M_z dz\]
@@ -1900,7 +1914,7 @@ La trattazione appena svolta per i materiali ferromagnetici è valida solo in un
 \[\frac{\chi_m(T-T_c)}{\rho} = C\] 
 dove C è una costante. 
 \subsubsection{Diamagnetici}
-consideriamo un atomo, schematizzabile in prima approssimazione come un atomo di idrogeno in cui è presente solo una carica negativa che orbita circolarmente attorno ad un nucleo carico positivamente. Conoscendo il valore del raggio dell'atomo allo stato fondamentale e del tempo che impiega ad effettuare una rivoluzione
+Consideriamo un atomo, schematizzabile in prima approssimazione come un atomo di idrogeno in cui è presente solo una carica negativa che orbita circolarmente attorno ad un nucleo carico positivamente. Conoscendo il valore del raggio dell'atomo allo stato fondamentale e del tempo che impiega ad effettuare una rivoluzione
 \[R_0 \simeq 0.5\cdot 10^{-10}\ m \quad T_0 \simeq 1.5\cdot 10^{-16}s\]
 possiamo vederlo come una spira circolare in cui transita una corrente di
 \[I_e = \frac{q}{T_0} \simeq 10^{-3}\ A\]
@@ -1926,7 +1940,7 @@ Questo moto, detto \textbf{precessione di Larmor} genera una corrente atomica di
 a cui è associato un momento magnetico di Larmor
 \[\mathbf{m_e} = i_e \mathbf{S}\]
 che è negativo poiché \(e = -|e|\). Questo momento magnetico dà origine al comportamento diamagnetico, ci spieghiamo il debole respingimento proprio per il segno negativo del momento di magnetizzazione che genera una forza repulsiva. 
-\section{Legge di rifrazione del campo magnetico}
+\subsection{Legge di rifrazione del campo magnetico}
 Consideriamo una superficie di separazione fra due mezzi di costanti di permeabilità magnetica relativa \(k_1\) e \(k_2\) ed un'onda elettromagnetica che incide sulla superficie 1 con angolo $\theta_1$ e viene rifratta con angolo $\theta_2$. A partire dalle equazioni già ricavate
 \[\oint_{\Sigma(\Gamma)} \mathbf{B} \mathbf{ds} = 0\]
 \[\oint_\Gamma \mathbf{H} \mathbf{dr} = 0\]
@@ -1950,6 +1964,7 @@ Mettendo assieme le due relazioni ricavate
 &\Rightarrow \frac{\tan\theta_1}{\tan\theta_2} =\frac{k_1}{k_2}
 \end{align*}
 che è la stessa trovata per il campo elettrico (entrambi i campi sono onde quindi si comportano allo stesso modo).
+\newpage
 \section{Teorema di Poynting: conservazione dell'energia}
 Abbiamo ricavato le equazioni (\ref{eq:densità_energia_elettrica}) e (\ref{eq:densità_energia_magnetica}) a partire dai casi particolari di un condensatore a facce piane parallele e di un solenoide per poi assumerle come generali senza dimostrarlo. Vogliamo ora ricavarle rigorosamente ed in generale ottenere un'espressione dell'energia scambiata da un generico sistema di cariche con velocità \(\mathbf{v}\) e carica q immerso in un generico campo elettrico e magnetico nell'unità di tempo (potenza). Scriviamo tutto ciò che sappiamo su questo sistema a partire dalla teoria sviluppata fin'ora
 \[\mathbf{F} = q\mathbf{E}+q\mathbf{v}\wedge\mathbf{B}\]
@@ -1997,10 +2012,42 @@ questo è il \textbf{teorema di Poynting} (dal fisico britannico John Henry Poyn
 L'onda elettromagnetica trasporta energia, come un corpuscolo puntiforme di massa m e quantità di moto \(\mathbf{p}\), di dimostra che anche le onde elettromagnetiche trasportano quantità di moto (derivante dal dualismo onda-corpuscolo)
 \[\mathbf{dp} = \mu_0\varepsilon_0 \mathbf{S}_p d\tau\]
 Un semplice esperimento che dimostra che anche la luce (e quindi le onde elettromagnetiche) hanno quantità di moto è la girandola solare, costituita da alcune pale colorate da un lato di nero (assorbe la luce) e dall'altro riflettenti. Visto che la riflessione della luce fa variare la quantità di moto della pala dal lato riflettente ma non da quello nero si crea una differenza di quantità di moto che mette in moto le pale facendole girare. 
+\newpage
 \section{Potenziale vettore}
+Osserviamo che nonostante campo elettrico e magnetico presentino tante simmetrie ed analogie, resta una forte discrepanza: il campo elettrico possiede un potenziale (\(V(\mathbf{x})\)) mentre il campo magnetico non ha potenziale e non può averlo scalare perché abbiamo osservato che è non conservativo (per definizione un campo conservativo possiede un potenziale scalare). Tuttavia ciò non esclude la possibilità dell'esistenza di un potenziale che sia un campo vettoriale, ci proponiamo di trovare la forma analitica del potenziale vettore del campo magnetico.\\
+Dalle equazioni di Maxwell abbiamo due proprietà  del campo magnetico, una ci offe informazioni sulla divergenza ed una sul rotore, sappiamo che il rotore non è nullo mentre la divergenza è sempre nulla. Sfruttiamo questa seconda proprietà, sempre valida, per ricavare un'espressione del potenziale vettore. Sia \(\mathbf{A}\) il potenziale vettore del campo magnetico, osserviamo che se lo definiamo mediante la relazione
+\[\mathbf{B} = \n \wedge \mathbf{A}\]
+la proprietà suddetta è sempre rispettata perché la divergenza del rotore è identicamente nulla. 
+\[\n\mathbf{B} = \n(\n \wedge \mathbf{A})=0\]
+Si osservi inoltre che in questo modo definiamo il potenziale vettore non solo a meno di una costante (analogamente al potenziale, a causa delle derivate della divergenza), ma anche a meno della divergenza di un campo scalare infatti
+\[\mathbf{A'} = \mathbf{A} + \n f\]
+\[\n\wedge\mathbf{A'} = \n\wedge\mathbf{A}+\n\wedge\n f = \n\wedge\mathbf{A} = \mathbf{B}\]
+dunque sia \(\mathbf{A}\) sia \(\mathbf{A'}\) rispettano la relazione con cui sono state definite. Inoltre, applicando la divergenza si nota 
+\[\n\mathbf{A'} = \n\mathbf{A}+\n^2 f = 0\]
+\[\Rightarrow \n\mathbf{A} = - \n^2f\]
+Cominciamo, per semplicità, con il definire il potenziale vettore, aggiungendo alla condizione \(\mathbf{B} = \n \wedge \mathbf{A}\) anche l'ipotesi \(\n A = 0\) da cui (\(\n^2f = 0\)) per semplificare i calcoli (torneremo su questo punto in seguito, per ora lo si accetti come una considerazione di tipo matematico). Inoltre, per semplicità, escludiamo la presenza di campi elettrici variabili.\\
+Sfruttiamo l'altra informazione che abbiamo sul campo magnetico dalle equazioni di Maxwell
+\[\n\wedge\mathbf{B} = \n\wedge(\n\wedge\mathbf{A}) = \n(\n A)-\n^2A = -\n^2 A = \mu_0\mathbf{J}\]
+dove è stata usata la regola del BAC-CAB e il fatto che per ipotesi \(\n A = 0\). Ciò che abbiamo ottenuto è un'equazione differenziale alle derivate parziali del secondo ordine, trovarne la risoluzione è possibile ma difficile, sfruttiamo dunque un'analogia con il campo elettrico per semplificare i calcoli. Abbiamo già notato come la risoluzione del problema di Laplace, ovvero la risoluzione dell'equazione differenziale alle derivate parziali del secondo ordine
+\[\n^V = -\frac{\rho}{\varepsilon_0}\]
+è risolta in modo generale dall'equazione
+\[V = \int_V \frac{\rho}{4\pi\varepsilon_0 r}d\tau\] 
+Per analogia possiamo risolvere l'equazione differenziale del potenziale vettore come
+\[\mathbf{A} = \int_V \frac{\mu_0 i}{4\pi r}d\tau\]
+Abbiamo così trovato l'espressione del potenziale vettore sotto l'ipotesi di assenza di campi elettrici variabili nel tempo e \(\n A = 0\), cosa significa fisicamente quest'ultima ipotesi? 
+\[\n A = \n \int \frac{\mu_0 \mathbf{J}}{4\pi r}d\tau = 0\]
+\[\Rightarrow \n \mathbf{J} = 0  \]
+dunque dire \(\n\mathbf{A} = 0\) equivale ad assumere il regime stazionario.\\
+Possiamo infine ottenere la forma integrale del potenziale vettore 
+\[\int_{\Sigma} \mathbf{B}\mathbf{ds} = \int_{Sigma} \n\wedge \mathbf{A}\mathbf{ds} = \oint_\Gamma(\Sigma) \mathbf{A}\mathbf{dl}\]
+Possiamo anche riscrivere l'equazione di Maxwell
+\[\n\wedge E = -\frac{\d \mathbf{B}}{\d t} = \frac{\d (-\n\wedge\mathbf{A})}{\d t} = \n\wedge\left(-\frac{\d \mathbf{A}}{\d t}\right)\]
+Dunque il campo elettrico consta di una componente conservativa, che è la differenza di potenziale elettrico, e di una componente non conservativa, presente solo quando si hanno campi magnetici variabili nel tempo, che è uguale alla variazione nel tempo del potenziale vettore. Possiamo quindi scrivere un'espressione generale del campo elettrico come
+\[\mathbf{E} = -\n V - \frac{\d \mathbf{A}}{\d t}\]
 \section{La fisica è finita?}
 Le equazioni di Maxwell permettono di studiare una quantità enorme di fenomeni prima sconosciuti le cui implicazioni tecnologiche ebbero un'impatto enorme sulla società della seconda metà dell' '800. Ciò avvenne grazie a (o a causa di) un periodo di pace che ormai durava in Europa da decenni, prosperità economica verificatasi grazie all'imposizione del ceto borghese nella società e in generale una incondizionata fiducia nel progresso e nella scienza testimoniata da movimenti filosofici come il positivismo o letterari e artistici come il realismo. Nel contesto di questa atmosfera si sviluppò un dibattito nella comunità scientifica attorno alla credenza che le principali scoperte scientifiche fossero ormai già state fatte e che ciò che mancava erano solamente conferme sperimentali e piccoli dettagli. L'ottimismo della comunità scientifica era già da tempo avversato da voci minori, ma non meno illustri, soprattutto di cultura umanistica, che criticavano le "magnifiche sorti e progressive" in cui la società dell'epoca credeva. Tuttavia una forte botta d'arresto a questo clima venne proprio dall'interno delle scienze, due problemi fondamentali erano stati lasciati aperti dalla teoria di Maxwell: il primo è che un elettrone in orbita attorno ad un nucleo (come veniva concepito dalla fisica classica), generando campo elettrico e magnetico, perde energia dunque non ci si spiega come faccia la materia stessa ad esistere poiché l'elettrone dovrebbe collassare sul nucleo. Inoltre dalle equazioni di Maxwell, come visto, risulta che le onde elettromagnetiche e quindi la luce hanno una velocità costante, la domanda è: "rispetto a quale sistema di riferimento?" inizialmente si pensò potesse essere il fantomatico etere ma le evidenze sperimentali (esperimenti di Michelson e Morley) confutarono questa ipotesi.\\
 Dal primo di questi problemi nacque la fisica quantistica, dal secondo la relatività (Appendice \ref{ap:relatività}): la fisica moderna stava per nascere. 
+\newpage
 \appendix
 \section{Operatori differenziali}\label{ap:operatori_differenziali}
 \subsection{Teorema del gradiente}
@@ -2160,6 +2207,7 @@ Le quattro condizioni necessarie e sufficienti (equivalenti) perché un campo si
 \begin{align*}
 \frac{c_1(c_2+c_4)}{c_1+c_2+c_3+c_4}-\frac{c_1c_2}{c_1+c_2}
 \end{align*}
+\newpage
 \section{Elettromagnetismo e relatività}\label{ap:relatività}
 Consideriamo due cariche uguali \(q_1\) \(q_2\) di segno positivo a distanza R in un S.R.I. O in quiete rispetto all'osservatore, che ipotizziamo sia solidale allo stesso S.R.I. delle cariche. Sappiamo che la forza agente su \(q_1\) è
 \[\mathbf{F}=q_1 \mathbf{E_2}= \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{R^2}\mathbf{\hat{j}}\]
