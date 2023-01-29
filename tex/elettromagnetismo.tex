@@ -291,13 +291,13 @@ Consideriamo ora una superficie chiusa $\Sigma$ e una sua parte infinitesima $d\
 	\label{fig:thmgauss1}
 \end{figure}
 \FloatBarrier
-Si noti che l'angolo che forma il campo elettrico con la superficie infinitesima è rispettivamente \(\theta_1\) e \(\theta_2\); essendo la direzione del campo generato da una carica costante nello spazio, si ha
-\[\theta_1 = \theta_2 + 180\]
-\[\Rightarrow \cos\theta_1 = -\cos\theta_2\]
+L'angolo che forma il campo elettrico con la superficie infinitesima è rispettivamente \(\theta_1\) e \(\theta_2\); per la superficie 2 il campo è uscente ma per la superficie 1 è entrante, cambiamo segno e prendiamo \(\theta_1'\) tale che
+\[\theta_1' = 180 - \theta_1\]
+\[\Rightarrow \cos\theta_1' = -\cos\theta_1\]
 Possiamo calcolare il flusso delle due superfici infinitesime, ricordando la definizione di steradiante precedentemente ottenuta
 \begin{align*}
 	&d\Phi_2 = \mathbf{E}_2\cdot d\mathbf{s}_2 = E_2 ds_2 \cos\theta_2 = E_2 R_2^2 \frac{ ds_2 \cos\theta_2}{R_2^2} = E_2 R_2^2 d\Omega =\frac{1}{4\pi\varepsilon_0}\frac{Q}{R^2_2}R^2_2 d\Omega= \frac{Q}{4\pi\varepsilon_0}d\Omega \\
-	&d\Phi_1 = \mathbf{E}_1\cdot d\mathbf{s}_1 = E_1 ds_1 \cos\theta_1 = -E_1 ds_1 \cos\theta_2 = -\frac{Q}{4\pi\varepsilon_0}d\Omega\\
+	&d\Phi_1 = \mathbf{E}_1\cdot d\mathbf{s}_1 = E_1 ds_1 \cos\theta_1 = -E_1 ds_1 \cos\theta_1' = -\frac{Q}{4\pi\varepsilon_0}d\Omega\\
 	&\Rightarrow d\Phi_{12} = d\Phi_1 + d\Phi_2 = 0
 \end{align*}
 Non avendo usato specifiche proprietà della carica esterna o del campo o della superficie chiusa considerata possiamo dedurre che il flusso per una superficie chiusa di ogni carica esterna è nullo; per calcolare il flusso basta considerare quelle interne.\\
@@ -351,11 +351,11 @@ Si noti infine che nel caso del piano carico il flusso non dipende dalla distanz
 \subsubsection{Discontinuità del campo elettrico attraverso una superficie carica}
 Osserviamo ora delle proprietà interessanti del campo elettrostatico, quando si attraversa una superficie carica.\\
 Consideriamo una superficie generica (non omogenea), costruiamo un cilindro che la interseca, visto che ci interessa sapere cosa accade nel passaggio da una faccia all'altra della superficie consideriamo un cilindro con altezza \(dh\to 0\), da ciò deriva che la componente di flusso per la superficie laterale del cilindro non è rilevante. Il flusso è quindi
-\[\oint_{\Sigma}\mathbf{E}d\mathbf{s} = \mathbf{E}_{u}d\mathbf{s}_{u}+\mathbf{E}_{d}d\mathbf{s}_d=(E_u\cos\theta_u-E_d\cos\theta_d)dA = dA(E_{\perp u}-E_{\perp d})\] 
+\[\oint_{\Sigma}\mathbf{E}d\mathbf{s} = \mathbf{E}_{u}d\mathbf{s}_{u}+\mathbf{E}_{d}d\mathbf{s}_d=(E_u\cos\theta_u-E_d\cos\theta_d)ds = (E_{\perp u}-E_{\perp d})ds\] 
 Per il teorema di Gauss, essendo la superficie del cilindro chiusa e $\sigma$ la densità di carica superficiale, si ha
-\[\oint_{\Sigma}\mathbf{E}d\mathbf{s} = \frac{Q_{tot}}{\varepsilon_0} = \frac{\sigma dA}{\varepsilon_0}\] 
+\[\oint_{\Sigma}\mathbf{E}d\mathbf{s} = \frac{Q_{tot}}{\varepsilon_0} = \frac{\sigma ds}{\varepsilon_0}\] 
 \[\Rightarrow |\Delta \mathbf{E}_{\perp}| = (E_{\perp u} - E_{\perp d}) = \frac{\sigma}{\varepsilon_0}\]
-Ne segue che la discontinuità della componente perpendicolare alla superficie, nell'attraversarla, presenta un salto pari a \(\frac{\sigma}{\varepsilon_0}\) (non si hanno informazioni su come sia distribuita questa quantità fra le due facce). Si noti che è la stessa discontinuità ottenuta nell'esercizio (\ref{es:campo_piano_infinito}).\\
+Ne segue che la discontinuità della componente perpendicolare alla superficie, nell'attraversarla, presenta un salto pari a \(\frac{\sigma}{\varepsilon_0}\) (non si hanno informazioni su come sia distribuita questa quantità fra le due facce).\\
 Ci chiediamo ora cosa accada alla componente tangente al campo nell'attraversare una superficie carica. Per farlo consideriamo la circuitazione del campo elettrostatico, calcolandola in un percorso rettangolare che interseca la superficie perpendicolarmente, a metà dei due lati perpendicolari. Essendo il campo conservativo abbiamo che la circuitazione deve essere nulla
 \[\oint_\Gamma\mathbf{E}d\mathbf{r} = 0\]
 D'altro canto possiamo calcolare la circuitazione lato per lato; visto che ci interessa il passaggio fra le due facce consideriamo un percorso rettangolare la cui altezza tenda a zero \(dh\to 0\) (considereremo solo i lati orizzontali del circuito).  
@@ -367,7 +367,7 @@ Ne segue quindi che la componente tangenziale resta continua attraversando la su
 \section{Elettrostatica della materia: i conduttori}
 \subsection{Conduttori neutri}
 I materiali si suddividono nelle due macrocategorie di conduttori e dielettrici (isolanti). Un conduttore metallico come il rame può essere modellizzato, in prima approssimazione, come un reticolo di ioni vincolati fra loro che possono solamente vibrare, immersi in un mare di elettroni tanto debolmente legati al nucleo da poter muoversi liberamente attorno al reticolo a seguito di eccitazioni energetiche minime come l'agitazione termica. Ogni atomo di rame contribuisce con circa un elettrone di conduzione, in un centimetro cubo vi sono
-\[n_e = \frac{\rho_M }{A}N_A \simeq 8\cdot 10^22\ \frac{e^-}{cm^3}\simeq13000\ \frac{C}{cm^3}\]
+\[n_e = \frac{\rho_M }{A}N_A \simeq 8\cdot 10^{22}\ \frac{e^-}{cm^3}\simeq13000\ \frac{C}{cm^3}\]
 dove $\rho_M$ è la densità ed A è la massa molare.
 \begin{definizione}[Conduttore elettrico]
 	Un conduttore elettrico è un materiale in grado di far scorrere corrente elettrica al suo interno. I materiali conduttori sono caratterizzati dalla presenza di elettroni liberi nella banda di valenza degli atomi del reticolo cristallino (conduttori di prima specie) o contengono specie ioniche che si fanno carico di trasportare la corrente (conduttori di seconda specie).
@@ -509,7 +509,7 @@ Ma come si dispongono le cariche sulla superficie? Sperimentalmente si esclude l
 	&\Rightarrow \frac{\sigma_1}{R_2} = \frac{\sigma_2}{R_1}
 \end{align*}
 Da cui segue che la densità superficiale di carica aumenta con il raggio di curvatura.\\
-Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica; in questo punto avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche. Se la densità di carica è alta il campo elettrico subito oltre la punta sarà molto grande, può accadere che un elettrone libero o uno ione siano accelerati a sufficienza da questo campo, prima di effettuare un urto, in modo da acquistare una grande quantità di energia tale da far saltare un elettrone ad un altro atomo, questo nuovo elettrone libero sarà soggetto allo stesso meccanismo: in questo modo si produce una scintilla (o un piccolo fulmine) che scaricano il condensatore. Questo meccanismo si chiama perforazione del dielettrico, è lo stesso meccanismo che avviene nei fulmini e per evitarlo bisogna costruire condensatori il puù lisci possibile per evitare la presenza di punte.\\
+Considerando un conduttore appuntito, sulla punta la curvatura è estremamente alta e così la sua densità di carica; in questo punto avvengono dei fenomeni di scarica sotto forma di fulmini ("potere dispersivo delle punte"). Se la curvatura è negativa, in quella regione non si dispongono cariche. Se la densità di carica è alta il campo elettrico subito oltre la punta sarà molto grande, può accadere che un elettrone libero o uno ione siano accelerati a sufficienza da questo campo, prima di effettuare un urto, in modo da acquistare una grande quantità di energia tale da far saltare un elettrone ad un altro atomo, questo nuovo elettrone libero sarà soggetto allo stesso meccanismo: in questo modo si produce una scintilla (o un piccolo fulmine) che scaricano il condensatore. Questo meccanismo si chiama perforazione del dielettrico, è lo stesso meccanismo che avviene nei fulmini e per evitarlo bisogna costruire condensatori il più lisci possibile per evitare la presenza di punte.\\
 Alla luce di quanto ottenuto possiamo rivedere il risultato precedentemente ottenuto per cui nella superficie interna non si dispongono cariche: possiamo considerare un conduttore pieno con carica disposta in superficie e piegarlo fino ad ottenere un conduttore cavo, più lo pieghiamo più la curvatura che formerà la cavità diventa negativa, allontanando da sè le cariche.\\
 Quando colleghiamo un conduttore carico al terreno questo si scarica, ciò avviene perché entra a contatto con una sfera di raggio di curvatura enorme (approssimabile ad infinito). 
 \subsection{Metodo delle cariche immagine}
@@ -593,7 +593,7 @@ Per ottenere la Capacità di questo condensatore seguiamo i 3 step: calcoliamo i
 Per farlo calcoliamo il flusso per la faccia interna del condensatore considerando un cilindro che parte dall'interno dell'armatura e termina all'esterno attraversando la faccia interna. Osservando che l'integrale sulla superficie del cilindro è l'Area di base A e che il flusso nella faccia del cilindro interna all'armatura è nullo, si ha, eguagliando con il teorema di Gauss
 \[\oint\mathbf{E}d\mathbf{s} = EA = \frac{\sigma A}{\varepsilon_0}\]
 \[\Rightarrow E = \frac{\sigma}{\varepsilon_0}\]
-Si noti che apparentemente questo risultato sembra contraddire quanto ottenuto in precedenza: abbiamo precedentemente dimostrato infatti ( esercizio (\ref{es:campo_piano_infinito})) che il campo generato da una superficie carica è $\frac{\sigma}{2\varepsilon_0}$. In realtà il campo calcolato è la somma del campo prodotto dalle due armature poiché inizialmente, applicando il principio di sovrapposizione al calcolo delle linee di campo, abbiamo sommato i due contributi che, essendo uguali, sono di $\frac{\sigma}{2\varepsilon_0}$ ciascuno. Si noti inoltre che sia considerati separatamente sia considerati a seguito della sovrapposizione dei campi la discontinuità è sempre $\frac{\sigma}{\varepsilon_0}$, come precedentemente dimostrato (quando si considerano insieme il campo all'interno e dietro le armature è nullo).
+Si noti che apparentemente questo risultato sembra contraddire quanto ottenuto in precedenza: abbiamo precedentemente dimostrato infatti che il campo generato da una superficie carica è $\frac{\sigma}{2\varepsilon_0}$. In realtà il campo calcolato è la somma del campo prodotto dalle due armature poiché inizialmente, applicando il principio di sovrapposizione al calcolo delle linee di campo, abbiamo sommato i due contributi che, essendo uguali, sono di $\frac{\sigma}{2\varepsilon_0}$ ciascuno. Si noti inoltre che sia considerati separatamente sia considerati a seguito della sovrapposizione dei campi la discontinuità è sempre $\frac{\sigma}{\varepsilon_0}$, come precedentemente dimostrato (quando si considerano insieme il campo all'interno e dietro le armature è nullo).
 Una volta ottenuto il campo elettrico calcoliamo la differenza di potenziale fra le due facce 
 \[\Delta V_{AB} = \int_{A}^{B}\mathbf{E}d\mathbf{r} = Ed=\frac{\sigma d}{\varepsilon_0}=\frac{Q d}{S\varepsilon_0}\]
 calcoliamo infine C
@@ -714,7 +714,7 @@ Finora abbiamo ottenuto solamente la componente del campo parallela al dipolo. S
 	Consideriamo un dipolo elettrico come in figura dove chiamiamo a la distanza fra le due cariche, effettuiamo l'approssimazione \(r>>a\). Sia P il punto a cui puntano i vettori \(\mathbf{r_1}, \mathbf{r_2}, \mathbf{r}\). 
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.4\linewidth]{../images/dipolo}
+		\includegraphics[width=0.3\linewidth]{../images/dipolo}
 		\caption{Schema di un dipolo elettrico}
 		\label{fig:dipolo}
 	\end{figure}
@@ -758,7 +758,7 @@ Da cui segue, ricordando che \(\mathbf{F} = \mathbf{\n} U\)
 Notiamo che abbiamo una condizione di equilibrio stabile quando questa funzione presenta un minimo, ovvero per \(\theta= 0^\circ,\ 180^\circ\). inoltre notiamo che, avendo considerato $\mathbf{a}$ infinitesimo, possiamo considerare in campo elettrico uguale nelle due cariche quindi la forza totale su un generico punto risulta 
 \[\mathbf{F}_{tot} =\mathbf{F}_++\mathbf{F}_- = q\mathbf{E}-q\mathbf{E} = 0\]
 Il momento delle forze totale invece è
-\[\mathbf{M}_{tot} = \mathbf{r}_+\wedge\mathbf{F}_+ + \mathbf{r}_-\wedge\mathbf{F}_- = \mathbf{r}_+\wedge q\mathbf{E}_+ + \mathbf{r}_\wedge q\mathbf{E}_- = (\mathbf{r}_+ - \mathbf{r}_-)\wedge q \mathbf{E} = (\mathbf{a}q)\wedge\mathbf{E} = \mathbf{p}\wedge\mathbf{E}\]
+\[\tau_{tot} = \mathbf{r}_+\wedge\mathbf{F}_+ + \mathbf{r}_-\wedge\mathbf{F}_- = \mathbf{r}_+\wedge q\mathbf{E}_+ + \mathbf{r}_-\wedge q\mathbf{E}_- = (\mathbf{r}_+ - \mathbf{r}_-)\wedge q \mathbf{E} = (\mathbf{a}q)\wedge\mathbf{E} = \mathbf{p}\wedge\mathbf{E}\]
 Notiamo che essendo il momento \(pE\sin\theta\), si ha che esso è nullo per \(\theta= 0^\circ,\ 180^\circ\), gli unici angoli in cui il sistema è stabile. 
 \subsection{Sistema di cariche come dipolo}
 Consideriamo ora un sistema di cariche discrete (il caso uniforme è analogo ma con gli integrali al posto delle sommatorie). Per il principio di sovrapposizione possiamo esprimere il potenziale totale sul punto P come somma dei potenziali generati dalle i cariche \(q_i\).
@@ -876,7 +876,7 @@ Vediamo una trattazione matematica di questo fenomeno. Consideriamo una superfic
 dove \(Q_p\) è la carica generata dalla polarizzazione.\\
 In presenza di campo invece, nel caso di un dielettrico generale, si ridistribuiscono le cariche a causa della polarizzazione; ne segue che una carica dq è transitata attraverso la superficie $\Sigma$. Consideriamo una pozione di superficie di \(\Sigma\) infinitesima $d\mathbf{s}$ e il vettore di polarizzazione $\mathbf{P}$. La carica infinitesima transitata attraverso la superficie d$\mathbf{s}$ è
 \[dq = \sigma_pds=(\mathbf{P}\hat{n})ds = \mathbf{P}d\mathbf{s}\]
-Ne deduciamo che la carica passata per \(\Sigma\) la otteniamo con il flusso di $\mathbf{P}$ su $\Sigma$. Se $\mathbf{P}$ è costante all'interno di tutto il dielettrico (dielettrico omogeneo) tanta carica entra e tanta ne esce da $\Sigma$ quindi il flusso è nullo e la carica interna al dielettrico anche (\(\rho_p = 0\)). Se $\mathbf{P}$ non è uniforme (materiali anisotropi) allora il flusso non è nullo e di conseguenza vi è una carica $Q_p$ all'interno del dielettrico. 
+Ne deduciamo che la carica passata per \(\Sigma\) la otteniamo con il flusso di $\mathbf{P}$ su $\Sigma$. Se $\mathbf{P}$ è costante all'interno di tutto il dielettrico (dielettrico omogeneo) tanta carica entra e tanta ne esce da $\Sigma$ quindi il flusso è nullo e la carica interna al dielettrico anche (\(\rho_p = 0\)). Se $\mathbf{P}$ non è uniforme allora il flusso non è nullo e di conseguenza vi è una carica $Q_p$ all'interno del dielettrico. 
 \[ Q_p = -\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau \neq 0 \]
 Applicando il teorema della divergenza otteniamo
 \[-\oint_{\Sigma} \mathbf{P}d\mathbf{s} = \int_{V(\Sigma)}\rho_p d\tau = -\int_{V(\Sigma)}(\mathbf{\n}\mathbf{P})d\tau \]
@@ -902,7 +902,7 @@ Sembra naturale introdurre una variabile la cui divergenza sia uguale alla densi
 Si noti che $\mathbf{D}$ non aggiunge nessuna informazione fisica (a differenza di $\mathbf{P}$ che ci dice come si polarizza il materiale) ma ha una grande utilità pratica poiché permette di calcolare semplicemente la carica interna al dielettrico prescindendo dalle sue caratteristiche. Nel vuoto, essendo $\mathbf{P} = 0$, si ha $\mathbf{D} = \varepsilon_0\mathbf{E}$. Inoltre, notiamo che se in un dielettrico la densità di carica libera interna è nulla si ha
 \[\rho_l = 0 \Rightarrow \mathbf{\n}\mathbf{D} =\mathbf{\n}(\varepsilon_0\mathbf{E}+\mathbf{P}) = 0 \Rightarrow \mathbf{\n}\mathbf{E}\neq 0\]
 da cui deriva che il campo all'interno del dielettrico è non conservativo.\\
-Infine possiamo trovare una semplice espressione di $\mathbf{D}$ ricordando la \ref{eq:polarizzazione_lineare}
+Infine possiamo trovare una semplice espressione di $\mathbf{D}$ ricordando la (\ref{eq:polarizzazione_lineare})
 \begin{align}\label{eq:spostamento_elettrico}
 \mathbf{D} = \varepsilon_0\mathbf{E}+\mathbf{P} = \varepsilon_0\mathbf{E}+ \varepsilon_0 \mathbf{E}(k-1)=  \varepsilon_0\mathbf{E}- \varepsilon_0 \mathbf{E}+\varepsilon_0 \mathbf{E}k=\varepsilon_0 k\mathbf{E} = \varepsilon \mathbf{E}
 \end{align}
@@ -912,9 +912,9 @@ Dalla relazione (\ref{eq:polarizzazione_lineare}) possiamo sostituire E alla def
 \[\mathbf{\n}\mathbf{P} = \mathbf{\n}\left(\frac{k-1}{k}\mathbf{D}\right)\]
 Se il materiale dielettrico è omogeneo, differenziando $\mathbf{P}$, essendo k costante, si ottiene 
 \[\mathbf{\n}\mathbf{P} = \frac{k-1}{k}\mathbf{\n}\mathbf{D} = 0\] 
-se invece il materiale non è omogeneo \(k=k(x,y,z)\) si deve applicare la differenziazione di prodotto ottenendo
+se invece il materiale non è omogeneo \(k=k(x,y,z)\) e non sono presenti cariche libere \(\mathbf{D} = 0\), si deve applicare la differenziazione di prodotto ottenendo
 \[\mathbf{\n}\mathbf{P} = \frac{k-1}{k}\mathbf{\n}\mathbf{D} + \mathbf{D}\mathbf{\n}\left(\frac{k-1}{k}\right)= \mathbf{D}\mathbf{\n}\left(\frac{k-1}{k}\right)\neq 0\]
-Osserviamo inoltre che se in materiale è lineare ed omogeneo, la direzione in cui si polarizzano gli atomi è la stessa di quella del campo elettrico perché nella \ref{eq:polarizzazione_lineare} P ed E sono legate da uno scalare quindi
+Osserviamo inoltre che se in materiale è lineare ed isotropo, la direzione in cui si polarizzano gli atomi è la stessa di quella del campo elettrico perché nella (\ref{eq:polarizzazione_lineare}) P ed E sono legate da uno scalare quindi
 \[\mathbf{D}//\mathbf{E}//\mathbf{P}\]
 se però k è una matrice in generale si ha che questi non sono paralleli. L'espressione più generale di $\mathbf{D}$ e $\mathbf{P}$ per materiali anisotropi è dunque
 \[\mathbf{P} = \varepsilon_0 (\mathbf{k}-I)\mathbf{E}\]
@@ -973,7 +973,7 @@ Il vettore P non è ancora parallelo ad E perché le costanti ne cambiano la dir
 \end{figure}
 \FloatBarrier
 \subsection{Deduzione della legge di Snell (rifrazione)}
-Abbiamo notato precedentemente che, essendo la circuitazione di E nulla, la componente tangente si conserva e abbiamo dimostrato che la discontinuità della componente normale è $\frac{\sigma}{\varepsilon_0}$. Consideriamo un campo elettromagnetico che attraversa una superficie sotto la quale è presente un materiale di costante dielettrica relativa \(k_1\) e sopra la quale una costante dielettrica relativa \(k_2\). Conoscendo la direzione della linea di campo entrante nella superficie, per conoscere la direzione della linea di campo uscente dovremmo conoscere $\sigma$, per sapere di quanto cambia la componente normale. Consideriamo una superficie cilindrica di area di base dA e altezza dh che attraversa la superficie perpendicolarmente, siano i vettori normali alle superfici di base \(d\mathbf{s}_1\) e d\(\mathbf{s}_2\). Calcolando il flusso del vettore spostamento elettrico otteniamo
+Abbiamo notato precedentemente che, essendo la circuitazione di E nulla, la componente tangente si conserva e abbiamo dimostrato che la discontinuità della componente normale è $\frac{\sigma}{\varepsilon_0}$. Consideriamo un campo elettromagnetico che attraversa una superficie sotto la quale è presente un materiale di costante dielettrica relativa \(k_1\) e sopra la quale una costante dielettrica relativa \(k_2\). Conoscendo la direzione della linea di campo entrante nella superficie, per conoscere la direzione della linea di campo uscente dovremmo conoscere $\sigma$, per sapere di quanto cambia la componente normale. Consideriamo una superficie cilindrica di area di base ds e altezza dh che attraversa la superficie perpendicolarmente, siano i vettori normali alle superfici di base \(d\mathbf{s}_1\) e d\(\mathbf{s}_2\). Calcolando il flusso del vettore spostamento elettrico otteniamo
 \[\oint_{\Sigma}\mathbf{D}d\mathbf{s} = Q_l = 0\]
 poiché nei dielettrici non ci sono cariche libere. Da cui segue
 \[D_1ds_1\cos\theta_1 + D_2ds_2\cos\theta_2 = 0\]
@@ -1203,8 +1203,8 @@ Osserviamo come la funzione q(t) tenda asintoticamente al valore \(Q=C\Delta V \
 L'unica incognita è il tempo; per una carica del 99.9\%,99\%,95\% deve passare rispettivamente un tempo di 7RC, 4.6RC,3RC. Notiamo che l'unità di misura di RC è proprio un tempo, che è caratteristico dello specifico circuito, viene infatti detto \textbf{tempo proprio del circuito}. Un valore tipico di tempo proprio è di \(1\mu s \), per caricare al 99.9\% un condensatore servono dunque \(7\cdot10^{-6}\ s\). \\
 Dal punto di vista energetico, una parte di energia per caricare il condensatore è dissipata durante il processo di carica per effetto Joule. Calcoliamo l'energia che il generatore immette nel sistema per caricare completamente il condensatore integrando l'espressione della potenza erogata in un tempo infinito (abbiamo visto che la carica è un processo infinito). 
 \[L_{gen} = \int_{0}^{+\infty}P_{gen}(t)dt=\int_{0}^{+\infty}\Delta V i(t)dt = \int_{0}^{+\infty}\frac{\Delta V^2}{R} e^{-\frac{t}{RC}}dt = C\Delta V^2 \]
-Ne deduciamo che L'energia fornita dal generatore per caricare il condensatore è doppia rispetto a quella immagazzinata da questo una volta carico (\(U=\frac{1}{2}X\Delta V^2\)), l'altra metà è persa per effetto Joule. Possiamo pervenire allo stesso risultato integrando la potenza dissipata per effetto Joule in un tempo infinito per ottenere l'energia dissipata nel processo di carica. 
-\[L_{R} = \int_{0}^{+\infty}P_{R}(t)dt =\int_{0}^{+\infty}Ri(t)^2dt = \int_{0}^{+\infty}\frac{\Delta V^2}{R}e^{-\frac{2t}{RC}}dt = \frac{1}{2}C\Delta^2\]
+Ne deduciamo che L'energia fornita dal generatore per caricare il condensatore è doppia rispetto a quella immagazzinata da questo una volta carico (\(U=\frac{1}{2}C\Delta V^2\)), l'altra metà è persa per effetto Joule. Possiamo pervenire allo stesso risultato integrando la potenza dissipata per effetto Joule in un tempo infinito per ottenere l'energia dissipata nel processo di carica. 
+\[L_{R} = \int_{0}^{+\infty}P_{R}(t)dt =\int_{0}^{+\infty}Ri(t)^2dt = \int_{0}^{+\infty}\frac{\Delta V^2}{R}e^{-\frac{2t}{RC}}dt = \frac{1}{2}C\Delta V^2\]
 \newpage
 \section{Il magnetismo stazionario nel vuoto}
 \subsection{Evidenze sperimentali}
@@ -1253,7 +1253,7 @@ Ma che moto ha la carica nello spazio? La forza sull'asse x è nulla dunque in q
 La composizione di questi due moti è detta \textbf{moto elicoidale}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../images/moto_elicoidale}
+	\includegraphics[width=0.4\linewidth]{../images/moto_elicoidale}
 	\caption{Rappresentazione del moto elicoidale}
 	\label{fig:motoelicoidale}
 \end{figure}
@@ -1308,7 +1308,7 @@ Possiamo definire il campo di Hall come
 \[\mathbf{E_H}=\frac{\mathbf{F}}{q}=\mathbf{v_d}\wedge\mathbf{B}=\frac{\mathbf{J}}{nq}\wedge\mathbf{B}\]
 Le cariche negative col tempo si addensano sulla faccia sinistra generando una differenza di potenziale fra le facce e quindi un campo elettrico che si oppone al campo di Hall. Dopo un intervallo di tempo sufficientemente lungo i due campi si annullano e si raggiunge l'equilibrio. Possiamo definire la forza elettromotrice di Hall come
 \[\Delta V_H = E_H l =\frac{BJ}{nq}l =\frac{iB}{ldnq}l=\frac{i B}{nqd} = R_H \frac{iB}{d}\] 
-dove è stata usata la formula della \(\Delta V\) per i condensatori, ed \(R_H\) è la \textbf{costante di Hall}.
+dove è stata usata la formula della \(\Delta V\) per i condensatori, ed \(R_H\) è la \textbf{costante di Hall}. Si noti che se i portatori di carica sono positivi la velocità ha verso positivo dunque i portatori sperimentano una forza verso l'alto che li fa addensare sulla faccia superiore. Se i portatori sono negativi la velocità ha verso negativo, i portatori subiscono una forza verso il basso che, essendo negativi, li fa addensare sempre sulla faccia superiore. Ne segue che all'equilibrio la differenza di potenziale è sempre la stessa ma con segno che varia a seconda del tipo di portatore di carica. Ecco un metodo per determinare il segno dei portatori!
 \end{applicazione}
 \subsection{Misurare il campo magnetico}
 Come già osservato l'ideazione di un'apparato sperimentale per la misura di una grandezza offre la possibilità di dedurne informazioni teoriche. Nel caso del campo magnetico il primo semplice metodo di misura del campo magnetico è basato sullo studio del moto di una spira immersa in un campo magnetico
@@ -1330,9 +1330,9 @@ Possiamo spezzare questo integrale di percorso nei 4 lati, chiamiamo 1 e 3 quell
 Calcoliamo le forze e il momento da esse generato: l'angolo compreso fra il vettore spostamento $\mathbf{dl}$ ed il campo magnetico sui lati 1 e 3 è pari a \(\frac{\pi}{2}+\theta\), per i lati 2 e 4 è invece \(\frac{3\pi}{2}\), indipendentemente da $\theta$ (osservare attentamente la figura per convincersene)
 \[F_1=F_3=ibB\sin(\frac{\pi}{2}+\theta)\]
 \[F_2=F_4 = ibB\sin(\frac{3}{2}\pi)= -ibB\]
-Per il calciolo del momento delle forze prendiamo come polo il centro del rettangolo, il braccio per le forze 1 e 3 ha modulo b/2 ed è parallelo ai lati 2 e 4 mentre per le forze 2 e 4 vale a/2 ed è parallelo ai lati 1 e 3.\\
+Per il calcolo del momento delle forze prendiamo come polo il centro del rettangolo, il braccio per le forze 1 e 3 ha modulo b/2 ed è parallelo ai lati 2 e 4 mentre per le forze 2 e 4 vale a/2 ed è parallelo ai lati 1 e 3.\\
 Indipendentemente dal valore delle forze  \(F_1\) ed \(F_3\), il momento da esse generato è nullo perché l'angolo fra braccio e forza è nullo, essendo inoltre di modulo uguali ma di direzione opposte esse non imprimono alla spira neanche un'accelerazione lineare.
-Il momento delle forze sulla spira dato da \(F_2\) ed \(F_4\), osservando che l'angolo formato con il braccio è in entrambi i casi $\theta$, è
+Il momento delle forze sulla spira dato da \(F_2\) ed \(F_4\), osservando che l'angolo formato con il braccio è in entrambi i casi $\pi - \theta$ e che \(\sin(\pi-\theta) = \sin(\theta)\), è
 \[\tau= \mathbf{r}\wedge\mathbf{F_2}+\mathbf{r}\wedge\mathbf{F_4}=2(-\frac{ab}{2}i\sin\theta)= -i SB \sin\theta\]
 Ricordando l'espressione del momento delle forze in funzione di $\theta$, impostiamo l'equazione differenziale che descrive il moto della spira
 \[\tau=I\ddot{\theta}=- iSB\sin\theta\]
@@ -1352,13 +1352,11 @@ Risolvendo l'equazione differenziale otteniamo
 con semplici misure risulta possibile misurare l'intensità del campo magnetico.\\
 Sperimentalmente, anche grazie a questo strumento, si ottiene che il campo magnetico generato da un filo di lunghezza dl attraversato da corrente è
 \begin{align}\label{eq:campo_magnetico_filo_infinitesimo}
-&\mathbf{dB}=\frac{\mu_0}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{r}}{r^3}
+&\mathbf{dB}=k_m\frac{i\mathbf{dl}\wedge\mathbf{r}}{r^3}
 \end{align}
 Quest'ultima è anche detta \textbf{legge di Biot-Savart}.\\
-\[\mathbf{dB}=k_m\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\]
-dove \(k_m\) è una costante che si pone (per ragioni che saranno chiare in seguito)
-\[k_m \equiv\frac{\mu_0}{4\pi}\]
-dove $\mu_0$ è detta \textbf{permeabilità magnetica del vuoto}.\\
+\[\mathbf{dB}=k_m \equiv\frac{\mu_0}{4\pi}=\frac{\mu_0}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}\]
+dove \(k_m\) è una costante che si pone (per ragioni storiche che saranno chiare in seguito) \(\frac{\mu_0}{4\pi}\) dove $\mu_0$ è detta \textbf{permeabilità magnetica del vuoto}.\\
 Anche per il campo magnetico vale il principio di sovrapposizione, considerando un oggetto qualsiasi è possibile scomporlo in fili
 \[\mathbf{dB}=\frac{\mu_0}{4\pi}\frac{i\mathbf{dl}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu_0}{4\pi}\frac{(\Sigma dl)\mathbf{J}\wedge\mathbf{\hat{u}_r}}{r^2}=\frac{\mu_0}{4\pi}\frac{\mathbf{J}\wedge\mathbf{\hat{u}_r}dV}{r^2}=\frac{\mu_0}{4\pi}\frac{q\mathbf{v}\wedge\mathbf{\hat{u}_r}n dV}{r^2}\]
 Il campo magnetico creato da un solo portatore di carica si ha per \(ndV=1\)
@@ -1400,7 +1398,7 @@ Entrambi presentano simmetria cilindrica, dipendendo da \(r^{-1}\) ma il campo m
 Risulta ovvio che la circuitazione del campo magnetico è diversa da zero se scegliamo come percorso una linea di campo circolare concentrica ad un filo attraversato da corrente, ci chiediamo se questo sia vero per ogni linea chiusa. Consideriamo un percorso come quello in figura 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../images/circuitazione_campo_magnetico}
+	\includegraphics[width=0.5\linewidth]{../images/circuitazione_campo_magnetico}
 	\caption{Schema utile alla dimostrazione che la circuitazione del campo magnetico è sempre diversa da zero.}
 	\label{fig:circuitazionecampomagnetico}
 \end{figure}
@@ -1431,7 +1429,7 @@ La legge di Ampere non ha validità del tutto generale a causa di un "bias" di c
 \[\mathbf{\n}\left(\mathbf{J}+\varepsilon_0\frac{\d\mathbf{E}}{\d t}\right) = 0\]
 Possiamo definire un nuovo vettore $\mathbf{J'}$ tale che
 \[\mathbf{\n}\mathbf{J'}=0\]
-Nel caso di Ampere la divergenza di J è nulla (definizione di regime stazionario \ref{def:corrente_stazionaria}), nel caso di Maxwell invece, dedotto in modo puramente teorico, quella di J' è nulla; abbiamo aggiunto un termine che tiene conto della variabilità nel tempo del campo elettrico. La legge di Ampere, nella forma generale di Ampere-Maxwell, diventa
+Nel caso di Ampere la divergenza di J è nulla (definizione di regime stazionario (\ref{def:corrente_stazionaria})), nel caso di Maxwell invece, dedotto in modo puramente teorico, quella di J' è nulla; abbiamo aggiunto un termine che tiene conto della variabilità nel tempo del campo elettrico. La legge di Ampere, nella forma generale di Ampere-Maxwell, diventa
 \[\mathbf{\n}\wedge\mathbf{B}=\mu_0\mathbf{J'}=\mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\d\mathbf{E}}{\d t}\]
 dove notiamo che il termine
 \[\varepsilon_0\frac{\d\mathbf{E}}{\d t}\]
@@ -1457,7 +1455,7 @@ Riassumendo, la legge di Maxwell-Ampere rispettivamente in forma differenziale e
 	&\oint\mathbf{B}_{\Gamma}\mathbf{dl}= \mu_0 i + \mu_0\varepsilon_0\frac{d}{dt}\Phi(\mathbf{E})
 \end{align}
 Resta aperto un problema: in questo modo si spiega l'origine dei fenomeni magnetici legati a correnti elettriche, come si spiega però il campo magnetico generato da una calamita? Questo è dato dal moto degli elettroni nelle molecole di essa che generano una corrente atomica che genera campo magnetico (secondo il primo termine della legge di Ampere-Maxwell). Approfondiremo e giustificheremo le calamite più approfonditamente in seguito.
-\subsection{Spire e solenoidi}
+\subsection{Spira in campo magnetico e solenoidi}
 Abbiamo già visto la definizione di spira, analogamente a quanto fatto per il campo elettrico calcoliamo il campo magnetico generato da una spira attraversata da corrente in senso antiorario su un punto P giacente sul suo asse a distanza d. 
 \begin{esercizio}[Campo magnetico spira]
 Consideriamo una porzione infinitesima di spira \(\mathbf{dl}\) attraversata da corrente, per la legge di Biot-Savart il campo generato sul punto P è
@@ -1490,7 +1488,9 @@ Se immergiamo una spira attraversata da corrente in un campo magnetico B esterno
 \[\tau = \mathbf{m}\wedge\mathbf{B}_{ext}\]
 ma il campo magnetico generato dalla spira \(\mathbf{B}_{spira}\) ha la stessa direzione di \textbf{m}, ne segue che la spira è in quiete quando si allinea il campo magnetico da essa prodotto a quello esterno.\\
 Calcoliamo ora il lavoro che della spira immersa in un campo magnetico
-\[L = \int M d\theta= \int m B \sin\theta d\theta= -mB\cos\theta + c= -\mathbf{m}\mathbf{B}+c \equiv U\]
+\begin{align}\label{eq:pot_spira}
+	L = \int \tau d\theta= \int m B \sin\theta d\theta= -mB\cos\theta + c= -\mathbf{m}\mathbf{B}+c \equiv U
+\end{align}
 dove U è l'energia potenziale derivante dal lavoro fatto dal campo magnetico sulla spira, definita a meno della costante c. Si presenta però un problema concettuale importante: l'energia potenziale è definita solo per campi conservativi, cosa che abbiamo visto il campo magnetico non è, come interpretare fisicamente questo passaggio matematico? La non conservatività di B dipende dal fatto che la sua circuitazione non è mai nulla, che a sua volta è legato al fatto che le linee di campo si chiudono sempre, creando percorsi in cui la circuitazione non è nulla. Abbiamo però osservato che in una spira alcune linee di campo si chiudono all'infinito, ne segue che localmente le linee di campo restano aperte: otteniamo così un campo localmente conservativo per cui ha senso definire un'energia potenziale locale (approssimazione)\\ 
 Consideriamo ora N spire circolari collegate fra loro in serie come in figura, questo apparato è detto solenoide.
 \begin{figure}[h!]
@@ -1507,7 +1507,7 @@ Ci chiediamo che forma abbia il campo magnetico generato da un solenoide, possia
 dove in questo caso i è la corrente concatenata al solenoide. La corrente passante per la superficie sottesa da $\Gamma$ (che possiamo scegliere interna al solenoide) è nulla (la corrente passa nel circuito che non è interno a $\Gamma$) dunque la circuitazione è sicuramente nulla. 
 Ricalcoliamo la circuitazione seguendo la definizione: consideriamo una linea chiusa rettangolare all'interno del solenoide di lati AB, DE paralleli all'asse del solenoide e di lunghezza l e CD,DA perpendicolari all'asse. Avendo osservato che con infinite spire il campo verticale si annulla restano solo due componenti da considerare, in cui il campo è parallelo allo spostamento
 \[\oint_{\Gamma}\mathbf{B}\mathbf{dl}= \int_{A}^{B}Bdl+\int_{E}^{D}Bdl=lB_{AB}-lB{CD}=0\]
-\[\Rightarrow B_{AB}=B{CD}\]
+\[\Rightarrow B_{AB}=B_{CD}\]
 Ne deduciamo che il campo all'interno del solenoide ha lo stesso valore, direzione e verso in tutti i punti.\\
 Per conoscere il modulo del campo all'interno del solenoide consideriamo ora un percorso rettangolare, analogo a quello di prima, ma che sia a cavalo del solenoide come in figura e tale che i due lati verticali siano infinitesimi
 \begin{figure}[h!]
@@ -1517,11 +1517,11 @@ Per conoscere il modulo del campo all'interno del solenoide consideriamo ora un 
 	\label{fig:circuitazionesolenoide}
 \end{figure}
 \FloatBarrier
-Sul tratto AB sappiamo che la circuitazione vale \(lB_{AB}\), sui tratti verticali la trascuriamo poiché li abbiamo presi per ipotesi infinitesimi. Infine sul lato esterno possiamo considerare il campo magnetico trascurabile rispetto che all'interno perché, come si vede dalla figura, per ogni punto che fornisce un contributo di campo positivo, ne esiste un'altro che ne fornisce uno negativo (usando la regola della mano destra) che annullerà il primo, la somma totale non è nulla perché, solo per i due punti che si trovano sullo stesso asse del punto esterno, i contributi del campo non si annullano perché uno dei due è più vicino dell'altro quindi la differenza (e quindi i moduli non sono uguali), per quanto piccola, non è nulla. 
+Sul tratto AB sappiamo che la circuitazione vale \(lB_{AB}\), sui tratti verticali la trascuriamo poiché li abbiamo presi per ipotesi infinitesimi.\\ Infine sul lato esterno possiamo considerare il campo magnetico trascurabile rispetto che all'interno perché, come si vede dalla figura, per ogni tratto infinitesimo di circuito del solenoide \(dl\) che fornisce un contributo di campo positivo, ne esiste un'altro che ne fornisce uno negativo (usando la regola della mano destra) che annullerà il primo. La somma totale non è nulla perché, solo per i due punti che si trovano sullo stesso asse del punto esterno, i contributi del campo non si annullano perché uno dei due è più vicino dell'altro al solenoide quindi la differenza per quanto piccola, non è nulla. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../images/campo_esterno_spira}
-	\caption{Schema del campo generato da una spira su un punto ad essa esterno, si noti che il campo generato dal vettore in alto a sinistra è uscente dal foglio mentre per quello in basso a destra è entrante.}
+	\caption{Sezione trasversale di un solenoide ideale. Si consideri un punto P esterno al solenoide ed una porzione infinitesima di circuito che fornisce un contributo positivo di campo magnetico in P. Dovunque si trovi quel tratto, ne esiste sempre un altro diametralmente opposto, che genera un campo uguale e contrario su P, annullandolo; tranne che per i due punti giacenti sulla stessa retta individuata dai due e P. In questo caso i contributi del campo non si annullano ma si sottraggono e sono comunque infinitesimi.}
 	\label{fig:campoesternospira}
 \end{figure}
 \FloatBarrier
@@ -1542,25 +1542,30 @@ Ricordando l'immagine delle linee di campo prodotte da un magnete vista a inizio
 Abbiamo osservato come, attraversando una superficie carica, la componente tangente del campo elettrico si conservi mentre quella normale si modifichi. Nel campo magnetico avviene il contrario: la componente normale si conserva perché il flusso è nullo (similmente nel campo elettrico abbiamo dimostrato che la componente normale non si conserva perché il flusso non è nullo) mentre quella tangente non si conserva perché la circuitazione non è nulla (mentre nel campo elettrico abbiamo dimostrato che si conserva perché la circuitazione è nulla). Possiamo valutarne la discontinuità considerando un percorso di altezza infinitesima, come fatto nel caso del solenoide, ed applicare sta volta non la legge di Ampere ma quella più generale di Ampere-Maxwell
 \[\oint_{\Gamma}\mathbf{B}\mathbf{dl}=\mu_0 i + \mu_0\varepsilon_0 \frac{\d \Phi(\mathbf{E})}{\d t}\]
 \subsection{Mutua induzione e autoinduzione}
-Abbiamo già osservato che il flusso del campo magnetico per una superficie chiusa è sempre nullo; vogliamo conoscere il flusso per una superficie aperta. Per farlo consideriamo due superfici aperte, $\Sigma_1$ e $\Sigma_2$, con lo stesso bordo $\gamma$, singolarmente i flussi sono diversi da zero ma se si uniscono le due superfici facendo combaciare i bordi in totale il flusso è nullo perché si forma una superficie chiusa. Cominciamo chiedendoci se il flusso di $\Sigma_1$ sia uguale a quello di $\Sigma_2$.
-\[\phi_{12} = \iint_{\Sigma(\Gamma)}d\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_2= i\left(\int_{\Sigma(\Gamma)}\oint_{\Gamma_1}\frac{\mu_0 }{4\pi}\frac{\mathbf{ds}_1\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma_2\right)\equiv M_{12}i\]
-Dove, notando che l'integrale doppio all'interno delle parentesi dipende dolo dal mezzo e dalla geometria della superficie, abbiamo definito il \textbf{coefficiente di mutua induzione} M.
-Analogamente abbiamo
-\[\phi_{12}= M_{21}i\]
-Visto che i due flussi sono uguali, anche i due coefficienti di mutua induzione lo sono, in generale \(M_{12}=M_{21}\) per qualsiasi coppia di superfici.\\
-Ne deduciamo che l'espressione generale del flusso del campo magnetico è
-\[\phi(B) = M i\]
-Il coefficiente di mutua induzione ha una sua unità di misura: l'Henry (H)
+Consideriamo due circuiti $\Gamma_1$ e $\Gamma_2$ attraversati rispettivamente da corrente \(i_1\) e \(i_2\), calcoliamo il flusso di campo magnetico generato da $\Gamma_1$ su $\Gamma_2$; per farlo consideriamo una generica superficie $\Sigma_2$ con bordo $\Gamma_2$
+\begin{align}\label{eq:mutuainduzione}
+	\Phi_{\Sigma_2}(\mathbf{B}_1) = \iint_{\Sigma_2}d\mathbf{B}_1\mathbf{\hat{u}_n}ds= i_1\left(\iint_{\Sigma_2}\oint_{\Gamma_1}\frac{\mu_0 }{4\pi}\frac{\mathbf{dl}\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}ds\right)\equiv M_{12}i_1
+\end{align}
+Dove, notando che l'integrale doppio e la circuitazione all'interno delle parentesi dipende solo dal mezzo e dalla geometria della superficie, abbiamo definito il \textbf{coefficiente di mutua induzione} \(M_{12}\).
+Analogamente abbiamo che il flusso generato dal circuito \(\Gamma_2\) su $\Gamma_1$ vale
+\[\Phi_{\Sigma_1}(\mathbf{B}_2)= M_{21}i_2\]
+Dimostreremo in seguito che vale sempre \(M_{21} = M_{12}\). Il coefficiente di mutua induzione ha una sua unità di misura: l'Henry (H)
 \[H = \frac{Wb}{A}\]
 \begin{esercizio}[Coefficiente di mutua induzione per due solenoidi concentrici]
-Verifichiamo quanto ottenuto nel caso particolare di due solenoidi concentrici
-\[\phi_{12}=\iint_{\Sigma_2}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_2 = B_1\Sigma_2 n_2=B_1 S n_2 = \mu_0 i_1 n_1 n_2 S = M_{12}i_1\]
-\[\phi_{21}=\iint_{\Sigma_1}\mathbf{B}_2\mathbf{\hat{u}_n}d\Sigma_1 = B_2\Sigma_1 n_1=B_2 S n_1 = \mu_0 i_2 n_1 n_2 S = M_{21}i_2\]
-\[\Rightarrow M_{12}=\mu_0 n_1 n_2 S=M_{21}\]
+Verifichiamo che \(M_{21} = M_{12}\) nel caso particolare di due solenoidi concentrici
+\[\frac{\Phi_{12}}{l}=\iint_{\Sigma_2}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_2 = B_1\Sigma_2 n_2=B_1 S n_2 = \mu_0 i_1 n_1 n_2 S = \frac{M_{12}}{l}i_1\]
+\[\frac{\Phi_{21}}{l}=\iint_{\Sigma_1}\mathbf{B}_2\mathbf{\hat{u}_n}d\Sigma_1 = B_2\Sigma_1 n_1=B_2 S n_1 = \mu_0 i_2 n_1 n_2 S = \frac{M_{21}}{l}i_2\]
+\[\frac{M_{12}}{l}=\mu_0 n_1 n_2 S=\frac{M_{21}}{l}\]
+\[\Rightarrow M_{12} = M_{21}\]
 \end{esercizio}
 Un fatto di fondamentale importanza è che si crea un flusso non solo fra le due superfici ma anche di una superficie con sè stessa
-\[\iint_{\Sigma}\mathbf{B}_1\mathbf{\hat{u}_n}d\Sigma_1 = \int_{\Sigma}\oint_{\Gamma}\frac{\mu_0 i }{4\pi}\frac{\mathbf{ds}\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma\equiv L i\]
-dove, osservando che nell'integrale tutto dipende dalla geometria e dal mezzo tranne la corrente, definiamo il coefficiente di autoinduzione o \textbf{induttanza} L.
+\[\iint_{\Sigma}\mathbf{B}\mathbf{\hat{u}_n}d\Sigma = \iint_{\Sigma}\oint_{\Gamma}\frac{\mu_0 i }{4\pi}\frac{\mathbf{ds}\wedge\mathbf{r}}{r^3}\mathbf{\hat{u}_n}d\Sigma\equiv L i\]
+dove, osservando che nell'integrale tutto dipende dalla geometria e dal mezzo tranne la corrente, definiamo il coefficiente di autoinduzione o \textbf{induttanza} L.\\
+Come vedremo nella seguente sezione, per la legge di Faraday vale 
+\[\mathcal{E}_I = -\frac{d\Phi(B)}{dt}\]
+da cui, applicando quanto ottenuto per mutua induzione e autoinduzione
+\[\mathcal{E}_{autoind} = -\frac{d\Phi(B)}{dt} =  -L \frac{i}{dt}  \]
+\[\mathcal{E}_{ind12} = -\frac{d\Phi(B)}{dt} =  -M_12 \frac{i_1}{dt} \]
 \newpage
 \section{Campi magnetici variabili nel tempo}
 In elettrostatica valevano le relazioni
@@ -1575,19 +1580,19 @@ ma abbiamo già visto che in elettrodinamica queste non sono più valide in quan
 \end{itemize}
 Ciò che risulta evidente è che in qualche modo il campo magnetico è capace di indurre corrente elettrica su un filo. Queste evidenze portarono a formulare la \textbf{legge di Faraday} nel 1831, questa viene anche detta legge di Faraday-Henry o Faraday-Neumann o Faraday-Neumann-Lenz poiché a legge di Lenz ne è un corollario.
 \begin{align}\label{eq:Faraday_integrale}
-	\mathcal{E}_I = -\frac{d\phi(B)}{dt}
+	\mathcal{E}_I = -\frac{d\Phi(B)}{dt}
 \end{align}
-\[i_I = -\frac{1}{R}\frac{d\phi(B)}{dt}\]
+\[i_I = -\frac{1}{R}\frac{d\Phi(B)}{dt}\]
 Si osservi che se esiste una corrente elettrica esiste un campo elettrico, quello indotto dal campo magnetico però non può essere conservativo perché la condizione di conservatività è che la circuitazione del campo sia nulla ma
-\[\mathcal{E}_I = \oint_{\Gamma}\mathbf{E}\mathbf{ds}=-\frac{d\phi(B)}{dt}\neq 0\]
+\[\mathcal{E}_I = \oint_{\Gamma}\mathbf{E}\mathbf{ds}=-\frac{d\Phi(B)}{dt}\neq 0\]
 Cosa indica il segno negativo presente nella legge? La corrente indotta, generandosi, varia da zero ad un valore, a seconda di come varia il flusso del campo magnetico; come tutte le correnti variabili genera campo magnetico, questo ha sempre verso opposto al campo che lo genera. Da ciò segue, svolgendo semplici considerazioni applicando la regola della mano destra, che il segno della corrente è sempre opposto a quello della variazione del campo magnetico.  Se così non fosse sarebbe violata la conservazione dell'energia infatti avremmo che un campo magnetico variando genera corrente variabile che genera un campo magnetico che si somma a quello iniziale e, facendolo aumentare, produce altra corrente che porterebbe ad un loop infinito che produrrebbe energia infinita, il che è assurdo. Avviene invece che si genera un campo magnetico opposto a quello iniziale che tende ad annullarlo. Possiamo pensare lo stesso problema avvalendoci del principio di equivalenza di Ampere, il filo su cui passa corrente indotta è equivalente ad un'altro magnete che, a causa del segno negativo nella formula, ha i poli invertiti rispetto al magnete iniziale, in questo modo due poli uguali, avvicinandosi, generano una forza che li respinge e quindi si oppone all'avvicinarsi del magnete iniziale che avrebbe aumentato il campo magnetico  (e quindi in definitiva si crea un campo magnetico indotto opposto all'aumento del campo iniziale).\\
 Vediamo ora alcune modalità in cui il campo elettrico può variare nel tempo:
 \begin{esercizio}[Variare il flusso per rotazione del circuito]
 Vi sono vari metodi per far variare il flusso del campo magnetico (la variazione di flusso nel tempo è facilmente misurabile mediante la f.e.m.), uno di questi è lasciare il campo magnetico costante (non muovere il magnete) e variare il vettore normale alla superficie individuata dal circuito (ruotando il circuito su un asse) e quindi l'angolo $\theta$ compreso fra questo versore ed il campo magnetico. La rotazione ha velocità angolare $\omega(t)$
-\[\mathcal{E}_I = -\frac{d\phi (B)}{dt} = -\frac{d}{dt}\oint_{\Gamma}\mathbf{B}\mathbf{ds} = -\frac{d}{dt}B\Sigma \cos\theta=B\Sigma \sin\theta\frac{d\theta}{dt}=B\Sigma\sin\theta\omega(t)\]
+\[\mathcal{E}_I = -\frac{d\Phi (B)}{dt} = -\frac{d}{dt}\oint_{\Gamma}\mathbf{B}\mathbf{ds} = -\frac{d}{dt}B\Sigma \cos\theta=B\Sigma \sin\theta\frac{d\theta}{dt}=B\Sigma\sin\theta\omega(t)\]
 \end{esercizio}
 \begin{esercizio}[Variare il flusso per variazione della corrente]
-Consideriamo un filo infinito giacente sull'asse z con un flusso di corrente verso l'alto variabile nel tempo ed un circuito quadrato di lato l. A priori non sappiamo che verso ha la corrente indotta quindi non sappiamo come orientare la superficie  (che convenzionalmente si orienta con la regola della mano destra a seconda del verso della corrente), quindi scegliamo arbitrariamente un'orientamento, se questo è lo stesso che induce il verso della corrente indotta allora l'espressione che otterremo sarà positiva, se no negativa (quindi l'orientamento inizialmente scelto era sbagliato e bisogna invertirlo). In questo caso scegliamo arbitrariamente verso antiorario (versore superficie uscente dal foglio), in questo modo l'angolo fra questo è il campo magnetico è nullo
+Consideriamo un filo infinito giacente sull'asse z con un flusso di corrente verso l'alto variabile nel tempo ed un circuito quadrato di lato l. A priori non sappiamo che verso ha la corrente indotta quindi non sappiamo come orientare la superficie  (che convenzionalmente si orienta con la regola della mano destra a seconda del verso della corrente), quindi scegliamo arbitrariamente un'orientamento, se questo è lo stesso che induce il verso della corrente indotta allora l'espressione che otterremo sarà positiva, se no negativa (quindi l'orientamento inizialmente scelto era sbagliato e bisogna invertirlo). In questo caso scegliamo arbitrariamente verso antiorario (versore superficie uscente dal foglio), in questo modo l'angolo fra questo ed il campo magnetico è nullo
 \[\mathbf{B}_{filo} = \frac{\mu_0 i}{2\pi y}\mathbf{\hat{i}}\]
 \[\phi(B)=\int_0^l\int_{y_0}^{y_0+l} \frac{\mu_0 i}{2\pi y}dydz= \mu_0 i l \int_{y_0}^{y_0+l}\frac{dy}{y}=\mu_0 i l \ln\left(\frac{y_0 + l}{y_0}\right)\]
 \[\mathcal{E}_I=-\frac{d}{dt}\left(\mu_0 i l \ln\left(\frac{y_0 + l}{y_0}\right)\right) = \mu_0 \frac{di}{dt} l \ln\left(\frac{y_0 + l}{y_0}\right)\]
@@ -1640,7 +1645,7 @@ Svolgiamo alcune osservazioni: il grafico della corrente nel tempo è
 	\label{fig:correnterl}
 \end{figure}
 \FloatBarrier
-Ci spieghiamo fisicamente questo grafico perché nell'istante in cui è chiuso il circuito la corrente aumenta, questa variazione genera una f.e.m. e duna corrente indotta che rallenta l'aumento di corrente, tendendo a farla stabilizzare a \(\frac{\mathcal{E}}{R}\). La tendenza a stabilizzarsi equivale ad una riduzione graduale della variazione e quindi ad una riduzione della forza elettromotrice indotta e quindi della corrente indotta. Si noti dunque che per \(t\to\infty\) l'effetto dell'induttore si annulla e il valore della corrente si stabilizza a quello del caso elettrostatico; è possibile vedere la corrente indotta come la differenza fra il valore a cui si stabilizza la corrente \((i_{\infty})\) e il suo valore al tempo t
+Ci spieghiamo fisicamente questo grafico perché nell'istante in cui è chiuso il circuito la corrente aumenta, questa variazione genera una f.e.m. ed una corrente indotta che rallenta l'aumento di corrente, tendendo a farla stabilizzare a \(\frac{\mathcal{E}}{R}\). La tendenza a stabilizzarsi equivale ad una riduzione graduale della variazione e quindi ad una riduzione della forza elettromotrice indotta e quindi della corrente indotta. Si noti dunque che per \(t\to\infty\) l'effetto dell'induttore si annulla e il valore della corrente si stabilizza a quello del caso elettrostatico; è possibile vedere la corrente indotta come la differenza fra il valore a cui si stabilizza la corrente \((i_{\infty})\) e il suo valore al tempo t
 \[i_I = i_\infty - i(t)\]
 Possiamo infine svolgere uno studio del circuito RL da un punto di vista energetico
 \[f.e.m.:\ \mathcal{E} = Ri+L\frac{di}{dt}\]
@@ -1735,15 +1740,17 @@ che è una costante che risulta essere uguale alla velocità della luce.
 \newpage
 \section{Campi magnetici stazionari nella materia}
 \subsection{Evidenze sperimentali}
-Consideriamo un solenoide (solenoide 1) di raggio R con asse giacente sull'asse delle x nel quale passa una corrente i. Poniamo un altro solenoide (solenoide 2) concentrico al primo, di raggio minore, sulla soglia del primo solenoide e connesso ad un dinamometro per misurare la forza con cui è attratto o respinto dal solenoide in cui passa corrente. La forza è data da 
+Consideriamo un solenoide (solenoide 1) di raggio R con asse giacente sull'asse delle x nel quale passa una corrente i. Poniamo un altro solenoide (solenoide 2) concentrico al primo, di raggio minore, sulla soglia del primo solenoide e connesso ad un dinamometro per misurare la forza con cui è attratto o respinto dal solenoide in cui passa corrente. La forza, ricordando la (\ref{eq:pot_spira}), è data da 
 \[\mathbf{F} = -\n U = -\n(\mathbf{m}\mathbf{B})\]
 dove \(\mathbf{m}\) è il momento magnetico del solenoide 2. Questo è costante in direzione e modulo nell'apparato da noi considerato ma a seconda del verso in cui scorre la corrente può essere positivo o negativo.
 \[\mathbf{F}=\pm m \frac{d B_x}{dx}\mathbf{\hat{i}}\]
 Se la corrente è oraria la forza va verso il basso, se antioraria va verso l'alto.\\
 Se ora al posto del solenoide 2 poniamo un campione di materiale di egual forma e volume si osserva che alcuni materiali sono attratti, altri respinti con forze che sono solitamente deboli ma che possono arrivare ad essere molto grandi per alcuni materiali. Nella maggior parte dei casi la direzione della forza dipende dal verso della corrente ma talvolta si osserva che la forza ha verso indipendente dal verso della corrente (sorprendentemente per gli sperimentatori ottocenteschi che osservarono questo fenomeno per la prima volta).\\
-Per svolgere gli esperimenti, come detto, bisogna usare sempre lo stesso volume di materiale dunque introduciamo una nuova grandezza
+Per svolgere gli esperimenti, come detto, bisogna usare sempre lo stesso volume di materiale dunque introduciamo una nuova grandezza (che tornerà utile in seguito)
 \[\frac{\mathbf{F}}{\tau} = \frac{m}{\tau}\frac{d B_x}{dx}\mathbf{\hat{i}}\equiv \mathbf{M}\frac{dB_x}{dx}\]
-dove abbiamo definito M, vettore di magnetizzazione. A seconda delle caratteristiche di \(\mathbf{M}\) che si osservano mediante l'apparato sperimentale di cui sopra possiamo distinguere i materiali in tre categorie
+dove abbiamo definito M, vettore di magnetizzazione, come
+\[\mathbf{M}\equiv \frac{dm}{d\tau}\]
+A seconda delle caratteristiche di \(\mathbf{M}\) che si osservano mediante l'apparato sperimentale di cui sopra possiamo distinguere i materiali in tre categorie
 \begin{itemize}
 	\item Diamagnetici: se M è negativa di modulo piccolo ed equiversa al campo magnetico, ovvero quando il materiale è debolmente respinto
 	\item Paramagnetici: se M è positiva di modulo piccolo ed equiversa al campo magnetico, ovvero quando il materiale è debolmente attratto
@@ -1752,15 +1759,15 @@ dove abbiamo definito M, vettore di magnetizzazione. A seconda delle caratterist
 Sempre sperimentalmente si nota che se l'esperimento avviene in un mezzo invece che nel vuoto si ha che il campo magnetico è proporzionale a quello che avremmo osservato nel vuoto con una costante di proporzionalità dipendente unicamente dal mezzo, detta costante di permeabilità magnetica relativa (\(k_m\)).
 \[B = B_0 k_m = \mu_0 k_m n i = \mu n i\]
 dove $\mu$ è la costante di permeabilità magnetica assoluta. 
-Il valore di \(k_m\) dipende dal mezzo e può essere maggiore o minore di 1, a differenza della costante di permeabilità elettrica che era sempre minore di uno e riduceva sempre il campo elettrico. Questo fatto, osservato per la prima volta nel caso specifico di un solenoide, si osserva avere validità generale,per mezzi omogenei (\(k_m\) è la stessa in tutto il mezzo) e con densità uguale in tutti i punti. La formula di Biot-Savart in un mezzo con queste caratteristiche è quindi 
-\[\mathbf{dB} = \frac{\mu}{4\pi} i \frac{\mathbf{ds}\wedge \mathbf{r}}{r^3}\] 
+Il valore di \(k_m\) dipende dal mezzo e può essere maggiore o minore di 1, a differenza della costante di permeabilità elettrica che era sempre minore di uno e riduceva sempre il campo elettrico. Questo fatto, osservato per la prima volta nel caso specifico di un solenoide, si osserva avere validità generale,per mezzi omogenei (\(k_m\) è la stessa in tutto il mezzo e non è una funzione della posizione) e con densità uguale in tutti i punti. La formula di Biot-Savart in un mezzo con queste caratteristiche è quindi 
+\[\mathbf{dB} = \frac{\mu}{4\pi} i \frac{\mathbf{dl}\wedge \mathbf{r}}{r^3}\] 
 Possiamo definire una grandezza analoga alla suscettibilità elettrica: la suscettibilità magnetica 
 \[\mathbf{B}-\mathbf{B_0}=(k_m - 1)\mathbf{B_0} \equiv \chi_m \mathbf{B_0}\]
 Possiamo quindi riclassificare i materiali in base ai valori di suscettibilità magnetica che presentano
 \begin{itemize}
 	\item Diamagnetici: \(k_m <1,\ \chi_m < 0\sim 10^{-5}\) \(\Rightarrow\) \(B< B_0\)
 	\item Paramagnetici: \(k_m >1,\ \chi_m > 0\sim 10^{-5}\) \(\Rightarrow\) \(B > B_0\)
-	\item Ferromagnetici: \(k_m >1,\ \chi_m < 0\sim 10^{3}-10^{5}\) \(\Rightarrow\) \(B > B_0\)
+	\item Ferromagnetici: \(k_m > 1,\ \chi_m > 0\sim 10^{3}-10^{5}\) \(\Rightarrow\) \(B > B_0\)
 \end{itemize}
 Riordinando i termini della precedente relazione otteniamo una forma più espressiva
 \[\frac{B-B_0}{B}=\chi_m\]
@@ -1768,25 +1775,25 @@ che mette in luce il fatto che $\chi_m$ è la frazione di quanto varia il campo 
 \[\mathbf{B}=\mathbf{B_0}+\mathbf{B_0}\chi_m\]
 che mette in luce il fatto che il campo magnetico in un mezzo è costituito da una componente che è il valore che avrebbe avuto nel vuoto più una componente che esprime il contributo del mezzo (che può essere sia riduttivo che accrescitivo). 
 \subsection{Interpretazione microscopica della magnetizzazione}
-Il contributo di campo magnetico offerto dal mezzo ha natura atomica: esiste una corrente atomica detta "amperiana" causata dai moti degli elettroni, le cui traiettorie possono essere viste come piccole spire. Visto che il loro moto è genera una corrente variabile, si genera per ogni elettrone un piccolo campo magnetico; ad ogni elettrone, come si farebbe per una spira, è possibile associare un momento magnetico \(\mathbf{m_e}\). Essendo gli orientamenti degli atomi casuali il momento magnetico globale di un materiale formato da molti atomi è solitamente nullo. In presenza di un campo magnetico, proprio come nel caso delle spire, i momenti magnetici dei singoli atomi sperimentano un momento delle forze e tendono ad allinearsi col campo, producendo così un momento magnetico globale nel materiale. Vediamo più in particolare l'interpretazione microscopica del fenomeno della magnetizzazione ricordando che quella che possiamo offrire è solo una trattazione qualitativa in quanto per avere precisione quantitativa è necessaria la teoria quantistica.\\
+Il contributo di campo magnetico offerto dal mezzo ha natura atomica: esiste una corrente atomica detta "amperiana" causata dai moti degli elettroni, le cui traiettorie possono essere viste come piccole spire. Visto che il loro moto genera una corrente variabile, si genera per ogni elettrone un piccolo campo magnetico; ad ogni elettrone, come si farebbe per una spira, è possibile associare un momento magnetico \(\mathbf{m_e}\). Essendo gli orientamenti degli atomi casuali il momento magnetico globale di un materiale formato da molti atomi è solitamente nullo. In presenza di un campo magnetico, proprio come nel caso delle spire, i momenti magnetici dei singoli atomi sperimentano un momento delle forze e tendono ad allinearsi col campo, producendo così un momento magnetico globale nel materiale; l'agitazione termica si oppone al riorientamento degli atomi. Vediamo più in particolare l'interpretazione microscopica del fenomeno della magnetizzazione ricordando che quella che possiamo offrire è solo una trattazione qualitativa in quanto per avere precisione quantitativa è necessaria la teoria quantistica.\\
 In generale gli elettroni generano una corrente di magnetizzazione \(i_m\), vogliamo trovare un'espressione di questa corrente. Cominciamo con l'osservare che il momento magnetico  medio del materiale (\(<\mathbf{m}>\)) è parallelo al campo magnetico esterno \((\mathbf{B})\) e che il momento magnetico (\(\Delta\mathbf{m}\)) di una porzione di materiale di volume \(\Delta \tau\) è pari al momento magnetico medio per il numero di atomi contenuto in quella porzione di materiale (\(\Delta N\)), inoltre ricordando la definizione del vettore di magnetizzazione possiamo scrivere
 \[<\mathbf{m}>//\mathbf{B}\]
 \[\Delta \mathbf{m}=\Delta N<\mathbf{m>}\]
-\[\mathbf{M}=\frac{\Delta \mathbf{m}}{\Delta \tau}=\frac{\Delta N }{\delta \tau}<\mathbf{m}>=n<\mathbf{m}>\]
-Si noti la forte analogia momento di polarizzazione-momento magnetico polarizzazione-magnetizzazione.\\
+\[\mathbf{M}=\frac{\Delta \mathbf{m}}{\Delta \tau}=\frac{\Delta N }{\Delta \tau}<\mathbf{m}>=n<\mathbf{m}>\]
+Si noti la forte analogia momento di polarizzazione-momento magnetico, polarizzazione-magnetizzazione.\\
 Consideriamo il caso particolare in cui \(\mathbf{M}\) è costante in tutto il materiale (nei dielettrici avevamo considerato un materiale in cui P era costante in tutti i punti), ovvero ad esempio un cilindro nel quale quindi si genera un momento di magnetizzazione uguale in tutti i punti. Se ferromagnetico o paramagnetico per definizione abbiamo \(\mathbf{M}//\mathbf{B}\) ed equiversi (come con \(\mathbf{P}//\mathbf{E}\) se \(P\) costante in tutto il dielettrico). Consideriamo una sezione di cilindro di altezza dz e dividiamolo in piccoli prismi a superficie di base quadrata. Per ogni volumetto si ha un momento di magnetizzazione infinitesimo
 \[\mathbf{dm} = \mathbf{M}d\tau = \mathbf{M} ds dz = M dz \mathbf{ds}\]  
 dove l'ultima uguaglianza è possibile perché il vettore di magnetizzazione è parallelo al versore normale la superficie. Per il teorema di equivalenza di Ampere il prisma, che è un piccolo magnete, è equivalente ad una spira in cui scorre una corrente di magnetizzazione \(di_M\) di superficie \(\mathbf{ds}\)
 \[\mathbf{dm} = di_M \mathbf{ds} = M dz \mathbf{ds}\]
-\[\Rightarrow d i_M = M dz\]
-essendo \(\mathbf{M}\) costante per ipotesi la corrente ha sempre la stessa intensità e dipende solo dall'altezza della sezione di cilindro considerata. Ciò vuol dire che in tutti i prismi di cui è composto il cilindro vi è una corrente che circola sempre nello stesso verso, ciò vuol dire che all'interno del cilindro le correnti si annullano vicendevolmente tranne quelle al bordo, ne segue che la corrente id magnetizzazione sta solo sul bordo e, più questo è spesso maggiore sarà la corrente totale. Possiamo considerare prismi di volume tanto piccoli da contenere solo un atomo, dunque la corrente di magnetizzazione a livello atomico è data solo dagli elettroni nell'atomo. per ottenere la corrente di magnetizzazione dell'intero cilindro integriamo
+\[\Rightarrow d i_m = M dz\]
+essendo \(\mathbf{M}\) costante per ipotesi la corrente ha sempre la stessa intensità e dipende solo dall'altezza della sezione di cilindro considerata. Ciò vuol dire che in tutti i prismi di cui è composto il cilindro vi è una corrente che circola sempre nello stesso verso, ciò vuol dire che all'interno del cilindro le correnti si annullano vicendevolmente tranne quelle al bordo, ne segue che la corrente di magnetizzazione sta solo sul bordo e, più questo è spesso maggiore sarà la corrente totale. Possiamo considerare prismi di volume tanto piccoli da contenere solo un atomo, dunque la corrente di magnetizzazione a livello atomico è data solo dagli elettroni nell'atomo. per ottenere la corrente di magnetizzazione dell'intero cilindro integriamo
 \[i_{ml} = \int_{0}^{h}di_M=Mh\]
 Analogamente a quanto già fatto per la corrente elettrica con il vettore di densità di corrente, definiamo un \textbf{vettore di densità lineare di corrente di magnetizzazione}
-\[J_{ml} \equiv \frac{i_M}{h}= M\]
+\[J_{ml} \equiv \frac{i_m}{h}= M\]
 o, in forma vettoriale
 \[\mathbf{J_{ml}} \equiv \mathbf{M}\wedge \mathbf{\hat{n}}\]
-dove \(\mathbf{\hat{n}}\) è il versore normale alla superficie del cilindro. Questa relazione è analoga alla \ref{eq:densità_polarizzazione}. Se \(\mathbf{M}\) non è costante le correnti non si annullano all'interno del cilindro quindi si generano correnti di magnetizzazione interne al cilindro (analogamente a quando \(\mathbf{P}\) non è costante nel dielettrico e si creano densità di polarizzazione interne).\\
-Cosa succede sulla superficie di contatto fra i du prismi? Su ogni superficie laterale c'è una corrente che girano nello stesso senso
+dove \(\mathbf{\hat{n}}\) è il versore normale alla superficie del cilindro. Questa relazione è analoga alla (\ref{eq:densità_polarizzazione}). Se \(\mathbf{M}\) non è costante le correnti non si annullano all'interno del cilindro quindi si generano correnti di magnetizzazione interne al cilindro (analogamente a quando \(\mathbf{P}\) non è costante nel dielettrico e si creano densità di polarizzazione interne).\\
+Cosa succede sulla superficie di contatto fra i due prismi? Su ogni superficie laterale c'è una corrente che gira nello stesso senso, se i momenti di magnetizzazione dei due prismi adiacenti è lo stesso allora la corrente totale su questa faccia è nulla, se però sono diversi si ha
 \[di_1 = M_z dz\]
 \[di_2 = M'_z dz\]
 Sulla superficie laterale però ci sono entrambe le correnti ed hanno verso opposto
@@ -1800,20 +1807,20 @@ dove, essendo i prismi di altezza infinitesima dz abbiamo sostituito
 	\label{fig:prismi1}
 \end{figure}
 \FloatBarrier
-Analogamente possiamo ragionare sull'asse invertendo gli assi, ottenendo
+Possiamo ragionare analogamente invertendo gli assi, ottenendo
 \[di_4 - di_3 = (M'_x - M_x)dx = -\left(\frac{\d M_x}{\d z}\right)dz dx\]
 Dunque, in totale, la variazione di corrente sull'asse y è
 \[di_y = (di_1 -di_2)+(di_4-di_3)=\left(\frac{\d M_x}{\d z}-\frac{\d M_z}{\d x}\right)dxdz\]
 \[J_y = \frac{di_y}{dxdz} = \left(\frac{\d M_x}{\d z}-\frac{\d M_z}{\d x}\right) \]
 Quest'ultima è la componente \(\mathbf{\hat{j}}\) del rotore del vettore di magnetizzazione dunque, ripetendo lo stesso ragionamento sui tre assi otteniamo
 \[\n\wedge\mathbf{M} = \mathbf{J}_{mS}\]
-dove \(\mathbf{J}_{mS}\) è la densità di corrente superficiale, presente all'interno del materiale non omogeneo, anisotropo a causa della non uniformità di \(\mathbf{M}\). Questa relazione è analoga alla \ref{eq:gradiente_vettore_polarizzazione}. Possiamo quindi applicare il teorema di Stokes per ottenere un'equivalente della legge di Ampere ma questa volta per la corrente di magnetizzazione
+dove \(\mathbf{J}_{mS}\) è la densità di corrente superficiale, presente all'interno del materiale non omogeneo a causa della non uniformità di \(\mathbf{M}\). Questa relazione è analoga alla (\ref{eq:gradiente_vettore_polarizzazione}). Possiamo quindi applicare il teorema di Stokes per ottenere un'equivalente della legge di Ampere ma questa volta per la corrente di magnetizzazione
 \[\oint_\Gamma\mathbf{M}\mathbf{dz} = i_{mS}\]
-Introducendola corrente di magnetizzazione (sia lineare che superficiale) è possibile render conto delle calamite: basta correggere la legge di Ampere-Maxwell considerando anche la corrente di magnetizzazione nella componente di Ampere della legge
+Introducendo la corrente di magnetizzazione (sia lineare che superficiale) è possibile render conto delle calamite: basta correggere la legge di Ampere-Maxwell considerando anche la corrente di magnetizzazione nella componente di Ampere della legge
 \[\oint_\Gamma \mathbf{B}\mathbf{dz} = \mu_0 i_{tot} + \mu_0\varepsilon_0\frac{\d\Phi(\mathbf{E})}{\d t}\]
-dove \(i_{tot} = i+i_m\). In una calamita anche se non scorre corrente è comunque presente una corrente di magnetizzazione di origine atomica. In questo modo ci spieghiamo anche l'osservazione sperimentale sposta all'inizio della trattazione dei magneti per cui spezzando un magnete con due poli si ottiene un'altro magnete con due poli e non è possibile ottenere un monopolo magnetico: In realtà un magnete è formato da tante spire e, dividendolo, non si fa altro che ridurre il numero di spire (e quindi la corrente di magnetizzazione, che dipende solo dall'altezza del magnete, e quindi l'intensità del campo magnetico che genera). \'{E} interessante notare che le più avanzate teorie sulla formazione dell'universo predicono l'esistenza di monopoli che classicamente non sono previsti e che per di più non sono mai stati osservati, questo è un problema tutt'ora aperto nella fisica.\\
+dove \(i_{tot} = i+i_m\). In una calamita anche se non scorre corrente è comunque presente una corrente di magnetizzazione di origine atomica. In questo modo ci spieghiamo anche l'osservazione sperimentale esposta all'inizio della trattazione dei magneti per cui spezzando un magnete con due poli si ottiene un'altro magnete con due poli e non è possibile ottenere un monopolo magnetico: In realtà un magnete è formato da tante spire e, dividendolo, non si fa altro che ridurre il numero di spire (e quindi la corrente di magnetizzazione, che dipende solo dall'altezza del magnete, e quindi l'intensità del campo magnetico che genera). \'{E} interessante notare che le più avanzate teorie sulla formazione dell'universo predicono l'esistenza di monopoli che classicamente non sono previsti e che per di più non sono mai stati osservati, questo è un problema tutt'ora aperto nella fisica.\\
 Trascuriamo ora i campi variabili nel tempo
-\[\oint_\Gamma \mathbf{B}\mathbf{dr} = \mu_0 i_{tot} = \mu_0(i + i_M)=\mu_0 i +\mu_0\oint_\Gamma \mathbf{M}\mathbf{dr}\]
+\[\oint_\Gamma \mathbf{B}\mathbf{dr} = \mu_0 i_{tot} = \mu_0(i + i_m)=\mu_0 i +\mu_0\oint_\Gamma \mathbf{M}\mathbf{dr}\]
 \[\oint_\Gamma\left(\frac{\mathbf{B}}{\mu_0}-\mathbf{M}\right)\mathbf{dr} = i\]
 Abbiamo trovato una quantità la cui circuitazione equivale solamente dalla corrente di conduzione, in analogia a quanto fatto per il vettore di spostamento elettrico \(\mathbf{D}\), il cui flusso dipendeva solo dalle cariche libere, definiamo il vettore \(\mathbf{H}\), detta \textbf{densità di flusso magnetico}. 
 \[\mathbf{H}\equiv \frac{\mathbf{B}}{\mu_0}- \mathbf{M}\]
@@ -1839,7 +1846,7 @@ in analogia ai circuiti elettrici, in cui è presente un campo elettrico in un c
 Se la costante di permeabilità magnetica assoluta \(\mu\) del mezzo è abbastanza elevata il campo magnetico al suo interno non si disperde all'esterno, ne segue che il campo indotto da un'avvolgimento è costante su tutto il circuito ed è equivalente che gli avvolgimenti siano presenti su tutto il circuito o solo in una parte.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../images/circuito-magnetico}
+	\includegraphics[width=0.4\linewidth]{../images/circuito-magnetico}
 	\caption{Schematizzazione di un classico circuito magnetico.}
 	\label{fig:circuito-magnetico}
 \end{figure}
@@ -1888,7 +1895,7 @@ Il caso ferromagnetico è particolare dal punto di vista sperimentale perché ac
 	\label{fig:isteresim}
 \end{figure}
 \FloatBarrier
-Concentriamoci sul grafico H-M: all'aumentare di H (che per ipotesi inizialmente è nullo) inizialmente (curva di prima magnetizzazione) la magnetizzazione aumenta, seguendo una curva non lineare, fino a raggiungere la magnetizzazione di saturazione, valore su cui si stabilizza asintoticamente, ciò avviene perché arrivati a questo punto tutti gli spin sono allineati con il campo magnetico. Se arrivati a questo punto si diminuisce H si nota sperimentalmente che non si segue la stessa curva precedente a ritroso ma se ne segue una distinta, che decresce più lentamente, detta curva di demagnetizzazione; per questo motivo quando H è nullo vi sarà ancora una magnetizzazione residua che si azzera solo se H è minore di zero, ad un valore detto H coercitivo. Continuando a diminuire il valore di h si raggiunge un minimo. Se ora torniamo ad aumentare H riscontreremo che si segue un'ulteriore curva detta di seconda magnetizzazione. Risulta chiaro che la relazione non solo non è lineare ma dipende dalla "storia" della variazione di H: ad uno stesso valore di H sono associati più valori di M a seconda che ci troviamo su una curva o su un'altra. Per il grafico del campo magnetico la situazione è simile con la principale differenza che in corrispondenza del punto in cui M diventa costante B comincia a crescere linearmente poiché
+Concentriamoci sul grafico H-M: all'aumentare di H (che per ipotesi inizialmente è nullo) inizialmente (curva di prima magnetizzazione) la magnetizzazione aumenta, seguendo una curva non lineare, fino a raggiungere la magnetizzazione di saturazione, valore su cui si stabilizza asintoticamente, ciò avviene perché arrivati a questo punto tutti gli spin sono allineati con il campo magnetico. Se arrivati a questo punto si diminuisce H si nota sperimentalmente che non si segue la stessa curva precedente a ritroso ma se ne segue una distinta, che decresce più lentamente, detta curva di demagnetizzazione; per questo motivo quando H è nullo vi sarà ancora una magnetizzazione residua che si azzera solo se H è minore di zero, ad un valore detto H coercitivo. Continuando a diminuire il valore di H si raggiunge un minimo. Se ora torniamo ad aumentare H riscontreremo che si segue un'ulteriore curva detta di seconda magnetizzazione. Risulta chiaro che la relazione non solo non è lineare ma dipende dalla "storia" della variazione di H: ad uno stesso valore di H sono associati più valori di M a seconda che ci troviamo su una curva o su un'altra. Per il grafico del campo magnetico la situazione è simile con la principale differenza che in corrispondenza del punto in cui M diventa costante B comincia a crescere linearmente poiché
 \[\mathbf{B} = \mu_0\mathbf{M}_{sat}+\mu_0\mathbf{H}\]
 se M è costante questa diventa l'equazione di una retta. Anche per \(\mathbf{B}\) nella curva di demagnetizzazione c'è un valore residuo tale che
 \[\mathbf{B}_{res} = \mu_0\mathbf{M}_{res}\] 
@@ -1901,7 +1908,7 @@ Basandosi sul ciclo di isteresi è possibile magnetizzare un materiale con quals
 \end{figure}
 \FloatBarrier
 Si noti che la smagnetizzazione, di cui abbiamo esperienza ad esempio con le carte di credito, avviene semplicemente quando il magnete all'interno della carta, a causa di un prolungato contatto con un'altro magnete, come quello di un cellulare, raggiunge lo zero nel grafico di cui sopra.\\
-Ciò che avviene in ogni ciclo più stretto è che sempre più spin si disordinano fino ad arrivare a magnetizzazione zero asintoticamente quando sono tutti disordinati. Il motivo per cui non tutti gli spin cambiano orientamento in una volta sola è che nei materiali ferromagnetici gli spin sono disposti con spin uguali in regioni di materiale dette \textbf{domini di Weiss} giustificabili con la meccanica quantistica; ad ogni ciclo si cambia orientamento di un erto numero di domini
+Ciò che avviene in ogni ciclo più stretto è che sempre più spin si disordinano fino ad arrivare a magnetizzazione zero asintoticamente quando sono tutti disordinati. Il motivo per cui non tutti gli spin cambiano orientamento in una volta sola è che nei materiali ferromagnetici gli spin sono disposti con spin uguali in regioni di materiale dette \textbf{domini di Weiss} giustificabili con la meccanica quantistica; ad ogni ciclo si cambia orientamento di un certo numero di domini
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{../"images/domini di weiss"}
@@ -1917,29 +1924,29 @@ dove C è una costante.
 Consideriamo un atomo, schematizzabile in prima approssimazione come un atomo di idrogeno in cui è presente solo una carica negativa che orbita circolarmente attorno ad un nucleo carico positivamente. Conoscendo il valore del raggio dell'atomo allo stato fondamentale e del tempo che impiega ad effettuare una rivoluzione
 \[R_0 \simeq 0.5\cdot 10^{-10}\ m \quad T_0 \simeq 1.5\cdot 10^{-16}s\]
 possiamo vederlo come una spira circolare in cui transita una corrente di
-\[I_e = \frac{q}{T_0} \simeq 10^{-3}\ A\]
+\[i_e = \frac{e}{T_0} = -\frac{|e|}{T_0} \simeq -10^{-3}\ A\]
 e di momento di magnetizzazione
-\[\mathbf{m} = I_e \mathbf{S} = I_e \pi R_0^2\mathbf{\hat{u}_n} = \frac{e}{T_0}\pi R_0\mathbf{\hat{u}_n}\]
-dove \(\mathbf{\hat{u}_n}\) è il versore normale al piano su cui ruota l'elettrone, nonché alla superficie S.  Visto che l'elettrone orbita possiede anche un momento angolare \(\mathbf{L}\) che ha stessa direzione di \(\mathbf{m}\)
+\[\mathbf{m} = i_e \mathbf{S} = i_e \pi R_0^2\mathbf{\hat{u}_n} = -\frac{|e|}{T_0}\pi R_0^2 \mathbf{\hat{u}_n}\]
+dove \(\mathbf{S}\) è orientata verso l'alto e \(\mathbf{\hat{u}_n}\) è il versore normale al piano su cui ruota l'elettrone, nonché alla superficie S, ma con verso opposto ad \(\mathbf{m}\). Visto che l'elettrone orbita, possiede anche un momento angolare \(\mathbf{L}\) che ha stessa direzione di \(\mathbf{m}\)
 \[\mathbf{L} = \mathbf{R_0}\wedge m_e\mathbf{v_0} = R_0 m_e v_0 \mathbf{\hat{u}_n} = \frac{2\pi R_0^2 m_e}{T_0}\mathbf{\hat{u}_n} \]
 Possiamo ricavare la relazione tra \(\mathbf{L}\) ed \(\mathbf{m}\) sostituendo
-\[\mathbf{L} = -\frac{2 m_e}{e}\mathbf{m}\]
-deduciamo che \(\mathbf{L}\) ed \(\mathbf{m}\) hanno stessa direzione e verso opposto.\\
-Immergendo ora l'atomo in un campo magnetico la cui direzione forma un angolo $\theta$ con a direzione di \(\mathbf{L}\) ed \(\mathbf{m}\), l'atomo-spira risente di un momento delle forze pari a 
-\[\tau = \mathbf{m}\wedge \mathbf{B} = \frac{d\mathbf{L}}{dt} = -\frac{e}{2m_e} \mathbf{L}\wedge \mathbf{B}\]
-Visto che per definizione il prodotto scalare fra due vettori risulta in un vettore ortogonale ad entrambe quelli di partenza, ne risulta che la derivata di \(\mathbf{L}\) è ortogonale ad \(\mathbf{L}\), ciò vuol dire che non ha componenti sull'asse \(\mathbf{\hat{u}_n}\) e quindi non può \(\mathbf{L}\) ma solo sulla sua direzione
+\[\mathbf{L} = -\frac{2 m_e}{|e|}\mathbf{m}\]
+deduciamo che \(\mathbf{L}\) ed \(\mathbf{m}\) hanno stessa direzione e verso opposto, questo discende dal fatto che la corrente è composta da elettroni che fluiscono in verso negativo, questo fa cambiare il segno ad \(\mathbf{m}\) ma non ad \(\mathbf{L}\) poiché nella formula di quest'ultima compare la velocità degli elettroni, che è in verso positivo.\\
+Immergendo ora l'atomo in un campo magnetico la cui direzione forma un angolo $\theta$ con la direzione di \(\mathbf{L}\) ed uno \(\theta + \pi\) \(\mathbf{m}\), l'atomo-spira risente di un momento delle forze pari a 
+\[\tau = \mathbf{m}\wedge \mathbf{B} = \frac{d\mathbf{L}}{dt} = -\frac{|e|}{2m_e} \mathbf{L}\wedge \mathbf{B}\]
+Visto che per definizione il prodotto scalare fra due vettori risulta in un vettore ortogonale ad entrambe quelli di partenza, ne segue che la derivata di \(\mathbf{L}\) è ortogonale ad \(\mathbf{L}\), ciò vuol dire che non ha componenti sull'asse \(\mathbf{\hat{u}_n}\) e quindi non può agire sul modulo di \(\mathbf{L}\) ma solo sulla sua direzione
 \[\mathbf{L} = L \mathbf{\hat{u}}(t)\]
 Usando le leggi di Poisson per la derivazione dei versori
 \[\frac{d\mathbf{L}}{dt} = \omega_L \wedge \mathbf{L}\]
 dove \(\omega_L\) è la velocità angolare con cui ruota il vettore \(\mathbf{L}\), si verifica dunque un moto di precessione dell'elettrone.\\
 Uguagliando con la precedente espressione della derivata del momento angolare otteniamo
-\[-\frac{e}{2m_e} \mathbf{L}\wedge \mathbf{B} = \frac{e}{2m_e} \mathbf{B}\wedge\mathbf{L}\]
-\[\Rightarrow \omega_L = \mathbf{B}\frac{e}{2 m_e}\]
-Questo moto, detto \textbf{precessione di Larmor} genera una corrente atomica di Larmor
-\[i_e = \frac{e}{T_L}= e\left(\frac{\omega_L}{2\pi}\right)=\frac{Be^2}{4\pi m_e}\]
+\[-\frac{|e|}{2m_e} \mathbf{L}\wedge \mathbf{B} = \frac{|e|}{2m_e} \mathbf{B}\wedge\mathbf{L}\]
+\[\Rightarrow \omega_L = \mathbf{B}\frac{|e|}{2 m_e}\]
+Questo moto, detto \textbf{precessione di Larmor}, genera una corrente atomica di Larmor
+\[i_l = \frac{e}{T_L} = -|e|\left(\frac{\omega_L}{2\pi}\right)= -\frac{\mathbf{B}e^2}{4\pi m_e}\]
 a cui è associato un momento magnetico di Larmor
-\[\mathbf{m_e} = i_e \mathbf{S}\]
-che è negativo poiché \(e = -|e|\). Questo momento magnetico dà origine al comportamento diamagnetico, ci spieghiamo il debole respingimento proprio per il segno negativo del momento di magnetizzazione che genera una forza repulsiva. 
+\[\mathbf{m_e} = i_l \mathbf{S}_l\]
+che è negativo poiché \(i_l < 0\), ed ha direzione uguale a quella del campo magnetico; ecco spiegato il motivo per cui i materiali diamagnetici sono sempre respinti dal campo magnetico, indipendentemente dal segno della corrente. Si noti che la superficie di Larmor non coincide con quella racchiusa nella traiettoria dell'elettrone ma è una sua proiezione sul piano ortogonale a quello del campo magnetico
 \subsection{Legge di rifrazione del campo magnetico}
 Consideriamo una superficie di separazione fra due mezzi di costanti di permeabilità magnetica relativa \(k_1\) e \(k_2\) ed un'onda elettromagnetica che incide sulla superficie 1 con angolo $\theta_1$ e viene rifratta con angolo $\theta_2$. A partire dalle equazioni già ricavate
 \[\oint_{\Sigma(\Gamma)} \mathbf{B} \mathbf{ds} = 0\]
@@ -1949,7 +1956,7 @@ possiamo ricavare, analogamente a quanto fatto per il campo elettrico, la legge 
 \[\Rightarrow \frac{B_{1//}}{\mu_1} = \frac{B_{2//}}{\mu_2}\]
 \[B_{//1}k_2 =  B_{//2}k_1\]
 Considerando ora il flusso del campo magnetico, consideriamo un cilindro di altezza \(dh\to 0\) che attraversa la superficie di discontinuità, la componente di flusso per la superficie laterale è irrilevante essendo l'altezza tendente a zero, il flusso è quindi
-\[\oint_\Sigma(\Gamma)\mathbf{B} = \mathbf{B}_1\mathbf{S} +  \mathbf{B}_1\mathbf{S} = S(B_1\cos\theta_1 -B_2\cos\theta_2)=S(B_{\perp 1}- B_{\perp 2})=0 \]
+\[\oint_{\Sigma(\Gamma)}\mathbf{B} = \mathbf{B}_1\mathbf{S} +  \mathbf{B}_1\mathbf{S} = S(B_1\cos\theta_1 -B_2\cos\theta_2)=S(B_{\perp 1}- B_{\perp 2})=0 \]
 \[\Rightarrow B_{\perp 1} = B_{\perp 2}\]
 Mettendo assieme le due relazioni ricavate
 \begin{align*}
@@ -1966,7 +1973,8 @@ Mettendo assieme le due relazioni ricavate
 che è la stessa trovata per il campo elettrico (entrambi i campi sono onde quindi si comportano allo stesso modo).
 \newpage
 \section{Teorema di Poynting: conservazione dell'energia}
-Abbiamo ricavato le equazioni (\ref{eq:densità_energia_elettrica}) e (\ref{eq:densità_energia_magnetica}) a partire dai casi particolari di un condensatore a facce piane parallele e di un solenoide per poi assumerle come generali senza dimostrarlo. Vogliamo ora ricavarle rigorosamente ed in generale ottenere un'espressione dell'energia scambiata da un generico sistema di cariche con velocità \(\mathbf{v}\) e carica q immerso in un generico campo elettrico e magnetico nell'unità di tempo (potenza). Scriviamo tutto ciò che sappiamo su questo sistema a partire dalla teoria sviluppata fin'ora
+Abbiamo ricavato le equazioni (\ref{eq:densità_energia_elettrica}) e (\ref{eq:densità_energia_magnetica}) a partire dai casi particolari di un condensatore a facce piane parallele e di un solenoide per poi assumerle come generali senza dimostrarlo. Vogliamo ora ricavarle rigorosamente ed in generale ottenere un'espressione dell'energia scambiata da un generico sistema di cariche con velocità \(\mathbf{v}\) e carica q immerso in un generico campo elettrico e magnetico nell'unità di tempo (potenza). Si noti che trovare un'espressione della potenza equivale a spiegare come si trasforma l'energia elettromagnetico, ammettendo implicitamente che questa non si generi o distrugga ma si conservi. Il teorema di Poynting è dunque una formulazione più forte del principio di conservazione dell'energia non solo perché spiega anche come questa si trasforma ma anche perché ci indica che l'energia risiede nel campo elettromagnetico e che dunque la conservazione vale localmente. Infatti la conservazione dell'energia a priori potrebbe anche valere globalmente cioè l'energia dissipata in A riappare in B senza che nulla accada in mezzo. Questo è escluso dal teorema di Poynting poiché ha forma differenziale (locale.).\\
+Scriviamo tutto ciò che sappiamo su questo sistema a partire dalla teoria sviluppata fin'ora
 \[\mathbf{F} = q\mathbf{E}+q\mathbf{v}\wedge\mathbf{B}\]
 \[\n\mathbf{E} = \frac{q}{\varepsilon_0}\]
 \[\n\wedge\mathbf{E} = -\frac{\d \mathbf{B}}{\d t}\]
@@ -1977,7 +1985,7 @@ Consideriamo ora una porzione di volume infinitesimo \(d\tau\) della distribuzio
 \[\mathbf{dF} = dq\mathbf{E} + dq\mathbf{v}\wedge\mathbf{B} = (\rho\mathbf{E} + \rho \mathbf{v}\wedge\mathbf{B})d\tau\]
 la forza moltiplicata scalarmente per la velocità risulta nella potenza scambiata dal volumetto $d\tau$
 \[\mathbf{dP} = (\rho\mathbf{v}\mathbf{E} + \rho (\mathbf{v}\wedge\mathbf{B})\mathbf{v})d\tau =  \rho\mathbf{v}\mathbf{E}d\tau = \mathbf{J}\mathbf{E}d\tau\]
-dove il contributo offerto dal campo magnetico si annulla perché per definizione di prodotto vettoriale il vettore risultante è ortogonale a \(\mathbf{v}\) che, moltiplicato per \(\mathbf{v}\) si annulla. Si noti che questa è la formula dell'effetto Joule (\ref{eq:effetto_Joule}).\\
+dove il contributo offerto dal campo magnetico si annulla perché per definizione di prodotto vettoriale il vettore risultante è ortogonale a \(\mathbf{v}\) che, moltiplicato per \(\mathbf{v}\) si annulla. Si noti che questa è la formula dell'effetto Joule (\ref{eq:effetto_Joule}), ottenuta precedentemente a partire dal modello microscopico di Lorentz-Drude.\\
 Ci chiediamo da cosa sia prodotta questa energia scambiata nell'unità di tempo, vogliamo ricavare un'espressione di \(\mathbf{J}\mathbf{E}\), usiamo la legge di Ampere-Maxwell e la moltiplichiamo scalarmente per \(\mathbf{E}\)
 \[(\n\wedge\mathbf{B})\mathbf{E} = \mu_0(\mathbf{J}\mathbf{E}) + \mu_0\varepsilon_0 \frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
 \[\mathbf{J}\mathbf{E} = \frac{(\n\wedge\mathbf{B})\mathbf{E}}{\mu_0}-\varepsilon_0\frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
@@ -1985,22 +1993,22 @@ Osservando che
 \[\n(\mathbf{E}\wedge\mathbf{B}) = (\n\wedge\mathbf{E})\mathbf{B}-(\n\wedge\mathbf{B})\mathbf{E}\]
 \[(\n\wedge\mathbf{B})\mathbf{E} = (\n\wedge\mathbf{E})\mathbf{B}- \n(\mathbf{E}\wedge\mathbf{B})\]
 per la legge di Faraday possiamo scrivere
-\[(\n\wedge\mathbf{B})\mathbf{E} = -\frac{\d B}{\d t}\mathbf{B}- \n(\mathbf{E}\wedge\mathbf{B})\]
+\[(\n\wedge\mathbf{B})\mathbf{E} = -\frac{\d \mathbf{B}}{\d t}\mathbf{B}- \n(\mathbf{E}\wedge\mathbf{B})\]
 sostituiamo
-\[\mathbf{J}\mathbf{E} = -\varepsilon_0 \frac{\d \mathbf{E}}{\d t} = -\frac{1}{\mu_0}\left[\frac{\d B}{\d t}\mathbf{B}+\n(\mathbf{E\wedge\mathbf{B}})\right]\]
+\[\mathbf{J}\mathbf{E} = -\varepsilon_0 \frac{\d \mathbf{E}}{\d t}\mathbf{E} -\frac{1}{\mu_0}\left[\frac{\d \mathbf{B}}{\d t}\mathbf{B}+\n(\mathbf{E}\wedge\mathbf{B})\right]\]
 Osserviamo che 
-\[\frac{\d B^2}{\d t} = \frac{\d }{\d t}(\mathbf{B}\mathbf{B}) = \mathbf{B}\frac{\d B}{\d t}+\frac{\d B}{\d t}\mathbf{B}=2\frac{\d B}{\d t}\mathbf{B}\]
-\[\frac{\d E^2}{\d t} = 2\frac{\d E}{\d t}\mathbf{E}\]
+\[\frac{\d B^2}{\d t} = \frac{\d }{\d t}(\mathbf{B}\mathbf{B}) = \mathbf{B}\frac{\d \mathbf{B}}{\d t}+\frac{\d \mathbf{B}}{\d t}\mathbf{B}=2\frac{\d \mathbf{B}}{\d t}\mathbf{B}\]
+\[\frac{\d E^2}{\d t} = 2\frac{\d \mathbf{E}}{\d t}\mathbf{E}\]
 sostituendo
 \[\mathbf{J}\mathbf{E} = -\frac{1}{2}\varepsilon_0\frac{\d E^2}{\d t}-\frac{1}{2\mu_0}\frac{\d B^2}{\d t}-\frac{1}{\mu_0}\n(\mathbf{E}\wedge\mathbf{B})\]
-dunque la potenza è
-\[dW = d\tau (\mathbf{J}\mathbf{E})\]
+la potenza è, come visto sopra
+\[dP =  (\mathbf{J}\mathbf{E})d\tau\]
 per ottenere l'energia scambiata nell'unità di tempo sull'intera distribuzione di carica integriamo sul volume
-\[W = \int_V\left[ -\frac{1}{2}\varepsilon_0\frac{\d E^2}{\d t}-\frac{1}{2\mu_0}\frac{\d B^2}{\d t} \right] d\tau-\frac{1}{\mu_0}\int_V \n(\mathbf{E}\wedge\mathbf{B})d\tau \]
-Possiamo applicare il teorema della divergenza per il secondo addendo 
+\[P = \int_V\left[ -\frac{1}{2}\varepsilon_0\frac{\d E^2}{\d t}-\frac{1}{2\mu_0}\frac{\d B^2}{\d t} \right] d\tau-\frac{1}{\mu_0}\int_V \n(\mathbf{E}\wedge\mathbf{B})d\tau \]
+Possiamo applicare il teorema della divergenza
 \[\int_V \n(\mathbf{E}\wedge\mathbf{B}) d\tau = \oint_{\Sigma(\Gamma)}(\mathbf{E}\wedge\mathbf{B})\mathbf{ds}\]
 Infine otteniamo
-\[W = -\frac{\d }{\d t}\left[\int_V \frac{1}{2}\varepsilon_0 E^2+\frac{1}{2\mu_0}B^2 \right] d\tau-\frac{1}{\mu_0}\oint_{\Sigma(\Gamma)}(\mathbf{E}\wedge\mathbf{B})\mathbf{ds}\]
+\[P = -\frac{\d }{\d t}\left[\int_V \frac{1}{2}\varepsilon_0 E^2+\frac{1}{2\mu_0}B^2 \right] d\tau-\frac{1}{\mu_0}\oint_{\Sigma(\Gamma)}(\mathbf{E}\wedge\mathbf{B})\mathbf{ds}\]
 
 questo è il \textbf{teorema di Poynting} (dal fisico britannico John Henry Poynting (1852 – 1914)), che altro non è che il principio di conservazione dell'energia in elettromagnetismo. Questo infatti ci dice che l'aumento (diminuzione) di energia nell'unità di tempo di un sistema di cariche è accompagnata da una diminuzione (emissione) di energia in tre modalità, che corrispondono ai tre addendi della legge di Poynting:
 \begin{itemize}
@@ -2022,31 +2030,57 @@ la proprietà suddetta è sempre rispettata perché la divergenza del rotore è 
 Si osservi inoltre che in questo modo definiamo il potenziale vettore non solo a meno di una costante (analogamente al potenziale, a causa delle derivate della divergenza), ma anche a meno della divergenza di un campo scalare infatti
 \[\mathbf{A'} = \mathbf{A} + \n f\]
 \[\n\wedge\mathbf{A'} = \n\wedge\mathbf{A}+\n\wedge\n f = \n\wedge\mathbf{A} = \mathbf{B}\]
-dunque sia \(\mathbf{A}\) sia \(\mathbf{A'}\) rispettano la relazione con cui sono state definite. Inoltre, applicando la divergenza si nota 
+dunque sia \(\mathbf{A}\) sia \(\mathbf{A'}\) rispettano la relazione con cui sono state definite. Inoltre, imponendo la divergenza di A nulla per ipotesi si nota 
 \[\n\mathbf{A'} = \n\mathbf{A}+\n^2 f = 0\]
 \[\Rightarrow \n\mathbf{A} = - \n^2f\]
 Cominciamo, per semplicità, con il definire il potenziale vettore, aggiungendo alla condizione \(\mathbf{B} = \n \wedge \mathbf{A}\) anche l'ipotesi \(\n A = 0\) da cui (\(\n^2f = 0\)) per semplificare i calcoli (torneremo su questo punto in seguito, per ora lo si accetti come una considerazione di tipo matematico). Inoltre, per semplicità, escludiamo la presenza di campi elettrici variabili.\\
 Sfruttiamo l'altra informazione che abbiamo sul campo magnetico dalle equazioni di Maxwell
 \[\n\wedge\mathbf{B} = \n\wedge(\n\wedge\mathbf{A}) = \n(\n A)-\n^2A = -\n^2 A = \mu_0\mathbf{J}\]
 dove è stata usata la regola del BAC-CAB e il fatto che per ipotesi \(\n A = 0\). Ciò che abbiamo ottenuto è un'equazione differenziale alle derivate parziali del secondo ordine, trovarne la risoluzione è possibile ma difficile, sfruttiamo dunque un'analogia con il campo elettrico per semplificare i calcoli. Abbiamo già notato come la risoluzione del problema di Laplace, ovvero la risoluzione dell'equazione differenziale alle derivate parziali del secondo ordine
-\[\n^V = -\frac{\rho}{\varepsilon_0}\]
+\[\n^2V = -\frac{\rho}{\varepsilon_0}\]
 è risolta in modo generale dall'equazione
 \[V = \int_V \frac{\rho}{4\pi\varepsilon_0 r}d\tau\] 
 Per analogia possiamo risolvere l'equazione differenziale del potenziale vettore come
-\[\mathbf{A} = \int_V \frac{\mu_0 i}{4\pi r}d\tau\]
-Abbiamo così trovato l'espressione del potenziale vettore sotto l'ipotesi di assenza di campi elettrici variabili nel tempo e \(\n A = 0\), cosa significa fisicamente quest'ultima ipotesi? 
+\begin{align}\label{eq:potenzialevettore}
+	\mathbf{A} = \int_V \frac{\mu_0 \mathbf{J}}{4\pi r}d\tau
+\end{align}
+Dove l'integrale va fatto su tutto il volume in cui \(\mathbf{J}\neq 0\).\\
+Abbiamo trovato l'espressione del potenziale vettore sotto l'ipotesi di assenza di campi elettrici variabili nel tempo e \(\n A = 0\), cosa significa fisicamente quest'ultima ipotesi? 
 \[\n A = \n \int \frac{\mu_0 \mathbf{J}}{4\pi r}d\tau = 0\]
 \[\Rightarrow \n \mathbf{J} = 0  \]
 dunque dire \(\n\mathbf{A} = 0\) equivale ad assumere il regime stazionario.\\
 Possiamo infine ottenere la forma integrale del potenziale vettore 
-\[\int_{\Sigma} \mathbf{B}\mathbf{ds} = \int_{Sigma} \n\wedge \mathbf{A}\mathbf{ds} = \oint_\Gamma(\Sigma) \mathbf{A}\mathbf{dl}\]
+\[\int_{\Sigma} \mathbf{B}\mathbf{ds} = \int_{\Sigma} \n\wedge \mathbf{A}\mathbf{ds} = \oint_{\Gamma(\Sigma)} \mathbf{A}\mathbf{dl}\]
 Possiamo anche riscrivere l'equazione di Maxwell
 \[\n\wedge E = -\frac{\d \mathbf{B}}{\d t} = \frac{\d (-\n\wedge\mathbf{A})}{\d t} = \n\wedge\left(-\frac{\d \mathbf{A}}{\d t}\right)\]
 Dunque il campo elettrico consta di una componente conservativa, che è la differenza di potenziale elettrico, e di una componente non conservativa, presente solo quando si hanno campi magnetici variabili nel tempo, che è uguale alla variazione nel tempo del potenziale vettore. Possiamo quindi scrivere un'espressione generale del campo elettrico come
 \[\mathbf{E} = -\n V - \frac{\d \mathbf{A}}{\d t}\]
+\section{Per un approccio formale}
+L'approccio da noi seguito fin ora è stato di tipo storico: si sono esposte le scoperte in modo cronologico a partire dai fatti sperimentali per poi giustificarli con modelli teorici. \'E possibile seguire un'altra strada più complessa ma che offre risultati più interessanti, è infatti possibile sviluppare formalmente la teoria classica dell'elettromagnetismo a partire da postulati. In questo modo leggi non dimostrate e accettate come evidenze sperimentali sono ricavabili formalmente. Sviluppare una teoria con questo rigore va oltre le nostre capacità ed interessi al momento ma è interessante sapere che per far ciò è necessaria l'introduzione del potenziale vettore che nel presente testo è stato introdotto alla fine e che però in ottica formale dovrebbe costituire un punto di partenza. Di seguito si fornisce qualche esempio di leggi accettate sperimentalmente dimostrabili formalmente avvalendosi del potenziale vettore.
+\subsection{Dimostrazione legge di Biot-Savart}
+Se la corrente è a regime stazionario vale \(\mathbf{J} = \frac{i}{S}\)
+\[\mathbf{A} = \int_V \frac{\mu_0 \mathbf{J}}{4\pi r}d\tau = \int_{\Gamma}\frac{\mu_0 i}{4\pi r}\mathbf{dl}\]
+\[\mathbf{dA} = \frac{\mu_0 i}{4\pi r}\mathbf{dl}\]
+\[\mathbf{dB} = \n\wedge\mathbf{dA} = \frac{\mu_0 i}{4\pi}\n\wedge\frac{\mathbf{dl}}{r}\]
+in generale vale
+\[\n\wedge(f \mathbf{v}) = f(\n\wedge(\mathbf{v}))+\n f \wedge\mathbf{v}\]
+dunque
+\[\n\wedge(\frac{1}{r} \mathbf{dl}) = \frac{1}{r}(\n\wedge(\mathbf{dl}))+\n \frac{1}{r} \wedge\mathbf{dl}\]
+ma \(\mathbf{dl}\) non dipende dalle coordinate spaziali dunque \(\n\wedge\mathbf{dl} = 0\). Inoltre
+\[\n\left(\frac{1}{r}\right)\wedge\mathbf{dl} = -\left(\frac{\mathbf{r}}{r^3}\right)\wedge\mathbf{dl} = \frac{\mathbf{dl}\wedge\mathbf{r}}{r^3}\]
+dunque, infine
+\[\mathbf{dB} = \frac{\mu_0 i}{4\pi}\n\wedge\frac{\mathbf{dl}}{r}= \frac{\mu_0 i}{4\pi}\frac{\mathbf{dl}\wedge\mathbf{r}}{r^3}\]
+\subsection{Dimostrazione uguaglianza coefficiente di mutua induzione}
+Consideriamo due circuiti e calcoliamo il flusso di uno sull'altro come già visto nella (\ref{eq:mutuainduzione}) ma sta volta sostituiamo il potenziale vettore ed applichiamo Stokes
+\[\Phi_{\Sigma_2}(\mathbf{B}_1) = \iint_{\Sigma_2}\mathbf{B}\mathbf{ds} =  \iint_{\Sigma_2}(\n\wedge\mathbf{A})\mathbf{ds} = \oint_{\Gamma_2}\mathbf{A}\mathbf{dl}\]
+Per la (\ref{eq:potenzialevettore}) possiamo sostituire
+\[\Phi_{\Sigma_2}(\mathbf{B}_1) = i_1\oint_{\Gamma_2}\oint_{\Gamma_1}\frac{\mu_0 }{4\pi r_1}\mathbf{dl_1}\mathbf{dl_2}\equiv M_{12} i_1\]
+Poiché il prodotto scalare \(\mathbf{dl_1}\mathbf{dl_2}\) commuta ed evidentemente \(r_1 = r_2\), si ha 
+\[\Phi_{\Sigma_1}(\mathbf{B}_2) = i_2\oint_{\Gamma_1}\oint_{\Gamma_2}\frac{\mu_0 }{4\pi r_2}\mathbf{dl_2}\mathbf{dl_1}\equiv M_{21} i_2\]
+\[M_{12} = M_{21}\]
 \section{La fisica è finita?}
 Le equazioni di Maxwell permettono di studiare una quantità enorme di fenomeni prima sconosciuti le cui implicazioni tecnologiche ebbero un'impatto enorme sulla società della seconda metà dell' '800. Ciò avvenne grazie a (o a causa di) un periodo di pace che ormai durava in Europa da decenni, prosperità economica verificatasi grazie all'imposizione del ceto borghese nella società e in generale una incondizionata fiducia nel progresso e nella scienza testimoniata da movimenti filosofici come il positivismo o letterari e artistici come il realismo. Nel contesto di questa atmosfera si sviluppò un dibattito nella comunità scientifica attorno alla credenza che le principali scoperte scientifiche fossero ormai già state fatte e che ciò che mancava erano solamente conferme sperimentali e piccoli dettagli. L'ottimismo della comunità scientifica era già da tempo avversato da voci minori, ma non meno illustri, soprattutto di cultura umanistica, che criticavano le "magnifiche sorti e progressive" in cui la società dell'epoca credeva. Tuttavia una forte botta d'arresto a questo clima venne proprio dall'interno delle scienze, due problemi fondamentali erano stati lasciati aperti dalla teoria di Maxwell: il primo è che un elettrone in orbita attorno ad un nucleo (come veniva concepito dalla fisica classica), generando campo elettrico e magnetico, perde energia dunque non ci si spiega come faccia la materia stessa ad esistere poiché l'elettrone dovrebbe collassare sul nucleo. Inoltre dalle equazioni di Maxwell, come visto, risulta che le onde elettromagnetiche e quindi la luce hanno una velocità costante, la domanda è: "rispetto a quale sistema di riferimento?" inizialmente si pensò potesse essere il fantomatico etere ma le evidenze sperimentali (esperimenti di Michelson e Morley) confutarono questa ipotesi.\\
-Dal primo di questi problemi nacque la fisica quantistica, dal secondo la relatività (Appendice \ref{ap:relatività}): la fisica moderna stava per nascere. 
+Dal primo di questi problemi nacque la fisica quantistica, dal secondo la relatività (Appendice (\ref{ap:relatività})): la fisica moderna stava per nascere. 
 \newpage
 \appendix
 \section{Operatori differenziali}\label{ap:operatori_differenziali}
